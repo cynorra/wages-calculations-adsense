@@ -1,0 +1,82 @@
+---
+import Base from "../layouts/Base.astro";
+import { breadcrumbSchema } from "../lib/schema.js";
+
+const crumbs = [{ name: "Methodology", path: "/methodology/" }];
+const schema = [breadcrumbSchema(crumbs)];
+---
+
+<Base
+  title="Mathematical Methodology & Statutory FLSA Standards"
+  description="Explore the mathematical models, Fair Labor Standards Act (FLSA) regulations, and IRS tax withholding formulas powering our calculators."
+  schema={schema}
+  crumbs={crumbs}
+>
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+    <div class="bg-white rounded-2xl border border-slate-200 p-8 sm:p-12 shadow-sm prose prose-slate max-w-none text-sm text-slate-700 leading-relaxed">
+      <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-brand-50 text-brand-700 border border-brand-200 not-prose mb-3">
+        Statutory Documentation
+      </span>
+      <h1 class="text-3xl font-extrabold text-slate-900 not-prose">Calculation Methodology & Legal Standards</h1>
+      <p class="lead text-base text-slate-600 mt-2">
+        This document outlines the mathematical framework, federal statutes, and algorithmic logic underlying every wage and paycheck calculator on this platform.
+      </p>
+
+      <hr class="my-8" />
+
+      <h2>1. The 2,080-Hour Annual Baseline Standard</h2>
+      <p>
+        The United States Office of Personnel Management (OPM) and standard accounting conventions define full-time employment as 2,080 hours per annum:
+      </p>
+      <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 font-mono text-xs text-slate-900">
+        Annual Hours = 40 hours/week × 52 weeks = 2,080 hours
+      </div>
+      <p>
+        When converting between periodic wage figures:
+      </p>
+      <ul>
+        <li><strong>Monthly Pay:</strong> <code>Annual Gross / 12</code> (representing 173.33 average work hours per month).</li>
+        <li><strong>Biweekly Pay:</strong> <code>Annual Gross / 26</code> (representing exactly 80 work hours across 14 calendar days).</li>
+        <li><strong>Semi-Monthly Pay:</strong> <code>Annual Gross / 24</code> (paid twice per calendar month, e.g., 1st and 15th).</li>
+        <li><strong>Weekly Pay:</strong> <code>Annual Gross / 52</code> (representing 40 straight-time work hours).</li>
+      </ul>
+
+      <h2>2. Fair Labor Standards Act (FLSA) Overtime Formula</h2>
+      <p>
+        Under <strong>29 U.S. Code § 207(a)(1)</strong>, non-exempt employees must receive overtime compensation for all hours worked exceeding 40 in a single workweek at a rate not less than one and one-half times (1.5x) their <em>regular rate of pay</em>.
+      </p>
+      <p>
+        When employees earn non-discretionary bonuses or shift differentials, the regular rate is determined under <strong>29 CFR § 778.109</strong>:
+      </p>
+      <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 font-mono text-xs text-slate-900">
+        Regular Rate of Pay = Total Straight-Time Earnings (including bonuses) / Total Hours Worked in Workweek<br /><br />
+        Total Overtime Pay = (Regular Rate × 0.5) × Overtime Hours Worked
+      </div>
+
+      <h2>3. Federal Insurance Contributions Act (FICA)</h2>
+      <p>
+        Pursuant to Title 26 of the United States Code (Internal Revenue Code):
+      </p>
+      <ul>
+        <li><strong>Old-Age, Survivors, and Disability Insurance (OASDI - Social Security):</strong> 6.2% withheld from employee wages up to the statutory wage base limit of <strong>$176,100 for 2026</strong>. Employer contributes a matching 6.2%.</li>
+        <li><strong>Hospital Insurance (HI - Medicare):</strong> 1.45% withheld on all wages without cap. Employer matches 1.45%.</li>
+        <li><strong>Additional Medicare Tax:</strong> 0.9% withheld on employee wages exceeding $200,000 (single) or $250,000 (married filing jointly), with no employer match.</li>
+      </ul>
+
+      <h2>4. Federal Income Tax Withholding (IRS Pub 15-T)</h2>
+      <p>
+        Federal income tax withholding is calculated using the percentage method tables of <strong>IRS Publication 15-T</strong>:
+      </p>
+      <ol>
+        <li>Gross wage is reduced by pre-tax contributions (Section 401(k), Section 125 cafeteria plans, and HSA/FSA deferrals).</li>
+        <li>Annual standard deduction is applied ($15,000 for single filers; $30,000 for married joint filers in 2026).</li>
+        <li>Progressive marginal tax brackets (10%, 12%, 22%, 24%, 32%, 35%, 37%) are applied strictly to the taxable excess within each bracket.</li>
+      </ol>
+
+      <h2>5. State Income Tax Modeling</h2>
+      <p>
+        Nine states impose no personal wage income tax: <strong>Alaska, Florida, Nevada, New Hampshire (dividends/interest only), South Dakota, Tennessee, Texas, Washington (capital gains only), and Wyoming</strong>. For all other states, statutory flat tax rates or progressive bracket distributions are applied to adjusted gross income.
+      </p>
+    </div>
+  </div>
+</Base>

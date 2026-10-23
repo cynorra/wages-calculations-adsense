@@ -1,0 +1,39 @@
+---
+import Base from "../layouts/Base.astro";
+import { SITE } from "../site.config.js";
+import { breadcrumbSchema } from "../lib/schema.js";
+
+const crumbs = [{ name: "Terms of Use", path: "/terms/" }];
+const schema = [breadcrumbSchema(crumbs)];
+---
+
+<Base
+  title="Terms of Use"
+  description={`Terms and conditions governing the use of the financial and wage calculators provided by ${SITE.name}.`}
+  schema={schema}
+  crumbs={crumbs}
+>
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+    <div class="bg-white rounded-2xl border border-slate-200 p-8 sm:p-12 shadow-sm prose prose-slate max-w-none text-sm text-slate-700 leading-relaxed">
+      <h1 class="text-3xl font-extrabold text-slate-900 not-prose">Terms of Use</h1>
+      <p class="text-xs text-slate-500">Last Revised: October 2026</p>
+
+      <hr class="my-6" />
+
+      <h2>1. Acceptance of Terms</h2>
+      <p>
+        By accessing or using {SITE.name}, you agree to be bound by these Terms of Use and all applicable federal and state laws. If you do not agree, you are prohibited from using the calculators and content.
+      </p>
+
+      <h2>2. Permitted Use</h2>
+      <p>
+        The calculators and computational matrices provided on this platform are made available for personal, educational, and informational evaluation. You may utilize the outputs to benchmark job offers, verify paycheck deductions, or plan personal household budgets.
+      </p>
+
+      <h2>3. Intellectual Property</h2>
+      <p>
+        The code architecture, design systems, proprietary calculators, and editorial guides are the intellectual property of {SITE.name} and Eren Şimşir, protected under copyright and intellectual property treaties.
+      </p>
+    </div>
+  </div>
+</Base>

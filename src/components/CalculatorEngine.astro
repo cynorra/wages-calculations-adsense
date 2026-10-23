@@ -1,0 +1,396 @@
+---
+// Universal Interactive Calculator Engine
+interface Props {
+  toolSlug: string;
+}
+
+const { toolSlug } = Astro.props;
+---
+
+<div id="calculator-engine" data-slug={toolSlug} class="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 sm:p-8 transition-all">
+  <!-- Dynamic Calculator UI based on Slug -->
+  <div class="mb-6 pb-6 border-b border-slate-100 flex flex-wrap items-center justify-between gap-4">
+    <div>
+      <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-brand-50 text-brand-700 border border-brand-200">
+        Live Dynamic Engine
+      </span>
+      <h2 class="text-xl sm:text-2xl font-bold text-slate-900 mt-1">Interactive Wage Calculator</h2>
+      <p class="text-xs text-slate-500">Adjust parameters below to simulate take-home wages, overtime multipliers, and statutory tax withholdings.</p>
+    </div>
+    <div class="text-right">
+      <span class="text-xs font-medium text-slate-400 block">Standard Year Model</span>
+      <span class="font-mono text-sm font-semibold text-slate-700">2,080 Work Hours</span>
+    </div>
+  </div>
+
+  <!-- Primary Input Controls (Responsive Form Grid) -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+    <!-- Input 1: Hourly / Salary Value -->
+    <div id="group-primary-amount">
+      <label id="label-primary-amount" for="calc-primary-amount" class="block text-xs font-semibold text-slate-700 mb-1">
+        Hourly Pay Rate ($)
+      </label>
+      <div class="relative rounded-lg shadow-sm">
+        <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+          <span class="text-slate-500 sm:text-sm">$</span>
+        </div>
+        <input
+          type="number"
+          id="calc-primary-amount"
+          step="0.25"
+          min="0"
+          value="36.06"
+          class="block w-full rounded-lg border-slate-300 pl-7 pr-3 py-2 text-slate-900 focus:border-brand-500 focus:ring-brand-500 sm:text-sm border"
+        />
+      </div>
+    </div>
+
+    <!-- Input 2: Weekly Hours -->
+    <div id="group-hours">
+      <label for="calc-weekly-hours" class="block text-xs font-semibold text-slate-700 mb-1">
+        Hours per Week (<span id="hours-display">40</span> hrs)
+      </label>
+      <input
+        type="range"
+        id="calc-weekly-hours"
+        min="10"
+        max="70"
+        value="40"
+        class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-brand-600 mt-2"
+      />
+    </div>
+
+    <!-- Input 3: State Tax Selection -->
+    <div id="group-state">
+      <label for="calc-state" class="block text-xs font-semibold text-slate-700 mb-1">
+        State (Taxes & Living Index)
+      </label>
+      <select
+        id="calc-state"
+        class="block w-full rounded-lg border-slate-300 py-2 px-3 text-slate-900 focus:border-brand-500 focus:ring-brand-500 sm:text-sm border bg-white"
+      >
+        <option value="TX" selected>Texas (0% Income Tax)</option>
+        <option value="FL">Florida (0% Income Tax)</option>
+        <option value="WA">Washington (0% Income Tax)</option>
+        <option value="CA">California (7.25% Avg Bracket)</option>
+        <option value="NY">New York (5.85% State Tax)</option>
+        <option value="IL">Illinois (4.95% Flat Tax)</option>
+        <option value="PA">Pennsylvania (3.07% Flat Tax)</option>
+        <option value="OH">Ohio (3.50% State Tax)</option>
+        <option value="NC">North Carolina (4.50% Flat Tax)</option>
+        <option value="GA">Georgia (5.39% State Tax)</option>
+      </select>
+    </div>
+
+    <!-- Input 4: Filing Status -->
+    <div id="group-filing-status">
+      <label for="calc-status" class="block text-xs font-semibold text-slate-700 mb-1">
+        IRS Filing Status (W-4)
+      </label>
+      <select
+        id="calc-status"
+        class="block w-full rounded-lg border-slate-300 py-2 px-3 text-slate-900 focus:border-brand-500 focus:ring-brand-500 sm:text-sm border bg-white"
+      >
+        <option value="single" selected>Single ($15,000 Std Ded)</option>
+        <option value="married">Married Joint ($30,000 Std Ded)</option>
+        <option value="headOfHousehold">Head of Household</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Special Controls for Certain Calculators (Overtime, Unpaid Vacation, 1099 etc) -->
+  <div id="advanced-controls" class="p-4 bg-slate-50 rounded-xl mb-6 border border-slate-100 flex flex-wrap items-center gap-6 text-xs">
+    <div class="flex items-center gap-2">
+      <label for="calc-vacation-weeks" class="font-medium text-slate-700">Unpaid Vacation:</label>
+      <input type="number" id="calc-vacation-weeks" min="0" max="10" value="0" class="w-16 rounded border-slate-300 py-1 px-2 text-center text-xs border" />
+      <span class="text-slate-500">weeks/yr</span>
+    </div>
+
+    <div class="flex items-center gap-2">
+      <label for="calc-pretax-deductions" class="font-medium text-slate-700">Pre-Tax (401k/HSA):</label>
+      <input type="number" id="calc-pretax-deductions" min="0" step="50" value="0" class="w-20 rounded border-slate-300 py-1 px-2 text-center text-xs border" />
+      <span class="text-slate-500">$/month</span>
+    </div>
+
+    <div class="flex items-center gap-2">
+      <label for="calc-overtime-hours" class="font-medium text-slate-700">Overtime (>40 hrs):</label>
+      <input type="number" id="calc-overtime-hours" min="0" max="30" value="0" class="w-16 rounded border-slate-300 py-1 px-2 text-center text-xs border" />
+      <span class="text-slate-500">hrs/wk @ 1.5x</span>
+    </div>
+  </div>
+
+  <!-- Main Calculation Results Dashboard -->
+  <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
+    <div class="bg-gradient-to-br from-brand-500 to-brand-600 rounded-xl p-4 text-white shadow-sm">
+      <span class="text-xs font-medium text-brand-100 uppercase tracking-wide block">Annual Gross Wages</span>
+      <span id="result-annual-gross" class="font-mono text-xl sm:text-2xl font-bold tracking-tight block mt-1">$75,004.80</span>
+      <span class="text-[11px] text-brand-100 mt-1 block">Before withholdings</span>
+    </div>
+
+    <div class="bg-slate-900 rounded-xl p-4 text-white shadow-sm">
+      <span class="text-xs font-medium text-slate-400 uppercase tracking-wide block">Estimated Take-Home (Net)</span>
+      <span id="result-annual-net" class="font-mono text-xl sm:text-2xl font-bold tracking-tight block text-brand-400 mt-1">$61,240.12</span>
+      <span class="text-[11px] text-slate-400 mt-1 block" id="result-effective-tax">Effective Tax: 18.35%</span>
+    </div>
+
+    <div class="bg-slate-100 rounded-xl p-4 text-slate-900 border border-slate-200">
+      <span class="text-xs font-semibold text-slate-500 uppercase tracking-wide block">Biweekly Paycheck</span>
+      <span id="result-biweekly-net" class="font-mono text-xl sm:text-2xl font-bold tracking-tight block text-slate-900 mt-1">$2,355.39</span>
+      <span class="text-[11px] text-slate-500 mt-1 block">Gross: <span id="result-biweekly-gross">$2,884.80</span></span>
+    </div>
+
+    <div class="bg-slate-100 rounded-xl p-4 text-slate-900 border border-slate-200">
+      <span class="text-xs font-semibold text-slate-500 uppercase tracking-wide block">Real Hourly (Post-Tax)</span>
+      <span id="result-hourly-net" class="font-mono text-xl sm:text-2xl font-bold tracking-tight block text-slate-900 mt-1">$29.44 /hr</span>
+      <span class="text-[11px] text-slate-500 mt-1 block">Nominal: <span id="result-hourly-gross">$36.06 /hr</span></span>
+    </div>
+  </div>
+
+  <!-- Detailed Line-Item Reductions Table (Anti-AIO & AdSense Quality) -->
+  <div class="border border-slate-200 rounded-xl overflow-hidden mb-6">
+    <div class="bg-slate-50 px-4 py-3 border-b border-slate-200 flex items-center justify-between">
+      <h3 class="text-xs font-bold text-slate-800 uppercase tracking-wider">Payroll Deductions & Take-Home Schedule</h3>
+      <span class="text-xs text-slate-500">IRS Pub 15-T & FICA Formula</span>
+    </div>
+    <div class="overflow-x-auto">
+      <table class="table-custom">
+        <thead>
+          <tr>
+            <th>Period</th>
+            <th>Gross Pay</th>
+            <th>Federal Withholding</th>
+            <th>FICA (SS + Medicare)</th>
+            <th>State Tax</th>
+            <th class="text-right">Net Take-Home</th>
+          </tr>
+        </thead>
+        <tbody id="table-breakdown-body">
+          <!-- Populated by JavaScript -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Interactive 50/30/20 Monthly Budget Reality Simulator (Anti-Zero Click Feature) -->
+  <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+    <div class="flex items-center justify-between mb-3">
+      <div>
+        <h3 class="text-sm font-bold text-slate-900">Monthly 50/30/20 Budget Allocation</h3>
+        <p class="text-xs text-slate-500">Derived from your estimated net take-home pay of <span id="budget-net-monthly" class="font-bold text-slate-800">$5,103.34</span>/month.</p>
+      </div>
+      <span class="px-2 py-1 rounded bg-brand-100 text-brand-800 font-semibold text-xs">Recommended Framework</span>
+    </div>
+    
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs">
+      <div class="bg-white p-3.5 rounded-lg border border-slate-200">
+        <div class="flex justify-between items-center mb-1">
+          <span class="font-semibold text-slate-700">50% Needs & Essentials</span>
+          <span class="font-mono font-bold text-slate-900" id="budget-needs">$2,551.67</span>
+        </div>
+        <p class="text-[11px] text-slate-500">Rent/mortgage (max 30%), groceries, utilities, health insurance.</p>
+      </div>
+
+      <div class="bg-white p-3.5 rounded-lg border border-slate-200">
+        <div class="flex justify-between items-center mb-1">
+          <span class="font-semibold text-slate-700">30% Wants & Lifestyle</span>
+          <span class="font-mono font-bold text-slate-900" id="budget-wants">$1,531.00</span>
+        </div>
+        <p class="text-[11px] text-slate-500">Dining out, entertainment, shopping, vacations, hobbies.</p>
+      </div>
+
+      <div class="bg-white p-3.5 rounded-lg border border-slate-200">
+        <div class="flex justify-between items-center mb-1">
+          <span class="font-semibold text-slate-700">20% Savings & Debt Payoff</span>
+          <span class="font-mono font-bold text-brand-700" id="budget-savings">$1,020.67</span>
+        </div>
+        <p class="text-[11px] text-slate-500">Emergency fund, Roth IRA, index funds, student debt acceleration.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script is:inline>
+(function() {
+  const container = document.getElementById('calculator-engine');
+  if (!container) return;
+  const slug = container.getAttribute('data-slug');
+
+  // Input Elements
+  const primaryAmountInput = document.getElementById('calc-primary-amount');
+  const labelPrimaryAmount = document.getElementById('label-primary-amount');
+  const hoursInput = document.getElementById('calc-weekly-hours');
+  const hoursDisplay = document.getElementById('hours-display');
+  const stateSelect = document.getElementById('calc-state');
+  const statusSelect = document.getElementById('calc-status');
+  const vacationWeeksInput = document.getElementById('calc-vacation-weeks');
+  const preTaxDeductionsInput = document.getElementById('calc-pretax-deductions');
+  const overtimeHoursInput = document.getElementById('calc-overtime-hours');
+
+  // Result Elements
+  const resGrossAnnual = document.getElementById('result-annual-gross');
+  const resNetAnnual = document.getElementById('result-annual-net');
+  const resEffectiveTax = document.getElementById('result-effective-tax');
+  const resBiweeklyNet = document.getElementById('result-biweekly-net');
+  const resBiweeklyGross = document.getElementById('result-biweekly-gross');
+  const resHourlyNet = document.getElementById('result-hourly-net');
+  const resHourlyGross = document.getElementById('result-hourly-gross');
+  const tableBody = document.getElementById('table-breakdown-body');
+
+  const budgetNetMonthly = document.getElementById('budget-net-monthly');
+  const budgetNeeds = document.getElementById('budget-needs');
+  const budgetWants = document.getElementById('budget-wants');
+  const budgetSavings = document.getElementById('budget-savings');
+
+  // Custom configurations by slug
+  if (slug === 'salary-to-hourly-calculator' || slug.includes('salary')) {
+    labelPrimaryAmount.textContent = "Annual Salary ($)";
+    primaryAmountInput.value = "75000";
+    primaryAmountInput.step = "1000";
+  } else if (slug === '75000-a-year-is-how-much-an-hour') {
+    labelPrimaryAmount.textContent = "Annual Salary ($)";
+    primaryAmountInput.value = "75000";
+    primaryAmountInput.step = "1000";
+  } else if (slug === '80000-a-year-is-how-much-an-hour') {
+    labelPrimaryAmount.textContent = "Annual Salary ($)";
+    primaryAmountInput.value = "80000";
+    primaryAmountInput.step = "1000";
+  } else if (slug === '50000-a-year-is-how-much-an-hour') {
+    labelPrimaryAmount.textContent = "Annual Salary ($)";
+    primaryAmountInput.value = "50000";
+    primaryAmountInput.step = "1000";
+  } else if (slug === '85000-a-year-is-how-much-an-hour') {
+    labelPrimaryAmount.textContent = "Annual Salary ($)";
+    primaryAmountInput.value = "85000";
+    primaryAmountInput.step = "1000";
+  } else if (slug === 'overtime-pay-calculator' || slug === 'calculating-overtime-with-bonuses') {
+    overtimeHoursInput.value = "5";
+    primaryAmountInput.value = "25.00";
+  } else if (slug === 'hourly-to-salary-calculator') {
+    primaryAmountInput.value = "30.00";
+  }
+
+  function fmt(val) {
+    return new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(val || 0);
+  }
+
+  function calcFederalTax(taxable, status) {
+    if (taxable <= 0) return 0;
+    const brackets = status === 'married' 
+      ? [{ m: 23850, r: 0.10 }, { m: 96950, r: 0.12 }, { m: 206700, r: 0.22 }, { m: 394600, r: 0.24 }, { m: Infinity, r: 0.32 }]
+      : [{ m: 11925, r: 0.10 }, { m: 48475, r: 0.12 }, { m: 103350, r: 0.22 }, { m: 197300, r: 0.24 }, { m: Infinity, r: 0.32 }];
+    let tax = 0;
+    let prev = 0;
+    for (const b of brackets) {
+      if (taxable > b.m) {
+        tax += (b.m - prev) * b.r;
+        prev = b.m;
+      } else {
+        tax += (taxable - prev) * b.r;
+        break;
+      }
+    }
+    return tax;
+  }
+
+  function update() {
+    const rawAmount = parseFloat(primaryAmountInput.value) || 0;
+    const weeklyHours = parseFloat(hoursInput.value) || 40;
+    hoursDisplay.textContent = weeklyHours;
+    const state = stateSelect.value;
+    const status = statusSelect.value;
+    const vacationWeeks = parseFloat(vacationWeeksInput.value) || 0;
+    const preTaxMonthly = parseFloat(preTaxDeductionsInput.value) || 0;
+    const overtimeHours = parseFloat(overtimeHoursInput.value) || 0;
+
+    let baseHourly = 0;
+    let grossAnnual = 0;
+    const workedWeeks = Math.max(1, 52 - vacationWeeks);
+
+    const isAnnualInput = primaryAmountInput.value >= 1000 || labelPrimaryAmount.textContent.includes('Salary');
+
+    if (isAnnualInput) {
+      grossAnnual = rawAmount;
+      const totalAnnualHours = (weeklyHours + (overtimeHours * 1.5)) * workedWeeks;
+      baseHourly = totalAnnualHours > 0 ? grossAnnual / totalAnnualHours : 0;
+    } else {
+      baseHourly = rawAmount;
+      const weeklyStraightPay = baseHourly * Math.min(weeklyHours, 40);
+      const weeklyOvertimePay = baseHourly * 1.5 * overtimeHours;
+      grossAnnual = (weeklyStraightPay + weeklyOvertimePay) * workedWeeks;
+    }
+
+    // Taxes
+    const stdDed = status === 'married' ? 30000 : status === 'headOfHousehold' ? 22500 : 15000;
+    const annualPreTax = preTaxMonthly * 12;
+    const taxableIncome = Math.max(0, grossAnnual - annualPreTax - stdDed);
+    const federalTax = calcFederalTax(taxableIncome, status);
+
+    // FICA
+    const ssCap = 176100;
+    const ssTax = Math.min(grossAnnual, ssCap) * 0.062;
+    const medTax = grossAnnual * 0.0145;
+    const ficaTotal = ssTax + medTax;
+
+    // State Tax Rates
+    const stateRates = { TX: 0, FL: 0, WA: 0, CA: 0.0725, NY: 0.0585, IL: 0.0495, PA: 0.0307, OH: 0.035, NC: 0.045, GA: 0.0539 };
+    const stateRate = stateRates[state] !== undefined ? stateRates[state] : 0.04;
+    const stateTax = grossAnnual * stateRate;
+
+    const totalDeductions = federalTax + ficaTotal + stateTax + annualPreTax;
+    const netAnnual = Math.max(0, grossAnnual - totalDeductions);
+    const effectiveRate = grossAnnual > 0 ? ((federalTax + ficaTotal + stateTax) / grossAnnual) * 100 : 0;
+
+    // Update Top KPIs
+    resGrossAnnual.textContent = fmt(grossAnnual);
+    resNetAnnual.textContent = fmt(netAnnual);
+    resEffectiveTax.textContent = `Effective Tax: ${effectiveRate.toFixed(2)}%`;
+    resBiweeklyNet.textContent = fmt(netAnnual / 26);
+    resBiweeklyGross.textContent = fmt(grossAnnual / 26);
+    resHourlyNet.textContent = `${fmt(netAnnual / (workedWeeks * weeklyHours))} /hr`;
+    resHourlyGross.textContent = `${fmt(baseHourly)} /hr`;
+
+    // Breakdown Table Periods
+    const periods = [
+      { name: "Annual (52 Weeks)", factor: 1 },
+      { name: "Monthly (12 Months)", factor: 12 },
+      { name: "Semi-Monthly (24 Periods)", factor: 24 },
+      { name: "Biweekly (26 Paychecks)", factor: 26 },
+      { name: "Weekly (52 Weeks)", factor: 52 },
+      { name: "Daily (8-Hour Shift)", factor: 260 },
+      { name: "Hourly Rate", factor: 2080 }
+    ];
+
+    tableBody.innerHTML = periods.map(p => {
+      const g = grossAnnual / p.factor;
+      const f = federalTax / p.factor;
+      const fc = ficaTotal / p.factor;
+      const st = stateTax / p.factor;
+      const net = (grossAnnual - (federalTax + ficaTotal + stateTax)) / p.factor;
+      return `
+        <tr>
+          <td class="font-semibold text-slate-900">${p.name}</td>
+          <td class="font-mono text-slate-800">${fmt(g)}</td>
+          <td class="font-mono text-slate-600">${fmt(f)}</td>
+          <td class="font-mono text-slate-600">${fmt(fc)}</td>
+          <td class="font-mono text-slate-600">${fmt(st)}</td>
+          <td class="font-mono text-right font-bold text-brand-700">${fmt(net)}</td>
+        </tr>
+      `;
+    }).join('');
+
+    // 50/30/20 Budget
+    const netMonthly = netAnnual / 12;
+    budgetNetMonthly.textContent = fmt(netMonthly);
+    budgetNeeds.textContent = fmt(netMonthly * 0.50);
+    budgetWants.textContent = fmt(netMonthly * 0.30);
+    budgetSavings.textContent = fmt(netMonthly * 0.20);
+  }
+
+  // Bind Listeners
+  [primaryAmountInput, hoursInput, stateSelect, statusSelect, vacationWeeksInput, preTaxDeductionsInput, overtimeHoursInput].forEach(el => {
+    if (el) el.addEventListener('input', update);
+  });
+
+  update();
+})();
+</script>

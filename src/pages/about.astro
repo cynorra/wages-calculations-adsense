@@ -1,0 +1,57 @@
+---
+import Base from "../layouts/Base.astro";
+import { AUTHOR } from "../site.config.js";
+import { breadcrumbSchema, personRef } from "../lib/schema.js";
+
+const crumbs = [{ name: "About", path: "/about/" }];
+const schema = [breadcrumbSchema(crumbs)];
+---
+
+<Base
+  title="About Our Engineering & Editorial Team"
+  description="Learn about Eren Şimşir and the engineering methodology behind our transparent, open-formula wage and payroll calculation tools."
+  schema={schema}
+  crumbs={crumbs}
+>
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+    <div class="bg-white rounded-2xl border border-slate-200 p-8 sm:p-12 shadow-sm mb-12">
+      <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6 pb-8 mb-8 border-b border-slate-200">
+        <div class="w-24 h-24 rounded-2xl bg-gradient-to-br from-brand-600 to-brand-800 text-white flex items-center justify-center font-bold text-3xl shadow-md shrink-0">
+          EŞ
+        </div>
+        <div>
+          <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-brand-50 text-brand-700 border border-brand-200 mb-2">
+            Founder & Lead Engineer
+          </span>
+          <h1 class="text-3xl font-extrabold text-slate-900">{AUTHOR.name}</h1>
+          <p class="text-sm text-brand-700 font-medium">{AUTHOR.role}</p>
+          <div class="mt-3 flex items-center space-x-4 text-xs">
+            <a href={AUTHOR.linkedin} target="_blank" rel="noopener noreferrer" class="text-slate-600 hover:text-slate-900 underline">LinkedIn Profile</a>
+            <a href={AUTHOR.github} target="_blank" rel="noopener noreferrer" class="text-slate-600 hover:text-slate-900 underline">GitHub Repositories</a>
+            <a href={`/author/${AUTHOR.slug}/`} class="text-brand-600 hover:text-brand-800 font-semibold">Full Author Bio &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="prose prose-slate max-w-none text-sm text-slate-700 leading-relaxed space-y-4">
+        <h2 class="text-xl font-bold text-slate-900">Mission & Technical Background</h2>
+        <p>
+          {AUTHOR.shortBio}
+        </p>
+        <p>
+          Many online paycheck and wage calculators are opaque "black boxes" that fail to account for modern labor law complexities—such as non-discretionary bonus regular rate adjustments under FLSA § 7(e), statutory overtime calculations, or local state bracket nuances.
+        </p>
+        <p>
+          Our mission is to provide <strong>100% mathematically transparent, peer-auditable, and client-side payroll calculations</strong>. We publish every formula, cite every applicable title of the US Code and IRS Publication 15-T, and never store or transmit sensitive worker wage data.
+        </p>
+
+        <h2 class="text-xl font-bold text-slate-900 mt-8">Engineering Principles</h2>
+        <ul class="list-disc pl-5 space-y-2">
+          <li><strong>Zero Server Data Collection:</strong> All wage and tax computations execute in your local browser using Vanilla JavaScript. Your financial details never touch a server.</li>
+          <li><strong>Statutory Verification:</strong> Tax brackets, standard deduction thresholds, and FICA wage caps are cross-verified against official IRS bulletins annually.</li>
+          <li><strong>Clear Attribution:</strong> When local municipal or collective bargaining agreements supersede federal baselines, we provide explicit citations and contextual guidance.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</Base>

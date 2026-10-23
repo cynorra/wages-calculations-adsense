@@ -1,0 +1,56 @@
+---
+import Base from "../layouts/Base.astro";
+import { SITE, AUTHOR } from "../site.config.js";
+import { breadcrumbSchema } from "../lib/schema.js";
+
+const crumbs = [{ name: "Editorial Policy", path: "/editorial-policy/" }];
+const schema = [breadcrumbSchema(crumbs)];
+---
+
+<Base
+  title="Editorial & Mathematical Verification Policy"
+  description="Our editorial principles, source attribution rules, and rigorous auditing process for payroll and labor calculation algorithms."
+  schema={schema}
+  crumbs={crumbs}
+>
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+    <div class="bg-white rounded-2xl border border-slate-200 p-8 sm:p-12 shadow-sm prose prose-slate max-w-none text-sm text-slate-700 leading-relaxed">
+      <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-brand-50 text-brand-700 border border-brand-200 not-prose mb-3">
+        Integrity & Governance
+      </span>
+      <h1 class="text-3xl font-extrabold text-slate-900 not-prose">Editorial & Verification Policy</h1>
+      
+      <p class="lead text-base text-slate-600 mt-2">
+        At {SITE.name}, accuracy in wage computations directly impacts household budgeting, contract negotiation, and statutory compliance. We uphold rigorous editorial standards to ensure every calculator and guide meets professional engineering benchmarks.
+      </p>
+
+      <hr class="my-8" />
+
+      <h2>1. Primary Source Attribution</h2>
+      <p>
+        Every formula, deduction rate, and threshold implemented on this website originates from official, authoritative government sources:
+      </p>
+      <ul>
+        <li><strong>United States Code (Title 29 - Labor):</strong> Specifically Fair Labor Standards Act provisions (29 U.S.C. §§ 201-219).</li>
+        <li><strong>Code of Federal Regulations (29 CFR Part 778):</strong> Overtime compensation guidelines and regular rate calculations.</li>
+        <li><strong>Internal Revenue Service (IRS):</strong> Publications 15 (Circular E), 15-T, and annual Revenue Procedures defining inflation-adjusted brackets.</li>
+        <li><strong>State Departments of Labor:</strong> Annual legislative enactments modifying local minimum wages and paid family leave withholding rates.</li>
+      </ul>
+
+      <h2>2. Verification & Testing Protocol</h2>
+      <p>
+        Before any new calculator or algorithmic guide is published, it must pass a three-tier verification process:
+      </p>
+      <ol>
+        <li><strong>Unit Test Validation:</strong> Test suites compare engine outputs against real pay stubs and IRS sample scenarios down to the exact cent.</li>
+        <li><strong>Edge-Case Stress Testing:</strong> Testing extreme boundaries including minimum wage compliance, maximum Social Security wage base thresholds, and high-bracket bonus taxation.</li>
+        <li><strong>Annual Indexing:</strong> Tax brackets, standard deductions, and statutory wage bases are audited and updated immediately upon release of IRS bulletins in the fourth quarter of each year.</li>
+      </ol>
+
+      <h2>3. Corrections & Feedback</h2>
+      <p>
+        We welcome peer review. If you identify an edge case, statutory discrepancy, or error in any formula, please reach out to our engineering editor at <a href={`mailto:${SITE.email}`}>{SITE.email}</a>. Verified discrepancies are addressed and resolved within 48 hours.
+      </p>
+    </div>
+  </div>
+</Base>

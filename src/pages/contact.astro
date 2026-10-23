@@ -1,0 +1,45 @@
+---
+import Base from "../layouts/Base.astro";
+import { SITE, AUTHOR } from "../site.config.js";
+import { breadcrumbSchema } from "../lib/schema.js";
+
+const crumbs = [{ name: "Contact", path: "/contact/" }];
+const schema = [breadcrumbSchema(crumbs)];
+---
+
+<Base
+  title="Contact Our Editorial & Technical Team"
+  description={`Contact the engineers and editors behind ${SITE.name} for calculation feedback, formula verification, or general inquiries.`}
+  schema={schema}
+  crumbs={crumbs}
+>
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+    <div class="bg-white rounded-2xl border border-slate-200 p-8 sm:p-12 shadow-sm">
+      <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-brand-50 text-brand-700 border border-brand-200 mb-3">
+        Direct Communication
+      </span>
+      <h1 class="text-3xl font-extrabold text-slate-900">Contact Us</h1>
+      <p class="mt-2 text-sm text-slate-600">
+        Have questions about a wage calculation, state tax model discrepancy, or technical bug? We respond promptly to all engineering inquiries.
+      </p>
+
+      <div class="mt-8 pt-8 border-t border-slate-100 grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div class="p-5 rounded-xl bg-slate-50 border border-slate-100">
+          <h3 class="text-xs font-bold text-slate-500 uppercase tracking-wider">General & Editorial Email</h3>
+          <p class="text-sm font-semibold text-slate-900 mt-1">
+            <a href={`mailto:${SITE.email}`} class="text-brand-600 hover:underline">{SITE.email}</a>
+          </p>
+          <p class="text-xs text-slate-500 mt-2">Typical response time: 24–48 hours.</p>
+        </div>
+
+        <div class="p-5 rounded-xl bg-slate-50 border border-slate-100">
+          <h3 class="text-xs font-bold text-slate-500 uppercase tracking-wider">Engineering Lead</h3>
+          <p class="text-sm font-semibold text-slate-900 mt-1">
+            <a href={`/author/${AUTHOR.slug}/`} class="text-brand-600 hover:underline">{AUTHOR.name}</a>
+          </p>
+          <p class="text-xs text-slate-500 mt-2">Founder & Systems Engineer</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</Base>

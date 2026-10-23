@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #fafaf9;
+    color: #0f172a;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Newsreader', Charter, Georgia, Cambria, serif;
+    letter-spacing: -0.025em;
+    color: #020617;
+  }
+}
+
+.table-custom {
+  @apply w-full text-left border-collapse text-sm;
+}
+.table-custom th {
+  @apply bg-slate-100/80 text-slate-700 font-semibold px-4 py-3 border-b border-slate-200 text-xs uppercase tracking-wider;
+}
+.table-custom td {
+  @apply px-4 py-3 border-b border-slate-100 text-slate-800;
+}
+.table-custom tr:hover {
+  @apply bg-slate-50;
+}

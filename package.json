@@ -1,0 +1,21 @@
+{
+  "name": "wages-calculations-adsense",
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "test": "node scripts/check-links.mjs",
+    "push-guides": "node scripts/push-guides.mjs",
+    "reschedule": "node scripts/reschedule.mjs",
+    "indexnow": "node scripts/indexnow.mjs"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "3.2.1",
+    "@astrojs/tailwind": "^5.1.5",
+    "astro": "^4.16.18",
+    "tailwindcss": "^3.4.17"
+  }
+}

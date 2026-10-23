@@ -1,0 +1,81 @@
+---
+import Base from "../../layouts/Base.astro";
+import { AUTHOR } from "../../site.config.js";
+import { breadcrumbSchema } from "../../lib/schema.js";
+
+export function getStaticPaths() {
+  return [{ params: { slug: AUTHOR.slug } }];
+}
+
+const crumbs = [
+  { name: "About", path: "/about/" },
+  { name: AUTHOR.name, path: `/author/${AUTHOR.slug}/` },
+];
+
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": `https://hourlysalarycalc.com/author/${AUTHOR.slug}/#person`,
+  name: AUTHOR.name,
+  jobTitle: AUTHOR.role,
+  url: `https://hourlysalarycalc.com/author/${AUTHOR.slug}/`,
+  sameAs: [AUTHOR.linkedin, AUTHOR.github],
+  description: AUTHOR.shortBio,
+  alumniOf: [
+    { "@type": "CollegeOrUniversity", name: "Kocaeli University" },
+    { "@type": "CollegeOrUniversity", name: "Düzce University" },
+  ],
+};
+
+const schema = [personSchema, breadcrumbSchema(crumbs)];
+---
+
+<Base
+  title={`${AUTHOR.name} - ${AUTHOR.role}`}
+  description={`${AUTHOR.name} is a software engineer and industrial engineering researcher specializing in algorithmic wage calculation, labor economics, and payroll tax modeling.`}
+  schema={schema}
+  crumbs={crumbs}
+>
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+    <div class="bg-white rounded-2xl border border-slate-200 p-8 sm:p-12 shadow-sm">
+      <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6 pb-8 mb-8 border-b border-slate-200">
+        <div class="w-28 h-28 rounded-2xl bg-gradient-to-br from-brand-600 to-brand-800 text-white flex items-center justify-center font-bold text-4xl shadow-md shrink-0">
+          EŞ
+        </div>
+        <div>
+          <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-brand-50 text-brand-700 border border-brand-200 mb-2">
+            Verified Author & Engineer
+          </span>
+          <h1 class="text-3xl font-extrabold text-slate-900">{AUTHOR.name}</h1>
+          <p class="text-base text-brand-700 font-medium mt-1">{AUTHOR.role}</p>
+          <p class="text-xs text-slate-500 mt-1">Academic: Kocaeli University (M.Sc. ongoing) | Düzce University (B.Sc., Industrial Eng. Double Major)</p>
+          
+          <div class="mt-4 flex items-center space-x-4 text-xs font-medium">
+            <a href={AUTHOR.linkedin} target="_blank" rel="noopener noreferrer" class="text-brand-600 hover:text-brand-800 underline">LinkedIn &rarr;</a>
+            <a href={AUTHOR.github} target="_blank" rel="noopener noreferrer" class="text-slate-600 hover:text-slate-900 underline">GitHub &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="prose prose-slate max-w-none text-sm text-slate-700 leading-relaxed space-y-4">
+        <h2 class="text-xl font-bold text-slate-900">Academic Background & Areas of Expertise</h2>
+        <p>
+          Eren Şimşir is a computer engineer holding a Bachelor of Science with a double major in Industrial Engineering from Düzce University, currently pursuing a Master of Science in Computer Engineering at Kocaeli University.
+        </p>
+        <p>
+          His research combines optimization algorithms, deterministic payroll simulation, and statutory labor law compliance. In development of this portal, he engineered:
+        </p>
+        <ul class="list-disc pl-5 space-y-2">
+          <li><strong>Progressive Tax Computation Algorithms:</strong> Implementing exact bracket interpolation matching IRS Publication 15-T percentage methods.</li>
+          <li><strong>FLSA Regular Rate Logic:</strong> Developing algorithmic models to accurately account for non-discretionary bonuses, shift differentials, and multi-tier piece rates under 29 CFR Part 778.</li>
+          <li><strong>50-State Statutory Database:</strong> Curating annual updates across municipal and state minimum wage statutes.</li>
+        </ul>
+
+        <h2 class="text-xl font-bold text-slate-900 mt-8">Editorial Independence</h2>
+        <p>
+          All calculators and guides published on this platform undergo rigorous verification. The author maintains complete editorial independence and does not accept compensation or sponsored placements that would compromise calculation objectivity.
+        </p>
+      </div>
+    </div>
+  </div>
+</Base>

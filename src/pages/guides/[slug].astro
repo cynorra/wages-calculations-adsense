@@ -1,0 +1,179 @@
+---
+import Base from "../../layouts/Base.astro";
+import { localRows, liveArticles } from "../../lib/articles-source.js";
+import { guideRow } from "../../lib/frontmatter.js";
+import { articleSchema, breadcrumbSchema } from "../../lib/schema.js";
+import { TOOLS } from "../../lib/tools.js";
+
+export async function getStaticPaths() {
+  const guideFiles = import.meta.glob<{ default: string }>("../../content/guides/*.md", { query: "?raw", import: "default", eager: true });
+  const entries = Object.entries(guideFiles).map(([path, content]) => {
+    const filename = path.split("/").pop() || "";
+    return guideRow(filename, content);
+  });
+
+  return entries.map((article: any) => ({
+    params: { slug: article.slug },
+    props: { article },
+  }));
+}
+
+const { article } = Astro.props;
+const relatedTool = TOOLS.find((t) => t.guideSlug === article.slug || t.slug === article.tool);
+
+// Get related articles for internal PageRank linking (same cluster or nearby topics)
+const allGuides = localRows();
+const relatedArticles = allGuides
+  .filter((g: any) => g.slug !== article.slug)
+  .slice(0, 3);
+
+const crumbs = [
+  { name: "Guides", path: "/guides/" },
+  { name: article.title, path: `/guides/${article.slug}/` },
+];
+
+const schema = [
+  articleSchema({
+    title: article.title,
+    description: article.description,
+    path: `/guides/${article.slug}/`,
+    published: new Date(article.published_at),
+    updated: article.content_updated_at ? new Date(article.content_updated_at) : undefined,
+  }),
+  breadcrumbSchema(crumbs),
+];
+
+// Clean markdown to HTML renderer for essential elements
+function renderMarkdown(md: string) {
+  let html = md
+    .replace(/^### (.*$)/gim, '<h3 class="text-lg font-bold text-slate-900 mt-6 mb-2">$1</h3>')
+    .replace(/^## (.*$)/gim, '<h2 class="text-xl font-bold text-slate-900 mt-8 mb-3 pb-2 border-b border-slate-100">$1</h2>')
+    .replace(/^# (.*$)/gim, '<h1 class="text-2xl font-extrabold text-slate-900 mb-4">$1</h1>')
+    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+    .replace(/\*(.*?)\*/g, '<em>$1</em>')
+    .replace(/`([^`]+)`/g, '<code class="bg-slate-100 text-slate-800 px-1.5 py-0.5 rounded font-mono text-xs">$1</code>')
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-brand-600 hover:text-brand-800 underline font-medium">$1</a>');
+
+  // Format bullet lists
+  html = html.replace(/^\s*-\s+(.*$)/gim, '<li class="ml-4 list-disc text-slate-700 leading-relaxed text-sm my-1">$1</li>');
+
+  // Wrap consecutive list items in <ul>
+  html = html.replace(/(<li[\s\S]*?<\/li>)/g, '<ul class="my-3 space-y-1 pl-2">$1</ul>');
+  html = html.replace(/<\/ul>\s*<ul class="my-3 space-y-1 pl-2">/g, '');
+
+  // Format paragraphs for double linebreaks outside tags
+  const blocks = html.split(/\n\n+/);
+  return blocks
+    .map((block) => {
+      const trimmed = block.trim();
+      if (!trimmed) return "";
+      if (
+        trimmed.startsWith("<h1") ||
+        trimmed.startsWith("<h2") ||
+        trimmed.startsWith("<h3") ||
+        trimmed.startsWith("<ul")
+      ) {
+        return trimmed;
+      }
+      return `<p class="my-3 text-slate-700 leading-relaxed text-sm">${trimmed}</p>`;
+    })
+    .join("\n");
+}
+
+const renderedHtml = renderMarkdown(article.body_md);
+---
+
+<Base
+  title={article.title}
+  description={article.description}
+  schema={schema}
+  crumbs={crumbs}
+  published={new Date(article.published_at)}
+  updated={article.content_updated_at ? new Date(article.content_updated_at) : undefined}
+>
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
+    <div class="mb-8">
+      <div class="flex items-center gap-3 text-xs text-slate-500 mb-3">
+        <span class="font-mono">{article.published_at?.slice(0, 10)}</span>
+        <span>&bull;</span>
+        <span class="text-brand-700 font-semibold uppercase">By Eren Şimşir, Systems Engineer</span>
+      </div>
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
+        {article.title}
+      </h1>
+      <p class="mt-4 text-base sm:text-lg text-slate-600 leading-relaxed">
+        {article.description}
+      </p>
+    </div>
+
+    {relatedTool && (
+      <div class="mb-8 p-5 bg-brand-50 border border-brand-200 rounded-2xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+        <div>
+          <span class="text-[11px] font-bold text-brand-800 uppercase tracking-wide">Interactive Tool</span>
+          <h3 class="text-base font-bold text-slate-900">{relatedTool.name}</h3>
+          <p class="text-xs text-slate-600 mt-0.5">{relatedTool.blurb}</p>
+        </div>
+        <a
+          href={relatedTool.href}
+          class="px-4 py-2 bg-brand-600 hover:bg-brand-700 text-white rounded-lg text-xs font-semibold whitespace-nowrap shadow-sm transition-colors"
+        >
+          Open Calculator &rarr;
+        </a>
+      </div>
+    )}
+
+    <article class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-10 shadow-sm text-sm text-slate-700">
+      <div set:html={renderedHtml} />
+    </article>
+
+    <!-- Related Internal Guides & Further Reading (Contextual Internal Authority Linking) -->
+    {relatedArticles.length > 0 && (
+      <section class="mt-12 pt-8 border-t border-slate-200">
+        <div class="flex items-baseline justify-between mb-6">
+          <div>
+            <span class="text-xs font-semibold uppercase tracking-wider text-slate-500">Related Analysis</span>
+            <h3 class="text-xl font-serif font-bold text-slate-900 mt-1">Recommended Guides & Legal Standards</h3>
+          </div>
+          <a href="/guides/" class="text-xs font-semibold text-slate-900 hover:underline">
+            All Guides &rarr;
+          </a>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
+          {relatedArticles.map((rel: any) => (
+            <article class="p-4 bg-white border border-slate-200 rounded-xl hover:border-slate-400 transition-colors flex flex-col justify-between group">
+              <div>
+                <span class="text-[10px] font-mono text-slate-400 block mb-1.5">{rel.published_at?.slice(0, 10)}</span>
+                <h4 class="text-sm font-serif font-bold text-slate-900 group-hover:text-brand-700 transition-colors leading-snug">
+                  <a href={`/guides/${rel.slug}/`}>
+                    {rel.title}
+                  </a>
+                </h4>
+                <p class="text-xs text-slate-500 mt-2 line-clamp-2 leading-relaxed">
+                  {rel.description}
+                </p>
+              </div>
+              <a
+                href={`/guides/${rel.slug}/`}
+                class="mt-4 pt-2 border-t border-slate-100 text-xs font-medium text-slate-900 group-hover:underline inline-flex items-center gap-1"
+              >
+                Read Guide &rarr;
+              </a>
+            </article>
+          ))}
+        </div>
+      </section>
+    )}
+
+    <!-- Browse Directory Banner -->
+    <div class="mt-8 p-6 bg-stone-50 rounded-xl border border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+      <div>
+        <h4 class="text-sm font-serif font-bold text-slate-900">Need statutory paycheck calculations?</h4>
+        <p class="text-xs text-slate-600 mt-0.5">Explore our companion directory of 25 open-formula FLSA calculators.</p>
+      </div>
+      <a href="/calculators/" class="px-4 py-2 bg-slate-900 hover:bg-slate-800 text-white rounded-md text-xs font-semibold uppercase tracking-wider transition-colors shrink-0">
+        Browse Calculators &rarr;
+      </a>
+    </div>
+  </div>
+</Base>

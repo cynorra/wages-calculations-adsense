@@ -1,0 +1,39 @@
+---
+import Base from "../layouts/Base.astro";
+import { SITE } from "../site.config.js";
+import { breadcrumbSchema } from "../lib/schema.js";
+
+const crumbs = [{ name: "Financial Disclaimer", path: "/disclaimer/" }];
+const schema = [breadcrumbSchema(crumbs)];
+---
+
+<Base
+  title="Financial & Legal Disclaimer"
+  description={`Financial and legal disclaimer for ${SITE.name}. Our calculation tools provide estimates and do not constitute formal tax or legal advice.`}
+  schema={schema}
+  crumbs={crumbs}
+>
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+    <div class="bg-white rounded-2xl border border-slate-200 p-8 sm:p-12 shadow-sm prose prose-slate max-w-none text-sm text-slate-700 leading-relaxed">
+      <h1 class="text-3xl font-extrabold text-slate-900 not-prose">Financial & Legal Disclaimer</h1>
+      <p class="text-xs text-slate-500">Important Notice Regarding Calculations & Estimates</p>
+
+      <hr class="my-6" />
+
+      <h2>1. Informational & Educational Use Only</h2>
+      <p>
+        The calculations, figures, tables, and projections generated on {SITE.name} are provided solely for general educational, illustrative, and informational purposes. While every formula is rigorously engineered against the Fair Labor Standards Act (FLSA), Title 29 of the United States Code, and IRS Publication 15-T, <strong>our outputs do not constitute formal legal, accounting, tax, or payroll advisory services</strong>.
+      </p>
+
+      <h2>2. Individual Tax Variances</h2>
+      <p>
+        Individual employee payroll withholdings may vary due to specific local wage taxes (such as city, county, or school district withholdings), non-statutory pre-tax deductions (e.g. customized 401k match formulas, union dues, garnishments), health insurance pre-tax tiers, and personal W-4 multiple-job worksheet adjustments.
+      </p>
+
+      <h2>3. Seek Qualified Professional Advice</h2>
+      <p>
+        Always consult a Certified Public Accountant (CPA), licensed payroll specialist, or labor attorney before making binding financial, employment, or tax decisions.
+      </p>
+    </div>
+  </div>
+</Base>

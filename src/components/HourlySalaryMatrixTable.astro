@@ -1,0 +1,59 @@
+---
+import { formatCurrency } from "../lib/tax-engine.js";
+
+// Generate intervals from $15.00 to $70.00 in $2.50 steps
+const wageSteps = [];
+for (let rate = 15; rate <= 70; rate += 2.5) {
+  wageSteps.push(rate);
+}
+---
+
+<div class="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 sm:p-8">
+  <div class="pb-6 mb-6 border-b border-slate-100 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+    <div>
+      <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-brand-50 text-brand-700 border border-brand-200">
+        Mandatory Conversion Matrix
+      </span>
+      <h3 class="text-xl font-bold text-slate-900 mt-1">Hourly to Salary Pay Conversion Chart ($15 - $70)</h3>
+      <p class="text-xs text-slate-500">Benchmark comparison for a standard 40-hour workweek (2,080 annual hours, 173.33 monthly hours).</p>
+    </div>
+    <div class="flex items-center gap-2">
+      <span class="text-xs text-slate-500 font-medium">Schedule:</span>
+      <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-800 text-xs font-semibold">40 hrs / week</span>
+    </div>
+  </div>
+
+  <div class="overflow-x-auto max-h-[500px] overflow-y-auto border border-slate-200 rounded-xl">
+    <table class="table-custom">
+      <thead class="sticky top-0 z-10">
+        <tr>
+          <th>Hourly Rate</th>
+          <th>Daily (8 Hours)</th>
+          <th>Weekly (40 Hours)</th>
+          <th>Biweekly (80 Hours)</th>
+          <th>Monthly (Avg 173.3h)</th>
+          <th>Annual Salary (2,080 Hours)</th>
+        </tr>
+      </thead>
+      <tbody>
+        {wageSteps.map((rate) => {
+          const daily = rate * 8;
+          const weekly = rate * 40;
+          const biweekly = rate * 80;
+          const monthly = (rate * 2080) / 12;
+          const annual = rate * 2080;
+          return (
+            <tr>
+              <td class="font-bold font-mono text-brand-700">{formatCurrency(rate)} /hr</td>
+              <td class="font-mono text-slate-700">{formatCurrency(daily)}</td>
+              <td class="font-mono text-slate-700">{formatCurrency(weekly)}</td>
+              <td class="font-mono text-slate-700">{formatCurrency(biweekly)}</td>
+              <td class="font-mono text-slate-700">{formatCurrency(monthly)}</td>
+              <td class="font-bold font-mono text-slate-900">{formatCurrency(annual)}</td>
+            </tr>
+          );
+        })}
+      </tbody>
+    </table>
+  </div>
+</div>

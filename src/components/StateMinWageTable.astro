@@ -1,0 +1,81 @@
+---
+import { STATE_MINIMUM_WAGES_2026 } from "../lib/state-min-wages.js";
+import { formatCurrency } from "../lib/tax-engine.js";
+---
+
+<div class="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 sm:p-8">
+  <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-6 mb-6 border-b border-slate-100 gap-4">
+    <div>
+      <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-brand-50 text-brand-700 border border-brand-200">
+        Statutory Database
+      </span>
+      <h3 class="text-xl font-bold text-slate-900 mt-1">All 50 US States Minimum Wage & Annual Salary Matrix</h3>
+      <p class="text-xs text-slate-500">Based on standard full-time employment (40 hours/week, 52 weeks = 2,080 annual work hours).</p>
+    </div>
+    <div>
+      <input
+        type="text"
+        id="state-filter-input"
+        placeholder="Search state (e.g. California)..."
+        class="text-xs rounded-lg border-slate-300 py-2 px-3 border w-full sm:w-64 focus:ring-brand-500 focus:border-brand-500"
+      />
+    </div>
+  </div>
+
+  <div class="overflow-x-auto max-h-[500px] overflow-y-auto border border-slate-200 rounded-xl">
+    <table class="table-custom" id="state-min-wage-table">
+      <thead class="sticky top-0 z-10">
+        <tr>
+          <th>State</th>
+          <th>Hourly Minimum</th>
+          <th>Weekly (40h)</th>
+          <th>Biweekly (80h)</th>
+          <th>Annual Salary (2,080h)</th>
+          <th>Statutory Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        {STATE_MINIMUM_WAGES_2026.map((s) => {
+          const weekly = s.minWage * 40;
+          const biweekly = s.minWage * 80;
+          const annual = s.minWage * 2080;
+          return (
+            <tr data-state={s.state.toLowerCase()}>
+              <td class="font-bold text-slate-900">
+                {s.state} <span class="text-xs font-mono text-slate-400">({s.code})</span>
+              </td>
+              <td class="font-mono font-semibold text-brand-700">
+                {formatCurrency(s.minWage)} /hr
+              </td>
+              <td class="font-mono text-slate-700">{formatCurrency(weekly)}</td>
+              <td class="font-mono text-slate-700">{formatCurrency(biweekly)}</td>
+              <td class="font-mono font-bold text-slate-900">{formatCurrency(annual)}</td>
+              <td class="text-xs text-slate-500 max-w-xs">{s.notes}</td>
+            </tr>
+          );
+        })}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<script is:inline>
+(function() {
+  const searchInput = document.getElementById('state-filter-input');
+  const table = document.getElementById('state-min-wage-table');
+  if (!searchInput || !table) return;
+
+  searchInput.addEventListener('input', function(e) {
+    const term = e.target.value.toLowerCase().trim();
+    const rows = table.querySelectorAll('tbody tr');
+    rows.forEach(row => {
+      const state = row.getAttribute('data-state');
+      if (!term || state.includes(term)) {
+        row.style.display = '';
+      } else {
+        row.style.display = 'none';
+      }
+    });
+  });
+})();
+</script>

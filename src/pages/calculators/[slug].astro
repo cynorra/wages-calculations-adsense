@@ -1,0 +1,226 @@
+---
+import Base from "../../layouts/Base.astro";
+import { TOOLS } from "../../lib/tools.js";
+import { calculatorSchema, breadcrumbSchema, faqSchema } from "../../lib/schema.js";
+import CalculatorEngine from "../../components/CalculatorEngine.astro";
+import HourlySalaryMatrixTable from "../../components/HourlySalaryMatrixTable.astro";
+import StateMinWageTable from "../../components/StateMinWageTable.astro";
+import { liveArticles } from "../../lib/articles-source.js";
+
+export function getStaticPaths() {
+  return TOOLS.map((tool) => ({
+    params: { slug: tool.slug },
+    props: { tool },
+  }));
+}
+
+const { tool } = Astro.props;
+const articles = await liveArticles();
+const relatedGuide = articles.find((a: any) => a.slug === tool.guideSlug || a.tool === tool.slug);
+
+const crumbs = [
+  { name: "Calculators", path: "/calculators/" },
+  { name: tool.name, path: tool.href },
+];
+
+const faqs = [
+  {
+    q: `How is the ${tool.name} computed under standard payroll regulations?`,
+    a: `Our engine computes calculations using the 2,080 annual work hour standard established under 29 U.S. Code § 207 (FLSA), incorporating 2026 IRS Publication 15-T standard deduction brackets ($15,000 Single / $30,000 Married) and statutory FICA tax caps ($176,100 Social Security base).`,
+  },
+  {
+    q: "How does working 35 vs 40 hours per week affect take-home earnings?",
+    a: "Working 35 hours reduces the annual base from 2,080 hours to 1,820 hours—a 12.5% decrease in gross earnings. Furthermore, 30+ hours meets the Affordable Care Act (ACA) full-time threshold for statutory benefits.",
+  },
+  {
+    q: "Will entering a higher tax bracket reduce my net hourly wage?",
+    a: "No. The United States uses a progressive marginal tax system. Only dollars earned ABOVE each specific tax bracket threshold are taxed at that higher percentage rate. Your prior dollars remain taxed at the lower marginal brackets.",
+  },
+  {
+    q: "How does overtime interact with non-discretionary bonuses and differentials?",
+    a: "Under FLSA Section 7(e), employers must include non-discretionary bonuses, shift differentials, and commissions into the regular rate of pay before computing the 1.5x overtime multiplier.",
+  },
+];
+
+const schema = [
+  calculatorSchema({
+    name: tool.name,
+    description: tool.description,
+    path: tool.href,
+  }),
+  breadcrumbSchema(crumbs),
+  faqSchema(faqs),
+];
+---
+
+<Base title={tool.name} description={tool.description} schema={schema} crumbs={crumbs}>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-12">
+    <!-- Header Hero -->
+    <div class="max-w-3xl mb-8">
+      <div class="flex items-center gap-2 mb-3">
+        <span class="text-xs font-semibold px-2.5 py-1 rounded-md bg-brand-100 text-brand-800">
+          {tool.clusterName}
+        </span>
+        <span class="text-xs text-slate-500">2026 FLSA & IRS Tax Formula Compliant</span>
+      </div>
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+        {tool.name}
+      </h1>
+      <p class="mt-3 text-base sm:text-lg text-slate-600 leading-relaxed">
+        {tool.description}
+      </p>
+    </div>
+
+    <!-- Interactive Calculator Engine -->
+    <div class="mb-12">
+      <CalculatorEngine toolSlug={tool.slug} />
+    </div>
+
+    <!-- Cluster-specific Data Table -->
+    <div class="mb-12">
+      {tool.slug.includes("minimum-wage") ? (
+        <StateMinWageTable />
+      ) : (
+        <HourlySalaryMatrixTable />
+      )}
+    </div>
+
+    <!-- In-Depth Technical Guide & Statutory Text (AdSense High Value Content & Anti-Thin Content) -->
+    <div class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-10 mb-12 shadow-sm prose prose-slate max-w-none">
+      <div class="border-b border-slate-200 pb-6 mb-8 flex items-center justify-between">
+        <div>
+          <h2 class="text-2xl font-bold text-slate-900 m-0">Statutory Payroll Breakdown & Legal Analysis</h2>
+          <p class="text-xs text-slate-500 mt-1 m-0">Authored by Eren Şimşir, Software & Industrial Systems Engineer</p>
+        </div>
+        <span class="text-xs font-mono px-3 py-1 bg-slate-100 rounded-full text-slate-600">
+          FLSA 29 U.S.C. § 207
+        </span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-sm leading-relaxed text-slate-700 not-prose">
+        <div class="space-y-4">
+          <h3 class="text-base font-bold text-slate-900 flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-brand-500"></span>
+            1. The 2,080-Hour Annual Baseline Formula
+          </h3>
+          <p>
+            Under standard United States labor accounting, full-time employment is defined as 40 hours per week across 52 workweeks, totaling <strong>2,080 annual working hours</strong>. 
+            When evaluating an offer, calculating your true hourly rate requires accounting for unpaid vacation or leave. For example, taking two weeks of unpaid time off reduces the annual divisor to 2,000 hours, immediately altering your gross yield:
+          </p>
+          <div class="bg-slate-50 p-3 rounded-lg font-mono text-xs text-slate-800 border border-slate-200">
+            Hourly Wage = Annual Gross Salary / (Hours Worked per Week × Weeks Worked per Year)
+          </div>
+          <p>
+            Furthermore, under the <strong>Affordable Care Act (ACA) § 4980H</strong>, employees averaging 30 or more hours per week (or 130 hours per month) qualify as full-time equivalents (FTE), triggering mandatory employer healthcare coverage requirements.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          <h3 class="text-base font-bold text-slate-900 flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-brand-500"></span>
+            2. Progressive Withholdings vs. Marginal Tax Myths
+          </h3>
+          <p>
+            A persistent misconception among hourly and salaried workers is that crossing into a higher tax bracket reduces total net take-home pay. Under the Internal Revenue Code (IRC), federal income taxes operate on a strictly <strong>marginal bracket structure</strong>.
+          </p>
+          <p>
+            For 2026, single filers claim a <strong>$15,000 standard deduction</strong> ($30,000 for married couples filing jointly). Income up to $11,925 above the standard deduction is taxed at only 10%, with dollars between $11,925 and $48,475 taxed at 12%. Receiving an hourly raise never decreases total take-home pay; only the incremental dollars are subject to higher marginal rates.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          <h3 class="text-base font-bold text-slate-900 flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-brand-500"></span>
+            3. FICA Deductions: Social Security & Medicare Limits
+          </h3>
+          <p>
+            Every W-2 paycheck in the United States incurs statutory deductions mandated by the <strong>Federal Insurance Contributions Act (FICA)</strong>:
+          </p>
+          <ul class="list-disc pl-5 space-y-1">
+            <li><strong>Social Security (OASDI):</strong> 6.2% withheld up to the 2026 statutory wage base limit of <strong>$176,100</strong>. Earnings above this cap incur 0% Social Security tax.</li>
+            <li><strong>Medicare (HI):</strong> 1.45% withheld on all gross earnings with no upper cap.</li>
+            <li><strong>Additional Medicare Tax:</strong> 0.9% levied on individual earnings exceeding $200,000 ($250,000 for married couples).</li>
+          </ul>
+        </div>
+
+        <div class="space-y-4">
+          <h3 class="text-base font-bold text-slate-900 flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-brand-500"></span>
+            4. Overtime & "Regular Rate of Pay" Compliance
+          </h3>
+          <p>
+            Under Section 7(a) of the Fair Labor Standards Act (FLSA), covered non-exempt employees must receive overtime pay for hours worked over 40 in a workweek at a rate not less than <strong>time-and-a-half (1.5x)</strong> their regular rate of pay.
+          </p>
+          <p>
+            Crucially, employers cannot legally calculate overtime using only base hourly rates if workers also receive shift differentials, production bonuses, or commissions. All non-discretionary payments must be blended into the statutory <em>Regular Rate of Pay</em> before applying the 1.5x multiplier.
+          </p>
+        </div>
+      </div>
+
+      {relatedGuide && (
+        <div class="mt-8 pt-6 border-t border-slate-200 flex items-center justify-between bg-slate-50 p-4 rounded-xl">
+          <div>
+            <span class="text-xs font-semibold text-brand-700 uppercase">Recommended Companion Guide</span>
+            <h4 class="text-base font-bold text-slate-900 mt-0.5">{relatedGuide.title}</h4>
+            <p class="text-xs text-slate-500 m-0">{relatedGuide.description}</p>
+          </div>
+          <a
+            href={`/guides/${relatedGuide.slug}/`}
+            class="px-4 py-2 bg-brand-600 hover:bg-brand-700 text-white rounded-lg text-xs font-semibold whitespace-nowrap transition-colors"
+          >
+            Read In-Depth Guide &rarr;
+          </a>
+        </div>
+      )}
+    </div>
+
+    <!-- Structured FAQ Section (FAQPage Schema Validated) -->
+    <div class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-10 mb-12 shadow-sm">
+      <h2 class="text-2xl font-bold text-slate-900 mb-6">Frequently Asked Questions</h2>
+      <div class="space-y-6">
+        {faqs.map((f) => (
+          <div class="border-b border-slate-100 pb-5 last:border-b-0 last:pb-0">
+            <h3 class="text-base font-semibold text-slate-900 mb-2">{f.q}</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">{f.a}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <!-- All 25 Tools Directory Grid -->
+    <div>
+      <div class="flex items-center justify-between mb-6">
+        <div>
+          <h2 class="text-xl font-bold text-slate-900">Explore Related Wage & Paycheck Calculators</h2>
+          <p class="text-xs text-slate-500">Fast, client-side financial tools engineered for employees and payroll managers.</p>
+        </div>
+        <a href="/calculators/" class="text-xs font-semibold text-brand-600 hover:underline">
+          View All 25 &rarr;
+        </a>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        {TOOLS.filter((t) => t.slug !== tool.slug).slice(0, 6).map((t) => (
+          <a
+            href={t.href}
+            class="p-4 rounded-xl border border-slate-200 bg-white hover:border-brand-500 hover:shadow-sm transition-all group flex flex-col justify-between"
+          >
+            <div>
+              <span class="text-[10px] font-semibold uppercase tracking-wider text-brand-700 bg-brand-50 px-2 py-0.5 rounded">
+                Cluster {t.cluster}
+              </span>
+              <h3 class="text-sm font-bold text-slate-900 mt-2 group-hover:text-brand-700 transition-colors">
+                {t.name}
+              </h3>
+              <p class="text-xs text-slate-500 mt-1 line-clamp-2">
+                {t.description}
+              </p>
+            </div>
+            <span class="text-xs font-semibold text-brand-600 mt-3 inline-flex items-center gap-1 group-hover:translate-x-0.5 transition-transform">
+              Launch Tool &rarr;
+            </span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </div>
+</Base>
