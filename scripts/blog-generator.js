@@ -178,6 +178,48 @@ ${body}
   fs.writeFileSync(targetPath, markdownContent, "utf-8");
   console.log(`ARTICLE_PUBLISHED_SUCCESSFULLY: ${targetPath}`);
   console.log(`Stats: ${quality.stats.words} words, ${quality.stats.h2Count} H2s, ${quality.stats.tableCount} tables, ${quality.stats.mathCount} formulas.`);
+
+  // Push directly to Supabase Backend if credentials are present
+  const supabaseUrl = process.env.SUPABASE_URL?.replace(/\/$/, "");
+  const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.SUPABASE_ANON_KEY;
+
+  if (supabaseUrl && supabaseKey) {
+    console.log("Syncing new article to Supabase backend database...");
+    try {
+      const payload = [{
+        slug: candidate.slug,
+        title: candidate.title,
+        description: candidate.description,
+        key_takeaway: candidate.keyTakeaway,
+        body_md: body,
+        tool: candidate.tool,
+        status: "published",
+        published_at: `${TODAY_ISO}T12:00:00Z`,
+        author_slug: "eren-simsir",
+      }];
+
+      const res = await fetch(`${supabaseUrl}/rest/v1/articles?on_conflict=slug`, {
+        method: "POST",
+        headers: {
+          apikey: supabaseKey,
+          Authorization: `Bearer ${supabaseKey}`,
+          "Content-Type": "application/json",
+          Prefer: "resolution=merge-duplicates",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      if (res.ok) {
+        console.log(`SUPABASE_SYNC_SUCCESS: Article [${candidate.slug}] pushed to Supabase.`);
+      } else {
+        console.warn(`SUPABASE_SYNC_FAILED: Status ${res.status} -`, await res.text());
+      }
+    } catch (e) {
+      console.warn("Supabase push exception:", e.message);
+    }
+  } else {
+    console.log("SUPABASE_NOTE: No SUPABASE_URL / KEY detected, saved locally in git.");
+  }
 }
 
 function compileFallbackArticle(topic) {
