@@ -4,7 +4,7 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://hourlysalarycalc.com",
+  site: "https://thewagereport.com",
   trailingSlash: "always",
   build: {
     format: "directory",

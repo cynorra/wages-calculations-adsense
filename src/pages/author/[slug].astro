@@ -1,6 +1,6 @@
 ---
 import Base from "../../layouts/Base.astro";
-import { AUTHOR } from "../../site.config.js";
+import { AUTHOR, SITE } from "../../site.config.js";
 import { breadcrumbSchema } from "../../lib/schema.js";
 
 export function getStaticPaths() {
@@ -15,10 +15,10 @@ const crumbs = [
 const personSchema = {
   "@context": "https://schema.org",
   "@type": "Person",
-  "@id": `https://hourlysalarycalc.com/author/${AUTHOR.slug}/#person`,
+  "@id": `${SITE.url}/author/${AUTHOR.slug}/#person`,
   name: AUTHOR.name,
   jobTitle: AUTHOR.role,
-  url: `https://hourlysalarycalc.com/author/${AUTHOR.slug}/`,
+  url: `${SITE.url}/author/${AUTHOR.slug}/`,
   sameAs: [AUTHOR.linkedin, AUTHOR.github],
   description: AUTHOR.shortBio,
   alumniOf: [

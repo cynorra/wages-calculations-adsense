@@ -234,7 +234,7 @@
     // Copy to clipboard
     if (copyBtn) {
       copyBtn.addEventListener('click', () => {
-        const text = `Hourly Salary Breakdown:\n- Hourly Rate: $${parseFloat(rateInput.value).toFixed(2)}\n- Weekly Hours: ${hoursInput.value} regular + ${otInput.value} OT\n- Annual Gross: ${resGross?.textContent}\n- Est. Take-Home (Net): ${resNet?.textContent}\n- Biweekly Paycheck: ${resBiweekly?.textContent}\n(Source: hourlysalarycalc.com)`;
+        const text = `Hourly Salary Breakdown:\n- Hourly Rate: $${parseFloat(rateInput.value).toFixed(2)}\n- Weekly Hours: ${hoursInput.value} regular + ${otInput.value} OT\n- Annual Gross: ${resGross?.textContent}\n- Est. Take-Home (Net): ${resNet?.textContent}\n- Biweekly Paycheck: ${resBiweekly?.textContent}\n(Source: thewagereport.com)`;
         navigator.clipboard.writeText(text).then(() => {
           const original = copyBtn.innerHTML;
           copyBtn.innerHTML = `<span>Copied!</span>`;

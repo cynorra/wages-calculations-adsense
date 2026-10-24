@@ -7,7 +7,7 @@
 // 1. Prohibited First-Party Fabricated Claims (AdSense spam filter)
 const FIRST_PARTY_PATTERNS = [
   /\bour\s+(?:own\s+|internal\s+|proprietary\s+|platform\s+|aggregated\s+|anonymi[sz]ed\s+)*(?:data(?:set|base)?|analys[ie]s|research|stud(?:y|ies)|survey|benchmarks?|clients?|customers?|users?|network|marketplace|platform|records?|team|engineers?|advisors?|consultants?|findings)\b/i,
-  /\bHourlySalaryCalc(?:['’]s)?\s+(?:own\s+|internal\s+|proprietary\s+)*(?:data|research|analys[ie]s|analysts?|experts?|team|clients?|customers?|users?|network|benchmarks?|survey|study|findings|insights?|index|forecast)\b/i,
+  /\b(?:TheWageReport|HourlySalaryCalc)(?:['’]s)?\s+(?:own\s+|internal\s+|proprietary\s+)*(?:data|research|analys[ie]s|analysts?|experts?|team|clients?|customers?|users?|network|benchmarks?|survey|study|findings|insights?|index|forecast)\b/i,
   /\b(?:when I was managing payroll|in my \d+\+? years as an hr director|I['’]ve handled thousands of paychecks|as a seasoned payroll clerk)\b/i,
   /\b(?:a|one|another) (?:client|customer|member|user|employee)s? of ours\b/i,
   /\bwe(?:['’]ve| have)?\s+(?:analy[sz]ed|surveyed|reviewed|observed|measured|audited|tracked|monitored|processed|handled|seen|saw|partnered|helped|advised|studied|interviewed|collected)\b/i,

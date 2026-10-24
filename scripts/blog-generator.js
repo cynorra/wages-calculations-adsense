@@ -99,7 +99,7 @@ export async function runGenerator() {
     console.log("Calling Gemini API with strict E-E-A-T quality prompt...");
     try {
       const prompt = `TODAY'S DATE: ${TODAY_ISO}. Current calendar year: ${CURRENT_YEAR}.
-You are an authoritative US Compensation Attorney & Systems Engineer writing for an independent labor standards publication (HourlySalaryCalc.com).
+You are an authoritative US Compensation Attorney & Systems Engineer writing for an independent labor standards publication (TheWageReport.com).
 Write a comprehensive, peer-reviewed guide for the following topic:
 
 Title: ${candidate.title}

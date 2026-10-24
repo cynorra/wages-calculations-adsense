@@ -1,13 +1,13 @@
 export const SITE = {
-  name: "HourlySalaryCalc",
-  domain: "hourlysalarycalc.com",
-  url: "https://hourlysalarycalc.com",
-  tagline: "Payroll Analysis, FLSA Labor Law & Wage Publication",
+  name: "TheWageReport",
+  domain: "thewagereport.com",
+  url: "https://thewagereport.com",
+  tagline: "Independent Labor Economics, FLSA Compliance & Payroll Standards",
   description: "Independent financial publication providing peer-reviewed guides, FLSA labor law breakdowns, IRS payroll tax analysis, and wage estimation tools.",
   language: "en-US",
   locale: "en_US",
   foundingYear: 2026,
-  email: "hello@hourlysalarycalc.com",
+  email: "hello@thewagereport.com",
   contactFormEndpoint: "",
   adsensePublisherId: "", // Onay oncesi bos, onay sonrasi pub-4674211063760769
   verification: { google: "", bing: "", yandex: "" },
