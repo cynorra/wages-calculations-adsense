@@ -1,9 +1,9 @@
 import type { APIRoute } from "astro";
 import { SITE, AUTHOR } from "../site.config.js";
-import { localLiveArticles } from "../lib/articles-source.js";
+import { liveArticles } from "../lib/articles-source.js";
 
 export const GET: APIRoute = async () => {
-  const articles = localLiveArticles();
+  const articles = await liveArticles();
 
   const itemsXml = articles
     .map((a: any) => {

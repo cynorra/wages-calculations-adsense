@@ -1,97 +1,139 @@
+import { sanitizeSignatures } from "./false-precision.js";
+
 /**
- * Article Quality & Compliance Gate for Wages & Payroll Blog Engine
- * Inspired by yukle-next article-quality architecture, customized for
- * FLSA, IRS Payroll, and E-E-A-T AdSense standards.
+ * Editorial Quality Gates & Anti-Hallucination Guard for The Wage Report.
+ * Inspired by yukle-next article-quality architecture.
  */
 
-// 1. Prohibited First-Party Fabricated Claims (AdSense spam filter)
 const FIRST_PARTY_PATTERNS = [
-  /\bour\s+(?:own\s+|internal\s+|proprietary\s+|platform\s+|aggregated\s+|anonymi[sz]ed\s+)*(?:data(?:set|base)?|analys[ie]s|research|stud(?:y|ies)|survey|benchmarks?|clients?|customers?|users?|network|marketplace|platform|records?|team|engineers?|advisors?|consultants?|findings)\b/i,
-  /\b(?:TheWageReport|HourlySalaryCalc)(?:['’]s)?\s+(?:own\s+|internal\s+|proprietary\s+)*(?:data|research|analys[ie]s|analysts?|experts?|team|clients?|customers?|users?|network|benchmarks?|survey|study|findings|insights?|index|forecast)\b/i,
-  /\b(?:when I was managing payroll|in my \d+\+? years as an hr director|I['’]ve handled thousands of paychecks|as a seasoned payroll clerk)\b/i,
-  /\b(?:a|one|another) (?:client|customer|member|user|employee)s? of ours\b/i,
-  /\bwe(?:['’]ve| have)?\s+(?:analy[sz]ed|surveyed|reviewed|observed|measured|audited|tracked|monitored|processed|handled|seen|saw|partnered|helped|advised|studied|interviewed|collected)\b/i,
+  /\bour\s+(?:own\s+|internal\s+|proprietary\s+|platform\s+|aggregated\s+|client\s+)*(?:data(?:set|base)?|analys[ie]s|research|stud(?:y|ies)|survey|benchmarks?|clients?|customers?|users?|audits?|records?|team|findings)\b/i,
+  /\b(?:in\s+)?our\s+(?:experience|observation|practice|files|caseload)\b/i,
+  /\bTheWageReport(?:['’]s)?\s+(?:own\s+|internal\s+|proprietary\s+)*(?:data|research|analys[ie]s|analysts?|experts?|team|benchmarks?|audits?)\b/i,
+  /\b(?:I['’]ve|I have)\s+(?:audited|calculated|processed|handled|seen|represented|advised)\b/i,
+  /\b(?:when I was|in my \d+\+?\s+years|as an? (?:attorney|accountant|auditor|payroll specialist))\b/i,
+  /\bwe(?:['’]ve| have)?\s+(?:audited|processed|calculated|surveyed|reviewed|found|observed|measured|handled)\b/i,
+  /\b(?:a|one|another)\s+(?:client|customer|employer)\s+of ours\b/i
 ];
 
-// 2. Hallucinated repetitive metrics and signature numbers
-const SIGNATURE_PATTERNS = [
-  /\b14\.3%|\b18\.7%|\b12\.3%|\b8\.7%/g,
-  /\$1,?84[07]|\$3,?750/g,
+const FABRICATED_ANECDOTES = [
+  /\bone client of ours\b/i,
+  /\ba company we worked with\b/i,
+  /\bin a recent case we handled\b/i,
+  /\ba manufacturer in (?:Ohio|Texas|California|Florida|Illinois) recently\b/i
 ];
 
 export function findFirstPartyClaim(text) {
-  if (!text) return null;
   for (const re of FIRST_PARTY_PATTERNS) {
-    const m = text.match(re);
-    if (m) {
-      const i = m.index || 0;
-      return text.slice(Math.max(0, i - 20), i + m[0].length + 40).trim();
+    const match = text.match(re);
+    if (match) {
+      const idx = match.index;
+      return text.slice(Math.max(0, idx - 20), idx + match[0].length + 40).trim();
     }
   }
   return null;
 }
 
-export function sanitizeSignatures(text) {
-  if (!text) return text;
-  let out = text;
-  // Replace repeated AI-hallucinated statistics with realistic wording
-  out = out.replace(/\b14\.3%/g, "roughly 14%");
-  out = out.replace(/\b18\.7%/g, "approximately 19%");
-  out = out.replace(/\b12\.3%/g, "around 12%");
-  out = out.replace(/\$1,840/g, "roughly $1,800");
-  return out;
+export function findFabricatedAnecdote(text) {
+  for (const re of FABRICATED_ANECDOTES) {
+    const match = text.match(re);
+    if (match) {
+      const idx = match.index;
+      return text.slice(Math.max(0, idx - 20), idx + match[0].length + 40).trim();
+    }
+  }
+  return null;
 }
 
-export function auditArticleQuality({ title, description, body_md, minWords = 1100 }) {
-  const errors = [];
-  const words = body_md ? body_md.split(/\s+/).length : 0;
+// 5-word shingle extraction for similarity check
+export function textOnly(markdown) {
+  return (markdown || '')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/\$\$[\s\S]*?\$\$/g, ' ')
+    .toLowerCase()
+    .replace(/[^a-z0-9\s]/g, ' ')
+    .split(/\s+/)
+    .filter(Boolean);
+}
 
-  if (words < minWords) {
-    errors.push(`Word count too low: ${words} words (minimum required: ${minWords})`);
+export function shingleSet(words, n = 5) {
+  const set = new Set();
+  for (let i = 0; i + n <= words.length; i++) {
+    set.add(words.slice(i, i + n).join(' '));
+  }
+  return set;
+}
+
+export function jaccardSimilarity(setA, setB) {
+  if (setA.size === 0 || setB.size === 0) return 0;
+  let intersection = 0;
+  const [smaller, larger] = setA.size <= setB.size ? [setA, setB] : [setB, setA];
+  for (const shingle of smaller) {
+    if (larger.has(shingle)) intersection++;
+  }
+  const union = setA.size + setB.size - intersection;
+  return union === 0 ? 0 : intersection / union;
+}
+
+export function auditArticleQuality({ title, description, body_md, minWords = 1000 }) {
+  const errors = [];
+
+  if (!body_md || typeof body_md !== "string") {
+    errors.push("ARTICLE_EMPTY: Markdown content is empty or invalid.");
+    return { isValid: false, errors };
   }
 
-  // Check for H2 structure
+  // 1. First-Party Claims Check
+  const fpClaim = findFirstPartyClaim(body_md);
+  if (fpClaim) {
+    errors.push(`FIRST_PARTY_CLAIM_FORBIDDEN: Article contains fabricated first-party claim: "${fpClaim}"`);
+  }
+
+  // 2. Fabricated Anecdote Check
+  const anecdote = findFabricatedAnecdote(body_md);
+  if (anecdote) {
+    errors.push(`FABRICATED_ANECDOTE_FORBIDDEN: Article contains invented client anecdote: "${anecdote}"`);
+  }
+
+  // 3. Word Count Gate
+  const words = textOnly(body_md);
+  if (words.length < minWords) {
+    errors.push(`WORD_COUNT_TOO_LOW: Article has ${words.length} words; minimum required is ${minWords}.`);
+  }
+
+  // 4. Structural Heading Count
   const h2Count = (body_md.match(/^##\s+/gm) || []).length;
   if (h2Count < 4) {
-    errors.push(`Insufficient H2 headings: ${h2Count} (minimum required: 4)`);
+    errors.push(`INSUFFICIENT_HEADINGS: Article has only ${h2Count} H2 sections; minimum required is 4.`);
   }
 
-  // Check for Markdown table
-  const tableCount = (body_md.match(/\| :---/gm) || []).length;
-  if (tableCount === 0) {
-    errors.push(`Missing structured Markdown comparison table.`);
+  // 5. Data Density (Tables)
+  const tableCount = (body_md.match(/\|[\s\S]*?\|[\s\S]*?\n\|[-:\s|]+\|/g) || []).length;
+  if (tableCount < 1) {
+    errors.push("MISSING_DATA_TABLE: Article must include at least one multi-column comparison markdown table.");
   }
 
-  // Check for Math formulas
-  const mathCount = (body_md.match(/\$\$/g) || []).length / 2;
-  if (mathCount === 0) {
-    errors.push(`Missing LaTeX equation block ($$...$$).`);
+  // 6. Mathematical / Formula Density ($$...$$ or LaTeX equations)
+  const mathCount = (body_md.match(/\$\$[\s\S]*?\$\$/g) || []).length;
+  if (mathCount < 2) {
+    errors.push("MISSING_FORMULAS: Article must include at least 2 LaTeX mathematical equation blocks ($$...$$).");
   }
 
-  // Check for fabricated first-party claims
-  const fpMatch = findFirstPartyClaim(body_md);
-  if (fpMatch) {
-    errors.push(`Prohibited first-party fabricated claim detected: "${fpMatch}"`);
-  }
-
-  // Check title length
-  if (!title || title.length < 30 || title.length > 85) {
-    errors.push(`Title length invalid (${title?.length} chars). Must be between 30 and 85 characters.`);
-  }
-
-  // Check description length
-  if (!description || description.length < 100 || description.length > 195) {
-    errors.push(`Description length invalid (${description?.length} chars). Must be between 100 and 195 characters.`);
+  // 7. Statutory Reference Gate
+  const statutoryRegex = /(?:29\s+U\.S\.C\.|29\s+C\.F\.R\.|26\s+U\.S\.C\.|IRS\s+Publication|FLSA\s+Section|Title\s+29)/i;
+  if (!statutoryRegex.test(body_md)) {
+    errors.push("MISSING_STATUTORY_AUTHORITY: Article must cite specific US Code or CFR sections (e.g., 29 C.F.R. § 778 or 29 U.S.C. § 207).");
   }
 
   return {
     isValid: errors.length === 0,
     errors,
     stats: {
-      words,
+      words: words.length,
       h2Count,
       tableCount,
-      mathCount,
+      mathCount
     }
   };
 }
+
+export { sanitizeSignatures };
