@@ -3,7 +3,7 @@ title: "FLSA Overtime Pay Rules: Time-and-a-Half (1.5x) and Double Time (2.0x)"
 description: "Federal FLSA Section 7(a) overtime requirements, California daily 8-hour overtime rules, double-time provisions, and calculating overtime across dual pay rates."
 tool: "overtime-pay-calculator"
 status: "published"
-published: "2026-10-26"
+published: "2026-10-30"
 author_slug: "eren-simsir"
 ---
 

@@ -3,7 +3,7 @@ title: "1099 Contractor vs W-2 Employee: Finding Your True Hourly Equivalence"
 description: "How to calculate the 1099 contractor billing rate needed to equal a W-2 salary factoring 15.3% SECA self-employment tax, uncompensated leave, and private benefits."
 tool: "1099-contractor-vs-w2-employee-calculator"
 status: "published"
-published: "2026-10-30"
+published: "2026-10-25"
 author_slug: "eren-simsir"
 ---
 

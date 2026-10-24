@@ -4,7 +4,7 @@ description: "The Department of Labor multi-factor analysis: opportunity for pro
 key_takeaway: "Worker classification hinges on economic dependence under 29 C.F.R. Part 795, where no single factor governs whether a worker operates an independent business or functions as an economically dependent employee."
 tool: "hourly-paycheck-tax-calculator"
 status: "published"
-published: "2026-10-24"
+published: "2026-11-03"
 author_slug: "eren-simsir"
 ---
 

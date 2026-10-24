@@ -3,7 +3,7 @@ title: "Hourly to Salary Calculation: The 2,080-Hour Annual Standard Breakdown"
 description: "Comprehensive guide to converting hourly pay to yearly, monthly, and biweekly earnings with FLSA 2,080-hour baseline formulas, unpaid leave impact, and payroll accounting rules."
 tool: "hourly-to-salary-calculator"
 status: "published"
-published: "2026-10-20"
+published: "2026-10-22"
 author_slug: "eren-simsir"
 ---
 

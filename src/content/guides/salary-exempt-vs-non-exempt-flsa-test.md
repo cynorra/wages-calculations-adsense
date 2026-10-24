@@ -3,7 +3,7 @@ title: "Salary Exempt vs Non-Exempt: The FLSA Duties Test and Salary Thresholds"
 description: "How to audit overtime eligibility using federal salary level tests and standard administrative, executive, and professional duties criteria under 29 CFR Part 541."
 tool: "salary-exempt-vs-non-exempt-calculator"
 status: "published"
-published: "2026-10-29"
+published: "2026-11-11"
 author_slug: "eren-simsir"
 ---
 

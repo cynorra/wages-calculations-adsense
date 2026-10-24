@@ -4,7 +4,7 @@ description: "Statutory legality of compensatory time off. Why private employers
 key_takeaway: "Compensatory time off in lieu of monetary overtime is strictly restricted to state and local government public agencies under FLSA Section 7(o); offering comp time to private-sector non-exempt employees violates federal law."
 tool: "hour-and-wage-calculator"
 status: "published"
-published: "2026-10-24"
+published: "2026-10-28"
 author_slug: "eren-simsir"
 ---
 

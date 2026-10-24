@@ -19,19 +19,21 @@ export function localRows() {
 }
 
 export function localLiveArticles() {
+  const nowIso = new Date().toISOString();
   return localRows()
-    .filter((r) => r.status === "published")
+    .filter((r) => r.status === "published" && r.published_at <= nowIso)
     .sort((a, b) => b.published_at.localeCompare(a.published_at));
 }
 
 export async function liveArticles() {
+  const nowIso = new Date().toISOString();
   // If SUPABASE credentials are set in process.env, fetch from Supabase
   const supabaseUrl = process.env.SUPABASE_URL?.replace(/\/$/, "");
   const supabaseKey = process.env.SUPABASE_ANON_KEY;
 
   if (supabaseUrl && supabaseKey) {
     try {
-      const url = `${supabaseUrl}/rest/v1/articles?select=${COLUMNS}&status=eq.published&order=published_at.desc`;
+      const url = `${supabaseUrl}/rest/v1/articles?select=${COLUMNS}&status=eq.published&published_at=lte.${encodeURIComponent(nowIso)}&order=published_at.desc`;
       const res = await fetch(url, {
         headers: { apikey: supabaseKey, Authorization: `Bearer ${supabaseKey}` },
       });

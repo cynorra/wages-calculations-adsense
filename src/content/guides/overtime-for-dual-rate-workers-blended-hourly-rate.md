@@ -4,7 +4,7 @@ description: "How to calculate lawful overtime when an employee works two differ
 key_takeaway: "Under 29 C.F.R. § 778.115, overtime for dual-rate workers is computed using the weighted average regular rate, determined by dividing total straight-time pay from both jobs by total hours worked."
 tool: "hour-and-wage-calculator"
 status: "published"
-published: "2026-10-24"
+published: "2026-11-05"
 author_slug: "eren-simsir"
 ---
 

@@ -4,7 +4,7 @@ description: "State-mandated split shift premiums, non-consecutive working hours
 key_takeaway: "Under California IWC Wage Orders, a split shift occurring when non-working breaks exceed 1 hour requires the employer to pay one additional hour at the state minimum wage, minus any hourly wages paid above the minimum rate."
 tool: "shift-differential-pay-calculator"
 status: "published"
-published: "2026-10-24"
+published: "2026-11-12"
 author_slug: "eren-simsir"
 ---
 

@@ -3,7 +3,7 @@ title: "Reverse Paycheck Audit: Biweekly to Hourly Rate Deconstruction"
 description: "How to calculate your base hourly wage from a biweekly paycheck stub and detect payroll errors, uncompensated lunch deductions, or misapplied overtime."
 tool: "biweekly-to-hourly-rate-converter"
 status: "published"
-published: "2026-11-01"
+published: "2026-11-10"
 author_slug: "eren-simsir"
 ---
 

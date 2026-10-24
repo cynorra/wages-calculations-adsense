@@ -3,7 +3,7 @@ title: "Biweekly Paycheck Schedules: Navigating 26-Pay-Period Years and Magic Mo
 description: "Comparison of 26-pay-period biweekly schedules vs 24 semi-monthly periods, 27-paycheck calendar leap years, and how to strategically budget for the two annual three-paycheck months."
 tool: "biweekly-paycheck-calculator"
 status: "published"
-published: "2026-10-25"
+published: "2026-10-28"
 author_slug: "eren-simsir"
 ---
 

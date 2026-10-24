@@ -4,7 +4,7 @@ description: "Federal tax withholding mechanisms for performance bonuses, commis
 key_takeaway: "Supplemental wages up to $1 million are subject to a flat 22% optional federal withholding rate under IRS rules, while earnings exceeding $1 million face mandatory 37% withholding."
 tool: "hourly-paycheck-tax-calculator"
 status: "published"
-published: "2026-10-24"
+published: "2026-11-14"
 author_slug: "eren-simsir"
 ---
 

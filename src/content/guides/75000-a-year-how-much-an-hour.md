@@ -3,7 +3,7 @@ title: "$75,000 a Year is How Much an Hour? Take-Home Pay & 50/30/20 Budget"
 description: "A $75,000 salary equals $36.06 per hour. Explore exact net paychecks after IRS tax withholding, FICA, pre-tax 401(k) deductions, and practical 50/30/20 monthly budgeting."
 tool: "75000-a-year-is-how-much-an-hour"
 status: "published"
-published: "2026-10-21"
+published: "2026-10-20"
 author_slug: "eren-simsir"
 ---
 

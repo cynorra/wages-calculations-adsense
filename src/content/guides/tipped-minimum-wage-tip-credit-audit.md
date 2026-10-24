@@ -3,7 +3,7 @@ title: "Tipped Minimum Wage & Tip Credit: Federal $2.13 Audit and Tip Pooling"
 description: "How the FLSA tip credit functions under 29 U.S.C. § 203(m), 50-state variations, the 80/20/30 rule, and statutory boundaries for back-of-house tip pooling eligibility."
 tool: "tipped-minimum-wage-calculator"
 status: "published"
-published: "2026-10-29"
+published: "2026-11-14"
 author_slug: "eren-simsir"
 ---
 

@@ -3,7 +3,7 @@ title: "Gross Pay vs Net Pay: How Pre-Tax Reductions Preserve Take-Home Value"
 description: "Detailed analysis of pre-tax deductions (traditional 401k, HSA, FSA) vs post-tax payroll reductions and their mathematical impact on adjusted gross income."
 tool: "gross-pay-vs-net-pay-calculator"
 status: "published"
-published: "2026-10-25"
+published: "2026-10-31"
 author_slug: "eren-simsir"
 ---
 

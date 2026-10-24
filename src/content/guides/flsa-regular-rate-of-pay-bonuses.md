@@ -3,7 +3,7 @@ title: "Calculating Overtime with Bonuses: The FLSA Regular Rate of Pay Formula"
 description: "How employers miscalculate overtime by omitting non-discretionary production bonuses and commissions, violating FLSA 29 U.S.C. § 207(e) and 29 CFR § 778.208."
 tool: "calculating-overtime-with-bonuses"
 status: "published"
-published: "2026-10-26"
+published: "2026-10-31"
 author_slug: "eren-simsir"
 ---
 

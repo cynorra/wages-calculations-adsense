@@ -3,7 +3,7 @@ title: "$80,000 a Year is How Much an Hour? State-by-State Take-Home Comparison"
 description: "At $38.46 per hour, an $80k salary produces vastly different take-home pay in Texas vs California. Mathematical proof of marginal vs effective tax rates and local purchasing power."
 tool: "80000-a-year-is-how-much-an-hour"
 status: "published"
-published: "2026-10-22"
+published: "2026-10-21"
 author_slug: "eren-simsir"
 ---
 

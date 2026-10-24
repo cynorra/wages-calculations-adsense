@@ -3,7 +3,7 @@ title: "$50,000 a Year is How Much an Hour? Living Wage & Biweekly Breakdown"
 description: "At $24.04 per hour, a $50k gross salary yields specific biweekly take-home pay. Comprehensive analysis of the 30% housing rule, tax brackets, and purchasing power across metro areas."
 tool: "50000-a-year-is-how-much-an-hour"
 status: "published"
-published: "2026-10-22"
+published: "2026-10-20"
 author_slug: "eren-simsir"
 ---
 

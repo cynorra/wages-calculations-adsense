@@ -4,7 +4,7 @@ description: "How to calculate federal Davis-Bacon prevailing wages, basic hourl
 key_takeaway: "The Davis-Bacon Act mandates that contractors on federal construction contracts exceeding $2,000 must pay local prevailing wages, where total compensation equals the predetermined base wage plus bona fide fringe benefits."
 tool: "hour-and-wage-calculator"
 status: "published"
-published: "2026-10-24"
+published: "2026-11-07"
 author_slug: "eren-simsir"
 ---
 

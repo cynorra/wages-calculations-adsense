@@ -3,7 +3,7 @@ title: "Real Hourly Pay Rate After Tax: Demystifying Progressive Tax Brackets"
 description: "Why entering a higher tax bracket never lowers your net hourly earnings. Mathematical proof of progressive marginal brackets, the bucket model, and true take-home rates."
 tool: "pay-rate-after-tax-calculator"
 status: "published"
-published: "2026-10-24"
+published: "2026-11-08"
 author_slug: "eren-simsir"
 ---
 

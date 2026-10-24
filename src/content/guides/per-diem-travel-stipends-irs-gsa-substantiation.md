@@ -4,7 +4,7 @@ description: "IRS Publication 463 standards for lodging and meals, accountable v
 key_takeaway: "Per diem allowances meeting GSA rates under an IRS accountable plan are fully exempt from payroll withholding (FICA and FIT); however, unsubstantiated allowances convert entirely into taxable wages."
 tool: "hour-and-wage-calculator"
 status: "published"
-published: "2026-10-24"
+published: "2026-11-06"
 author_slug: "eren-simsir"
 ---
 

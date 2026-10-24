@@ -3,7 +3,7 @@ title: "Hourly Paycheck Tax Withholding: Federal, FICA & State Deductions"
 description: "Penny-accurate hourly paycheck deductions for Federal withholding, Social Security (6.2%), Medicare (1.45%), and State taxes under IRS Publication 15-T."
 tool: "hourly-paycheck-tax-calculator"
 status: "published"
-published: "2026-10-23"
+published: "2026-10-22"
 author_slug: "eren-simsir"
 ---
 
