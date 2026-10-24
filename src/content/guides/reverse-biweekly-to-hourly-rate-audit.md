@@ -109,10 +109,16 @@ If an employee only has access to their bank account direct deposit amount and w
 
 $$\text{Estimated Gross Pay} = \frac{\text{Net Direct Deposit Amount}}{1 - \text{Total Effective Tax Rate}}$$
 
-### Benchmark Effective Deduction Percentages:
-- **Zero-Tax State (TX, FL, WA) with minimal benefit deductions:** Total deductions typically equal **16% to 20%** of gross earnings ($1 - 0.18 = 0.82$).
-- **Moderate-Tax State (VA, NC, IL) with health insurance & 5% 401(k):** Total deductions typically equal **25% to 30%** of gross earnings ($1 - 0.275 = 0.725$).
-- **High-Tax State / City (CA, NYC) with benefits:** Total deductions typically equal **32% to 38%** of gross earnings ($1 - 0.35 = 0.65$).
+### Benchmark Effective Deduction & Net-to-Gross Multipliers (2026 Standards)
+
+| Jurisdiction & Benefit Profile | Typical Effective Deduction Rate | Reverse Gross Divisor | Example Net Deposit ($1,800) | Implied Gross Paycheck | Implied Base Hourly (80 hrs) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Zero State Tax (TX, FL, WA) - Solo Standard** | 16.0% - 19.5% | 0.820 | $1,800.00 | $2,195.12 | **$27.44 / hr** |
+| **Average US State (~4.5% SIT) - Basic Health** | 24.0% - 27.5% | 0.745 | $1,800.00 | $2,416.11 | **$30.20 / hr** |
+| **High Tax State (CA, NY) - Full Benefits + 401k** | 32.0% - 37.0% | 0.655 | $1,800.00 | $2,748.09 | **$34.35 / hr** |
+| **Top Municipal Bracket (NYC Resident)** | 35.0% - 41.0% | 0.620 | $1,800.00 | $2,903.23 | **$36.29 / hr** |
+
+---
 
 ### Example:
 If a worker in Texas receives a net direct deposit of **$2,100.00**:

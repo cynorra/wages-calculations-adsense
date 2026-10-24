@@ -68,6 +68,16 @@ Under federal FLSA rules alone, if that employee only worked that single 14-hour
 - **Nevada (NRS 608.018):** Enforces an 8-hour daily overtime rule for employees earning less than 1.5 times the state minimum wage.
 - **Colorado (7 CCR 1103-1):** Enforces a multi-trigger rule requiring overtime after **40 hours per week, 12 hours per workday, or 12 consecutive hours** without regard to the start of the workday.
 
+### State Overtime & Double-Time Statutory Comparison (2026 Standards)
+
+| Jurisdiction | Weekly Overtime (1.5x) | Daily Overtime (1.5x) | Double Time (2.0x) Threshold | Seventh Consecutive Day Rule |
+| :--- | :--- | :--- | :--- | :--- |
+| **Federal (FLSA Standard)** | After 40.0 hours | None (No daily limit) | None (Not mandated by federal law) | None (Standard weekly 40-hr rule) |
+| **California (LC § 510)** | After 40.0 regular hours | Over 8.0 up to 12.0 hours | All hours over 12.0 in a workday | First 8 hrs at 1.5x; Over 8 hrs at 2.0x |
+| **Colorado (COMPS Order #39)** | After 40.0 hours | Over 12.0 consecutive hours | None | None |
+| **Alaska (AS 23.10.060)** | After 40.0 hours | Over 8.0 hours in a day | None | None |
+| **Nevada (NRS 608.018)** | After 40.0 hours | Over 8.0 hours (if under 1.5x min wage) | None | None |
+
 ---
 
 ## Dual Pay Rates: The Weighted Average Overtime Formula

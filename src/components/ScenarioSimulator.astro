@@ -1,0 +1,260 @@
+---
+// Interactive Scenario Simulator for Zero-Click & AI Overview Defense
+// Allows in-browser wage conversions, overtime scenarios, and tax deductions
+---
+
+<div class="my-8 p-6 bg-slate-900 text-white rounded-2xl shadow-xl border border-slate-800 scenario-simulator" id="scenario-simulator">
+  <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-5 border-b border-slate-800">
+    <div>
+      <div class="inline-flex items-center gap-2 px-2.5 py-1 bg-brand-500/10 border border-brand-500/30 rounded-md text-[11px] font-mono text-brand-400 font-bold uppercase tracking-wider">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        Live Interactive Wage Engine
+      </div>
+      <h3 class="text-lg font-serif font-bold text-white mt-2">Personalized Paycheck & Overtime Simulator</h3>
+      <p class="text-xs text-slate-400 mt-0.5">Test custom hours, overtime multipliers, and state tax deductions in real-time.</p>
+    </div>
+    <div class="flex items-center gap-2">
+      <button type="button" id="sim-copy-btn" class="px-3 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white rounded-lg text-xs font-mono transition-colors flex items-center gap-1.5 border border-slate-700">
+        <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" />
+        </svg>
+        <span>Copy Summary</span>
+      </button>
+      <button type="button" id="sim-print-btn" class="px-3 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white rounded-lg text-xs font-mono transition-colors flex items-center gap-1.5 border border-slate-700">
+        <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
+        </svg>
+        <span>Print</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+    <!-- Input Column 1: Hourly Rate -->
+    <div class="space-y-4">
+      <div>
+        <div class="flex justify-between text-xs font-mono text-slate-300 mb-1">
+          <label for="sim-rate" class="font-semibold">Hourly Pay Rate ($/hr)</label>
+          <span id="sim-rate-val" class="text-brand-400 font-bold">$30.00</span>
+        </div>
+        <div class="relative">
+          <span class="absolute left-3 top-2.5 text-slate-400 font-mono text-sm">$</span>
+          <input 
+            type="number" 
+            id="sim-rate" 
+            min="7.25" 
+            max="300" 
+            step="0.5" 
+            value="30.00" 
+            class="w-full pl-7 pr-3 py-2 bg-slate-800/90 border border-slate-700 rounded-lg text-white font-mono text-sm focus:outline-none focus:border-brand-500"
+          />
+        </div>
+        <input 
+          type="range" 
+          id="sim-rate-slider" 
+          min="10" 
+          max="150" 
+          step="1" 
+          value="30" 
+          class="w-full mt-2 accent-brand-500 cursor-pointer"
+        />
+      </div>
+
+      <!-- Weekly Hours -->
+      <div>
+        <div class="flex justify-between text-xs font-mono text-slate-300 mb-1">
+          <label for="sim-hours" class="font-semibold">Standard Hours/Week</label>
+          <span id="sim-hours-val" class="text-brand-400 font-bold">40 hrs</span>
+        </div>
+        <input 
+          type="range" 
+          id="sim-hours" 
+          min="10" 
+          max="60" 
+          step="1" 
+          value="40" 
+          class="w-full accent-brand-500 cursor-pointer"
+        />
+      </div>
+    </div>
+
+    <!-- Input Column 2: Overtime & Tax State -->
+    <div class="space-y-4">
+      <div>
+        <div class="flex justify-between text-xs font-mono text-slate-300 mb-1">
+          <label for="sim-ot" class="font-semibold">Overtime Hours/Week (1.5x)</label>
+          <span id="sim-ot-val" class="text-emerald-400 font-bold">0 hrs</span>
+        </div>
+        <input 
+          type="range" 
+          id="sim-ot" 
+          min="0" 
+          max="25" 
+          step="1" 
+          value="0" 
+          class="w-full accent-emerald-500 cursor-pointer"
+        />
+        <p class="text-[11px] text-slate-400 mt-1 font-mono">FLSA 1.5x Rate: <span id="sim-ot-rate" class="text-slate-200 font-bold">$45.00/hr</span></p>
+      </div>
+
+      <div>
+        <label for="sim-state" class="block text-xs font-mono font-semibold text-slate-300 mb-1">State Income Tax Rate</label>
+        <select id="sim-state" class="w-full px-3 py-2 bg-slate-800/90 border border-slate-700 rounded-lg text-white font-mono text-xs focus:outline-none focus:border-brand-500">
+          <option value="0">0% (TX, FL, WA, NV, TN, WY, SD, AK)</option>
+          <option value="3.07">Pennsylvania (3.07% Flat)</option>
+          <option value="4.5" selected>Standard Average US (approx 4.5%)</option>
+          <option value="5.75">Virginia / Georgia (~5.75%)</option>
+          <option value="8.82">New York / High Bracket (~8.8%)</option>
+          <option value="9.3">California / Top Bracket (~9.3%)</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Output Column 3: Live Computed Results -->
+    <div class="bg-slate-800/80 p-4 rounded-xl border border-slate-700/80 flex flex-col justify-between">
+      <div>
+        <span class="text-[11px] font-mono uppercase tracking-wider text-slate-400 block">Estimated Take-Home (Net)</span>
+        <div class="text-2xl sm:text-3xl font-serif font-bold text-emerald-400 mt-1" id="res-annual-net">$52,176 / yr</div>
+        <div class="text-xs font-mono text-slate-400 mt-0.5">
+          Biweekly Paycheck: <span class="text-slate-200 font-bold" id="res-biweekly-net">$2,006.77</span>
+        </div>
+      </div>
+
+      <div class="pt-3 mt-3 border-t border-slate-700/60 space-y-1.5 text-xs font-mono">
+        <div class="flex justify-between text-slate-300">
+          <span class="text-slate-400">Gross Annual:</span>
+          <span id="res-annual-gross" class="font-bold text-white">$62,400</span>
+        </div>
+        <div class="flex justify-between text-slate-300">
+          <span class="text-slate-400">FICA (7.65%):</span>
+          <span id="res-fica" class="text-rose-400">-$4,773</span>
+        </div>
+        <div class="flex justify-between text-slate-300">
+          <span class="text-slate-400">Fed & State Tax (Est):</span>
+          <span id="res-tax" class="text-rose-400">-$5,450</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-4 pt-3 border-t border-slate-800/80 flex flex-wrap items-center justify-between text-[11px] font-mono text-slate-400">
+    <span>FLSA Statutory 2,080 Baseline &bull; 2026 IRS Single Filer Benchmark</span>
+    <span class="text-brand-400">Calculated locally in browser &bull; Zero tracking</span>
+  </div>
+</div>
+
+<script>
+  function initSimulator() {
+    const rateInput = document.getElementById('sim-rate') as HTMLInputElement | null;
+    const rateSlider = document.getElementById('sim-rate-slider') as HTMLInputElement | null;
+    const rateVal = document.getElementById('sim-rate-val');
+    const hoursInput = document.getElementById('sim-hours') as HTMLInputElement | null;
+    const hoursVal = document.getElementById('sim-hours-val');
+    const otInput = document.getElementById('sim-ot') as HTMLInputElement | null;
+    const otVal = document.getElementById('sim-ot-val');
+    const otRateLabel = document.getElementById('sim-ot-rate');
+    const stateSelect = document.getElementById('sim-state') as HTMLSelectElement | null;
+
+    const resGross = document.getElementById('res-annual-gross');
+    const resNet = document.getElementById('res-annual-net');
+    const resBiweekly = document.getElementById('res-biweekly-net');
+    const resFica = document.getElementById('res-fica');
+    const resTax = document.getElementById('res-tax');
+    const copyBtn = document.getElementById('sim-copy-btn');
+    const printBtn = document.getElementById('sim-print-btn');
+
+    if (!rateInput || !rateSlider || !hoursInput || !otInput || !stateSelect) return;
+
+    function recalculate() {
+      const rate = Math.max(0, parseFloat(rateInput?.value || '30') || 30);
+      const standardHours = parseFloat(hoursInput?.value || '40') || 40;
+      const otHours = parseFloat(otInput?.value || '0') || 0;
+      const stateTaxPct = parseFloat(stateSelect?.value || '4.5') / 100;
+
+      // Labels update
+      if (rateVal) rateVal.textContent = `$${rate.toFixed(2)}`;
+      if (hoursVal) hoursVal.textContent = `${standardHours} hrs`;
+      if (otVal) otVal.textContent = `${otHours} hrs`;
+      if (otRateLabel) otRateLabel.textContent = `$${(rate * 1.5).toFixed(2)}/hr`;
+
+      // 52 weeks standard year
+      const regularWeeklyWage = standardHours * rate;
+      const otWeeklyWage = otHours * (rate * 1.5);
+      const totalWeeklyWage = regularWeeklyWage + otWeeklyWage;
+      const annualGross = totalWeeklyWage * 52;
+
+      // FICA: 6.2% SS (up to 2026 cap approx $176k) + 1.45% Medicare
+      const fica = annualGross * 0.0765;
+
+      // Effective Federal Income Tax (Simple progressive single estimate with $15,000 std deduction)
+      const taxable = Math.max(0, annualGross - 15000);
+      let fedTax = 0;
+      if (taxable > 0) {
+        if (taxable <= 11600) {
+          fedTax = taxable * 0.10;
+        } else if (taxable <= 47150) {
+          fedTax = 1160 + (taxable - 11600) * 0.12;
+        } else if (taxable <= 100525) {
+          fedTax = 5426 + (taxable - 47150) * 0.22;
+        } else {
+          fedTax = 17168 + (taxable - 100525) * 0.24;
+        }
+      }
+
+      // State Tax
+      const stateTax = annualGross * stateTaxPct;
+      const totalTax = fedTax + stateTax;
+      const annualNet = Math.max(0, annualGross - fica - totalTax);
+      const biweeklyNet = annualNet / 26;
+
+      if (resGross) resGross.textContent = `$${Math.round(annualGross).toLocaleString()}`;
+      if (resNet) resNet.textContent = `$${Math.round(annualNet).toLocaleString()} / yr`;
+      if (resBiweekly) resBiweekly.textContent = `$${biweeklyNet.toFixed(2)}`;
+      if (resFica) resFica.textContent = `-$${Math.round(fica).toLocaleString()}`;
+      if (resTax) resTax.textContent = `-$${Math.round(totalTax).toLocaleString()}`;
+    }
+
+    rateInput.addEventListener('input', () => {
+      if (rateSlider) rateSlider.value = rateInput.value;
+      recalculate();
+    });
+
+    rateSlider.addEventListener('input', () => {
+      rateInput.value = parseFloat(rateSlider.value).toFixed(2);
+      recalculate();
+    });
+
+    hoursInput.addEventListener('input', recalculate);
+    otInput.addEventListener('input', recalculate);
+    stateSelect.addEventListener('change', recalculate);
+
+    // Initial run
+    recalculate();
+
+    // Copy to clipboard
+    if (copyBtn) {
+      copyBtn.addEventListener('click', () => {
+        const text = `Hourly Salary Breakdown:\n- Hourly Rate: $${parseFloat(rateInput.value).toFixed(2)}\n- Weekly Hours: ${hoursInput.value} regular + ${otInput.value} OT\n- Annual Gross: ${resGross?.textContent}\n- Est. Take-Home (Net): ${resNet?.textContent}\n- Biweekly Paycheck: ${resBiweekly?.textContent}\n(Source: hourlysalarycalc.com)`;
+        navigator.clipboard.writeText(text).then(() => {
+          const original = copyBtn.innerHTML;
+          copyBtn.innerHTML = `<span>Copied!</span>`;
+          setTimeout(() => { copyBtn.innerHTML = original; }, 2000);
+        });
+      });
+    }
+
+    // Print
+    if (printBtn) {
+      printBtn.addEventListener('click', () => {
+        window.print();
+      });
+    }
+  }
+
+  // Support Astro view transitions or direct DOM load
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initSimulator);
+  } else {
+    initSimulator();
+  }
+</script>

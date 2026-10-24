@@ -36,6 +36,7 @@ export function guideRow(filename, raw) {
     slug,
     title: data.title || slug,
     description: data.description || "",
+    key_takeaway: data.key_takeaway || "",
     body_md: content,
     tool: data.tool || "wage",
     status: data.draft ? "draft" : (data.status || "published"),
