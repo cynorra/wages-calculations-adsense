@@ -17,11 +17,11 @@ export const SITE = {
 export const AUTHOR = {
   name: "Eren Şimşir",
   slug: "eren-simsir",
-  role: "Founder, Editor & Software Engineer",
+  role: "Founder, Lead Engineer & Industrial Systems Researcher",
   photo: "/images/eren-simsir.jpg",
   linkedin: "https://www.linkedin.com/in/ernsmsr/",
   github: "https://github.com/cynorra",
-  shortBio: "Computer engineer (M.Sc. student at Kocaeli University, B.Sc. Düzce University) with a double major in industrial engineering. Dedicated to developing accurate, open-formula wage calculations and technical payroll planning models.",
+  shortBio: "Computer engineer (M.Sc. student at Kocaeli University, B.Sc. Düzce University) with a dual degree in industrial engineering. Specializes in time-and-motion wage algorithms, FLSA statutory compensation structures, and open-formula payroll mathematics.",
 };
 
 export const NAV = [
