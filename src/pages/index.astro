@@ -1,16 +1,14 @@
 ---
 import Base from "../layouts/Base.astro";
 import { SITE, AUTHOR } from "../site.config.js";
-import { TOOLS } from "../lib/tools.js";
 import { liveArticles } from "../lib/articles-source.js";
-import HourlySalaryMatrixTable from "../components/HourlySalaryMatrixTable.astro";
 
 const articles = await liveArticles();
 const featuredLead = articles[0];
 const secondaryFeatured = articles.slice(1, 4);
-const editorialColumns = articles.slice(4, 16);
+const mainFeed = articles.slice(4, 25);
 
-// Format date helper: "Oct 23, 2026"
+// Format date helper: "Oct 24, 2026"
 function formatDate(iso: string) {
   if (!iso) return "";
   const d = new Date(iso);
@@ -35,7 +33,7 @@ function formatDate(iso: string) {
       <div class="flex items-center gap-4 text-slate-600">
         <a href="/methodology/" class="hover:text-slate-900 underline underline-offset-2">FLSA Standards</a>
         <a href="/about/" class="hover:text-slate-900 underline underline-offset-2">Editorial Board</a>
-        <a href="/calculators/" class="hover:text-slate-900 underline underline-offset-2">Tools Index</a>
+        <a href="/editorial-policy/" class="hover:text-slate-900 underline underline-offset-2">Editorial Policy</a>
       </div>
     </div>
   </div>
@@ -51,7 +49,7 @@ function formatDate(iso: string) {
           How American compensation actually works—from statutory law to your paycheck.
         </h1>
         <p class="mt-5 text-lg sm:text-xl text-slate-600 leading-relaxed max-w-3xl font-normal">
-          An open-formula research publication breaking down Title 29 Fair Labor Standards Act provisions, IRS withholding tables, overtime arithmetic, and multi-state wage mechanics.
+          An independent workplace research journal examining Fair Labor Standards Act provisions, IRS withholding mechanisms, overtime formulas, and state compensation mandates.
         </p>
       </div>
     </div>
@@ -69,7 +67,7 @@ function formatDate(iso: string) {
           <div class="lg:col-span-7 flex flex-col justify-between">
             <div>
               <div class="flex items-center gap-2.5 text-xs text-slate-500 mb-3">
-                <span class="uppercase tracking-wider font-semibold text-slate-900">Cover Story</span>
+                <span class="uppercase tracking-wider font-semibold text-brand-700 bg-brand-50 px-2 py-0.5 rounded text-[11px]">Featured Report</span>
                 <span>&bull;</span>
                 <time datetime={featuredLead.published_at}>{formatDate(featuredLead.published_at)}</time>
                 <span>&bull;</span>
@@ -92,7 +90,7 @@ function formatDate(iso: string) {
               >
                 Read Full Report &rarr;
               </a>
-              <span class="text-xs text-slate-400">10-12 min read</span>
+              <span class="text-xs text-slate-400">Statutory Analysis</span>
             </div>
           </div>
         )}
@@ -100,7 +98,7 @@ function formatDate(iso: string) {
         <!-- 3 Secondary Articles Stacked (5 cols) -->
         <div class="lg:col-span-5 border-t lg:border-t-0 lg:border-l border-slate-200 pt-8 lg:pt-0 lg:pl-10 space-y-8">
           <div class="text-xs font-semibold uppercase tracking-widest text-slate-400">
-            Current Analyses
+            Recent Analyses
           </div>
           {secondaryFeatured.map((item: any) => (
             <article class="group">
@@ -124,11 +122,11 @@ function formatDate(iso: string) {
       </div>
     </section>
 
-    <!-- Broad Editorial Grid (9-12 Articles in Crisp Editorial Cards) -->
+    <!-- Broad Editorial Grid (Rich Blog Feed) -->
     <section class="py-14 border-b border-slate-200">
       <div class="flex items-baseline justify-between mb-8 pb-3 border-b border-slate-200">
         <div>
-          <h2 class="text-2xl sm:text-3xl font-serif font-bold text-slate-950">Recent Reports & Guides</h2>
+          <h2 class="text-2xl sm:text-3xl font-serif font-bold text-slate-950">Published Articles & Research Guides</h2>
           <p class="text-xs text-slate-500 mt-1">Explanations of overtime regulations, tax withholding models, and compensation benchmarks.</p>
         </div>
         <a href="/guides/" class="text-xs font-semibold text-slate-900 hover:underline">
@@ -137,12 +135,12 @@ function formatDate(iso: string) {
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-10">
-        {editorialColumns.map((guide: any) => (
-          <article class="flex flex-col justify-between group pt-2">
+        {mainFeed.map((guide: any) => (
+          <article class="flex flex-col justify-between group pt-2 bg-white border border-slate-200 p-6 rounded-xl hover:border-slate-400 transition-all shadow-sm">
             <div>
               <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
                 <span>{formatDate(guide.published_at)}</span>
-                <span class="text-slate-600 text-[11px] font-medium">Labor Economics</span>
+                <span class="text-slate-600 text-[11px] font-medium bg-slate-100 px-2 py-0.5 rounded">Statutory Guide</span>
               </div>
               <h3 class="text-lg font-serif font-bold text-slate-950 group-hover:text-brand-700 transition-colors leading-snug">
                 <a href={`/guides/${guide.slug}/`}>
@@ -153,9 +151,9 @@ function formatDate(iso: string) {
                 {guide.description}
               </p>
             </div>
-            <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
-              <a href={`/guides/${guide.slug}/`} class="font-medium text-slate-900 hover:underline">
-                Read Analysis &rarr;
+            <div class="mt-6 pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+              <a href={`/guides/${guide.slug}/`} class="font-medium text-slate-900 group-hover:text-brand-700 transition-colors">
+                Read Article &rarr;
               </a>
               <span class="text-slate-400">By Eren Şimşir</span>
             </div>
@@ -168,14 +166,14 @@ function formatDate(iso: string) {
           href="/guides/"
           class="inline-flex items-center px-6 py-2.5 border border-slate-300 text-xs font-semibold uppercase tracking-wider text-slate-900 bg-white hover:bg-slate-50 transition-colors"
         >
-          Browse Complete Article Archive &rarr;
+          Browse Complete Article Archive ({articles.length} Guides) &rarr;
         </a>
       </div>
     </section>
 
     <!-- Editor & Methodology Note (Authentic E-E-A-T) -->
-    <section class="py-14 border-b border-slate-200">
-      <div class="bg-stone-50 border border-slate-200 p-8 sm:p-10">
+    <section class="py-14">
+      <div class="bg-stone-50 border border-slate-200 p-8 sm:p-10 rounded-2xl">
         <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
           <div class="md:col-span-8">
             <span class="text-xs font-semibold uppercase tracking-widest text-slate-500">About This Publication</span>
@@ -211,60 +209,5 @@ function formatDate(iso: string) {
       </div>
     </section>
 
-    <!-- Reference Data & Companion Tools (Pure Editorial & Static) -->
-    <section class="py-14">
-      <div class="max-w-2xl mb-8">
-        <span class="text-xs font-semibold uppercase tracking-widest text-slate-500">Reference Tables & Tools</span>
-        <h2 class="text-2xl sm:text-3xl font-serif font-bold text-slate-950 mt-1">Wage Conversion Benchmarks</h2>
-        <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
-          Standard statutory gross compensation matrices computed under Title 29 FLSA benchmarks (40-hour workweek, 2,080 annual base hours).
-        </p>
-      </div>
-
-      <!-- Static Reference Table (Pure HTML / No Interactive Forms) -->
-      <div class="mb-10">
-        <HourlySalaryMatrixTable />
-      </div>
-
-      <!-- Editorial Tooling Banner Card -->
-      <div class="bg-stone-50 border border-slate-200 p-8 rounded-lg mb-12 flex flex-col sm:flex-row sm:items-center justify-between gap-6">
-        <div>
-          <span class="text-xs font-semibold uppercase tracking-wider text-slate-500">Interactive Directory</span>
-          <h3 class="text-xl font-serif font-bold text-slate-900 mt-1">Need customized payroll or overtime calculations?</h3>
-          <p class="text-xs text-slate-600 mt-1.5 max-w-xl">
-            Audit non-standard schedules, shift differentials, multi-state tax exemptions, and bonus allocations with our standalone calculation tools.
-          </p>
-        </div>
-        <a
-          href="/calculators/"
-          class="inline-flex items-center justify-center px-5 py-2.5 text-xs font-semibold uppercase tracking-wider text-white bg-slate-900 hover:bg-slate-800 transition-colors shrink-0"
-        >
-          View All 25 Calculators &rarr;
-        </a>
-      </div>
-
-
-
-      <!-- Minimal Tools Index List -->
-      <div class="border-t border-slate-200 pt-8">
-        <div class="flex items-center justify-between mb-4">
-          <h3 class="text-xs font-semibold uppercase tracking-wider text-slate-700">All Calculation Tools Index</h3>
-          <a href="/calculators/" class="text-xs text-slate-900 underline font-medium">Directory View &rarr;</a>
-        </div>
-        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2 text-xs">
-          {TOOLS.map((t) => (
-            <a
-              href={t.href}
-              class="text-slate-600 hover:text-slate-950 py-1 transition-colors truncate block"
-              title={t.name}
-            >
-              &bull; {t.shortName}
-            </a>
-          ))}
-        </div>
-      </div>
-    </section>
-
   </main>
 </Base>
-
