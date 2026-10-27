@@ -5,6 +5,7 @@ import { guideRow } from "../../lib/frontmatter.js";
 import { articleSchema, breadcrumbSchema } from "../../lib/schema.js";
 import { articleKind, KIND_LABEL, readingMinutes } from "../../lib/article-kind.js";
 import { coverSvg } from "../../lib/cover-art.js";
+import { hasInfographic } from "../../lib/infographics.js";
 import { marked } from "marked";
 import katex from "katex";
 import "katex/dist/katex.min.css";
@@ -20,6 +21,7 @@ export async function getStaticPaths() {
 const { article } = Astro.props;
 const kind = articleKind(article.slug);
 const kindLabel = KIND_LABEL[kind];
+const info = hasInfographic(article.slug);
 // The auto-injected link list duplicates the related cards below, so it is not rendered in the body.
 const bodyMd = article.body_md.replace(/\n## Related Statutory & Payroll Guides[\s\S]*$/, "").trim();
 const minutes = readingMinutes(bodyMd);
@@ -118,7 +120,7 @@ const schema = [
         <a href="/" class="hover:text-slate-900">Home</a><span>/</span>
         <a href="/guides/" class="hover:text-slate-900">Guides</a>
       </nav>
-      <div class="h-44 sm:h-60 lg:h-72 rounded-3xl overflow-hidden border border-stone-200 shadow-sm" set:html={cover} />
+      <div class={info ? "max-w-4xl aspect-[960/420] rounded-3xl overflow-hidden border border-stone-200 shadow-sm" : "h-44 sm:h-60 lg:h-72 rounded-3xl overflow-hidden border border-stone-200 shadow-sm"} set:html={cover} />
       <header class="max-w-3xl mt-8">
         <p class="text-xs font-mono font-semibold uppercase tracking-[0.18em] text-brand-700">{kindLabel}</p>
         <h1 class="mt-3 text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-slate-900 leading-[1.1]">{article.title}</h1>
@@ -182,7 +184,7 @@ const schema = [
         <a href="/guides/" class="hover:text-slate-900">Guides</a>
       </nav>
       <header class="relative overflow-hidden rounded-3xl bg-brand-950 text-white">
-        <div class="h-32 sm:h-40" set:html={cover} />
+        {!info && <div class="h-32 sm:h-40" set:html={cover} />}
         <div class="p-8 sm:p-12">
           <p class="text-xs font-mono font-semibold uppercase tracking-[0.18em] text-brand-300">{kindLabel}</p>
           <h1 class="mt-3 max-w-2xl text-3xl sm:text-4xl font-serif font-bold leading-tight text-white">{article.title}</h1>
@@ -192,6 +194,7 @@ const schema = [
           </p>
         </div>
       </header>
+      {info && <div class="mt-6 aspect-[960/420] rounded-3xl overflow-hidden border border-stone-200 shadow-sm" set:html={cover} />}
       {toc.length > 2 && (
         <nav aria-label="Table of Contents" class="mt-8">
           <h2 class="text-[11px] font-mono font-bold uppercase tracking-wider text-slate-500 mb-3">Step by step</h2>
@@ -230,7 +233,7 @@ const schema = [
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
           {relatedArticles.map((rel: any) => (
             <a href={`/guides/${rel.slug}/`} class="group block bg-white border border-stone-200 rounded-xl overflow-hidden hover:border-slate-400 hover:shadow-sm transition-all">
-              <div class="h-24" set:html={coverSvg(rel.slug, articleKind(rel.slug), { className: "w-full h-full" })} />
+              <div class="aspect-[960/420]" set:html={coverSvg(rel.slug, articleKind(rel.slug), { className: "w-full h-full" })} />
               <div class="p-4">
                 <h4 class="text-sm font-serif font-bold text-slate-900 group-hover:text-brand-700 leading-snug">{rel.title}</h4>
                 <p class="text-xs text-slate-500 mt-2 line-clamp-2 leading-relaxed">{rel.description}</p>

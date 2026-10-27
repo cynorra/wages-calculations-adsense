@@ -48,15 +48,17 @@ Under Department of Labor regulations, the salary threshold serves as an objecti
 
 | Exemption Classification | Regulatory Citation | Minimum Weekly Salary | Annualized Minimum Equivalent (2,080h) |
 | :--- | :--- | :--- | :--- |
-| **Standard White-Collar Exemption** | 29 C.F.R. § 541.600 | $844.00 / week | **$43,888.00 / year** |
-| **Highly Compensated Employee (HCE)**| 29 C.F.R. § 541.601 | $2,059.00 / week | **$107,432.00 / year** |
+| **Standard White-Collar Exemption** | 29 C.F.R. § 541.600 | $684.00 / week | **$35,568.00 / year** |
+| **Highly Compensated Employee (HCE)**| 29 C.F.R. § 541.601 | $2,066.00 / week | **$107,432.00 / year** |
 | **Computer Professional (Hourly Track)**| 29 C.F.R. § 541.400 | $27.63 / hour | **$57,470.40 / year** |
+
+The DOL raised the standard level to $844 per week in July 2024 and to $1,128 per week in January 2025, but a federal court in Texas vacated that rule in November 2024, so the 2019 level of $684 per week applies again. Because this has been litigated, confirm the current figure with the DOL before setting salaries.
 
 ### State-Level Preemption (California, New York, Washington)
 Several states enforce statutory salary thresholds substantially higher than the federal baseline:
-- **California:** The state salary test requires at least twice the state minimum wage for full-time employment (currently over **$66,560 per year**).
-- **New York:** Enforces regional salary thresholds exceeding **$62,000 per year** in New York City, Long Island, and Westchester County.
-- **Washington State:** Uses an escalating multiplier of state minimum wage, requiring upwards of **$67,000+ per year**.
+- **California:** The state salary test requires at least twice the state minimum wage for full-time employment (**$70,304 per year** at the 2026 minimum wage of $16.90).
+- **New York:** Enforces regional salary thresholds well above the federal level in New York City, Long Island, and Westchester County, and a lower but still higher level in the rest of the state. Check the current Department of Labor figures.
+- **Washington State:** Uses an escalating multiplier of the state minimum wage, which puts its exempt salary level well above the federal figure. Check the current Labor & Industries figures.
 
 An employee earning $55,000 in California may satisfy federal tests but is **legally non-exempt under California law**, requiring 1.5x overtime for hours over 8 per day or 40 per week.
 

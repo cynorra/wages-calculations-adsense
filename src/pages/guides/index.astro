@@ -33,7 +33,7 @@ const schema = [breadcrumbSchema(crumbs)];
       {articles.map((guide: any) => (
         <article class="bg-white rounded-2xl border border-slate-200 p-6 overflow-hidden shadow-sm hover:border-brand-500 hover:shadow-md transition-all flex flex-col justify-between group">
           <div>
-            <a href={`/guides/${guide.slug}/`} class="block -mx-6 -mt-6 mb-5 h-36" aria-label={guide.title} set:html={coverSvg(guide.slug, articleKind(guide.slug), { className: "w-full h-full" })} />
+            <a href={`/guides/${guide.slug}/`} class="block -mx-6 -mt-6 mb-5 aspect-[960/420]" aria-label={guide.title} set:html={coverSvg(guide.slug, articleKind(guide.slug), { className: "w-full h-full" })} />
             <div class="flex items-center justify-between text-xs text-slate-400 mb-3">
               <span class="font-mono">{guide.published_at?.slice(0, 10)}</span>
               <span class="font-semibold text-brand-700 uppercase bg-brand-50 px-2 py-0.5 rounded text-[10px]">{KIND_LABEL[articleKind(guide.slug)]}</span>

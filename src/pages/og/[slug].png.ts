@@ -2,6 +2,7 @@ import sharp from "sharp";
 import { liveArticles } from "../../lib/articles-source.js";
 import { articleKind, KIND_LABEL } from "../../lib/article-kind.js";
 import { coverSvg, themeFor } from "../../lib/cover-art.js";
+import { hasInfographic } from "../../lib/infographics.js";
 
 export async function getStaticPaths() {
   const articles = await liveArticles();
@@ -32,8 +33,18 @@ export async function GET({ props }: { props: { article: any } }) {
   const text = lines
     .map((l, i) => `<text x="64" y="${452 + i * 56}" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="46" fill="${t.ink}">${esc(l)}</text>`)
     .join("");
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-<svg x="0" y="0" width="1200" height="525" viewBox="0 0 960 420" preserveAspectRatio="xMidYMid slice">${art.replace(/^<svg[^>]*>/, "").replace(/<\/svg>$/, "")}</svg>
+  // Infographic covers carry their own headline, so they get the full chart and a slim title strip.
+  const info = hasInfographic(article.slug);
+  const inner = art.replace(/^<svg[^>]*>/, "").replace(/<\/svg>$/, "");
+  const svg = info
+    ? `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<rect width="1200" height="630" fill="#ffffff"/>
+<svg x="0" y="0" width="1200" height="525" viewBox="0 0 960 420">${inner}</svg>
+<text x="48" y="582" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="30" fill="${t.ink}">${esc(wrap(article.title, 58, 1)[0])}</text>
+<text x="48" y="612" font-family="Arial, sans-serif" font-size="18" fill="${t.ink}" fill-opacity=".6">TheWageReport</text>
+</svg>`
+    : `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<svg x="0" y="0" width="1200" height="525" viewBox="0 0 960 420" preserveAspectRatio="xMidYMid slice">${inner}</svg>
 <rect y="350" width="1200" height="280" fill="#ffffff"/>
 <text x="64" y="396" font-family="Arial, sans-serif" font-weight="700" font-size="20" letter-spacing="4" fill="${t.mid}">${esc(KIND_LABEL[kind].toUpperCase())}</text>
 ${text}

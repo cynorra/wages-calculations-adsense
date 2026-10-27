@@ -1,3 +1,5 @@
+import { infographicBody } from "./infographics.js";
+
 // Original cover illustrations, generated per article from its slug.
 // No stock photography: every piece is drawn from geometry that matches the article type.
 
@@ -125,7 +127,7 @@ export function coverSvg(slug, kind, { className = "", label = "" } = {}) {
   const t = THEMES[seed % THEMES.length];
   const r = rng(seed);
   const uid = seed.toString(36);
-  const body = (MOTIFS[kind] || editorial)(t, uid, r);
+  const body = infographicBody(slug, t, uid) ?? (MOTIFS[kind] || editorial)(t, uid, r);
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 420" preserveAspectRatio="xMidYMid slice" class="${className}" role="img" aria-label="${label.replace(/"/g, "&quot;")}">${body}</svg>`;
 }
 

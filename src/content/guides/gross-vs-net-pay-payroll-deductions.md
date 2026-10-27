@@ -34,7 +34,7 @@ Pre-tax deductions are subtracted from your gross compensation **before** federa
 
 ---
 
-## The Mathematical Proof: How a $500 401(k) Deferral Costs Only $350
+## The Mathematical Proof: How a $500 401(k) Deferral Costs Only $365
 
 To illustrate the financial leverage of pre-tax deductions, consider an employee earning **$30.00 per hour** ($62,400 gross annually) in a state with a 5% state income tax, operating in the **22% federal marginal bracket**.
 

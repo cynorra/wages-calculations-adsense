@@ -69,7 +69,7 @@ function formatDate(iso: string) {
         <!-- Big Lead Story (7 cols) -->
         {featuredLead && (
           <div class="lg:col-span-7 flex flex-col justify-between">
-            <a href={`/guides/${featuredLead.slug}/`} class="block h-56 sm:h-72 mb-7 rounded-2xl overflow-hidden border border-slate-200" aria-label={featuredLead.title} set:html={cover(featuredLead.slug, `Illustration for ${featuredLead.title}`)} />
+            <a href={`/guides/${featuredLead.slug}/`} class="block aspect-[960/420] mb-7 rounded-2xl overflow-hidden border border-slate-200" aria-label={featuredLead.title} set:html={cover(featuredLead.slug, `Illustration for ${featuredLead.title}`)} />
             <div>
               <div class="flex items-center gap-2.5 text-xs text-slate-500 mb-3">
                 <span class="uppercase tracking-wider font-semibold text-brand-700 bg-brand-50 px-2 py-0.5 rounded text-[11px]">Featured Report</span>
@@ -146,7 +146,7 @@ function formatDate(iso: string) {
         {mainFeed.map((guide: any) => (
           <article class="flex flex-col justify-between group bg-white border border-slate-200 p-6 rounded-xl overflow-hidden hover:border-slate-400 transition-all shadow-sm">
             <div>
-              <a href={`/guides/${guide.slug}/`} class="block -mx-6 -mt-6 mb-5 h-36" aria-label={guide.title} set:html={cover(guide.slug)} />
+              <a href={`/guides/${guide.slug}/`} class="block -mx-6 -mt-6 mb-5 aspect-[960/420]" aria-label={guide.title} set:html={cover(guide.slug)} />
               <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
                 <span>{formatDate(guide.published_at)}</span>
                 <span class="text-slate-600 text-[11px] font-medium bg-slate-100 px-2 py-0.5 rounded">{KIND_LABEL[articleKind(guide.slug)]}</span>
