@@ -192,3 +192,35 @@
   }
 }
 
+
+/* Per-layout article variations */
+.guide-dropcap > p:first-of-type::first-letter {
+  font-family: 'Newsreader', Charter, Georgia, serif;
+  float: left;
+  font-size: 3.6rem;
+  line-height: 0.85;
+  font-weight: 700;
+  padding: 0.35rem 0.6rem 0 0;
+  color: #325442;
+}
+
+.guide-ledger { counter-reset: ledger; }
+.guide-ledger h2 {
+  counter-increment: ledger;
+  position: relative;
+  padding-left: 3rem;
+}
+.guide-ledger h2::before {
+  content: counter(ledger, decimal-leading-zero);
+  position: absolute;
+  left: 0;
+  top: 0.15em;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: #fff;
+  background: #325442;
+  border-radius: 0.4rem;
+  padding: 0.15rem 0.4rem;
+}
