@@ -2,6 +2,10 @@
 import Base from "../layouts/Base.astro";
 import { SITE, AUTHOR } from "../site.config.js";
 import { liveArticles } from "../lib/articles-source.js";
+import { articleKind, KIND_LABEL } from "../lib/article-kind.js";
+import { coverSvg } from "../lib/cover-art.js";
+
+const cover = (slug: string, label = "") => coverSvg(slug, articleKind(slug), { className: "w-full h-full", label });
 
 const articles = await liveArticles();
 const featuredLead = articles[0];
@@ -65,6 +69,7 @@ function formatDate(iso: string) {
         <!-- Big Lead Story (7 cols) -->
         {featuredLead && (
           <div class="lg:col-span-7 flex flex-col justify-between">
+            <a href={`/guides/${featuredLead.slug}/`} class="block h-56 sm:h-72 mb-7 rounded-2xl overflow-hidden border border-slate-200" aria-label={featuredLead.title} set:html={cover(featuredLead.slug, `Illustration for ${featuredLead.title}`)} />
             <div>
               <div class="flex items-center gap-2.5 text-xs text-slate-500 mb-3">
                 <span class="uppercase tracking-wider font-semibold text-brand-700 bg-brand-50 px-2 py-0.5 rounded text-[11px]">Featured Report</span>
@@ -90,7 +95,7 @@ function formatDate(iso: string) {
               >
                 Read Full Report &rarr;
               </a>
-              <span class="text-xs text-slate-400">Statutory Analysis</span>
+              <span class="text-xs text-slate-400">{KIND_LABEL[articleKind(featuredLead.slug)]}</span>
             </div>
           </div>
         )}
@@ -101,20 +106,23 @@ function formatDate(iso: string) {
             Recent Analyses
           </div>
           {secondaryFeatured.map((item: any) => (
-            <article class="group">
-              <div class="flex items-center gap-2 text-xs text-slate-500 mb-1.5">
-                <span>{formatDate(item.published_at)}</span>
-                <span>&bull;</span>
-                <span class="text-slate-700 font-medium">Workplace Law</span>
+            <article class="group flex gap-4">
+              <a href={`/guides/${item.slug}/`} class="hidden sm:block shrink-0 w-32 h-24 rounded-xl overflow-hidden border border-slate-200" aria-label={item.title} set:html={cover(item.slug)} />
+              <div>
+                <div class="flex items-center gap-2 text-xs text-slate-500 mb-1.5">
+                  <span>{formatDate(item.published_at)}</span>
+                  <span>&bull;</span>
+                  <span class="text-slate-700 font-medium">{KIND_LABEL[articleKind(item.slug)]}</span>
+                </div>
+                <h3 class="text-lg font-serif font-bold text-slate-950 leading-snug group-hover:text-brand-700 transition-colors">
+                  <a href={`/guides/${item.slug}/`}>
+                    {item.title}
+                  </a>
+                </h3>
+                <p class="mt-2 text-xs text-slate-600 line-clamp-2 leading-relaxed">
+                  {item.description}
+                </p>
               </div>
-              <h3 class="text-lg sm:text-xl font-serif font-bold text-slate-950 leading-snug group-hover:text-brand-700 transition-colors">
-                <a href={`/guides/${item.slug}/`}>
-                  {item.title}
-                </a>
-              </h3>
-              <p class="mt-2 text-xs sm:text-sm text-slate-600 line-clamp-2 leading-relaxed">
-                {item.description}
-              </p>
             </article>
           ))}
         </div>
@@ -136,11 +144,12 @@ function formatDate(iso: string) {
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-10">
         {mainFeed.map((guide: any) => (
-          <article class="flex flex-col justify-between group pt-2 bg-white border border-slate-200 p-6 rounded-xl hover:border-slate-400 transition-all shadow-sm">
+          <article class="flex flex-col justify-between group bg-white border border-slate-200 p-6 rounded-xl overflow-hidden hover:border-slate-400 transition-all shadow-sm">
             <div>
+              <a href={`/guides/${guide.slug}/`} class="block -mx-6 -mt-6 mb-5 h-36" aria-label={guide.title} set:html={cover(guide.slug)} />
               <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
                 <span>{formatDate(guide.published_at)}</span>
-                <span class="text-slate-600 text-[11px] font-medium bg-slate-100 px-2 py-0.5 rounded">Statutory Guide</span>
+                <span class="text-slate-600 text-[11px] font-medium bg-slate-100 px-2 py-0.5 rounded">{KIND_LABEL[articleKind(guide.slug)]}</span>
               </div>
               <h3 class="text-lg font-serif font-bold text-slate-950 group-hover:text-brand-700 transition-colors leading-snug">
                 <a href={`/guides/${guide.slug}/`}>

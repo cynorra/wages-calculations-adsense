@@ -2,6 +2,8 @@
 import Base from "../../layouts/Base.astro";
 import { liveArticles } from "../../lib/articles-source.js";
 import { breadcrumbSchema } from "../../lib/schema.js";
+import { articleKind, KIND_LABEL } from "../../lib/article-kind.js";
+import { coverSvg } from "../../lib/cover-art.js";
 
 const articles = await liveArticles();
 const crumbs = [{ name: "Payroll Guides", path: "/guides/" }];
@@ -29,11 +31,12 @@ const schema = [breadcrumbSchema(crumbs)];
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       {articles.map((guide: any) => (
-        <article class="bg-white rounded-2xl border border-slate-200 p-6 shadow-sm hover:border-brand-500 hover:shadow-md transition-all flex flex-col justify-between group">
+        <article class="bg-white rounded-2xl border border-slate-200 p-6 overflow-hidden shadow-sm hover:border-brand-500 hover:shadow-md transition-all flex flex-col justify-between group">
           <div>
+            <a href={`/guides/${guide.slug}/`} class="block -mx-6 -mt-6 mb-5 h-36" aria-label={guide.title} set:html={coverSvg(guide.slug, articleKind(guide.slug), { className: "w-full h-full" })} />
             <div class="flex items-center justify-between text-xs text-slate-400 mb-3">
               <span class="font-mono">{guide.published_at?.slice(0, 10)}</span>
-              <span class="font-semibold text-brand-700 uppercase bg-brand-50 px-2 py-0.5 rounded text-[10px]">FLSA Compliant</span>
+              <span class="font-semibold text-brand-700 uppercase bg-brand-50 px-2 py-0.5 rounded text-[10px]">{KIND_LABEL[articleKind(guide.slug)]}</span>
             </div>
             <h2 class="text-lg font-bold text-slate-900 group-hover:text-brand-700 transition-colors">
               <a href={`/guides/${guide.slug}/`}>
