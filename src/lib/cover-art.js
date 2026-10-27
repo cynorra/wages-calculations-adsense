@@ -3,11 +3,10 @@ import { infographicBody } from "./infographics.js";
 // Original cover illustrations, generated per article from its slug.
 // No stock photography: every piece is drawn from geometry that matches the article type.
 
+// One palette only, taken from the site's tailwind "brand" scale and its amber callouts,
+// so every illustration reads as part of the same publication.
 const THEMES = [
-  { bg1: "#f4f7f5", bg2: "#dfeae3", ink: "#1e3027", mid: "#4f8266", soft: "#a3c2b0", accent: "#c8873a" },
-  { bg1: "#f5f6f9", bg2: "#e0e5ef", ink: "#1b2740", mid: "#4a639b", soft: "#a9b8d6", accent: "#d1693f" },
-  { bg1: "#faf6ef", bg2: "#efe3cd", ink: "#3a2a16", mid: "#a8742f", soft: "#dcc196", accent: "#2f6f5e" },
-  { bg1: "#f8f4f2", bg2: "#ecdcd5", ink: "#3b2020", mid: "#a4523f", soft: "#d9aea0", accent: "#2d5a6b" },
+  { bg1: "#fdfdfc", bg2: "#e6ede8", ink: "#1e3027", mid: "#3d6851", soft: "#a3c2b0", accent: "#c8873a" },
 ];
 
 function hash(str) {
