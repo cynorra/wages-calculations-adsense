@@ -4,6 +4,7 @@ description: "At $24.04 per hour, a $50k gross salary yields specific biweekly t
 tool: "50000-a-year-is-how-much-an-hour"
 status: "published"
 published: "2026-10-20"
+updated: "2026-10-27"
 author_slug: "eren-simsir"
 ---
 
@@ -30,12 +31,12 @@ If an employee works a standard 8-hour day, each regular working day generates *
 
 ---
 
-## 2026 Tax Withholdings and Net Take-Home Pay Analysis
+## Tax Withholdings and Net Take-Home Pay Analysis (Illustration)
 
 Gross compensation does not equate to disposable income. In the United States, employees are subject to mandatory payroll withholdings governed by the Internal Revenue Code (IRC).
 
 ### Single Filer Tax Simulation (Standard Deduction)
-Under federal tax formulas (assuming a single tax filer utilizing the 2026 standard deduction of approximately $15,000):
+Under federal tax formulas (assuming a single tax filer utilizing a standard deduction of approximately $15,000 (a rounded 2025 figure; the amount rises each year)):
 
 1. **Gross Annual Income:** $50,000.00
 2. **IRS Standard Deduction:** -$15,000.00
@@ -134,3 +135,12 @@ For additional context on FLSA regulations and take-home calculations, review ou
 - [Hourly to Salary Calculation: The 2,080-Hour Annual Standard Breakdown](/guides/hourly-to-salary-annual-breakdown/)
 - [True Hourly Rate: Deconstructing Exempt Salaries and Working Hours](/guides/salary-to-hourly-rate-converter/)
 - [FLSA Overtime Pay Rules: Time-and-a-Half (1.5x) and Double Time (2.0x)](/guides/flsa-overtime-time-and-a-half-rules/)
+
+## Sources and further reading
+
+The figures and rules in this article come from the primary sources below. Thresholds, rates, and limits change from year to year, so confirm the current value at the source before relying on it.
+
+- [DOL Fact Sheet #23, overtime pay requirements](https://www.dol.gov/agencies/whd/fact-sheets/23-flsa-overtime-pay)
+- [DOL Wage and Hour Division: FLSA overview](https://www.dol.gov/agencies/whd/flsa)
+- [IRS Publication 15-T, federal income tax withholding methods](https://www.irs.gov/publications/p15t)
+- [IRS Topic 751, Social Security and Medicare withholding rates](https://www.irs.gov/taxtopics/tc751)

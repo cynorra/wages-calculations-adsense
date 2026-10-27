@@ -64,3 +64,11 @@ Both premiums are paid at the minimum wage rate rather than the employee's actua
 - Write the policy per state. A multi-state employer should not use one shared "split shift" rule.
 
 For related California rules, see [meal and rest break premiums](/guides/rest-break-and-meal-period-penalty-pay-california/), and for premiums for nights and weekends see [shift differentials](/guides/night-weekend-shift-differential-pay/).
+
+## Sources and further reading
+
+The figures and rules in this article come from the primary sources below. Thresholds, rates, and limits change from year to year, so confirm the current value at the source before relying on it.
+
+- [12 NYCRR § 142-2.4, spread of hours (Cornell LII)](https://www.law.cornell.edu/regulations/new-york/12-NYCRR-142-2.4)
+- [New York State Department of Labor: minimum wage](https://dol.ny.gov/minimum-wage-0)
+- [DOL: state minimum wage laws](https://www.dol.gov/agencies/whd/minimum-wage/state)

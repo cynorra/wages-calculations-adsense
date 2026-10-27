@@ -23,7 +23,7 @@ To understand why, workers must examine how **progressive marginal tax brackets*
 
 The United States federal income tax code operates on a progressive tier system that functions exactly like a series of interconnected water buckets. As gross income flows in, dollars fill each bucket sequentially. **A higher tax rate applies exclusively to the dollars that overflow into that specific upper bucket—it never retroactively increases the tax rate applied to the money in earlier buckets.**
 
-### 2026 Progressive Federal Tax Slices (Single Filer with $15,000 Standard Deduction)
+### Progressive Federal Tax Slices (Illustration: Single Filer, $15,000 Standard Deduction)
 
 ```
 Gross Income Inflow
@@ -130,3 +130,11 @@ For additional context on FLSA regulations and take-home calculations, review ou
 - [Hourly Paycheck Tax Withholding: Federal, FICA & State Deductions](/guides/hourly-paycheck-tax-breakdown/)
 - [Gross Pay vs Net Pay: How Pre-Tax Reductions Preserve Take-Home Value](/guides/gross-vs-net-pay-payroll-deductions/)
 - [Hourly to Salary Calculation: The 2,080-Hour Annual Standard Breakdown](/guides/hourly-to-salary-annual-breakdown/)
+
+## Sources and further reading
+
+The figures and rules in this article come from the primary sources below. Thresholds, rates, and limits change from year to year, so confirm the current value at the source before relying on it.
+
+- [IRS Publication 15-T, federal income tax withholding methods](https://www.irs.gov/publications/p15t)
+- [IRS Topic 751, Social Security and Medicare withholding rates](https://www.irs.gov/taxtopics/tc751)
+- [SSA: contribution and benefit base](https://www.ssa.gov/oact/cola/cbb.html)

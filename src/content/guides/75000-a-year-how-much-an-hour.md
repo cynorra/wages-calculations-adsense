@@ -30,7 +30,7 @@ For employees receiving biweekly paychecks (every other Friday, 26 times per yea
 
 ---
 
-## 2026 Progressive Federal Tax Brackets and FICA Withholdings
+## Progressive Federal Tax Brackets and FICA Withholdings (2025 Illustration)
 
 Understanding real spendable liquidity requires analyzing how the Internal Revenue Service (IRS) taxes an income of $75,000. In the United States, federal income tax is progressive, meaning dollars are taxed at increasing rates across established brackets, rather than taxing the entire salary at one flat rate.
 
@@ -128,3 +128,12 @@ For additional context on FLSA regulations and take-home calculations, review ou
 - [Hourly to Salary Calculation: The 2,080-Hour Annual Standard Breakdown](/guides/hourly-to-salary-annual-breakdown/)
 - [True Hourly Rate: Deconstructing Exempt Salaries and Working Hours](/guides/salary-to-hourly-rate-converter/)
 - [FLSA Overtime Pay Rules: Time-and-a-Half (1.5x) and Double Time (2.0x)](/guides/flsa-overtime-time-and-a-half-rules/)
+
+## Sources and further reading
+
+The figures and rules in this article come from the primary sources below. Thresholds, rates, and limits change from year to year, so confirm the current value at the source before relying on it.
+
+- [DOL Fact Sheet #23, overtime pay requirements](https://www.dol.gov/agencies/whd/fact-sheets/23-flsa-overtime-pay)
+- [DOL Wage and Hour Division: FLSA overview](https://www.dol.gov/agencies/whd/flsa)
+- [IRS Publication 15-T, federal income tax withholding methods](https://www.irs.gov/publications/p15t)
+- [IRS Topic 751, Social Security and Medicare withholding rates](https://www.irs.gov/taxtopics/tc751)

@@ -84,3 +84,11 @@ This is before waiting time and wage statement penalties and attorney fees, whic
 - For industries with their own wage orders (for example, motion picture or commercial drivers), review the specific rules since some provide different timing.
 
 This guide covers California's rules only; other states, such as New York and Illinois, require meal periods but do not impose a premium. For related state-law premiums see [split-shift pay](/guides/split-shift-differential-premiums-california-ny/).
+
+## Sources and further reading
+
+The figures and rules in this article come from the primary sources below. Thresholds, rates, and limits change from year to year, so confirm the current value at the source before relying on it.
+
+- [California Labor Code § 226.7, meal and rest periods](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=LAB&sectionNum=226.7)
+- [California Labor Code § 512, meal periods](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=LAB&sectionNum=512)
+- [California Labor Code § 510, daily overtime](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=LAB&sectionNum=510)

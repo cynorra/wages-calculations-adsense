@@ -76,3 +76,12 @@ Severance does not automatically bar unemployment, but **state rules vary**. Som
 - Check the state's rules for final pay timing and accrued vacation.
 
 See [supplemental wage withholding](/guides/supplemental-wage-withholding-bonus-taxation-rules/) for the 22% and aggregate methods in more detail, and [gross vs. net pay](/guides/gross-vs-net-pay-payroll-deductions/) for how deductions affect take-home pay.
+
+## Sources and further reading
+
+The figures and rules in this article come from the primary sources below. Thresholds, rates, and limits change from year to year, so confirm the current value at the source before relying on it.
+
+- [IRS Publication 15-T, federal income tax withholding methods](https://www.irs.gov/publications/p15t)
+- [26 U.S.C. § 3121, FICA definitions (Cornell LII)](https://www.law.cornell.edu/uscode/text/26/3121)
+- [26 U.S.C. § 409A, deferred compensation (Cornell LII)](https://www.law.cornell.edu/uscode/text/26/409A)
+- [EEOC: waivers in severance agreements (OWBPA)](https://www.eeoc.gov/laws/guidance/qa-understanding-waivers-discrimination-claims-employee-severance-agreements)

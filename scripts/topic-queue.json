@@ -1,0 +1,62 @@
+[
+  {
+    "slug": "fluctuating-workweek-method-overtime",
+    "title": "Fluctuating Workweek Method: How Overtime Works for Salaried Non-Exempt Employees",
+    "description": "When a fixed salary covers hours that change every week, overtime is half-time on a regular rate that falls as hours rise. The conditions and the math under 29 CFR 778.114.",
+    "keyTakeaway": "Under the fluctuating workweek method, a salaried non-exempt employee owed overtime receives an extra half of the regular rate, which is the salary divided by the hours actually worked that week.",
+    "tool": "hour-and-wage-calculator",
+    "statutoryRef": "29 C.F.R. § 778.114",
+    "sources": ["usc207", "cfr778", "fs23"],
+    "notes": "Conditions in 778.114: the employee's hours fluctuate week to week; a fixed salary is paid for all hours worked, whatever the number; the salary is large enough that the regular rate is never below the minimum wage; employer and employee have a clear mutual understanding that the salary covers all hours; and overtime is paid at half-time (0.5x) of the regular rate because straight time is already in the salary. Since the 2020 DOL rule, bonuses and premium payments may be paid in addition to the salary under this method. Some states, such as California, do not allow this method. Example numbers to use: salary 900 dollars a week; 45 hours gives a regular rate of 20.00 and half-time premium of 10.00 per overtime hour; 55 hours gives a regular rate of 16.36."
+  },
+  {
+    "slug": "piece-rate-overtime-calculation",
+    "title": "Piece-Rate Pay and Overtime: Calculating the Regular Rate for Production Workers",
+    "description": "How to compute overtime for employees paid per unit produced, including the extra half-time premium and how nonproductive time is paid.",
+    "keyTakeaway": "For piece-rate workers the regular rate is total weekly earnings divided by total hours worked, and overtime hours are owed an additional half of that rate.",
+    "tool": "hour-and-wage-calculator",
+    "statutoryRef": "29 C.F.R. § 778.111",
+    "sources": ["usc207", "cfr778", "fs23"],
+    "notes": "Under 778.111, the regular rate of a piece-rate worker is the sum of piece-rate earnings plus any other earnings (such as hourly pay for nonproductive time) divided by total hours worked in the workweek. Because the piece-rate earnings already pay for all hours at straight time, the overtime premium is an additional 0.5x the regular rate for each hour over 40. An alternative under 778.111(a) lets the employee and employer agree in advance to pay 1.5x the piece rate for pieces made during overtime hours. Example numbers to use: 46 hours, 920 pieces at 1.10 dollars = 1,012.00; regular rate 22.00 per hour; premium 6 x 11.00 = 66.00; total 1,078.00. In many states, such as California, nonproductive time must be paid separately at an hourly rate."
+  },
+  {
+    "slug": "tip-pooling-rules-flsa-management-and-back-of-house",
+    "title": "Tip Pooling Rules: Who May Share in a Pool and Who May Not",
+    "description": "How tip pools work under the FLSA after the 2018 amendment: managers and owners may not keep tips, and back-of-house sharing depends on whether a tip credit is taken.",
+    "keyTakeaway": "An employer may never keep employees' tips, and may include back-of-house staff in a tip pool only if it does not take a tip credit and pays the full minimum wage in cash.",
+    "tool": "tipped-minimum-wage-calculator",
+    "statutoryRef": "29 U.S.C. § 203(m)(2)(B)",
+    "sources": ["usc203", "cfr531", "dolMinWage"],
+    "notes": "Section 203(m)(2)(B), added by the Consolidated Appropriations Act of 2018, prohibits employers, managers, and supervisors from keeping any portion of employees' tips, whether or not a tip credit is taken. An employer that takes a tip credit may require tip pooling only among employees who customarily and regularly receive tips (servers, bartenders, bussers, and similar). An employer that pays the full minimum wage in cash and takes no tip credit may include employees who do not customarily receive tips, such as cooks and dishwashers, but not managers or owners. Credit card processing fees: the employer may deduct the pro rata share of the processing fee from tips. The federal cash wage for tipped employees is 2.13 dollars an hour with a maximum tip credit of 5.12 dollars. Several states restrict pooling and tip credits more than federal law."
+  },
+  {
+    "slug": "payroll-record-retention-requirements-flsa-irs",
+    "title": "Payroll Record Retention: How Long to Keep Time Cards, Payroll Registers, and Tax Records",
+    "description": "FLSA and IRS recordkeeping periods for payroll data, which records fall under each rule, and what regulators expect to see in an audit.",
+    "keyTakeaway": "The FLSA requires payroll records to be kept for three years and time cards and wage-rate tables for two years, while the IRS requires employment tax records to be kept for at least four years.",
+    "tool": "hour-and-wage-calculator",
+    "statutoryRef": "29 C.F.R. Part 516; 26 C.F.R. § 31.6001-1",
+    "sources": ["cfr516", "p15", "usc216"],
+    "notes": "Under 29 C.F.R. 516.5, payroll records (name, address, birth date if under 19, occupation, hours, rate, earnings, deductions) must be kept three years. Under 516.6, supplementary records such as time cards, wage rate tables, work schedules, and records of additions to or deductions from wages must be kept two years. The IRS requires employers to keep employment tax records for at least four years after the tax is due or paid (Publication 15). The FLSA statute of limitations is two years, or three for willful violations (29 U.S.C. 255). Records may be kept electronically if they can be produced on request. Many states require longer retention, and a missing record can shift the burden of proof to the employer in a wage claim."
+  },
+  {
+    "slug": "training-meetings-and-seminars-hours-worked-flsa",
+    "title": "Are Training Sessions and Meetings Paid Time? The Four-Part Test Under 29 CFR 785.27",
+    "description": "When training, lectures, and meetings count as hours worked, and the four conditions that make attendance unpaid under the FLSA.",
+    "keyTakeaway": "Training and meeting time is unpaid only if attendance is outside regular hours, voluntary, not job related, and no productive work is done during it; otherwise it is hours worked.",
+    "tool": "hour-and-wage-calculator",
+    "statutoryRef": "29 C.F.R. §§ 785.27-785.32",
+    "sources": ["cfr785", "fs22", "usc207"],
+    "notes": "Under 29 C.F.R. 785.27, attendance at lectures, meetings, and training programs need not be counted as working time only if all four criteria are met: attendance is outside the employee's regular working hours; attendance is in fact voluntary; the course, lecture, or meeting is not directly related to the employee's job; and the employee does not perform any productive work during the attendance. Training directed by the employer, or required to keep the job, is compensable. 785.29 says training is not directly related to the job if it is designed to help the employee for a different job or to develop skills beyond the job. Time spent on mandatory training that is a legal requirement for the position is generally compensable. Travel to training follows the travel-time rules. Time counts toward the 40-hour overtime threshold."
+  },
+  {
+    "slug": "commission-overtime-retail-service-exemption-section-7i",
+    "title": "The Retail and Service Commission Exemption: When Commission Pay Replaces Overtime",
+    "description": "How Section 7(i) lets some retail and service establishments skip overtime for commissioned employees, and the two tests every pay period must pass.",
+    "keyTakeaway": "Section 7(i) exempts an employee from overtime only if the employer is a retail or service establishment, the regular rate is above one and a half times the minimum wage, and more than half of earnings in a representative period come from commissions.",
+    "tool": "base-hourly-plus-commission-calculator",
+    "statutoryRef": "29 U.S.C. § 207(i); 29 C.F.R. Part 779, Subpart G",
+    "sources": ["usc207", "cfr778", "fs23"],
+    "notes": "Under 29 U.S.C. 207(i), an employee of a retail or service establishment is not owed overtime if: the regular rate of pay is more than one and a half times the applicable minimum wage (10.88 dollars an hour at the 7.25 federal minimum wage); and more than half of the employee's compensation for a representative period of at least one month comes from commissions on goods or services. Commissions can include bona fide commission rates based on sales; draws and guarantees do not turn base pay into commission. Some industries (for example, auto dealerships, which have their own exemption in 213(b)(10)) are handled separately. State law may be stricter."
+  }
+]

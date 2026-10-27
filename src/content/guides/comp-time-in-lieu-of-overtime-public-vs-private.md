@@ -59,3 +59,11 @@ Legislation that would allow private comp time (the "Working Families Flexibilit
 ## What to do instead if you are private
 
 If scheduling flexibility is the goal, a compliant alternative is to pay overtime in cash and offer **voluntary schedule adjustments within the same workweek**, for example shortening Friday after a long Monday. For help with the 1.5x math, see [FLSA overtime rules](/guides/flsa-overtime-time-and-a-half-rules/).
+
+## Sources and further reading
+
+The figures and rules in this article come from the primary sources below. Thresholds, rates, and limits change from year to year, so confirm the current value at the source before relying on it.
+
+- [29 U.S.C. § 207, maximum hours (Cornell LII)](https://www.law.cornell.edu/uscode/text/29/207)
+- [29 C.F.R. Part 553, public agency employees (eCFR)](https://www.ecfr.gov/current/title-29/part-553)
+- [DOL Fact Sheet #23, overtime pay requirements](https://www.dol.gov/agencies/whd/fact-sheets/23-flsa-overtime-pay)

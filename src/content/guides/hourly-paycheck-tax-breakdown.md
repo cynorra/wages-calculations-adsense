@@ -22,7 +22,7 @@ Mandatory federal payroll taxes are governed by Chapter 21 of the Internal Reven
 ### A. Old-Age, Survivors, and Disability Insurance (OASDI / Social Security)
 - **Statutory Employee Tax Rate:** **6.20%**
 - **Employer Matching Contribution:** An identical **6.20%** paid directly by the employer (not deducted from employee wages).
-- **Annual Wage Base Ceiling:** Social Security tax is capped annually by the Social Security Administration (SSA). In 2026, the taxable maximum wage base is set at **$176,100**. Any earnings beyond this cumulative threshold in a calendar year are taxed at 0.00% for OASDI.
+- **Annual Wage Base Ceiling:** Social Security tax is capped annually by the Social Security Administration (SSA). For 2025, the taxable maximum wage base was **$176,100**; the SSA raises it every year, so check the current figure. Any earnings beyond this cumulative threshold in a calendar year are taxed at 0.00% for OASDI.
 - **Biweekly Deduction on $2,800:** $\$2,800.00 \times 0.062 = \mathbf{\$173.60}$
 
 ### B. Hospital Insurance (HI / Medicare)
@@ -47,7 +47,7 @@ $$\text{Biweekly FICA Withholding on \$2,800} = \$2,800.00 \times 0.0765 = \math
 
 Unlike FICA's flat percentages, Federal Income Tax (FIT) withholding is determined using the employee's Form W-4 elections and IRS Publication 15-T computational rules. Employers use either the **Percentage Method** or the **Wage Bracket Method**.
 
-### Biweekly Percentage Method Simulation (2026 Single Filer, Standard Withholding)
+### Biweekly Percentage Method Simulation (Single Filer Illustration, Standard Withholding)
 For an employee paid biweekly (26 pay periods per year) earning $2,800.00 gross per paycheck ($72,800 annualized):
 
 1. **Annualized Gross Pay:** $\$2,800.00 \times 26 = \$72,800.00$
@@ -105,7 +105,7 @@ At the conclusion of the tax year, the cumulative results of these hourly deduct
 - **Box 1 (Wages, tips, other compensation):** Gross wages minus pre-tax retirement, HSA, and Section 125 healthcare deductions. This is the figure transferred to Form 1040 Line 1z.
 - **Box 2 (Federal income tax withheld):** Total cumulative FIT withheld across all paychecks.
 - **Box 3 (Social Security wages):** Total earnings subject to OASDI (typically higher than Box 1 because 401(k) contributions are not exempt from FICA).
-- **Box 4 (Social Security tax withheld):** Exactly 6.2% of Box 3 (capped at $10,918.20 for 2026).
+- **Box 4 (Social Security tax withheld):** Exactly 6.2% of Box 3 (capped at $10,918.20 for 2025).
 - **Box 5 (Medicare wages and tips):** Total earnings subject to Medicare (no annual cap).
 - **Box 6 (Medicare tax withheld):** 1.45% of Box 5 plus any 0.9% Additional Medicare Tax.
 
@@ -118,3 +118,12 @@ For additional context on FLSA regulations and take-home calculations, review ou
 - [Real Hourly Pay Rate After Tax: Demystifying Progressive Tax Brackets](/guides/real-hourly-pay-rate-after-tax/)
 - [Gross Pay vs Net Pay: How Pre-Tax Reductions Preserve Take-Home Value](/guides/gross-vs-net-pay-payroll-deductions/)
 - [Hourly to Salary Calculation: The 2,080-Hour Annual Standard Breakdown](/guides/hourly-to-salary-annual-breakdown/)
+
+## Sources and further reading
+
+The figures and rules in this article come from the primary sources below. Thresholds, rates, and limits change from year to year, so confirm the current value at the source before relying on it.
+
+- [IRS Publication 15, Employer's Tax Guide](https://www.irs.gov/publications/p15)
+- [IRS Publication 15-T, federal income tax withholding methods](https://www.irs.gov/publications/p15t)
+- [IRS Topic 751, Social Security and Medicare withholding rates](https://www.irs.gov/taxtopics/tc751)
+- [SSA: contribution and benefit base](https://www.ssa.gov/oact/cola/cbb.html)

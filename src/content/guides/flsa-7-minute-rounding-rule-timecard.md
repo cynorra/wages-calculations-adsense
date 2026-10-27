@@ -106,3 +106,12 @@ For additional context on FLSA regulations and take-home calculations, review ou
 - [FLSA Overtime Pay Rules: Time-and-a-Half (1.5x) and Double Time (2.0x)](/guides/flsa-overtime-time-and-a-half-rules/)
 - [Calculating Overtime with Bonuses: The FLSA Regular Rate of Pay Formula](/guides/flsa-regular-rate-of-pay-bonuses/)
 - [Hourly to Salary Calculation: The 2,080-Hour Annual Standard Breakdown](/guides/hourly-to-salary-annual-breakdown/)
+
+## Sources and further reading
+
+The figures and rules in this article come from the primary sources below. Thresholds, rates, and limits change from year to year, so confirm the current value at the source before relying on it.
+
+- [29 C.F.R. Part 785, hours worked (eCFR)](https://www.ecfr.gov/current/title-29/part-785)
+- [DOL Fact Sheet #22, hours worked](https://www.dol.gov/agencies/whd/fact-sheets/22-flsa-hours-worked)
+- [29 C.F.R. Part 516, recordkeeping (eCFR)](https://www.ecfr.gov/current/title-29/part-516)
+- [29 U.S.C. § 207, maximum hours (Cornell LII)](https://www.law.cornell.edu/uscode/text/29/207)

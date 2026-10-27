@@ -2,7 +2,7 @@
 title: "50-State Minimum Wage to Annual Salary Rankings & Cost of Living"
 description: "Comprehensive 2026 rankings of all 50 US state statutory minimum wages converted into 2,080-hour annual base salaries from $15,080 to $36,400+."
 tool: "state-minimum-wage-to-annual-salary-calculator"
-status: "published"
+status: "draft"
 published: "2026-11-25"
 author_slug: "eren-simsir"
 ---
@@ -118,3 +118,11 @@ For additional context on FLSA regulations and take-home calculations, review ou
 - [Biweekly Paycheck Schedules: Navigating 26-Pay-Period Years and Magic Months](/guides/biweekly-paycheck-calculation-26-periods/)
 - [Reverse Paycheck Audit: Biweekly to Hourly Rate Deconstruction](/guides/reverse-biweekly-to-hourly-rate-audit/)
 - [Hourly to Salary Calculation: The 2,080-Hour Annual Standard Breakdown](/guides/hourly-to-salary-annual-breakdown/)
+
+## Sources and further reading
+
+The figures and rules in this article come from the primary sources below. Thresholds, rates, and limits change from year to year, so confirm the current value at the source before relying on it.
+
+- [DOL: state minimum wage laws](https://www.dol.gov/agencies/whd/minimum-wage/state)
+- [29 U.S.C. § 206, minimum wage (Cornell LII)](https://www.law.cornell.edu/uscode/text/29/206)
+- [New York State Department of Labor: minimum wage](https://dol.ny.gov/minimum-wage-0)

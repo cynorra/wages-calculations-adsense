@@ -59,3 +59,11 @@ When the premium is a flat sum instead of an hourly amount, the same principle a
 - The calculation of the regular rate for any week with overtime, kept for the three-year FLSA recordkeeping window under 29 C.F.R. Part 516.
 
 For the general method of blending premiums into the rate, see our guide on [regular rate and bonuses](/guides/flsa-regular-rate-of-pay-bonuses/), and for night or weekend premiums see [shift differentials](/guides/night-weekend-shift-differential-pay/).
+
+## Sources and further reading
+
+The figures and rules in this article come from the primary sources below. Thresholds, rates, and limits change from year to year, so confirm the current value at the source before relying on it.
+
+- [29 C.F.R. Part 778, overtime compensation (eCFR)](https://www.ecfr.gov/current/title-29/part-778)
+- [29 U.S.C. § 207, maximum hours (Cornell LII)](https://www.law.cornell.edu/uscode/text/29/207)
+- [DOL Fact Sheet #23, overtime pay requirements](https://www.dol.gov/agencies/whd/fact-sheets/23-flsa-overtime-pay)

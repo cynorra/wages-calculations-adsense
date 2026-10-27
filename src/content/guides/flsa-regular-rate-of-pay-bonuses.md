@@ -4,6 +4,7 @@ description: "How employers miscalculate overtime by omitting non-discretionary 
 tool: "calculating-overtime-with-bonuses"
 status: "published"
 published: "2026-10-23"
+updated: "2026-10-27"
 author_slug: "eren-simsir"
 ---
 
@@ -113,3 +114,11 @@ For additional context on FLSA regulations and take-home calculations, review ou
 - [FLSA Overtime Pay Rules: Time-and-a-Half (1.5x) and Double Time (2.0x)](/guides/flsa-overtime-time-and-a-half-rules/)
 - [Hour and Wage Timecards: FLSA 7-Minute Rounding Rules and Lunch Breaks](/guides/flsa-7-minute-rounding-rule-timecard/)
 - [Hourly to Salary Calculation: The 2,080-Hour Annual Standard Breakdown](/guides/hourly-to-salary-annual-breakdown/)
+
+## Sources and further reading
+
+The figures and rules in this article come from the primary sources below. Thresholds, rates, and limits change from year to year, so confirm the current value at the source before relying on it.
+
+- [29 U.S.C. § 207, maximum hours (Cornell LII)](https://www.law.cornell.edu/uscode/text/29/207)
+- [29 C.F.R. Part 778, overtime compensation (eCFR)](https://www.ecfr.gov/current/title-29/part-778)
+- [DOL Fact Sheet #23, overtime pay requirements](https://www.dol.gov/agencies/whd/fact-sheets/23-flsa-overtime-pay)

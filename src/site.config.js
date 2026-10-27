@@ -3,7 +3,7 @@ export const SITE = {
   domain: "thewagereport.com",
   url: "https://thewagereport.com",
   tagline: "Independent Labor Economics, FLSA Compliance & Payroll Standards",
-  description: "Independent financial publication providing peer-reviewed guides, FLSA labor law breakdowns, IRS payroll tax analysis, and wage estimation tools.",
+  description: "Independent financial publication providing source-cited guides, FLSA labor law breakdowns, IRS payroll tax analysis, and wage estimation tools.",
   language: "en-US",
   locale: "en_US",
   foundingYear: 2026,

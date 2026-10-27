@@ -120,3 +120,13 @@ For additional context on FLSA regulations and take-home calculations, review ou
 - [Biweekly Paycheck Schedules: Navigating 26-Pay-Period Years and Magic Months](/guides/biweekly-paycheck-calculation-26-periods/)
 - [Reverse Paycheck Audit: Biweekly to Hourly Rate Deconstruction](/guides/reverse-biweekly-to-hourly-rate-audit/)
 - [Hourly to Salary Calculation: The 2,080-Hour Annual Standard Breakdown](/guides/hourly-to-salary-annual-breakdown/)
+
+## Sources and further reading
+
+The figures and rules in this article come from the primary sources below. Thresholds, rates, and limits change from year to year, so confirm the current value at the source before relying on it.
+
+- [IRS: independent contractor, self-employed, or employee](https://www.irs.gov/businesses/small-businesses-self-employed/independent-contractor-self-employed-or-employee)
+- [IRS Form SS-8, worker status determination](https://www.irs.gov/forms-pubs/about-form-ss-8)
+- [DOL Fact Sheet #13, employment relationship](https://www.dol.gov/agencies/whd/fact-sheets/13-flsa-employment-relationship)
+- [DOL: misclassification as independent contractors](https://www.dol.gov/agencies/whd/flsa/misclassification)
+- [IRS Publication 15, Employer's Tax Guide](https://www.irs.gov/publications/p15)

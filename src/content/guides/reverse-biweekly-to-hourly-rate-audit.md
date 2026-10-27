@@ -109,7 +109,7 @@ If an employee only has access to their bank account direct deposit amount and w
 
 $$\text{Estimated Gross Pay} = \frac{\text{Net Direct Deposit Amount}}{1 - \text{Total Effective Tax Rate}}$$
 
-### Benchmark Effective Deduction & Net-to-Gross Multipliers (2026 Standards)
+### Benchmark Effective Deduction & Net-to-Gross Multipliers (Illustrative Standards)
 
 | Jurisdiction & Benefit Profile | Typical Effective Deduction Rate | Reverse Gross Divisor | Example Net Deposit ($1,800) | Implied Gross Paycheck | Implied Base Hourly (80 hrs) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -143,3 +143,10 @@ For additional context on FLSA regulations and take-home calculations, review ou
 - [Biweekly Paycheck Schedules: Navigating 26-Pay-Period Years and Magic Months](/guides/biweekly-paycheck-calculation-26-periods/)
 - [PTO Payout Laws by State: Vacation Cash Value and Supplemental Tax Rules](/guides/pto-vacation-payout-laws-by-state/)
 - [Hourly to Salary Calculation: The 2,080-Hour Annual Standard Breakdown](/guides/hourly-to-salary-annual-breakdown/)
+
+## Sources and further reading
+
+The figures and rules in this article come from the primary sources below. Thresholds, rates, and limits change from year to year, so confirm the current value at the source before relying on it.
+
+- [DOL Fact Sheet #23, overtime pay requirements](https://www.dol.gov/agencies/whd/fact-sheets/23-flsa-overtime-pay)
+- [IRS Publication 15, Employer's Tax Guide](https://www.irs.gov/publications/p15)

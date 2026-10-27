@@ -59,7 +59,8 @@ export async function liveArticles() {
       return local;
     }
     const remote = await res.json();
-    const known = new Set(local.map((r) => r.slug));
+    // Any local file, including a draft, takes precedence over a row with the same slug in Supabase.
+    const known = new Set(localRows().map((r) => r.slug));
     const extra = Array.isArray(remote) ? remote.filter((r) => !known.has(r.slug)) : [];
     return [...local, ...extra].sort((a, b) => b.published_at.localeCompare(a.published_at));
   } catch (e) {

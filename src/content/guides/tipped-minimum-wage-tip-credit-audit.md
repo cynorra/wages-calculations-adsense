@@ -4,6 +4,7 @@ description: "How the FLSA tip credit functions under 29 U.S.C. § 203(m), 50-st
 tool: "tipped-minimum-wage-calculator"
 status: "published"
 published: "2026-10-26"
+updated: "2026-10-27"
 author_slug: "eren-simsir"
 ---
 
@@ -116,3 +117,12 @@ For additional context on FLSA regulations and take-home calculations, review ou
 - [Biweekly Paycheck Schedules: Navigating 26-Pay-Period Years and Magic Months](/guides/biweekly-paycheck-calculation-26-periods/)
 - [Reverse Paycheck Audit: Biweekly to Hourly Rate Deconstruction](/guides/reverse-biweekly-to-hourly-rate-audit/)
 - [Hourly to Salary Calculation: The 2,080-Hour Annual Standard Breakdown](/guides/hourly-to-salary-annual-breakdown/)
+
+## Sources and further reading
+
+The figures and rules in this article come from the primary sources below. Thresholds, rates, and limits change from year to year, so confirm the current value at the source before relying on it.
+
+- [29 U.S.C. § 203, definitions including tipped employees (Cornell LII)](https://www.law.cornell.edu/uscode/text/29/203)
+- [29 C.F.R. Part 531, wage payments including tip credit (eCFR)](https://www.ecfr.gov/current/title-29/part-531)
+- [DOL: state minimum wage laws](https://www.dol.gov/agencies/whd/minimum-wage/state)
+- [29 U.S.C. § 206, minimum wage (Cornell LII)](https://www.law.cornell.edu/uscode/text/29/206)

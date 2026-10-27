@@ -4,6 +4,7 @@ description: "Federal FLSA Section 7(a) overtime requirements, California daily 
 tool: "overtime-pay-calculator"
 status: "published"
 published: "2026-10-22"
+updated: "2026-10-27"
 author_slug: "eren-simsir"
 ---
 
@@ -68,7 +69,7 @@ Under federal FLSA rules alone, if that employee only worked that single 14-hour
 - **Nevada (NRS 608.018):** Enforces an 8-hour daily overtime rule for employees earning less than 1.5 times the state minimum wage.
 - **Colorado (7 CCR 1103-1):** Enforces a multi-trigger rule requiring overtime after **40 hours per week, 12 hours per workday, or 12 consecutive hours** without regard to the start of the workday.
 
-### State Overtime & Double-Time Statutory Comparison (2026 Standards)
+### State Overtime & Double-Time Statutory Comparison (Current Standards)
 
 | Jurisdiction | Weekly Overtime (1.5x) | Daily Overtime (1.5x) | Double Time (2.0x) Threshold | Seventh Consecutive Day Rule |
 | :--- | :--- | :--- | :--- | :--- |
@@ -125,3 +126,12 @@ For additional context on FLSA regulations and take-home calculations, review ou
 - [Calculating Overtime with Bonuses: The FLSA Regular Rate of Pay Formula](/guides/flsa-regular-rate-of-pay-bonuses/)
 - [Hour and Wage Timecards: FLSA 7-Minute Rounding Rules and Lunch Breaks](/guides/flsa-7-minute-rounding-rule-timecard/)
 - [Hourly to Salary Calculation: The 2,080-Hour Annual Standard Breakdown](/guides/hourly-to-salary-annual-breakdown/)
+
+## Sources and further reading
+
+The figures and rules in this article come from the primary sources below. Thresholds, rates, and limits change from year to year, so confirm the current value at the source before relying on it.
+
+- [29 U.S.C. § 207, maximum hours (Cornell LII)](https://www.law.cornell.edu/uscode/text/29/207)
+- [29 C.F.R. Part 778, overtime compensation (eCFR)](https://www.ecfr.gov/current/title-29/part-778)
+- [DOL Fact Sheet #23, overtime pay requirements](https://www.dol.gov/agencies/whd/fact-sheets/23-flsa-overtime-pay)
+- [California Labor Code § 510, daily overtime](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=LAB&sectionNum=510)

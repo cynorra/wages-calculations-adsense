@@ -2,7 +2,7 @@
 title: "PTO Payout Laws by State: Vacation Cash Value and Supplemental Tax Rules"
 description: "How to convert unused vacation hours into cash value upon job separation, state use-it-or-lose-it prohibitions, and the 22% federal supplemental tax rule."
 tool: "pto-payout-calculator"
-status: "published"
+status: "draft"
 published: "2026-11-17"
 author_slug: "eren-simsir"
 ---
@@ -118,3 +118,11 @@ For additional context on FLSA regulations and take-home calculations, review ou
 - [Biweekly Paycheck Schedules: Navigating 26-Pay-Period Years and Magic Months](/guides/biweekly-paycheck-calculation-26-periods/)
 - [Reverse Paycheck Audit: Biweekly to Hourly Rate Deconstruction](/guides/reverse-biweekly-to-hourly-rate-audit/)
 - [Hourly to Salary Calculation: The 2,080-Hour Annual Standard Breakdown](/guides/hourly-to-salary-annual-breakdown/)
+
+## Sources and further reading
+
+The figures and rules in this article come from the primary sources below. Thresholds, rates, and limits change from year to year, so confirm the current value at the source before relying on it.
+
+- [DOL Wage and Hour Division: FLSA overview](https://www.dol.gov/agencies/whd/flsa)
+- [IRS Publication 15, Employer's Tax Guide](https://www.irs.gov/publications/p15)
+- [IRS Publication 15-T, federal income tax withholding methods](https://www.irs.gov/publications/p15t)

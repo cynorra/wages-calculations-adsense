@@ -74,7 +74,8 @@ export function jaccardSimilarity(setA, setB) {
   return union === 0 ? 0 : intersection / union;
 }
 
-export function auditArticleQuality({ title, description, body_md, minWords = 1000 }) {
+// minTables / minMath default to 0: each article structure decides how many tables and formulas it needs.
+export function auditArticleQuality({ title, description, body_md, minWords = 1000, minTables = 0, minMath = 0 }) {
   const errors = [];
 
   if (!body_md || typeof body_md !== "string") {
@@ -108,14 +109,14 @@ export function auditArticleQuality({ title, description, body_md, minWords = 10
 
   // 5. Data Density (Tables)
   const tableCount = (body_md.match(/\|[\s\S]*?\|[\s\S]*?\n\|[-:\s|]+\|/g) || []).length;
-  if (tableCount < 1) {
-    errors.push("MISSING_DATA_TABLE: Article must include at least one multi-column comparison markdown table.");
+  if (tableCount < minTables) {
+    errors.push(`MISSING_DATA_TABLE: Article must include at least ${minTables} markdown table(s); found ${tableCount}.`);
   }
 
   // 6. Mathematical / Formula Density ($$...$$ or LaTeX equations)
   const mathCount = (body_md.match(/\$\$[\s\S]*?\$\$/g) || []).length;
-  if (mathCount < 2) {
-    errors.push("MISSING_FORMULAS: Article must include at least 2 LaTeX mathematical equation blocks ($$...$$).");
+  if (mathCount < minMath) {
+    errors.push(`MISSING_FORMULAS: Article must include at least ${minMath} LaTeX equation block(s); found ${mathCount}.`);
   }
 
   // 7. Statutory Reference Gate

@@ -30,7 +30,7 @@ For employees paid biweekly (every two weeks, 26 times annually), each gross pay
 
 ---
 
-## 2026 Progressive Federal Tax Brackets and FICA Withholdings
+## Progressive Federal Tax Brackets and FICA Withholdings (2025 Illustration)
 
 An earner at $85,000 operates within the 22% federal marginal tax bracket. However, the United States federal tax system is progressive, meaning only a fraction of their income is taxed at the highest bracket.
 
@@ -86,7 +86,7 @@ At an $85,000 income level, an earner possesses sufficient discretionary surplus
 
 - **Maxing Out Employer 401(k) Match:** Capturing a standard 4% to 6% corporate match yields $3,400 to $5,100 in instant 100% tax-free returns.
 - **The Backdoor / Direct Roth IRA:** An earner below the statutory phase-out ceiling can contribute the maximum allowable annual limit ($7,000) to a Roth IRA, locking in decades of compounding growth completely exempt from future capital gains and federal income taxes.
-- **Health Savings Account (HSA):** By enrolling in an eligible High Deductible Health Plan (HDHP), an earner can contribute up to the single statutory limit ($4,300), shielding that income from federal, FICA, and state taxation.
+- **Health Savings Account (HSA):** By enrolling in an eligible High Deductible Health Plan (HDHP), an earner can contribute up to the single statutory limit ($4,300 for 2025), shielding that income from federal, FICA, and state taxation.
 
 ---
 
@@ -97,3 +97,12 @@ For additional context on FLSA regulations and take-home calculations, review ou
 - [Hourly to Salary Calculation: The 2,080-Hour Annual Standard Breakdown](/guides/hourly-to-salary-annual-breakdown/)
 - [True Hourly Rate: Deconstructing Exempt Salaries and Working Hours](/guides/salary-to-hourly-rate-converter/)
 - [FLSA Overtime Pay Rules: Time-and-a-Half (1.5x) and Double Time (2.0x)](/guides/flsa-overtime-time-and-a-half-rules/)
+
+## Sources and further reading
+
+The figures and rules in this article come from the primary sources below. Thresholds, rates, and limits change from year to year, so confirm the current value at the source before relying on it.
+
+- [DOL Fact Sheet #23, overtime pay requirements](https://www.dol.gov/agencies/whd/fact-sheets/23-flsa-overtime-pay)
+- [DOL Wage and Hour Division: FLSA overview](https://www.dol.gov/agencies/whd/flsa)
+- [IRS Publication 15-T, federal income tax withholding methods](https://www.irs.gov/publications/p15t)
+- [IRS Topic 751, Social Security and Medicare withholding rates](https://www.irs.gov/taxtopics/tc751)

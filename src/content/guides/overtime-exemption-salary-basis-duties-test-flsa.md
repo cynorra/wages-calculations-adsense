@@ -70,3 +70,12 @@ If an employee is found misclassified, damages include unpaid overtime for up to
 $$10 \times \$43.27 \times 52 = \$22{,}500 \text{ per year (before liquidated damages)}$$
 
 See [the exempt vs. non-exempt test](/guides/salary-exempt-vs-non-exempt-flsa-test/) for a shorter walkthrough of the salary side and [overtime rules](/guides/flsa-overtime-time-and-a-half-rules/) for the 1.5x calculation.
+
+## Sources and further reading
+
+The figures and rules in this article come from the primary sources below. Thresholds, rates, and limits change from year to year, so confirm the current value at the source before relying on it.
+
+- [DOL Fact Sheet #17A, white-collar exemptions](https://www.dol.gov/agencies/whd/fact-sheets/17a-overtime)
+- [29 C.F.R. Part 541, white-collar exemptions (eCFR)](https://www.ecfr.gov/current/title-29/part-541)
+- [29 U.S.C. § 213, exemptions (Cornell LII)](https://www.law.cornell.edu/uscode/text/29/213)
+- [DOL Wage and Hour Division: FLSA overview](https://www.dol.gov/agencies/whd/flsa)

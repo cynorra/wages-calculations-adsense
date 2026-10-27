@@ -4,6 +4,7 @@ description: "How to audit overtime eligibility using federal salary level tests
 tool: "salary-exempt-vs-non-exempt-calculator"
 status: "published"
 published: "2026-10-24"
+updated: "2026-10-27"
 author_slug: "eren-simsir"
 ---
 
@@ -125,3 +126,12 @@ For additional context on FLSA regulations and take-home calculations, review ou
 - [FLSA Overtime Pay Rules: Time-and-a-Half (1.5x) and Double Time (2.0x)](/guides/flsa-overtime-time-and-a-half-rules/)
 - [Calculating Overtime with Bonuses: The FLSA Regular Rate of Pay Formula](/guides/flsa-regular-rate-of-pay-bonuses/)
 - [Hourly to Salary Calculation: The 2,080-Hour Annual Standard Breakdown](/guides/hourly-to-salary-annual-breakdown/)
+
+## Sources and further reading
+
+The figures and rules in this article come from the primary sources below. Thresholds, rates, and limits change from year to year, so confirm the current value at the source before relying on it.
+
+- [DOL Fact Sheet #17A, white-collar exemptions](https://www.dol.gov/agencies/whd/fact-sheets/17a-overtime)
+- [29 C.F.R. Part 541, white-collar exemptions (eCFR)](https://www.ecfr.gov/current/title-29/part-541)
+- [29 U.S.C. § 213, exemptions (Cornell LII)](https://www.law.cornell.edu/uscode/text/29/213)
+- [DOL Wage and Hour Division: FLSA overview](https://www.dol.gov/agencies/whd/flsa)

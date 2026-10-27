@@ -70,3 +70,12 @@ Tax treatment and wage-and-hour law are separate. Under the FLSA, a **nondiscret
 - Not including 401(k) elections. If the employee's deferral election applies to bonuses, the deferral reduces federal taxable wages but not Social Security or Medicare wages.
 
 For how severance is withheld, see [severance pay](/guides/severance-pay-taxation-payroll-withholding-irc/), and for a look at the full gross-to-net picture see [gross vs. net pay](/guides/gross-vs-net-pay-payroll-deductions/).
+
+## Sources and further reading
+
+The figures and rules in this article come from the primary sources below. Thresholds, rates, and limits change from year to year, so confirm the current value at the source before relying on it.
+
+- [IRS Publication 15, Employer's Tax Guide](https://www.irs.gov/publications/p15)
+- [IRS Publication 15-T, federal income tax withholding methods](https://www.irs.gov/publications/p15t)
+- [26 U.S.C. § 3402, income tax withholding (Cornell LII)](https://www.law.cornell.edu/uscode/text/26/3402)
+- [IRS Form W-4](https://www.irs.gov/forms-pubs/about-form-w-4)

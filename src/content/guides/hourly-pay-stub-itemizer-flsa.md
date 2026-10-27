@@ -93,7 +93,7 @@ Perform a quick mathematical check:
 - If the numbers diverge significantly, your payroll department has misconfigured your pre-tax deduction exemptions.
 
 ### Step 3: Monitor the Social Security Wage Cap
-If your YTD Gross approaches or exceeds the annual Social Security cap ($176,100 in 2026), verify that the 6.2% FICA SS deduction ceases completely for all remaining paychecks in that calendar year.
+If your YTD Gross approaches or exceeds the annual Social Security cap ($176,100 for 2025; indexed each year), verify that the 6.2% FICA SS deduction ceases completely for all remaining paychecks in that calendar year.
 
 ### Step 4: Reconcile PTO Accruals and Balances
 Many states require pay stubs to display current available Paid Time Off (PTO), sick leave balances, and accrued hours earned during the pay period. Verify that PTO hours deducted reflect actual time taken off.
@@ -107,3 +107,11 @@ For additional context on FLSA regulations and take-home calculations, review ou
 - [Hourly Paycheck Tax Withholding: Federal, FICA & State Deductions](/guides/hourly-paycheck-tax-breakdown/)
 - [Real Hourly Pay Rate After Tax: Demystifying Progressive Tax Brackets](/guides/real-hourly-pay-rate-after-tax/)
 - [Hourly to Salary Calculation: The 2,080-Hour Annual Standard Breakdown](/guides/hourly-to-salary-annual-breakdown/)
+
+## Sources and further reading
+
+The figures and rules in this article come from the primary sources below. Thresholds, rates, and limits change from year to year, so confirm the current value at the source before relying on it.
+
+- [29 C.F.R. Part 516, recordkeeping (eCFR)](https://www.ecfr.gov/current/title-29/part-516)
+- [IRS Publication 15, Employer's Tax Guide](https://www.irs.gov/publications/p15)
+- [DOL Wage and Hour Division: FLSA overview](https://www.dol.gov/agencies/whd/flsa)

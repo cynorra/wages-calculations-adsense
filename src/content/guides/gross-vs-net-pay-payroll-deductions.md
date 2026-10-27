@@ -4,6 +4,7 @@ description: "Detailed analysis of pre-tax deductions (traditional 401k, HSA, FS
 tool: "gross-pay-vs-net-pay-calculator"
 status: "published"
 published: "2026-10-21"
+updated: "2026-10-27"
 author_slug: "eren-simsir"
 ---
 
@@ -23,7 +24,7 @@ Pre-tax deductions are subtracted from your gross compensation **before** federa
 
 ### Major Pre-Tax Deduction Categories:
 
-| Pre-Tax Deduction Category | Governing Tax Code | FIT Exempt? | SIT Exempt? | FICA Exempt (7.65%)? | 2026 Statutory Limits |
+| Pre-Tax Deduction Category | Governing Tax Code | FIT Exempt? | SIT Exempt? | FICA Exempt (7.65%)? | 2025 Limits (adjusted annually) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Traditional 401(k) / 403(b)** | IRC § 401(k) | **YES** | **YES** (Most states) | **NO** | $23,500 / year |
 | **Section 125 Health/Dental/Vision** | IRC § 125 (Cafeteria) | **YES** | **YES** | **YES** | Varies by employer plan |
@@ -120,3 +121,13 @@ For additional context on FLSA regulations and take-home calculations, review ou
 - [Hourly Paycheck Tax Withholding: Federal, FICA & State Deductions](/guides/hourly-paycheck-tax-breakdown/)
 - [Real Hourly Pay Rate After Tax: Demystifying Progressive Tax Brackets](/guides/real-hourly-pay-rate-after-tax/)
 - [Hourly to Salary Calculation: The 2,080-Hour Annual Standard Breakdown](/guides/hourly-to-salary-annual-breakdown/)
+
+## Sources and further reading
+
+The figures and rules in this article come from the primary sources below. Thresholds, rates, and limits change from year to year, so confirm the current value at the source before relying on it.
+
+- [IRS Publication 15, Employer's Tax Guide](https://www.irs.gov/publications/p15)
+- [IRS Publication 15-T, federal income tax withholding methods](https://www.irs.gov/publications/p15t)
+- [IRS Topic 751, Social Security and Medicare withholding rates](https://www.irs.gov/taxtopics/tc751)
+- [IRS: 401(k) contribution limits](https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-401k-and-profit-sharing-plan-contribution-limits)
+- [IRS Publication 969, health savings accounts](https://www.irs.gov/publications/p969)

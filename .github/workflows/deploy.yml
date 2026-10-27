@@ -12,7 +12,7 @@ concurrency:
   cancel-in-progress: false
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   deploy:
@@ -31,22 +31,8 @@ jobs:
 
       - run: npm ci
 
-      - name: Generate daily high-quality statutory guide
-        run: node scripts/blog-generator.js
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
-          SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
-
-      - name: Commit new article to repository
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action Auto-Publisher"
-          git add src/content/guides/
-          git diff-index --quiet HEAD || git commit -m "chore(content): auto-publish daily peer-reviewed wage guide [skip ci]"
-          git push || true
-
+      # Articles are no longer generated or committed here. Drafts come from `node scripts/blog-generator.js`
+      # on a developer machine and are published only after a person has checked them.
       - run: npm test
 
       - name: Build site with Supabase articles

@@ -64,3 +64,11 @@ When an employee is on duty for 24 hours or more, the employer and employee may 
 - Track every response, including phone and remote work, in the timekeeping system.
 - If the restrictions are too tight to avoid liability, pay a reasonable hourly standby rate. An agreed standby rate for compensable waiting time can be lower than the regular rate, as long as it is at least the minimum wage.
 - Review state law. Some states, and some union contracts, require call-in or standby pay that the FLSA does not.
+
+## Sources and further reading
+
+The figures and rules in this article come from the primary sources below. Thresholds, rates, and limits change from year to year, so confirm the current value at the source before relying on it.
+
+- [29 C.F.R. Part 785, hours worked (eCFR)](https://www.ecfr.gov/current/title-29/part-785)
+- [DOL Fact Sheet #22, hours worked](https://www.dol.gov/agencies/whd/fact-sheets/22-flsa-hours-worked)
+- [DOL Wage and Hour Division: FLSA overview](https://www.dol.gov/agencies/whd/flsa)

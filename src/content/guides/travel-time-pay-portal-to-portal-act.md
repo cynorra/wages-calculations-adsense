@@ -61,3 +61,11 @@ Travel time that is hours worked must be paid at no less than the minimum wage a
 - Is a state rule stricter? California, for instance, treats time under the employer's control as hours worked, including required employer-provided transportation, under the IWC wage orders.
 
 Back pay for unpaid travel is recoverable for two years, or three if the violation is willful, with an equal amount in liquidated damages under 29 U.S.C. § 216(b). The Portal-to-Portal Act itself provides a good-faith defense in § 259 where an employer relied in writing on a DOL interpretation.
+
+## Sources and further reading
+
+The figures and rules in this article come from the primary sources below. Thresholds, rates, and limits change from year to year, so confirm the current value at the source before relying on it.
+
+- [29 U.S.C. § 254, Portal-to-Portal Act (Cornell LII)](https://www.law.cornell.edu/uscode/text/29/254)
+- [29 C.F.R. Part 785, hours worked (eCFR)](https://www.ecfr.gov/current/title-29/part-785)
+- [DOL Fact Sheet #22, hours worked](https://www.dol.gov/agencies/whd/fact-sheets/22-flsa-hours-worked)

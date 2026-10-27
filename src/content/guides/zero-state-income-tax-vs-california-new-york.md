@@ -31,7 +31,7 @@ However, public finance economists caution that evaluating state affordability s
 
 ## The Paycheck Comparison: $100,000 Gross Salary Across 4 States
 
-To evaluate direct paycheck take-home cash flow, examine a single filer earning $100,000 annually ($48.08/hr, 2,080 hours) claiming the 2026 standard deduction:
+To evaluate direct paycheck take-home cash flow, examine a single filer earning $100,000 annually ($48.08/hr, 2,080 hours) claiming a standard deduction of roughly $15,000:
 
 | Tax & Deduction Component | Zero-Tax State (Texas / Florida) | Flat-Tax State (North Carolina - 4.5%) | High-Tax State (California) | High-Tax State (New York City) |
 | :--- | :--- | :--- | :--- | :--- |
@@ -114,3 +114,11 @@ For additional context on FLSA regulations and take-home calculations, review ou
 - [Hourly Paycheck Tax Withholding: Federal, FICA & State Deductions](/guides/hourly-paycheck-tax-breakdown/)
 - [Real Hourly Pay Rate After Tax: Demystifying Progressive Tax Brackets](/guides/real-hourly-pay-rate-after-tax/)
 - [Hourly to Salary Calculation: The 2,080-Hour Annual Standard Breakdown](/guides/hourly-to-salary-annual-breakdown/)
+
+## Sources and further reading
+
+The figures and rules in this article come from the primary sources below. Thresholds, rates, and limits change from year to year, so confirm the current value at the source before relying on it.
+
+- [IRS Publication 15, Employer's Tax Guide](https://www.irs.gov/publications/p15)
+- [IRS Publication 15-T, federal income tax withholding methods](https://www.irs.gov/publications/p15t)
+- [IRS Topic 751, Social Security and Medicare withholding rates](https://www.irs.gov/taxtopics/tc751)

@@ -66,3 +66,14 @@ Two other tests may apply to the same worker. The IRS uses a common-law control 
 - Before reclassifying, consider the IRS Voluntary Classification Settlement Program, which can reduce back payroll tax liability.
 
 For a related comparison of take-home and rate equivalence, see [1099 vs W-2 hourly rate equivalence](/guides/1099-contractor-vs-w2-hourly-rate-equivalence/).
+
+## Sources and further reading
+
+The figures and rules in this article come from the primary sources below. Thresholds, rates, and limits change from year to year, so confirm the current value at the source before relying on it.
+
+- [DOL Fact Sheet #13, employment relationship](https://www.dol.gov/agencies/whd/fact-sheets/13-flsa-employment-relationship)
+- [DOL: misclassification as independent contractors](https://www.dol.gov/agencies/whd/flsa/misclassification)
+- [29 C.F.R. Part 795, employee or independent contractor (eCFR)](https://www.ecfr.gov/current/title-29/part-795)
+- [IRS: independent contractor, self-employed, or employee](https://www.irs.gov/businesses/small-businesses-self-employed/independent-contractor-self-employed-or-employee)
+- [IRS Form SS-8, worker status determination](https://www.irs.gov/forms-pubs/about-form-ss-8)
+- [IRS Voluntary Classification Settlement Program](https://www.irs.gov/businesses/small-businesses-self-employed/voluntary-classification-settlement-program)

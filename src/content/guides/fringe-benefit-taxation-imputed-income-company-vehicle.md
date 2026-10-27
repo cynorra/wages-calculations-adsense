@@ -70,3 +70,12 @@ The $276 is subject to Social Security and Medicare, but not to federal income t
 - Review whether a person is a control employee before using the commuting rule.
 
 For the withholding side, see [supplemental wages](/guides/supplemental-wage-withholding-bonus-taxation-rules/) and for the net-pay result [gross vs. net pay](/guides/gross-vs-net-pay-payroll-deductions/).
+
+## Sources and further reading
+
+The figures and rules in this article come from the primary sources below. Thresholds, rates, and limits change from year to year, so confirm the current value at the source before relying on it.
+
+- [IRS Publication 15-B, employer's guide to fringe benefits](https://www.irs.gov/publications/p15b)
+- [26 C.F.R. § 1.61-21, fringe benefit valuation (eCFR)](https://www.ecfr.gov/current/title-26/section-1.61-21)
+- [26 U.S.C. § 61, gross income (Cornell LII)](https://www.law.cornell.edu/uscode/text/26/61)
+- [26 U.S.C. § 127, educational assistance programs (Cornell LII)](https://www.law.cornell.edu/uscode/text/26/127)

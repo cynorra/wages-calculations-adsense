@@ -34,7 +34,7 @@ For workers compensated biweekly (26 pay periods per year), each gross paycheck 
 
 A frequent point of taxpayer confusion at the $80,000 income level is the distinction between the **marginal tax rate** (the bracket applied to the last dollar earned) and the **effective tax rate** (the total tax paid divided by total gross income).
 
-### Federal Tax Simulation for a Single Filer (2026 Projections)
+### Federal Tax Simulation for a Single Filer (Illustration)
 Assuming single tax filing status claiming the standard deduction of approximately $15,000:
 
 1. **Gross Salary:** $80,000.00
@@ -102,7 +102,7 @@ At $2,000 per month, an earner can comfortably manage housing in 85% of US real 
 For professionals earning $38.46 per hour, utilizing available pre-tax benefit accounts generates immediate financial returns:
 
 1. **Pre-Tax 401(k) Matching:** If an employer matches up to 5% of salary, contributing $4,000 annually captures a 100% immediate guaranteed return ($4,000 employer match) while saving $880 in federal income taxes at the 22% marginal rate.
-2. **Health Savings Account (HSA):** Maxing out an individual HSA ($4,300 contribution limit) lowers taxable federal income, saving $946 in federal taxes and $329 in FICA taxes (if executed through Section 125 payroll cafeteria plans).
+2. **Health Savings Account (HSA):** Maxing out an individual HSA ($4,300 is the 2025 single limit) lowers taxable federal income, saving $946 in federal taxes and $329 in FICA taxes (if executed through Section 125 payroll cafeteria plans).
 3. **Flexible Spending Accounts (FSA):** Allocating pre-tax funds toward public transit passes or dependent care directly bypasses federal, state, and payroll taxation.
 
 ---
@@ -114,3 +114,12 @@ For additional context on FLSA regulations and take-home calculations, review ou
 - [Hourly to Salary Calculation: The 2,080-Hour Annual Standard Breakdown](/guides/hourly-to-salary-annual-breakdown/)
 - [True Hourly Rate: Deconstructing Exempt Salaries and Working Hours](/guides/salary-to-hourly-rate-converter/)
 - [FLSA Overtime Pay Rules: Time-and-a-Half (1.5x) and Double Time (2.0x)](/guides/flsa-overtime-time-and-a-half-rules/)
+
+## Sources and further reading
+
+The figures and rules in this article come from the primary sources below. Thresholds, rates, and limits change from year to year, so confirm the current value at the source before relying on it.
+
+- [DOL Fact Sheet #23, overtime pay requirements](https://www.dol.gov/agencies/whd/fact-sheets/23-flsa-overtime-pay)
+- [DOL Wage and Hour Division: FLSA overview](https://www.dol.gov/agencies/whd/flsa)
+- [IRS Publication 15-T, federal income tax withholding methods](https://www.irs.gov/publications/p15t)
+- [IRS Topic 751, Social Security and Medicare withholding rates](https://www.irs.gov/taxtopics/tc751)

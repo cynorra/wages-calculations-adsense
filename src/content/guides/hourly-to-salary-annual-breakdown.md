@@ -110,7 +110,7 @@ In this example, consistent 5-hour weekly overtime boosts annualized earnings by
 
 A gross annualized salary of $62,400 does not reflect an employee's actual spendable take-home liquidity. Statutory federal and state withholdings diminish gross paycheck amounts:
 
-### Mandatory Statutory Withholdings (2026 Single Filer Assumptions)
+### Mandatory Statutory Withholdings (Single Filer Illustration)
 1. **FICA Social Security Tax:** Fixed statutory rate of 6.20% on gross wages up to the annual wage cap ($62,400 \times 0.062 = \mathbf{\$3,868.80}$).
 2. **FICA Medicare Tax:** Fixed statutory rate of 1.45% on all earnings with no ceiling ($62,400 \times 0.0145 = \mathbf{\$904.80}$).
 3. **Federal Income Tax (FIT):** Calculated after the IRS Standard Deduction (approx. $15,000 for single filers). The remaining taxable wage ($47,400) is taxed progressively across the 10% and 12% federal brackets, resulting in approximately **$5,450.00** in federal liability.
@@ -138,3 +138,11 @@ For additional context on FLSA regulations and take-home calculations, review ou
 - [True Hourly Rate: Deconstructing Exempt Salaries and Working Hours](/guides/salary-to-hourly-rate-converter/)
 - [Part-Time vs Full-Time Hourly Wage Conversion: ACA 30-Hour Rules](/guides/hourly-to-salary-conversion-matrix/)
 - [FLSA Overtime Pay Rules: Time-and-a-Half (1.5x) and Double Time (2.0x)](/guides/flsa-overtime-time-and-a-half-rules/)
+
+## Sources and further reading
+
+The figures and rules in this article come from the primary sources below. Thresholds, rates, and limits change from year to year, so confirm the current value at the source before relying on it.
+
+- [DOL Fact Sheet #23, overtime pay requirements](https://www.dol.gov/agencies/whd/fact-sheets/23-flsa-overtime-pay)
+- [DOL Wage and Hour Division: FLSA overview](https://www.dol.gov/agencies/whd/flsa)
+- [IRS Publication 15, Employer's Tax Guide](https://www.irs.gov/publications/p15)

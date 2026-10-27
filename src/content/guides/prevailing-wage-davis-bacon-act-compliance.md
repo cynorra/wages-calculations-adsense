@@ -80,3 +80,13 @@ Apprentices may be paid less only if they are registered in a program approved b
 If a violation is found, the contracting agency can **withhold contract payments** to cover back wages, and the contractor can be **debarred** from federal contracts for up to three years (40 U.S.C. § 3144). Willful violations can lead to criminal prosecution. Workers are paid from the withheld funds.
 
 See [overtime rules](/guides/flsa-overtime-time-and-a-half-rules/) for the standard FLSA overtime rule that Davis-Bacon and the CWHSSA build on.
+
+## Sources and further reading
+
+The figures and rules in this article come from the primary sources below. Thresholds, rates, and limits change from year to year, so confirm the current value at the source before relying on it.
+
+- [DOL: Davis-Bacon and Related Acts](https://www.dol.gov/agencies/whd/government-contracts/construction)
+- [29 C.F.R. Part 5, labor standards on federal contracts (eCFR)](https://www.ecfr.gov/current/title-29/part-5)
+- [29 C.F.R. Part 3, Copeland Act deductions (eCFR)](https://www.ecfr.gov/current/title-29/part-3)
+- [SAM.gov wage determinations](https://sam.gov/content/wage-determinations)
+- [40 U.S.C. § 3142, Davis-Bacon rate of wages (Cornell LII)](https://www.law.cornell.edu/uscode/text/40/3142)

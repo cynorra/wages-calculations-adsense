@@ -73,3 +73,13 @@ For wage-and-hour purposes, payments that reasonably reimburse the employee for 
 - Watch assignments at one location that are expected to last more than a year. They are treated as indefinite, the new location becomes the tax home, and the allowance becomes taxable.
 
 For the take-home side, compare with [supplemental wage withholding](/guides/supplemental-wage-withholding-bonus-taxation-rules/), and for hours of travel itself, see [travel time pay](/guides/travel-time-pay-portal-to-portal-act/).
+
+## Sources and further reading
+
+The figures and rules in this article come from the primary sources below. Thresholds, rates, and limits change from year to year, so confirm the current value at the source before relying on it.
+
+- [IRS Publication 463, travel, gift, and car expenses](https://www.irs.gov/publications/p463)
+- [GSA per diem rates](https://www.gsa.gov/travel/plan-book/per-diem-rates)
+- [26 C.F.R. § 1.62-2, reimbursement arrangements (eCFR)](https://www.ecfr.gov/current/title-26/section-1.62-2)
+- [26 U.S.C. § 62, adjusted gross income (Cornell LII)](https://www.law.cornell.edu/uscode/text/26/62)
+- [IRS Publication 15, Employer's Tax Guide](https://www.irs.gov/publications/p15)
