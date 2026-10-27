@@ -1,107 +1,66 @@
 ---
 title: "On-Call Pay Rules: Engaged to Wait vs. Waiting to Be Engaged (FLSA 29 CFR 785.17)"
 description: "Federal compensation standards for standby and on-call shifts. Geographical response constraints, pager rules, and determining compensable working hours."
-key_takeaway: "Under 29 C.F.R. § 785.17, an employee is 'engaged to wait' and entitled to compensation if on-call freedom is severely restricted by tight response windows, whereas 'waiting to be engaged' at home allows personal freedom without mandatory hourly pay."
+key_takeaway: "On-call time is paid when restrictions are so tight that the employee cannot use the time effectively for personal purposes; time spent actually responding to calls is always paid."
 tool: "hour-and-wage-calculator"
 status: "published"
 published: "2026-11-11"
 author_slug: "eren-simsir"
 ---
 
-## Statutory Authority & Legal Accounting Standards (2026)
+The Supreme Court framed the whole doctrine in two cases from 1944. In *Armour & Co. v. Wantock*, firefighters who lived at the plant and did nothing most of the day were still working because they were **engaged to wait**. In *Skidmore v. Swift & Co.*, employees who slept at home and answered occasional fire alarms were held to be **waiting to be engaged**, with the court looking at the specific facts. Eighty years later, the Department of Labor's regulation at 29 C.F.R. § 785.17 still turns on that distinction.
 
-Under United States federal labor compensation law and Title 29 of the Fair Labor Standards Act (FLSA), structuring compensation models requires rigorous adherence to statutory definitions codified under federal law and the Internal Revenue Code (IRC).
+## The rule in one sentence
 
-When implementing compensation standards for **On-Call Pay Rules: Engaged to Wait vs. Waiting to Be Engaged (FLSA 29 CFR 785.17)**, employers, forensic accountants, and payroll officers must evaluate both federal mandates and state wage thresholds. The governing formula for total statutory compensation is expressed as:
+> An employee required to remain on call on the employer's premises, or so close to it that the employee cannot use the time effectively for their own purposes, is working while on call. An employee who is merely required to leave a number where they can be reached is not.
 
-$$\text{Lawful Total Compensation} = (\text{Regular Hours} \times R) + (\text{FLSA Overtime Hours} \times 1.5 \times R) + \text{Statutory Premium Allowances}$$
+Notice how the standard is about **freedom to use the time**, not about how often the phone rings.
 
-Where $R$ represents the unadulterated regular rate of pay determined in strict compliance with Section 7(e) of the Fair Labor Standards Act (29 U.S.C. § 207(e)). Under federal doctrine, the workweek is codified as a fixed, regularly recurring period of 168 hours—seven consecutive 24-hour cycles. Once established by an employer, this 7-day accounting cycle cannot be retroactively manipulated to avoid overtime liabilities.
+## How courts weigh the restrictions
 
----
+Because no single factor decides the case, courts add up the restrictions. The factors that appear most often:
 
-## Detailed Pay Matrix & Periodic Cadence Breakdown
+1. **Required response time.** A 10-minute deadline almost always counts; a 60-minute window usually does not.
+2. **Geographic limits.** Staying within a mile of the facility is far more restrictive than staying "in the metro area."
+3. **Frequency of calls.** Many calls per shift weigh toward compensable time, though frequency alone is not controlling.
+4. **Ability to trade shifts.** If employees can swap on-call duty freely, restrictions look lighter.
+5. **Whether the employee can engage in personal activities** such as dining out, exercising, or attending a child's event.
+6. **Equipment and condition requirements.** Having to carry a loaded work vehicle or remain sober and dressed to go can tilt the balance.
+7. **Whether there is an agreement** on how on-call time is treated. An agreement is relevant but cannot waive FLSA rights.
 
-To evaluate how compensation flows across standard operational cycles, the table below illustrates earnings based on an hourly wage rate of **$35.00 per hour** across standard full-time conventions (2,080 annual working hours):
+## Decision ladder
 
-| Compensation Interval | Measurement Basis | Standard Working Hours | Multiplier Ratio | Equivalent Gross Realization |
-| :--- | :--- | :--- | :--- | :--- |
-| **Straight-Time Hourly** | Baseline Hour | 1.00 Hour | 1.00x | **$35.00 / hr** |
-| **Standard 8-Hour Shift** | Single Workday | 8.00 Hours | 1.00x | **$280.00 / day** |
-| **Standard Weekly Pay** | 5-Day Workweek | 40.00 Hours | 1.00x | **$1,400.00 / wk** |
-| **Biweekly Pay Period** | 10 Business Days | 80.00 Hours | 1.00x | **$2,800.00 / check** |
-| **Semimonthly Pay Period** | 24 Annual Cycles | 86.67 Hours | 1.00x | **$3,033.45 / check** |
-| **Monthly Disbursement** | 12 Annual Cycles | 173.33 Hours | 1.00x | **$6,066.55 / mo** |
-| **FLSA Overtime Wage** | Hours in Excess of 40 | Per Overtime Hour | 1.50x | **$52.50 / hr** |
-| **Annualized Benchmark** | 52 Workweeks | 2,080 Hours | 1.00x | **$72,800.00 / yr** |
+| Restriction level | Typical result |
+| :--- | :--- |
+| Must stay at the workplace or on its grounds | Paid as hours worked |
+| Must stay in the employer's bunkhouse or residence provided for the job, ready to go | Paid (with possible sleep-time rules for 24-hour shifts) |
+| Must respond within minutes and remain within a very small radius | Likely paid |
+| Must carry a pager and respond within 30–60 minutes, free to be anywhere in the region | Usually not paid while waiting |
+| Free to be anywhere, only asked to answer if reachable | Not paid |
 
-Applying unverified blended formulas or failing to isolate overtime hours results in substantial exposure to federal liquidated damages and statutory penalties under 29 U.S.C. § 216(b).
+## Time spent responding is always paid
 
----
+Whatever the status of the waiting, once the employee is actually working, the clock runs. That includes remote work: a network engineer who spends 25 minutes at home resolving an outage has worked 25 minutes. Employers who record only on-site call-outs miss these short telephone and remote-login tasks, and they accumulate. Under the DOL's de minimis guidance, tiny irregular amounts of time may be disregarded only when they are administratively difficult to record, and a recurring 15-minute login is not that.
 
-## Overtime Calculations on Special Rate Differentials
+## Worked example: when the weekend turns into overtime
 
-A recurring area of confusion in wage accounting is the interaction between base pay rates and special condition premiums (such as hazardous environments, night shifts, or prevailing wage determinations). Under 29 C.F.R. § 778.207, premium payments for work performed under undesirable or dangerous circumstances are not excludable gifts—they constitute direct remuneration for employment that must be factored into the employee's regular rate before overtime multipliers are applied.
+An on-call technician earns **$34.00 per hour** and works 40 scheduled hours Monday to Friday. Over the weekend of on-call coverage, the technician takes four calls of 45, 30, 90, and 35 minutes. Total response time:
 
-### Forensic Mathematical Formula: Blended Regular Rate
-When an employee receives both an hourly base rate and an additional differential per hour:
+$$45 + 30 + 90 + 35 = 200 \text{ minutes} = 3.33 \text{ hours}$$
 
-$$\text{Blended Regular Rate} = \frac{(\text{Total Base Wages}) + (\text{Total Differential Premiums}) + (\text{Nondiscretionary Bonuses})}{\text{Total Hours Worked in the Workweek}}$$
+Those hours are overtime because the week already has 40:
 
-### Real-World Audit Scenario:
-Consider an industrial manufacturing technician earning a base rate of **$32.00 per hour** who logs 48 total hours in a workweek, with 20 of those hours qualifying for a **$4.00 per hour differential**:
-1. **Base Hourly Earnings:** $48 \text{ hours} \times \$32.00 = \$1,536.00$
-2. **Special Differential Earnings:** $20 \text{ hours} \times \$4.00 = \$80.00$
-3. **Total Straight-Time Compensation:** $\$1,536.00 + \$80.00 = \$1,616.00$
-4. **Lawful Regular Rate of Pay:** $\frac{\$1,616.00}{48 \text{ hours}} = \mathbf{\$33.67 \text{ per hour}}$
-5. **Overtime Premium (Half-Time on 8 hrs):** $8 \text{ hours} \times (\$33.67 \times 0.5) = \mathbf{\$134.68}$
-6. **Total Lawful Gross Compensation:** $\$1,616.00 + \$134.68 = \mathbf{\$1,750.68}$
+$$3.33 \times (\$34.00 \times 1.5) = 3.33 \times \$51.00 = \$169.83$$
 
-If the employer unlawfully calculated overtime based solely on the $32.00 base rate ($8 \times \$16.00 = \$128.00$), the employee is shortchanged, creating statutory grounds for Department of Labor wage recovery actions.
+If the employer also pays a flat **$150** on-call stipend, that stipend is generally part of the regular rate and increases overtime pay, unless it qualifies for one of the exclusions in 29 U.S.C. § 207(e). For the mechanics of recalculating, see [regular rate and bonuses](/guides/flsa-regular-rate-of-pay-bonuses/).
 
----
+## Sleep and 24-hour duty
 
-## Payroll Accounting: Gross to Net Withholding Analysis
+When an employee is on duty for 24 hours or more, the employer and employee may agree to exclude a bona fide sleeping period of up to 8 hours, if adequate sleeping facilities are provided and the employee can usually get at least 5 hours of uninterrupted sleep (29 C.F.R. § 785.22). If sleep is interrupted so that 5 hours is not possible, the entire period counts.
 
-Gross compensation figures do not represent spendable take-home liquidity for household budgeting. Mandatory federal and state deductions diminish disposable earnings:
+## Practical steps for employers
 
-$$\text{Net Take-Home Pay} = \text{Gross Earnings} - (\text{FICA Social Security} + \text{FICA Medicare} + \text{Federal Income Tax} + \text{State Withholding})$$
-
-### Mandatory Statutory Withholdings (2026 Single Filer Baseline)
-1. **FICA Social Security Tax (6.20%):** Assessed on gross earnings up to the annual statutory wage threshold.
-2. **FICA Medicare Tax (1.45%):** Assessed on all gross earnings without a wage ceiling, supplemented by an additional 0.90% Medicare surtax on income exceeding $200,000 for single filers.
-3. **Federal Income Tax (FIT):** Calculated under progressive marginal brackets following the standard deduction ($15,000 baseline).
-4. **State Income Tax (SIT):** Ranges from 0.00% (in non-tax jurisdictions like Texas, Florida, and Washington) to progressive brackets exceeding 5.5% in states like California and New York.
-
-### Multi-State Take-Home Comparison
-
-| Jurisdiction Model | Estimated Effective Deduction | Biweekly Gross ($2,800) | Total Deductions | Net Spendable Paycheck |
-| :--- | :--- | :--- | :--- | :--- |
-| **Zero Income Tax State (TX, FL, WA)** | 17.2% | $2,800.00 | -$481.60 | **$2,318.40** |
-| **Moderate Tax State (VA, NC, IL)** | 22.8% | $2,800.00 | -$638.40 | **$2,161.60** |
-| **High Tax State (CA, NY, NJ)** | 28.4% | $2,800.00 | -$795.20 | **$2,004.80** |
-
-Living in a jurisdiction with high progressive state income taxes reduces annualized net take-home liquidity by approximately $8,150 on an equivalent $72,800 gross salary compared to a zero-tax state.
-
----
-
-## Practical Case Audit & Statutory Compliance Checklist
-
-When auditing payroll records for FLSA and IRS accuracy, compensation analysts employ a structured checklist:
-
-- [ ] **Regular Rate Inclusion:** Confirm that all production bonuses, shift differential premiums, and non-discretionary payments are blended into the regular rate before calculating 1.5x overtime.
-- [ ] **FLSA Exemption Testing:** Verify that salaried employees meet both the statutory minimum salary threshold and the applicable administrative, executive, or professional duties test.
-- [ ] **Timecard Rounding Integrity:** Audit time-tracking systems to verify adherence to the 7-minute rounding rule (29 C.F.R. § 785.48(b)) without creating an asymmetrical advantage for the employer.
-- [ ] **Meal & Rest Period Classification:** Ensure that unpaid meal breaks lasting 30 minutes or more involve complete relief from all work-related obligations.
-- [ ] **Liquidated Damages Exposure (29 U.S.C. § 216(b)):** Recognize that willful violations result in mandatory 100% liquidated damages matching the back-pay total, plus mandatory legal fees.
-
----
-
-## Related Statutory & Payroll Guides
-
-For additional analysis on federal wage mandates and take-home calculations, explore our companion guides:
-
-- [Hourly to Salary Calculation: The 2,080-Hour Annual Standard Breakdown](/guides/hourly-to-salary-annual-breakdown/)
-- [FLSA Overtime Pay Rules: Time-and-a-Half (1.5x) and Double Time (2.0x)](/guides/flsa-overtime-time-and-a-half-rules/)
-- [Gross Pay vs Net Pay: Payroll Deductions Breakdown](/guides/gross-vs-net-pay-payroll-deductions/)
-
+- Write down the exact response-time, location, and equipment requirements for each on-call rotation.
+- Track every response, including phone and remote work, in the timekeeping system.
+- If the restrictions are too tight to avoid liability, pay a reasonable hourly standby rate. An agreed standby rate for compensable waiting time can be lower than the regular rate, as long as it is at least the minimum wage.
+- Review state law. Some states, and some union contracts, require call-in or standby pay that the FLSA does not.

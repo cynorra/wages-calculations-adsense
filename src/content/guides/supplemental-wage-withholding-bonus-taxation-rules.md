@@ -1,125 +1,72 @@
 ---
 title: "Bonus Tax Rates: IRS 22% Supplemental Withholding vs. Aggregate Method"
 description: "Federal tax withholding mechanisms for performance bonuses, commissions, and non-periodic earnings under IRS Publication 15-T."
-key_takeaway: "Supplemental wages up to $1 million are subject to a flat 22% optional federal withholding rate under IRS rules, while earnings exceeding $1 million face mandatory 37% withholding."
+key_takeaway: "Bonuses are not taxed at a special rate. Withholding is a prepayment calculated by either the flat 22% method or the aggregate method, and the real tax is settled on the tax return."
 tool: "hourly-paycheck-tax-calculator"
 status: "published"
 published: "2026-11-26"
 author_slug: "eren-simsir"
 ---
 
-## Statutory Framework and Federal Labor Principles
+The belief that "bonuses are taxed at a higher rate" comes from looking at a bonus paycheck and seeing a smaller net than expected. The reason is the withholding method, not a different tax. Bonuses, commissions, overtime pay, back pay, awards, and severance are all **supplemental wages** under IRS rules, and employers choose between two federal withholding methods. Neither changes the tax actually owed.
 
-Under federal employment regulations, specifically codified in the Fair Labor Standards Act (IRS Publication 15-T, 26 C.F.R. § 31.3402(g)-1), compensation structures require rigorous accounting. Employers operating in interstate commerce must establish clear policies to avoid statutory liquidated damages under 29 U.S.C. § 216(b).
+## What counts as supplemental wages
 
-The fundamental rule governing this area is straightforward:
+Supplemental wages are payments made in addition to regular wages. Typical examples are bonuses, commissions, accumulated sick leave payouts, back pay, awards, and severance. If a bonus is paid in the same check as regular wages but the amounts are **not separately identified**, the whole payment is treated as regular wages and withheld that way.
 
-> **Core Statutory Mandate:** Supplemental wages up to $1 million are subject to a flat 22% optional federal withholding rate under IRS rules, while earnings exceeding $1 million face mandatory 37% withholding.
+## Method 1: percentage (flat rate)
 
-When establishing lawful pay practices, compensation managers must align base hourly allocations with regular rate determinations to maintain full payroll integrity across all operational schedules.
+Available when the bonus is **separately identified** or paid on a separate check, and the employer withheld income tax from the employee's regular wages in the current or preceding year.
 
-### Scope of Federal Protection Under Title 29
+| Supplemental wages paid in calendar year (to one employee) | Flat rate |
+| :--- | :--- |
+| Up to $1,000,000 | 22% (optional) |
+| Over $1,000,000 | **37% (mandatory)** |
 
-Federal wage mandates apply broadly to individual employees engaged in interstate commerce or employed by an enterprise engaged in commerce with annual gross business volume exceeding statutory minimums. Failure to accurately compute statutory premiums exposes organizations to retroactive back-pay liability, mandatory liquidated damages equal to 100% of unpaid wages, and reasonable attorney fees under 29 U.S.C. § 216(b).
+Because the rate is fixed, the calculation is simple, and employers prefer it.
 
----
+## Method 2: aggregate
 
-## Mathematical Formulations: Statutory Rate Determination
+The employer adds the bonus to the employee's **regular wages for the most recent payroll period**, treats the total as a single payment, calculates withholding on that total as though it were a regular wage using the employee's Form W-4, and subtracts the tax already withheld from the regular wages.
 
-Lawful compensation requires structured mathematical calculation rather than discretionary accounting. The regular rate is established using the statutory formula:
+This method often leads to a different result from 22%, because adding a bonus to one pay period can make the annualized pay look much higher. For a modest earner with a large bonus, the aggregate method may withhold more than 22% on part of the amount; for a high earner with a small bonus, it may be close to their top rate.
 
-$$\text{Regular Rate of Pay} = \frac{\text{Total Non-Exempt Remuneration in Workweek}}{\text{Total Hours Actually Worked}}$$
+## A worked example
 
-When overtime thresholds are exceeded, the mandatory one-and-one-half premium rate applies directly:
+An employee is paid $3,000 every two weeks and receives a **$6,000 bonus** in a separate payment. Using the flat method:
 
-$$\text{Overtime Hourly Rate} = \text{Regular Rate} \times 1.50$$
+| Item | Calculation | Amount |
+| :--- | :--- | :--- |
+| Gross bonus | | $6,000.00 |
+| Federal income tax | 22% × $6,000 | −$1,320.00 |
+| Social Security | 6.2% × $6,000 | −$372.00 |
+| Medicare | 1.45% × $6,000 | −$87.00 |
+| **Net before state tax** | | **$4,221.00** |
 
-$$\text{Total Gross Earnings} = (\text{Straight-Time Hours} \times \text{Regular Rate}) + (\text{Overtime Hours} \times \text{Overtime Rate})$$
+$$\text{Net} = \$6{,}000 \times (1 - 0.22 - 0.062 - 0.0145) = \$4{,}221.00$$
 
-If an employer erroneously calculates overtime pay by excluding non-discretionary stipends or premiums from the regular rate denominator, the worker incurs uncompensated wage loss, triggering statutory enforcement penalties under Title 29.
+For the aggregate method, the employer would calculate withholding on $9,000 for one biweekly period, as though the employee earned that amount every two weeks, subtract the tax on the regular $3,000, and withhold the difference from the bonus. The exact result depends on the IRS withholding tables and the employee's W-4, so use the current Publication 15-T tables for the figures.
 
-### Step-by-Step Computational Walkthrough
+## The real tax happens at filing
 
-To illustrate the mathematical application, consider an employee earning a base rate of $28.00 per hour who completes 48 total hours in a standard workweek while receiving a non-discretionary production bonus of $120.00:
+Withholding is a deposit toward the final tax. An employee whose marginal rate is 12% will probably receive a refund of the excess 10% when filing; an employee in the 32% bracket will owe the difference. An employee who expects a bonus can use **Step 4(c)** of Form W-4 to withhold extra tax per pay period.
 
-1. **Straight-Time Base Pay:** $48 \text{ hours} \times \$28.00 = \$1,344.00$
-2. **Total Remuneration:** $\$1,344.00 + \$120.00 = \$1,464.00$
-3. **Lawful Regular Rate:** $\frac{\$1,464.00}{48 \text{ hours}} = \mathbf{\$30.50 \text{ per hour}}$
-4. **Half-Time Overtime Premium (8 hours):** $8 \text{ hours} \times (\$30.50 \times 0.50) = \mathbf{\$122.00}$
-5. **Total Gross Remuneration:** $\$1,464.00 + \$122.00 = \mathbf{\$1,586.00}$
+Social Security (6.2%) applies up to the annual wage base, and Medicare (1.45%) applies to every dollar. An additional 0.9% Medicare tax is withheld on wages over $200,000 in the year.
 
-If computed incorrectly using only base wages ($8 \times \$14.00 = \$112.00$), the enterprise unlawfully underpays the worker by $10.00 in statutory overtime premiums for that single pay cycle.
+## State withholding
 
----
+Many states have their own supplemental rates, and they often differ by type of payment. For example, California has historically used 10.23% for bonuses and 6.6% for other supplemental payments such as commissions, and New York uses a flat 11.70%. States change these figures, so verify the current rate with the state tax agency.
 
-## Detailed Compensation Matrix & Multi-Tier Comparison
+## Bonuses and overtime law
 
-To understand how statutory rules impact payroll schedules across standard working hours, review the structured comparison matrix below:
+Tax treatment and wage-and-hour law are separate. Under the FLSA, a **nondiscretionary bonus**, one that is promised in advance or tied to production or attendance, must be included in the regular rate and increases overtime for the period it covers. A truly **discretionary** bonus, where the employer decides both the fact and the amount at or near the end of the period, is excluded under 29 U.S.C. § 207(e)(3). Paying a bonus does not change its withholding, but it can create overtime owed. See [regular rate and bonuses](/guides/flsa-regular-rate-of-pay-bonuses/).
 
-| Weekly Hours Worked | Base Hourly Rate | Applicable Premium | Blended Regular Rate | Gross Weekly Earnings |
-| :--- | :--- | :--- | :--- | :--- |
-| **40.0 Hours** | $25.00 | $0.00 | $25.00 | **$1,000.00** |
-| **45.0 Hours** | $25.00 | $50.00 stipend | $26.11 | **$1,240.23** |
-| **50.0 Hours** | $25.00 | $100.00 stipend | $27.00 | **$1,485.00** |
-| **55.0 Hours** | $25.00 | $150.00 stipend | $27.73 | **$1,733.13** |
-| **60.0 Hours** | $25.00 | $200.00 stipend | $28.33 | **$1,983.10** |
+## Common errors
 
----
+- Paying a bonus in the same check as wages without identifying it, which prevents the flat method.
+- Forgetting the mandatory 37% rate once an employee's supplemental wages for the year pass $1 million.
+- Treating the 22% as the employee's tax rate in communications ("you are taxed 22%").
+- Ignoring the state's separate supplemental rate.
+- Not including 401(k) elections. If the employee's deferral election applies to bonuses, the deferral reduces federal taxable wages but not Social Security or Medicare wages.
 
-## Payroll Accounting: Gross to Net Withholding Analysis
-
-Gross compensation figures do not represent spendable take-home liquidity for household budgeting. Mandatory federal and state deductions diminish disposable earnings:
-
-$$\text{Net Take-Home Pay} = \text{Gross Earnings} - (\text{FICA Social Security} + \text{FICA Medicare} + \text{Federal Income Tax} + \text{State Withholding})$$
-
-### Mandatory Statutory Withholdings (2026 Single Filer Baseline)
-1. **FICA Social Security Tax (6.20%):** Assessed on gross earnings up to the annual statutory wage threshold ($176,100 limit).
-2. **FICA Medicare Tax (1.45%):** Assessed on all gross earnings without a wage ceiling, supplemented by an additional 0.90% Medicare surtax on income exceeding $200,000 for single filers.
-3. **Federal Income Tax (FIT):** Calculated under progressive marginal brackets following the standard deduction.
-4. **State Income Tax (SIT):** Ranges from 0.00% (in non-tax jurisdictions like Texas, Florida, and Washington) to progressive brackets exceeding 5.5% in states like California and New York.
-
-### Multi-State Take-Home Comparison
-
-| Jurisdiction Model | Estimated Effective Deduction | Biweekly Gross ($2,800) | Total Deductions | Net Spendable Paycheck |
-| :--- | :--- | :--- | :--- | :--- |
-| **Zero Income Tax State (TX, FL, WA)** | 17.2% | $2,800.00 | -$481.60 | **$2,318.40** |
-| **Moderate Tax State (VA, NC, IL)** | 22.8% | $2,800.00 | -$638.40 | **$2,161.60** |
-| **High Tax State (CA, NY, NJ)** | 28.4% | $2,800.00 | -$795.20 | **$2,004.80** |
-
-Living in a jurisdiction with high progressive state income taxes reduces annualized net take-home liquidity by approximately $8,150 on an equivalent $72,800 gross salary compared to a zero-tax state.
-
----
-
-## Employer Recordkeeping & Audit Retention Guidelines
-
-Under 29 C.F.R. § 516.5, employers subject to federal labor standards must preserve comprehensive payroll records for at least three years, with basic employment and earnings computation records retained for at least two years. 
-
-### Mandatory Documentation Mandates
-1. **Time and Earning Records:** Exact hours worked daily and total hours worked each workweek, including starting and ending times.
-2. **Rate Schedules:** Regular hourly rates of pay for any workweek in which overtime compensation is due.
-3. **Exclusion Justifications:** Contemporaneous documentation establishing why specific discretionary bonuses, gifts, or third-party reimbursements were excluded from regular rate overtime multipliers.
-
-Failure to maintain clear, contemporaneous timekeeping records creates a strong evidentiary presumption in favor of employee claims during Department of Labor audits and private collective actions.
-
----
-
-## Practical Case Audit & Statutory Compliance Checklist
-
-When auditing payroll records for FLSA and IRS accuracy, compensation analysts employ a structured compliance checklist:
-
-- [ ] **Regular Rate Inclusion:** Confirm that all production bonuses, shift differential premiums, and non-discretionary payments are blended into the regular rate before calculating 1.5x overtime.
-- [ ] **FLSA Exemption Testing:** Verify that salaried employees meet both the statutory minimum salary threshold and the applicable administrative, executive, or professional duties test under 29 C.F.R. Part 541.
-- [ ] **Timecard Rounding Integrity:** Audit time-tracking systems to verify adherence to the 7-minute rounding rule (29 C.F.R. § 785.48(b)) without creating an asymmetrical advantage for the employer.
-- [ ] **Meal & Rest Period Classification:** Ensure that unpaid meal breaks lasting 30 minutes or more involve complete relief from all work-related obligations.
-- [ ] **Liquidated Damages Exposure (29 U.S.C. § 216(b)):** Recognize that willful violations result in mandatory 100% liquidated damages matching the back-pay total, plus mandatory legal fees.
-
----
-
-## Related Statutory & Payroll Guides
-
-For additional analysis on federal wage mandates and take-home calculations, explore our companion guides:
-
-- [Hourly to Salary Calculation: The 2,080-Hour Annual Standard Breakdown](/guides/hourly-to-salary-annual-breakdown/)
-- [FLSA Overtime Pay Rules: Time-and-a-Half (1.5x) and Double Time (2.0x)](/guides/flsa-overtime-time-and-a-half-rules/)
-- [Gross Pay vs Net Pay: Payroll Deductions Breakdown](/guides/gross-vs-net-pay-payroll-deductions/)
-
+For how severance is withheld, see [severance pay](/guides/severance-pay-taxation-payroll-withholding-irc/), and for a look at the full gross-to-net picture see [gross vs. net pay](/guides/gross-vs-net-pay-payroll-deductions/).

@@ -1,125 +1,75 @@
 ---
 title: "Per Diem Travel Stipends: GSA Rates, Accountable Plans & Tax Exemption"
 description: "IRS Publication 463 standards for lodging and meals, accountable vs nonaccountable plans, and calculating taxable wage spillovers."
-key_takeaway: "Per diem allowances meeting GSA rates under an IRS accountable plan are fully exempt from payroll withholding (FICA and FIT); however, unsubstantiated allowances convert entirely into taxable wages."
+key_takeaway: "Per diem is tax-free only under an accountable plan: a business connection, timely substantiation, and return of excess. Otherwise the same dollars are taxable wages."
 tool: "hour-and-wage-calculator"
 status: "published"
 published: "2026-11-15"
 author_slug: "eren-simsir"
 ---
 
-## Statutory Framework and Federal Labor Principles
+A per diem is a flat daily allowance for lodging, meals, and incidental expenses while an employee is traveling for work. Whether it shows up on the W-2 depends entirely on how the employer's reimbursement arrangement is built, not on how large the payment is. The governing rule is Treasury Regulation § 1.62-2, and the IRS discusses it in Publications 463 and 15.
 
-Under federal employment regulations, specifically codified in the Fair Labor Standards Act (26 U.S.C. § 274, 26 C.F.R. § 1.62-2), compensation structures require rigorous accounting. Employers operating in interstate commerce must establish clear policies to avoid statutory liquidated damages under 29 U.S.C. § 216(b).
+## The accountable plan test
 
-The fundamental rule governing this area is straightforward:
+A reimbursement arrangement is an **accountable plan** only if it meets all three requirements:
 
-> **Core Statutory Mandate:** Per diem allowances meeting GSA rates under an IRS accountable plan are fully exempt from payroll withholding (FICA and FIT); however, unsubstantiated allowances convert entirely into taxable wages.
+1. **Business connection.** The expense must be a deductible business expense incurred while performing services as an employee, including travel away from home overnight.
+2. **Substantiation.** The employee must adequately account for the expense to the employer within a reasonable period: date, place, amount, and business purpose. For per diem, this means documenting the *time, place, and purpose of the travel*, not keeping every meal receipt.
+3. **Return of excess.** The employee must return any advance or allowance exceeding the substantiated amount within a reasonable period.
 
-When establishing lawful pay practices, compensation managers must align base hourly allocations with regular rate determinations to maintain full payroll integrity across all operational schedules.
+The regulation gives a safe harbor for "reasonable period": advances made within **30 days** of the expense, substantiation within **60 days** after it is paid or incurred, and return of excess within **120 days**.
 
-### Scope of Federal Protection Under Title 29
+## Accountable vs. nonaccountable
 
-Federal wage mandates apply broadly to individual employees engaged in interstate commerce or employed by an enterprise engaged in commerce with annual gross business volume exceeding statutory minimums. Failure to accurately compute statutory premiums exposes organizations to retroactive back-pay liability, mandatory liquidated damages equal to 100% of unpaid wages, and reasonable attorney fees under 29 U.S.C. § 216(b).
+| Feature | Accountable plan | Nonaccountable plan |
+| :--- | :--- | :--- |
+| Income tax withholding | None | Yes |
+| FICA and FUTA | None | Yes |
+| Appears on W-2 | No | Yes, in boxes 1, 3, 5 |
+| Employee must substantiate | Yes | No |
+| Employee must return excess | Yes | No |
+| Employee can deduct unreimbursed expenses | n/a | Generally no; the itemized deduction for unreimbursed employee expenses is suspended for most employees |
 
----
+If an accountable plan fails any element, for example an employer pays a flat $75 a day to all employees without checking whether they traveled, the **entire** payment can be recharacterized as wages.
 
-## Mathematical Formulations: Statutory Rate Determination
+## Using federal rates
 
-Lawful compensation requires structured mathematical calculation rather than discretionary accounting. The regular rate is established using the statutory formula:
+The GSA publishes per diem rates every fiscal year starting October 1, by location. The standard CONUS rate for recent fiscal years has been **$110 for lodging and $68 for meals and incidental expenses (M&IE)**; verify the current figures at gsa.gov. Many cities have higher rates. Employers may use the federal rates, or the high-low method from Rev. Proc. 2019-48, as a deemed substantiation of the amount of the expense.
 
-$$\text{Regular Rate of Pay} = \frac{\text{Total Non-Exempt Remuneration in Workweek}}{\text{Total Hours Actually Worked}}$$
+On the first and last day of travel, the M&IE rate is generally limited to **75%**.
 
-When overtime thresholds are exceeded, the mandatory one-and-one-half premium rate applies directly:
+## Worked example: a four-day trip
 
-$$\text{Overtime Hourly Rate} = \text{Regular Rate} \times 1.50$$
+An employee travels from Monday to Thursday to a city with the standard M&IE rate of $68. The employer pays actual lodging up to the rate for 3 nights at $110 and meals under per diem:
 
-$$\text{Total Gross Earnings} = (\text{Straight-Time Hours} \times \text{Regular Rate}) + (\text{Overtime Hours} \times \text{Overtime Rate})$$
+| Day | M&IE treatment | Amount |
+| :--- | :--- | :--- |
+| Monday (travel day) | 75% of $68 | $51.00 |
+| Tuesday | Full rate | $68.00 |
+| Wednesday | Full rate | $68.00 |
+| Thursday (travel day) | 75% of $68 | $51.00 |
+| **M&IE total** | | **$238.00** |
+| Lodging, 3 nights | 3 × $110 | $330.00 |
+| **Total reimbursement** | | **$568.00** |
 
-If an employer erroneously calculates overtime pay by excluding non-discretionary stipends or premiums from the regular rate denominator, the worker incurs uncompensated wage loss, triggering statutory enforcement penalties under Title 29.
+$$\text{M\&IE} = 0.75 \times \$68 + 2 \times \$68 + 0.75 \times \$68 = \$238.00$$
 
-### Step-by-Step Computational Walkthrough
+If the employee returns early on Wednesday evening, the Thursday allowance must be returned. If the company pays $568 under an accountable plan, none of it is taxable. If it pays the same amount under a nonaccountable plan, then at a 22% federal rate plus 7.65% FICA the employee faces roughly $168 in additional tax.
 
-To illustrate the mathematical application, consider an employee earning a base rate of $28.00 per hour who completes 48 total hours in a standard workweek while receiving a non-discretionary production bonus of $120.00:
+## What if the employer pays more than the federal rate?
 
-1. **Straight-Time Base Pay:** $48 \text{ hours} \times \$28.00 = \$1,344.00$
-2. **Total Remuneration:** $\$1,344.00 + \$120.00 = \$1,464.00$
-3. **Lawful Regular Rate:** $\frac{\$1,464.00}{48 \text{ hours}} = \mathbf{\$30.50 \text{ per hour}}$
-4. **Half-Time Overtime Premium (8 hours):** $8 \text{ hours} \times (\$30.50 \times 0.50) = \mathbf{\$122.00}$
-5. **Total Gross Remuneration:** $\$1,464.00 + \$122.00 = \mathbf{\$1,586.00}$
+Only the amount **up to the federal rate** is treated as substantiated for the employee. Under Reg. § 1.62-2(h), if the employer pays more than the federal per diem rate and the employee does not substantiate the actual cost, the excess is treated as paid under a nonaccountable plan and is taxable wages. For instance, $90 per day of M&IE in a $68 city would produce $22 per day of wages.
 
-If computed incorrectly using only base wages ($8 \times \$14.00 = \$112.00$), the enterprise unlawfully underpays the worker by $10.00 in statutory overtime premiums for that single pay cycle.
+## Interaction with overtime
 
----
+For wage-and-hour purposes, payments that reasonably reimburse the employee for expenses incurred for the employer's benefit are excluded from the **regular rate** (29 U.S.C. § 207(e)(2)). But if the "per diem" is really extra pay that does not track expenses, it is part of the regular rate and increases overtime. Pay that is made whether or not the employee travels, or paid on a flat per-day basis to all employees regardless of lodging, is hard to defend as a reimbursement.
 
-## Detailed Compensation Matrix & Multi-Tier Comparison
+## Recordkeeping
 
-To understand how statutory rules impact payroll schedules across standard working hours, review the structured comparison matrix below:
+- Keep records of the travel dates, locations, and business purpose for each trip.
+- Document the policy: which rates are used, when advances are given, deadlines for substantiation and return.
+- Keep lodging receipts, since the per diem method for lodging requires actual cost unless the employer uses the high-low or similar method.
+- Watch assignments at one location that are expected to last more than a year. They are treated as indefinite, the new location becomes the tax home, and the allowance becomes taxable.
 
-| Weekly Hours Worked | Base Hourly Rate | Applicable Premium | Blended Regular Rate | Gross Weekly Earnings |
-| :--- | :--- | :--- | :--- | :--- |
-| **40.0 Hours** | $25.00 | $0.00 | $25.00 | **$1,000.00** |
-| **45.0 Hours** | $25.00 | $50.00 stipend | $26.11 | **$1,240.23** |
-| **50.0 Hours** | $25.00 | $100.00 stipend | $27.00 | **$1,485.00** |
-| **55.0 Hours** | $25.00 | $150.00 stipend | $27.73 | **$1,733.13** |
-| **60.0 Hours** | $25.00 | $200.00 stipend | $28.33 | **$1,983.10** |
-
----
-
-## Payroll Accounting: Gross to Net Withholding Analysis
-
-Gross compensation figures do not represent spendable take-home liquidity for household budgeting. Mandatory federal and state deductions diminish disposable earnings:
-
-$$\text{Net Take-Home Pay} = \text{Gross Earnings} - (\text{FICA Social Security} + \text{FICA Medicare} + \text{Federal Income Tax} + \text{State Withholding})$$
-
-### Mandatory Statutory Withholdings (2026 Single Filer Baseline)
-1. **FICA Social Security Tax (6.20%):** Assessed on gross earnings up to the annual statutory wage threshold ($176,100 limit).
-2. **FICA Medicare Tax (1.45%):** Assessed on all gross earnings without a wage ceiling, supplemented by an additional 0.90% Medicare surtax on income exceeding $200,000 for single filers.
-3. **Federal Income Tax (FIT):** Calculated under progressive marginal brackets following the standard deduction.
-4. **State Income Tax (SIT):** Ranges from 0.00% (in non-tax jurisdictions like Texas, Florida, and Washington) to progressive brackets exceeding 5.5% in states like California and New York.
-
-### Multi-State Take-Home Comparison
-
-| Jurisdiction Model | Estimated Effective Deduction | Biweekly Gross ($2,800) | Total Deductions | Net Spendable Paycheck |
-| :--- | :--- | :--- | :--- | :--- |
-| **Zero Income Tax State (TX, FL, WA)** | 17.2% | $2,800.00 | -$481.60 | **$2,318.40** |
-| **Moderate Tax State (VA, NC, IL)** | 22.8% | $2,800.00 | -$638.40 | **$2,161.60** |
-| **High Tax State (CA, NY, NJ)** | 28.4% | $2,800.00 | -$795.20 | **$2,004.80** |
-
-Living in a jurisdiction with high progressive state income taxes reduces annualized net take-home liquidity by approximately $8,150 on an equivalent $72,800 gross salary compared to a zero-tax state.
-
----
-
-## Employer Recordkeeping & Audit Retention Guidelines
-
-Under 29 C.F.R. § 516.5, employers subject to federal labor standards must preserve comprehensive payroll records for at least three years, with basic employment and earnings computation records retained for at least two years. 
-
-### Mandatory Documentation Mandates
-1. **Time and Earning Records:** Exact hours worked daily and total hours worked each workweek, including starting and ending times.
-2. **Rate Schedules:** Regular hourly rates of pay for any workweek in which overtime compensation is due.
-3. **Exclusion Justifications:** Contemporaneous documentation establishing why specific discretionary bonuses, gifts, or third-party reimbursements were excluded from regular rate overtime multipliers.
-
-Failure to maintain clear, contemporaneous timekeeping records creates a strong evidentiary presumption in favor of employee claims during Department of Labor audits and private collective actions.
-
----
-
-## Practical Case Audit & Statutory Compliance Checklist
-
-When auditing payroll records for FLSA and IRS accuracy, compensation analysts employ a structured compliance checklist:
-
-- [ ] **Regular Rate Inclusion:** Confirm that all production bonuses, shift differential premiums, and non-discretionary payments are blended into the regular rate before calculating 1.5x overtime.
-- [ ] **FLSA Exemption Testing:** Verify that salaried employees meet both the statutory minimum salary threshold and the applicable administrative, executive, or professional duties test under 29 C.F.R. Part 541.
-- [ ] **Timecard Rounding Integrity:** Audit time-tracking systems to verify adherence to the 7-minute rounding rule (29 C.F.R. § 785.48(b)) without creating an asymmetrical advantage for the employer.
-- [ ] **Meal & Rest Period Classification:** Ensure that unpaid meal breaks lasting 30 minutes or more involve complete relief from all work-related obligations.
-- [ ] **Liquidated Damages Exposure (29 U.S.C. § 216(b)):** Recognize that willful violations result in mandatory 100% liquidated damages matching the back-pay total, plus mandatory legal fees.
-
----
-
-## Related Statutory & Payroll Guides
-
-For additional analysis on federal wage mandates and take-home calculations, explore our companion guides:
-
-- [Hourly to Salary Calculation: The 2,080-Hour Annual Standard Breakdown](/guides/hourly-to-salary-annual-breakdown/)
-- [FLSA Overtime Pay Rules: Time-and-a-Half (1.5x) and Double Time (2.0x)](/guides/flsa-overtime-time-and-a-half-rules/)
-- [Gross Pay vs Net Pay: Payroll Deductions Breakdown](/guides/gross-vs-net-pay-payroll-deductions/)
-
+For the take-home side, compare with [supplemental wage withholding](/guides/supplemental-wage-withholding-bonus-taxation-rules/), and for hours of travel itself, see [travel time pay](/guides/travel-time-pay-portal-to-portal-act/).

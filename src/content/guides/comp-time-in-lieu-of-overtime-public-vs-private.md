@@ -1,125 +1,61 @@
 ---
 title: "Comp Time Rules: Public Sector Standards vs. Private Sector FLSA Violations"
 description: "Statutory legality of compensatory time off. Why private employers cannot substitute comp time for 1.5x overtime under 29 U.S.C. 207(o)."
-key_takeaway: "Compensatory time off in lieu of monetary overtime is strictly restricted to state and local government public agencies under FLSA Section 7(o); offering comp time to private-sector non-exempt employees violates federal law."
+key_takeaway: "Only state and local government employers may give comp time instead of overtime pay (29 U.S.C. § 207(o)). A private employer can shift hours inside the same pay period, but cannot bank time off for later."
 tool: "hour-and-wage-calculator"
 status: "published"
 published: "2026-10-30"
 author_slug: "eren-simsir"
 ---
 
-## Statutory Framework and Federal Labor Principles
+"Comp time" sounds like an easy substitute for overtime: instead of paying 1.5 times the regular rate, give 1.5 hours off later. For a city or county it is lawful. For a private business it usually is not, and a handshake arrangement does not fix that. The difference is built into one subsection of the FLSA, 29 U.S.C. § 207(o).
 
-Under federal employment regulations, specifically codified in the Fair Labor Standards Act (29 U.S.C. § 207(o), 29 C.F.R. § 553.20), compensation structures require rigorous accounting. Employers operating in interstate commerce must establish clear policies to avoid statutory liquidated damages under 29 U.S.C. § 216(b).
+## The two worlds at a glance
 
-The fundamental rule governing this area is straightforward:
+| Feature | State/local government | Private employer |
+| :--- | :--- | :--- |
+| May give comp time instead of overtime pay | Yes | **No** |
+| Required ratio | 1.5 hours off per overtime hour | n/a |
+| Agreement needed | Yes, before the work, by union agreement or individual understanding | A private "comp time bank" is unlawful |
+| Cap on accrued hours | 240 hours (480 for public safety, emergency response, seasonal) | n/a |
+| Cash-out of unused time | Required at termination; employee may request use within reasonable period | Overtime wages are due on the regular payday |
+| Employee choice | Cannot be coerced to take comp time | Employee cannot waive overtime pay |
 
-> **Core Statutory Mandate:** Compensatory time off in lieu of monetary overtime is strictly restricted to state and local government public agencies under FLSA Section 7(o); offering comp time to private-sector non-exempt employees violates federal law.
+## How the public-sector system works
 
-When establishing lawful pay practices, compensation managers must align base hourly allocations with regular rate determinations to maintain full payroll integrity across all operational schedules.
+Section 207(o) lets a public agency provide compensatory time off at **one and one-half hours for each hour of overtime**, but only under conditions:
 
-### Scope of Federal Protection Under Title 29
+- **Agreement first.** For employees covered by a collective bargaining agreement, the agreement controls. Otherwise the employer and employee must agree *before* the overtime is worked, and the agreement must be in writing or documented.
+- **Cap.** A general employee may bank at most 240 hours, which equals 160 hours of overtime worked. Public safety, emergency response, and seasonal activities may bank up to 480 hours, or 320 hours of overtime. Once the cap is reached, further overtime must be paid in cash.
+- **Use on request.** The employee may use accrued comp time within a reasonable period after asking, unless doing so would "unduly disrupt" operations.
+- **Payout at separation.** Unused time is paid at the higher of the average regular rate over the last three years of employment or the final regular rate (29 U.S.C. § 207(o)(4)).
 
-Federal wage mandates apply broadly to individual employees engaged in interstate commerce or employed by an enterprise engaged in commerce with annual gross business volume exceeding statutory minimums. Failure to accurately compute statutory premiums exposes organizations to retroactive back-pay liability, mandatory liquidated damages equal to 100% of unpaid wages, and reasonable attorney fees under 29 U.S.C. § 216(b).
+## A payout example
 
----
+A county employee leaves with 90 hours of comp time. Her regular rate was $24.00 for the last year, and her three-year average regular rate is $22.80. The higher figure applies:
 
-## Mathematical Formulations: Statutory Rate Determination
+$$\text{Payout} = 90 \times \$24.00 = \$2{,}160.00$$
 
-Lawful compensation requires structured mathematical calculation rather than discretionary accounting. The regular rate is established using the statutory formula:
+The county cannot use the lower average. Because comp time is treated as a wage, it is also subject to income tax withholding and FICA when it is cashed out.
 
-$$\text{Regular Rate of Pay} = \frac{\text{Total Non-Exempt Remuneration in Workweek}}{\text{Total Hours Actually Worked}}$$
+## The private-sector rule and its narrow exception
 
-When overtime thresholds are exceeded, the mandatory one-and-one-half premium rate applies directly:
+A private employer owes overtime in **cash** for hours over 40 in a workweek. Offering time off at 1.5 hours later is a violation, even if the employee asks for it. Three points surprise employers:
 
-$$\text{Overtime Hourly Rate} = \text{Regular Rate} \times 1.50$$
+1. **The employee cannot waive it.** The right to overtime pay is statutory, and courts and the DOL do not enforce waivers (*Brooklyn Savings Bank v. O'Neil*).
+2. **Time off inside the same workweek is lawful.** If an employee works 10 hours on Monday, the employer may shorten later days that same 7-day workweek so total hours never exceed 40. No overtime arises, so nothing needs to be paid. Arrangements that spread the offset across two workweeks are where employers get into trouble, because each workweek stands on its own.
+3. **Pay periods cannot be stretched to avoid overtime.** The workweek is a fixed 168 hours, and the employer cannot average two weeks into 80 hours to avoid overtime.
 
-$$\text{Total Gross Earnings} = (\text{Straight-Time Hours} \times \text{Regular Rate}) + (\text{Overtime Hours} \times \text{Overtime Rate})$$
+Legislation that would allow private comp time (the "Working Families Flexibility Act") has been proposed several times but is not law.
 
-If an employer erroneously calculates overtime pay by excluding non-discretionary stipends or premiums from the regular rate denominator, the worker incurs uncompensated wage loss, triggering statutory enforcement penalties under Title 29.
+## Common mistakes in government payroll
 
-### Step-by-Step Computational Walkthrough
+- Letting comp time accumulate above the cap instead of paying cash.
+- Awarding comp time at a 1:1 ratio instead of 1.5:1.
+- Making comp time a condition of getting the overtime assignment.
+- Forgetting that FLSA-exempt employees do not earn comp time under § 207(o) at all.
+- Paying out at the wrong rate at separation.
 
-To illustrate the mathematical application, consider an employee earning a base rate of $28.00 per hour who completes 48 total hours in a standard workweek while receiving a non-discretionary production bonus of $120.00:
+## What to do instead if you are private
 
-1. **Straight-Time Base Pay:** $48 \text{ hours} \times \$28.00 = \$1,344.00$
-2. **Total Remuneration:** $\$1,344.00 + \$120.00 = \$1,464.00$
-3. **Lawful Regular Rate:** $\frac{\$1,464.00}{48 \text{ hours}} = \mathbf{\$30.50 \text{ per hour}}$
-4. **Half-Time Overtime Premium (8 hours):** $8 \text{ hours} \times (\$30.50 \times 0.50) = \mathbf{\$122.00}$
-5. **Total Gross Remuneration:** $\$1,464.00 + \$122.00 = \mathbf{\$1,586.00}$
-
-If computed incorrectly using only base wages ($8 \times \$14.00 = \$112.00$), the enterprise unlawfully underpays the worker by $10.00 in statutory overtime premiums for that single pay cycle.
-
----
-
-## Detailed Compensation Matrix & Multi-Tier Comparison
-
-To understand how statutory rules impact payroll schedules across standard working hours, review the structured comparison matrix below:
-
-| Weekly Hours Worked | Base Hourly Rate | Applicable Premium | Blended Regular Rate | Gross Weekly Earnings |
-| :--- | :--- | :--- | :--- | :--- |
-| **40.0 Hours** | $25.00 | $0.00 | $25.00 | **$1,000.00** |
-| **45.0 Hours** | $25.00 | $50.00 stipend | $26.11 | **$1,240.23** |
-| **50.0 Hours** | $25.00 | $100.00 stipend | $27.00 | **$1,485.00** |
-| **55.0 Hours** | $25.00 | $150.00 stipend | $27.73 | **$1,733.13** |
-| **60.0 Hours** | $25.00 | $200.00 stipend | $28.33 | **$1,983.10** |
-
----
-
-## Payroll Accounting: Gross to Net Withholding Analysis
-
-Gross compensation figures do not represent spendable take-home liquidity for household budgeting. Mandatory federal and state deductions diminish disposable earnings:
-
-$$\text{Net Take-Home Pay} = \text{Gross Earnings} - (\text{FICA Social Security} + \text{FICA Medicare} + \text{Federal Income Tax} + \text{State Withholding})$$
-
-### Mandatory Statutory Withholdings (2026 Single Filer Baseline)
-1. **FICA Social Security Tax (6.20%):** Assessed on gross earnings up to the annual statutory wage threshold ($176,100 limit).
-2. **FICA Medicare Tax (1.45%):** Assessed on all gross earnings without a wage ceiling, supplemented by an additional 0.90% Medicare surtax on income exceeding $200,000 for single filers.
-3. **Federal Income Tax (FIT):** Calculated under progressive marginal brackets following the standard deduction.
-4. **State Income Tax (SIT):** Ranges from 0.00% (in non-tax jurisdictions like Texas, Florida, and Washington) to progressive brackets exceeding 5.5% in states like California and New York.
-
-### Multi-State Take-Home Comparison
-
-| Jurisdiction Model | Estimated Effective Deduction | Biweekly Gross ($2,800) | Total Deductions | Net Spendable Paycheck |
-| :--- | :--- | :--- | :--- | :--- |
-| **Zero Income Tax State (TX, FL, WA)** | 17.2% | $2,800.00 | -$481.60 | **$2,318.40** |
-| **Moderate Tax State (VA, NC, IL)** | 22.8% | $2,800.00 | -$638.40 | **$2,161.60** |
-| **High Tax State (CA, NY, NJ)** | 28.4% | $2,800.00 | -$795.20 | **$2,004.80** |
-
-Living in a jurisdiction with high progressive state income taxes reduces annualized net take-home liquidity by approximately $8,150 on an equivalent $72,800 gross salary compared to a zero-tax state.
-
----
-
-## Employer Recordkeeping & Audit Retention Guidelines
-
-Under 29 C.F.R. § 516.5, employers subject to federal labor standards must preserve comprehensive payroll records for at least three years, with basic employment and earnings computation records retained for at least two years. 
-
-### Mandatory Documentation Mandates
-1. **Time and Earning Records:** Exact hours worked daily and total hours worked each workweek, including starting and ending times.
-2. **Rate Schedules:** Regular hourly rates of pay for any workweek in which overtime compensation is due.
-3. **Exclusion Justifications:** Contemporaneous documentation establishing why specific discretionary bonuses, gifts, or third-party reimbursements were excluded from regular rate overtime multipliers.
-
-Failure to maintain clear, contemporaneous timekeeping records creates a strong evidentiary presumption in favor of employee claims during Department of Labor audits and private collective actions.
-
----
-
-## Practical Case Audit & Statutory Compliance Checklist
-
-When auditing payroll records for FLSA and IRS accuracy, compensation analysts employ a structured compliance checklist:
-
-- [ ] **Regular Rate Inclusion:** Confirm that all production bonuses, shift differential premiums, and non-discretionary payments are blended into the regular rate before calculating 1.5x overtime.
-- [ ] **FLSA Exemption Testing:** Verify that salaried employees meet both the statutory minimum salary threshold and the applicable administrative, executive, or professional duties test under 29 C.F.R. Part 541.
-- [ ] **Timecard Rounding Integrity:** Audit time-tracking systems to verify adherence to the 7-minute rounding rule (29 C.F.R. § 785.48(b)) without creating an asymmetrical advantage for the employer.
-- [ ] **Meal & Rest Period Classification:** Ensure that unpaid meal breaks lasting 30 minutes or more involve complete relief from all work-related obligations.
-- [ ] **Liquidated Damages Exposure (29 U.S.C. § 216(b)):** Recognize that willful violations result in mandatory 100% liquidated damages matching the back-pay total, plus mandatory legal fees.
-
----
-
-## Related Statutory & Payroll Guides
-
-For additional analysis on federal wage mandates and take-home calculations, explore our companion guides:
-
-- [Hourly to Salary Calculation: The 2,080-Hour Annual Standard Breakdown](/guides/hourly-to-salary-annual-breakdown/)
-- [FLSA Overtime Pay Rules: Time-and-a-Half (1.5x) and Double Time (2.0x)](/guides/flsa-overtime-time-and-a-half-rules/)
-- [Gross Pay vs Net Pay: Payroll Deductions Breakdown](/guides/gross-vs-net-pay-payroll-deductions/)
-
+If scheduling flexibility is the goal, a compliant alternative is to pay overtime in cash and offer **voluntary schedule adjustments within the same workweek**, for example shortening Friday after a long Monday. For help with the 1.5x math, see [FLSA overtime rules](/guides/flsa-overtime-time-and-a-half-rules/).

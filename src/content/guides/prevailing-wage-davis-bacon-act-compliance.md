@@ -1,107 +1,82 @@
 ---
 title: "Davis-Bacon Act Prevailing Wage: Certified Payroll & Fringe Benefit Calculations"
 description: "How to calculate federal Davis-Bacon prevailing wages, basic hourly rates versus fringe benefit credits, and certified payroll reporting under 29 CFR Part 5."
-key_takeaway: "The Davis-Bacon Act mandates that contractors on federal construction contracts exceeding $2,000 must pay local prevailing wages, where total compensation equals the predetermined base wage plus bona fide fringe benefits."
+key_takeaway: "On covered federal construction contracts, every laborer and mechanic must receive at least the wage determination rate, as a mix of cash and bona fide fringe benefits, and the contractor must submit weekly certified payroll."
 tool: "hour-and-wage-calculator"
 status: "published"
 published: "2026-11-16"
 author_slug: "eren-simsir"
 ---
 
-## Statutory Authority & Legal Accounting Standards (2026)
+The Davis-Bacon Act of 1931 requires contractors on federally funded construction to pay workers the wages and fringe benefits that prevail for similar work in the locality. The Department of Labor's Wage and Hour Division administers it under 29 C.F.R. Parts 1, 3, and 5. The central skill is separating the *basic hourly rate* from the *fringe benefit rate*, and then proving compliance on weekly certified payroll.
 
-Under United States federal labor compensation law and Title 29 of the Fair Labor Standards Act (FLSA), structuring compensation models requires rigorous adherence to statutory definitions codified under federal law and the Internal Revenue Code (IRC).
+## When it applies
 
-When implementing compensation standards for **Davis-Bacon Act Prevailing Wage: Certified Payroll & Fringe Benefit Calculations**, employers, forensic accountants, and payroll officers must evaluate both federal mandates and state wage thresholds. The governing formula for total statutory compensation is expressed as:
+| Question | Answer |
+| :--- | :--- |
+| Which contracts? | Federal or District of Columbia contracts for construction, alteration, or repair, including painting and decorating, of public buildings or public works, **over $2,000** |
+| Which workers? | Laborers and mechanics performing physical or manual work on the site; not executives, administrative staff, or most supervisors |
+| What about federally assisted projects? | Many grant and loan programs include Davis-Bacon through "related acts" |
+| What about work off the site? | Generally only work at the site of the work; some exceptions apply for material production for the project |
+| What about overtime? | Required above 40 hours per week, under the Contract Work Hours and Safety Standards Act, at one and one-half times the regular rate, which includes cash paid in place of fringe benefits |
 
-$$\text{Lawful Total Compensation} = (\text{Regular Hours} \times R) + (\text{FLSA Overtime Hours} \times 1.5 \times R) + \text{Statutory Premium Allowances}$$
+## Reading a wage determination
 
-Where $R$ represents the unadulterated regular rate of pay determined in strict compliance with Section 7(e) of the Fair Labor Standards Act (29 U.S.C. § 207(e)). Under federal doctrine, the workweek is codified as a fixed, regularly recurring period of 168 hours—seven consecutive 24-hour cycles. Once established by an employer, this 7-day accounting cycle cannot be retroactively manipulated to avoid overtime liabilities.
+Every covered contract includes a **wage determination** for the county and type of construction (building, heavy, highway, or residential), published at SAM.gov. Each classification lists two numbers:
 
----
+| Classification | Basic hourly rate | Fringe benefits |
+| :--- | :--- | :--- |
+| Electrician (illustrative) | $42.00 | $18.50 |
+| Laborer, common (illustrative) | $24.10 | $9.20 |
 
-## Detailed Pay Matrix & Periodic Cadence Breakdown
+The sum is the total hourly obligation: $42.00 + $18.50 = **$60.50** for the electrician. Rates change by region and wage determination; the figures here are illustrative.
 
-To evaluate how compensation flows across standard operational cycles, the table below illustrates earnings based on an hourly wage rate of **$35.00 per hour** across standard full-time conventions (2,080 annual working hours):
+## Meeting the fringe obligation
 
-| Compensation Interval | Measurement Basis | Standard Working Hours | Multiplier Ratio | Equivalent Gross Realization |
-| :--- | :--- | :--- | :--- | :--- |
-| **Straight-Time Hourly** | Baseline Hour | 1.00 Hour | 1.00x | **$35.00 / hr** |
-| **Standard 8-Hour Shift** | Single Workday | 8.00 Hours | 1.00x | **$280.00 / day** |
-| **Standard Weekly Pay** | 5-Day Workweek | 40.00 Hours | 1.00x | **$1,400.00 / wk** |
-| **Biweekly Pay Period** | 10 Business Days | 80.00 Hours | 1.00x | **$2,800.00 / check** |
-| **Semimonthly Pay Period** | 24 Annual Cycles | 86.67 Hours | 1.00x | **$3,033.45 / check** |
-| **Monthly Disbursement** | 12 Annual Cycles | 173.33 Hours | 1.00x | **$6,066.55 / mo** |
-| **FLSA Overtime Wage** | Hours in Excess of 40 | Per Overtime Hour | 1.50x | **$52.50 / hr** |
-| **Annualized Benchmark** | 52 Workweeks | 2,080 Hours | 1.00x | **$72,800.00 / yr** |
+The contractor chooses how to discharge the fringe amount, in one or both of these ways:
 
-Applying unverified blended formulas or failing to isolate overtime hours results in substantial exposure to federal liquidated damages and statutory penalties under 29 U.S.C. § 216(b).
+1. **Contribute to a bona fide plan** such as health insurance, a pension, vacation, or training program, with the contribution credited toward the fringe rate.
+2. **Pay the shortfall in cash**, added to the hourly wage.
 
----
+Fringe credit is available only for contributions that are **irrevocably** made to a trustee or a third party, or for costs to the employer of providing benefits under a plan that is not a mere cash payment.
 
-## Overtime Calculations on Special Rate Differentials
+## Worked example
 
-A recurring area of confusion in wage accounting is the interaction between base pay rates and special condition premiums (such as hazardous environments, night shifts, or prevailing wage determinations). Under 29 C.F.R. § 778.207, premium payments for work performed under undesirable or dangerous circumstances are not excludable gifts—they constitute direct remuneration for employment that must be factored into the employee's regular rate before overtime multipliers are applied.
+An electrician is required to receive $42.00 basic plus $18.50 fringe. The contractor's plan provides $12.00 per hour to health insurance and a retirement account. The remaining $6.50 per hour is paid in cash:
 
-### Forensic Mathematical Formula: Blended Regular Rate
-When an employee receives both an hourly base rate and an additional differential per hour:
+$$\text{Cash hourly wage} = \$42.00 + (\$18.50 - \$12.00) = \$48.50$$
 
-$$\text{Blended Regular Rate} = \frac{(\text{Total Base Wages}) + (\text{Total Differential Premiums}) + (\text{Nondiscretionary Bonuses})}{\text{Total Hours Worked in the Workweek}}$$
+The employee works 44 hours in a week. Overtime is owed at one and one-half times the **regular rate**. Cash paid in place of fringe benefits is part of the regular rate; contributions to a bona fide plan are not. Here the regular rate is the $48.50 cash wage, and the half-time premium applies to the 4 hours over 40:
 
-### Real-World Audit Scenario:
-Consider an industrial manufacturing technician earning a base rate of **$32.00 per hour** who logs 48 total hours in a workweek, with 20 of those hours qualifying for a **$4.00 per hour differential**:
-1. **Base Hourly Earnings:** $48 \text{ hours} \times \$32.00 = \$1,536.00$
-2. **Special Differential Earnings:** $20 \text{ hours} \times \$4.00 = \$80.00$
-3. **Total Straight-Time Compensation:** $\$1,536.00 + \$80.00 = \$1,616.00$
-4. **Lawful Regular Rate of Pay:** $\frac{\$1,616.00}{48 \text{ hours}} = \mathbf{\$33.67 \text{ per hour}}$
-5. **Overtime Premium (Half-Time on 8 hrs):** $8 \text{ hours} \times (\$33.67 \times 0.5) = \mathbf{\$134.68}$
-6. **Total Lawful Gross Compensation:** $\$1,616.00 + \$134.68 = \mathbf{\$1,750.68}$
+$$\text{Straight time} = 44 \times \$48.50 = \$2{,}134.00$$
 
-If the employer unlawfully calculated overtime based solely on the $32.00 base rate ($8 \times \$16.00 = \$128.00$), the employee is shortchanged, creating statutory grounds for Department of Labor wage recovery actions.
+$$\text{Overtime premium} = 4 \times (0.5 \times \$48.50) = \$97.00$$
 
----
+$$\text{Gross cash pay} = \$2{,}134.00 + \$97.00 = \$2{,}231.00$$
 
-## Payroll Accounting: Gross to Net Withholding Analysis
+In addition, the plan contributions of $12.00 × 44 hours = $528.00 are made on top of the cash pay.
 
-Gross compensation figures do not represent spendable take-home liquidity for household budgeting. Mandatory federal and state deductions diminish disposable earnings:
+## Certified payroll
 
-$$\text{Net Take-Home Pay} = \text{Gross Earnings} - (\text{FICA Social Security} + \text{FICA Medicare} + \text{Federal Income Tax} + \text{State Withholding})$$
+Contractors and subcontractors must submit a **weekly certified payroll** to the contracting agency, within seven days after the regular payment date, using Form WH-347 or an equivalent. Each report lists:
 
-### Mandatory Statutory Withholdings (2026 Single Filer Baseline)
-1. **FICA Social Security Tax (6.20%):** Assessed on gross earnings up to the annual statutory wage threshold.
-2. **FICA Medicare Tax (1.45%):** Assessed on all gross earnings without a wage ceiling, supplemented by an additional 0.90% Medicare surtax on income exceeding $200,000 for single filers.
-3. **Federal Income Tax (FIT):** Calculated under progressive marginal brackets following the standard deduction ($15,000 baseline).
-4. **State Income Tax (SIT):** Ranges from 0.00% (in non-tax jurisdictions like Texas, Florida, and Washington) to progressive brackets exceeding 5.5% in states like California and New York.
+- Each worker's name, address, and a partial Social Security number or other ID.
+- Classification and hours worked each day on the covered project.
+- Hourly rates, gross pay, and itemized deductions.
+- A signed **Statement of Compliance** that the payroll is correct and that the workers are paid the full required rates, with the fringe benefits disclosed.
 
-### Multi-State Take-Home Comparison
+Apprentices may be paid less only if they are registered in a program approved by the Department of Labor's Office of Apprenticeship or a recognized state agency, and only in the ratio permitted by the program.
 
-| Jurisdiction Model | Estimated Effective Deduction | Biweekly Gross ($2,800) | Total Deductions | Net Spendable Paycheck |
-| :--- | :--- | :--- | :--- | :--- |
-| **Zero Income Tax State (TX, FL, WA)** | 17.2% | $2,800.00 | -$481.60 | **$2,318.40** |
-| **Moderate Tax State (VA, NC, IL)** | 22.8% | $2,800.00 | -$638.40 | **$2,161.60** |
-| **High Tax State (CA, NY, NJ)** | 28.4% | $2,800.00 | -$795.20 | **$2,004.80** |
+## Common compliance mistakes
 
-Living in a jurisdiction with high progressive state income taxes reduces annualized net take-home liquidity by approximately $8,150 on an equivalent $72,800 gross salary compared to a zero-tax state.
+- **Misclassification.** Paying a laborer's rate to someone doing electrician's work. The wage determination classification follows the work actually performed.
+- **Counting fringe credit for items that are not bona fide plans**, or for contributions that can be refunded to the employer.
+- **Averaging hours across weeks.** Overtime is measured per workweek.
+- **Unlawful deductions.** The Copeland Act (29 C.F.R. Part 3) limits deductions from pay.
+- **Late or incomplete payroll reports.**
 
----
+## Penalties
 
-## Practical Case Audit & Statutory Compliance Checklist
+If a violation is found, the contracting agency can **withhold contract payments** to cover back wages, and the contractor can be **debarred** from federal contracts for up to three years (40 U.S.C. § 3144). Willful violations can lead to criminal prosecution. Workers are paid from the withheld funds.
 
-When auditing payroll records for FLSA and IRS accuracy, compensation analysts employ a structured checklist:
-
-- [ ] **Regular Rate Inclusion:** Confirm that all production bonuses, shift differential premiums, and non-discretionary payments are blended into the regular rate before calculating 1.5x overtime.
-- [ ] **FLSA Exemption Testing:** Verify that salaried employees meet both the statutory minimum salary threshold and the applicable administrative, executive, or professional duties test.
-- [ ] **Timecard Rounding Integrity:** Audit time-tracking systems to verify adherence to the 7-minute rounding rule (29 C.F.R. § 785.48(b)) without creating an asymmetrical advantage for the employer.
-- [ ] **Meal & Rest Period Classification:** Ensure that unpaid meal breaks lasting 30 minutes or more involve complete relief from all work-related obligations.
-- [ ] **Liquidated Damages Exposure (29 U.S.C. § 216(b)):** Recognize that willful violations result in mandatory 100% liquidated damages matching the back-pay total, plus mandatory legal fees.
-
----
-
-## Related Statutory & Payroll Guides
-
-For additional analysis on federal wage mandates and take-home calculations, explore our companion guides:
-
-- [Hourly to Salary Calculation: The 2,080-Hour Annual Standard Breakdown](/guides/hourly-to-salary-annual-breakdown/)
-- [FLSA Overtime Pay Rules: Time-and-a-Half (1.5x) and Double Time (2.0x)](/guides/flsa-overtime-time-and-a-half-rules/)
-- [Gross Pay vs Net Pay: Payroll Deductions Breakdown](/guides/gross-vs-net-pay-payroll-deductions/)
-
+See [overtime rules](/guides/flsa-overtime-time-and-a-half-rules/) for the standard FLSA overtime rule that Davis-Bacon and the CWHSSA build on.

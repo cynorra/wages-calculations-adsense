@@ -1,125 +1,86 @@
 ---
 title: "California Meal and Rest Break Premiums: Labor Code 226.7 Penalty Calculations"
 description: "Calculating one additional hour of regular pay for missed, delayed, or non-compliant meal and rest periods under California Supreme Court standards."
-key_takeaway: "Under California Labor Code § 226.7, employers must pay one additional hour of pay at the employee's regular rate for each workday that a required meal or rest break is denied or unlawfully interrupted."
+key_takeaway: "California owes one extra hour of pay at the regular rate for each workday with a missed meal period and one for each workday with a missed rest period, up to two hours of premium pay per day."
 tool: "hour-and-wage-calculator"
 status: "published"
 published: "2026-11-19"
 author_slug: "eren-simsir"
 ---
 
-## Statutory Framework and Federal Labor Principles
+California is one of the few states where a missed break is a **wage** violation with a price tag set by statute. Labor Code § 226.7 and the IWC wage orders require employers to provide meal and rest periods, and when they do not, the employee earns a premium payment. Because the premium is owed automatically, it is also one of the most common sources of class actions.
 
-Under federal employment regulations, specifically codified in the Fair Labor Standards Act (Cal. Lab. Code § 226.7, Ferra v. Loews Hollywood Hotel), compensation structures require rigorous accounting. Employers operating in interstate commerce must establish clear policies to avoid statutory liquidated damages under 29 U.S.C. § 216(b).
+## The break rules
 
-The fundamental rule governing this area is straightforward:
+| Break | When it must be provided | Length |
+| :--- | :--- | :--- |
+| **First meal period** | Before the end of the **fifth hour** of work, if the workday is more than 5 hours | 30 minutes, unpaid, duty-free |
+| **Second meal period** | Before the end of the **tenth hour**, if the workday is more than 10 hours | 30 minutes, unpaid, duty-free |
+| **Rest period** | 10 paid minutes for each 4 hours worked "or major fraction thereof" | Paid; employee free from duty |
 
-> **Core Statutory Mandate:** Under California Labor Code § 226.7, employers must pay one additional hour of pay at the employee's regular rate for each workday that a required meal or rest break is denied or unlawfully interrupted.
+For rest breaks, "major fraction" means more than two hours of a four-hour block, which produces this schedule:
 
-When establishing lawful pay practices, compensation managers must align base hourly allocations with regular rate determinations to maintain full payroll integrity across all operational schedules.
+| Hours worked | Rest breaks required |
+| :--- | :--- |
+| Less than 3.5 | 0 |
+| 3.5 to 6 | 1 |
+| More than 6 to 10 | 2 |
+| More than 10 to 14 | 3 |
 
-### Scope of Federal Protection Under Title 29
+An employee can waive the first meal period by mutual consent if the workday is no more than 6 hours. The second meal period can be waived if the workday is no more than 12 hours and the first was not waived.
 
-Federal wage mandates apply broadly to individual employees engaged in interstate commerce or employed by an enterprise engaged in commerce with annual gross business volume exceeding statutory minimums. Failure to accurately compute statutory premiums exposes organizations to retroactive back-pay liability, mandatory liquidated damages equal to 100% of unpaid wages, and reasonable attorney fees under 29 U.S.C. § 216(b).
+## What "provide" means
 
----
+In *Brinker Restaurant Corp. v. Superior Court* (2012), the California Supreme Court held that employers must relieve employees of all duty and relinquish control over their time, and permit them to leave the premises. The employer need **not** ensure that employees actually stop working. But an employer that pressures employees to skip breaks, schedules work that makes them impossible, or fails to record breaks will struggle to defend itself. A timekeeping record showing late, short, or missing meal periods creates a rebuttable presumption of a violation.
 
-## Mathematical Formulations: Statutory Rate Determination
+## The premium: one hour of pay, per type, per day
 
-Lawful compensation requires structured mathematical calculation rather than discretionary accounting. The regular rate is established using the statutory formula:
+Under § 226.7(c), the employee receives **one additional hour of pay at the employee's regular rate of compensation** for each workday on which a meal period is not provided and **another** for each workday on which a rest period is not provided. The maximum is two premium hours per day, no matter how many breaks were missed.
 
-$$\text{Regular Rate of Pay} = \frac{\text{Total Non-Exempt Remuneration in Workweek}}{\text{Total Hours Actually Worked}}$$
+| Day | What happened | Premium hours owed |
+| :--- | :--- | :--- |
+| Monday | 9-hour shift, meal started after hour 6 | 1 (meal) |
+| Tuesday | Both rest breaks skipped | 1 (rest) |
+| Wednesday | Meal was missed and one rest break missed | 2 |
+| Thursday | Three rest breaks skipped on a 12-hour shift | 1 (rest, not 3) |
 
-When overtime thresholds are exceeded, the mandatory one-and-one-half premium rate applies directly:
+## Regular rate of compensation
 
-$$\text{Overtime Hourly Rate} = \text{Regular Rate} \times 1.50$$
+In *Ferra v. Loews Hollywood Hotel* (2021), the California Supreme Court held that the premium is calculated on the **regular rate of compensation**, which includes non-discretionary pay such as production bonuses and commissions, not just the base hourly rate.
 
-$$\text{Total Gross Earnings} = (\text{Straight-Time Hours} \times \text{Regular Rate}) + (\text{Overtime Hours} \times \text{Overtime Rate})$$
+An employee earns $24.00 per hour and a $120 non-discretionary weekly bonus over 40 hours:
 
-If an employer erroneously calculates overtime pay by excluding non-discretionary stipends or premiums from the regular rate denominator, the worker incurs uncompensated wage loss, triggering statutory enforcement penalties under Title 29.
+$$\text{Regular rate} = \$24.00 + \frac{\$120}{40} = \$27.00$$
 
-### Step-by-Step Computational Walkthrough
+If the employee had three days in a week with one missed meal period, the premium is:
 
-To illustrate the mathematical application, consider an employee earning a base rate of $28.00 per hour who completes 48 total hours in a standard workweek while receiving a non-discretionary production bonus of $120.00:
+$$3 \times \$27.00 = \$81.00$$
 
-1. **Straight-Time Base Pay:** $48 \text{ hours} \times \$28.00 = \$1,344.00$
-2. **Total Remuneration:** $\$1,344.00 + \$120.00 = \$1,464.00$
-3. **Lawful Regular Rate:** $\frac{\$1,464.00}{48 \text{ hours}} = \mathbf{\$30.50 \text{ per hour}}$
-4. **Half-Time Overtime Premium (8 hours):** $8 \text{ hours} \times (\$30.50 \times 0.50) = \mathbf{\$122.00}$
-5. **Total Gross Remuneration:** $\$1,464.00 + \$122.00 = \mathbf{\$1,586.00}$
+Paying it at $24.00 would underpay by $9.00 for the week.
 
-If computed incorrectly using only base wages ($8 \times \$14.00 = \$112.00$), the enterprise unlawfully underpays the worker by $10.00 in statutory overtime premiums for that single pay cycle.
+## Why employers owe more than the premium
 
----
+The premium is treated as **wages** (*Naranjo v. Spectrum Security Services*, 2022). That means:
 
-## Detailed Compensation Matrix & Multi-Tier Comparison
+- **It must appear on the wage statement** for the pay period when it is earned. Failure can create § 226 penalties of up to $4,000 per employee for inaccurate wage statements.
+- **Unpaid premiums can trigger waiting time penalties** under § 203 if the employee leaves, up to 30 days of wages, when the failure to pay was willful. A good-faith dispute can defeat willfulness.
+- **Interest and attorney fees** can apply, and the claims may be brought as a PAGA representative action.
+- **The statute of limitations** is generally three years for the premium, and up to four years when brought with an unfair competition claim.
 
-To understand how statutory rules impact payroll schedules across standard working hours, review the structured comparison matrix below:
+## Illustrative exposure
 
-| Weekly Hours Worked | Base Hourly Rate | Applicable Premium | Blended Regular Rate | Gross Weekly Earnings |
-| :--- | :--- | :--- | :--- | :--- |
-| **40.0 Hours** | $25.00 | $0.00 | $25.00 | **$1,000.00** |
-| **45.0 Hours** | $25.00 | $50.00 stipend | $26.11 | **$1,240.23** |
-| **50.0 Hours** | $25.00 | $100.00 stipend | $27.00 | **$1,485.00** |
-| **55.0 Hours** | $25.00 | $150.00 stipend | $27.73 | **$1,733.13** |
-| **60.0 Hours** | $25.00 | $200.00 stipend | $28.33 | **$1,983.10** |
+At a restaurant where each of 40 employees misses a meal period on 3 days a week, at a $27.00 rate, over 50 weeks a year for three years:
 
----
+$$40 \times 3 \times \$27.00 \times 50 \times 3 \text{ years} = \$486{,}000$$
 
-## Payroll Accounting: Gross to Net Withholding Analysis
+This is before waiting time and wage statement penalties and attorney fees, which is why the problem usually surfaces as a settlement figure in the hundreds of thousands of dollars.
 
-Gross compensation figures do not represent spendable take-home liquidity for household budgeting. Mandatory federal and state deductions diminish disposable earnings:
+## How compliant employers avoid it
 
-$$\text{Net Take-Home Pay} = \text{Gross Earnings} - (\text{FICA Social Security} + \text{FICA Medicare} + \text{Federal Income Tax} + \text{State Withholding})$$
+- Schedule meal periods in the timekeeping system, and require employees to clock out and in.
+- Audit punches weekly for meal periods that start after hour 5 or last under 30 minutes.
+- Pay the premium proactively, on its own line of the wage statement.
+- Train supervisors that discouraging breaks is a violation.
+- For industries with their own wage orders (for example, motion picture or commercial drivers), review the specific rules since some provide different timing.
 
-### Mandatory Statutory Withholdings (2026 Single Filer Baseline)
-1. **FICA Social Security Tax (6.20%):** Assessed on gross earnings up to the annual statutory wage threshold ($176,100 limit).
-2. **FICA Medicare Tax (1.45%):** Assessed on all gross earnings without a wage ceiling, supplemented by an additional 0.90% Medicare surtax on income exceeding $200,000 for single filers.
-3. **Federal Income Tax (FIT):** Calculated under progressive marginal brackets following the standard deduction.
-4. **State Income Tax (SIT):** Ranges from 0.00% (in non-tax jurisdictions like Texas, Florida, and Washington) to progressive brackets exceeding 5.5% in states like California and New York.
-
-### Multi-State Take-Home Comparison
-
-| Jurisdiction Model | Estimated Effective Deduction | Biweekly Gross ($2,800) | Total Deductions | Net Spendable Paycheck |
-| :--- | :--- | :--- | :--- | :--- |
-| **Zero Income Tax State (TX, FL, WA)** | 17.2% | $2,800.00 | -$481.60 | **$2,318.40** |
-| **Moderate Tax State (VA, NC, IL)** | 22.8% | $2,800.00 | -$638.40 | **$2,161.60** |
-| **High Tax State (CA, NY, NJ)** | 28.4% | $2,800.00 | -$795.20 | **$2,004.80** |
-
-Living in a jurisdiction with high progressive state income taxes reduces annualized net take-home liquidity by approximately $8,150 on an equivalent $72,800 gross salary compared to a zero-tax state.
-
----
-
-## Employer Recordkeeping & Audit Retention Guidelines
-
-Under 29 C.F.R. § 516.5, employers subject to federal labor standards must preserve comprehensive payroll records for at least three years, with basic employment and earnings computation records retained for at least two years. 
-
-### Mandatory Documentation Mandates
-1. **Time and Earning Records:** Exact hours worked daily and total hours worked each workweek, including starting and ending times.
-2. **Rate Schedules:** Regular hourly rates of pay for any workweek in which overtime compensation is due.
-3. **Exclusion Justifications:** Contemporaneous documentation establishing why specific discretionary bonuses, gifts, or third-party reimbursements were excluded from regular rate overtime multipliers.
-
-Failure to maintain clear, contemporaneous timekeeping records creates a strong evidentiary presumption in favor of employee claims during Department of Labor audits and private collective actions.
-
----
-
-## Practical Case Audit & Statutory Compliance Checklist
-
-When auditing payroll records for FLSA and IRS accuracy, compensation analysts employ a structured compliance checklist:
-
-- [ ] **Regular Rate Inclusion:** Confirm that all production bonuses, shift differential premiums, and non-discretionary payments are blended into the regular rate before calculating 1.5x overtime.
-- [ ] **FLSA Exemption Testing:** Verify that salaried employees meet both the statutory minimum salary threshold and the applicable administrative, executive, or professional duties test under 29 C.F.R. Part 541.
-- [ ] **Timecard Rounding Integrity:** Audit time-tracking systems to verify adherence to the 7-minute rounding rule (29 C.F.R. § 785.48(b)) without creating an asymmetrical advantage for the employer.
-- [ ] **Meal & Rest Period Classification:** Ensure that unpaid meal breaks lasting 30 minutes or more involve complete relief from all work-related obligations.
-- [ ] **Liquidated Damages Exposure (29 U.S.C. § 216(b)):** Recognize that willful violations result in mandatory 100% liquidated damages matching the back-pay total, plus mandatory legal fees.
-
----
-
-## Related Statutory & Payroll Guides
-
-For additional analysis on federal wage mandates and take-home calculations, explore our companion guides:
-
-- [Hourly to Salary Calculation: The 2,080-Hour Annual Standard Breakdown](/guides/hourly-to-salary-annual-breakdown/)
-- [FLSA Overtime Pay Rules: Time-and-a-Half (1.5x) and Double Time (2.0x)](/guides/flsa-overtime-time-and-a-half-rules/)
-- [Gross Pay vs Net Pay: Payroll Deductions Breakdown](/guides/gross-vs-net-pay-payroll-deductions/)
-
+This guide covers California's rules only; other states, such as New York and Illinois, require meal periods but do not impose a premium. For related state-law premiums see [split-shift pay](/guides/split-shift-differential-premiums-california-ny/).

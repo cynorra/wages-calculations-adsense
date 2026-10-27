@@ -1,123 +1,72 @@
 ---
 title: "FLSA White-Collar Exemptions: Salary Threshold & Duties Test Breakdown"
 description: "Executive, administrative, and professional overtime exemptions. Salary basis test, permissible deductions, and job duties analysis under 29 CFR 541."
+key_takeaway: "An employee is exempt from overtime only if they meet a salary level, are paid on a salary basis, and perform qualifying duties. Job titles and a salary alone are never enough."
 tool: "salary-to-hourly-converter"
 status: "published"
 published: "2026-11-13"
 author_slug: "eren-simsir"
 ---
 
-## Statutory Framework and Federal Labor Principles
+Calling someone a "manager" and paying a salary does not exempt them from overtime. Exempt status under the FLSA's "white-collar" exemptions (29 U.S.C. § 213(a)(1) and 29 C.F.R. Part 541) is earned by passing **three tests at once**, and failing any one of them makes the employee non-exempt. The burden of proving the exemption is on the employer, and courts do not read exemptions broadly.
 
-Under federal employment regulations, specifically codified in the Fair Labor Standards Act (29 C.F.R. Part 541, 29 U.S.C. § 213(a)(1)), compensation structures require rigorous accounting. Employers operating in interstate commerce must establish clear policies to avoid statutory liquidated damages under 29 U.S.C. § 216(b).
+## The three tests
 
-The fundamental rule governing this area is straightforward:
+1. **Salary level.** The employee must earn at least a minimum weekly amount.
+2. **Salary basis.** The employee must be paid a predetermined amount each pay period that is not reduced for variations in the quality or quantity of work.
+3. **Duties.** The primary duty must match the exemption claimed.
 
-> **Core Statutory Mandate:** To qualify as exempt from overtime, an employee must satisfy both the statutory weekly salary threshold and specific primary duty criteria established under 29 C.F.R. Part 541.
+## Test 1: the salary level
 
-When establishing lawful pay practices, compensation managers must align base hourly allocations with regular rate determinations to maintain full payroll integrity across all operational schedules.
+The federal level has moved repeatedly. In 2024 the DOL raised it to $844 per week effective July 1, 2024 and to $1,128 per week on January 1, 2025. In November 2024, a federal court in Texas vacated that rule nationwide, and the threshold reverted to the 2019 level of **$684 per week ($35,568 per year)**. The highly compensated employee threshold likewise reverted to **$107,432**. Because this has been litigated and may be revisited, verify the current federal figure on the DOL's website before setting salaries.
 
-### Scope of Federal Protection Under Title 29
+State thresholds can be much higher. California, for example, requires exempt employees to earn at least twice the state minimum wage for full-time work. At a 2026 minimum wage of $16.90, that is:
 
-Federal wage mandates apply broadly to individual employees engaged in interstate commerce or employed by an enterprise engaged in commerce with annual gross business volume exceeding statutory minimums. Failure to accurately compute statutory premiums exposes organizations to retroactive back-pay liability, mandatory liquidated damages equal to 100% of unpaid wages, and reasonable attorney fees under 29 U.S.C. § 216(b).
+$$2 \times \$16.90 \times 2{,}080 = \$70{,}304 \text{ per year}$$
 
----
+New York, Washington, Colorado and other states also have their own, often higher, minimums. Employers must follow the higher of federal and state requirements.
 
-## Mathematical Formulations: Statutory Rate Determination
+## Test 2: the salary basis
 
-Lawful compensation requires structured mathematical calculation rather than discretionary accounting. The regular rate is established using the statutory formula:
+A salary basis means the employee gets their **full salary for any week in which any work is performed**, with limited exceptions. Improper deductions can destroy the exemption for the whole class of employees under the same manager.
 
-$$\text{Regular Rate of Pay} = \frac{\text{Total Non-Exempt Remuneration in Workweek}}{\text{Total Hours Actually Worked}}$$
+| Deduction | Permitted? |
+| :--- | :--- |
+| Employee is absent a full day for personal reasons | Yes, for full days |
+| Employee is absent a full day due to sickness under a bona fide plan | Yes, if a plan exists |
+| Pay is reduced because there was not enough work that day | **No** |
+| Partial-day absences | **No** (but accrued leave may be reduced) |
+| Disciplinary suspension for a full day, under a written workplace-conduct policy | Yes |
+| Jury duty or witness fees offset against pay | Yes |
+| Initial and terminal weeks | Prorated |
 
-When overtime thresholds are exceeded, the mandatory one-and-one-half premium rate applies directly:
+If an employer makes an improper deduction, the regulation (29 C.F.R. § 541.603) allows it to reimburse and commit to future compliance. The "safe harbor" under § 541.603(d) applies only if the employer has a clear policy prohibiting improper deductions and a complaint mechanism.
 
-$$\text{Overtime Hourly Rate} = \text{Regular Rate} \times 1.50$$
+## Test 3: the duties
 
-$$\text{Total Gross Earnings} = (\text{Straight-Time Hours} \times \text{Regular Rate}) + (\text{Overtime Hours} \times \text{Overtime Rate})$$
+Each exemption has its own duties test, and the employee must meet it as a **primary duty**, meaning the principal, main, major, or most important duty, usually (but not strictly) over 50% of working time.
 
-If an employer erroneously calculates overtime pay by excluding non-discretionary stipends or premiums from the regular rate denominator, the worker incurs uncompensated wage loss, triggering statutory enforcement penalties under Title 29.
+| Exemption | Core requirements |
+| :--- | :--- |
+| **Executive** | Manages the enterprise or a department; directs the work of at least two full-time employees (or equivalent); has authority to hire or fire, or recommendations are given particular weight |
+| **Administrative** | Office or non-manual work related to management or general business operations; exercises discretion and independent judgment on significant matters |
+| **Learned professional** | Work requiring advanced knowledge in a field of science or learning, customarily acquired by prolonged specialized education |
+| **Creative professional** | Work requiring invention, imagination, originality, or talent in a recognized artistic or creative field |
+| **Computer employee** | Systems analysis, programming, or similar skilled work; may be paid on salary or hourly (at least $27.63 per hour federally) |
+| **Outside sales** | Primary duty is making sales away from the employer's place of business; no salary minimum |
+| **Highly compensated** | Total annual compensation at or above the HCE level and customarily performs at least one exempt duty |
 
-### Step-by-Step Computational Walkthrough
+## Where employers go wrong
 
-To illustrate the mathematical application, consider an employee earning a base rate of $28.00 per hour who completes 48 total hours in a standard workweek while receiving a non-discretionary production bonus of $120.00:
+- **Assistant managers who spend most of the shift working the register or stocking shelves.** Their primary duty is nonexempt work even if they supervise occasionally.
+- **Administrative titles on routine work.** Following established procedures or applying well-known skills is not "discretion and independent judgment."
+- **Job title shortcuts.** Under 29 C.F.R. § 541.2, a title alone is not sufficient.
+- **Paying a salary meant to cover all hours, no matter how many.** If the employee fails the duties test, they are owed overtime, and the "salary" is treated as covering only the first 40 hours unless the parties had a different understanding.
 
-1. **Straight-Time Base Pay:** $48 \text{ hours} \times \$28.00 = \$1,344.00$
-2. **Total Remuneration:** $\$1,344.00 + \$120.00 = \$1,464.00$
-3. **Lawful Regular Rate:** $\frac{\$1,464.00}{48 \text{ hours}} = \mathbf{\$30.50 \text{ per hour}}$
-4. **Half-Time Overtime Premium (8 hours):** $8 \text{ hours} \times (\$30.50 \times 0.50) = \mathbf{\$122.00}$
-5. **Total Gross Remuneration:** $\$1,464.00 + \$122.00 = \mathbf{\$1,586.00}$
+## What reclassification costs
 
-If computed incorrectly using only base wages ($8 \times \$14.00 = \$112.00$), the enterprise unlawfully underpays the worker by $10.00 in statutory overtime premiums for that single pay cycle.
+If an employee is found misclassified, damages include unpaid overtime for up to two years (three if willful) and an equal amount in liquidated damages under 29 U.S.C. § 216(b). For a salaried employee earning $60,000 who regularly works 50 hours, the exposure per year is large. The regular rate for a salary meant to cover 40 hours is $60,000 ÷ 2,080 = $28.85, so each overtime hour is owed 1.5 × $28.85 = $43.27:
 
----
+$$10 \times \$43.27 \times 52 = \$22{,}500 \text{ per year (before liquidated damages)}$$
 
-## Detailed Compensation Matrix & Multi-Tier Comparison
-
-To understand how statutory rules impact payroll schedules across standard working hours, review the structured comparison matrix below:
-
-| Weekly Hours Worked | Base Hourly Rate | Applicable Premium | Blended Regular Rate | Gross Weekly Earnings |
-| :--- | :--- | :--- | :--- | :--- |
-| **40.0 Hours** | $25.00 | $0.00 | $25.00 | **$1,000.00** |
-| **45.0 Hours** | $25.00 | $50.00 stipend | $26.11 | **$1,240.23** |
-| **50.0 Hours** | $25.00 | $100.00 stipend | $27.00 | **$1,485.00** |
-| **55.0 Hours** | $25.00 | $150.00 stipend | $27.73 | **$1,733.13** |
-| **60.0 Hours** | $25.00 | $200.00 stipend | $28.33 | **$1,983.10** |
-
----
-
-## Payroll Accounting: Gross to Net Withholding Analysis
-
-Gross compensation figures do not represent spendable take-home liquidity for household budgeting. Mandatory federal and state deductions diminish disposable earnings:
-
-$$\text{Net Take-Home Pay} = \text{Gross Earnings} - (\text{FICA Social Security} + \text{FICA Medicare} + \text{Federal Income Tax} + \text{State Withholding})$$
-
-### Mandatory Statutory Withholdings (2026 Single Filer Baseline)
-1. **FICA Social Security Tax (6.20%):** Assessed on gross earnings up to the annual statutory wage threshold ($176,100 limit).
-2. **FICA Medicare Tax (1.45%):** Assessed on all gross earnings without a wage ceiling, supplemented by an additional 0.90% Medicare surtax on income exceeding $200,000 for single filers.
-3. **Federal Income Tax (FIT):** Calculated under progressive marginal brackets following the standard deduction.
-4. **State Income Tax (SIT):** Ranges from 0.00% (in non-tax jurisdictions like Texas, Florida, and Washington) to progressive brackets exceeding 5.5% in states like California and New York.
-
-### Multi-State Take-Home Comparison
-
-| Jurisdiction Model | Estimated Effective Deduction | Biweekly Gross ($2,800) | Total Deductions | Net Spendable Paycheck |
-| :--- | :--- | :--- | :--- | :--- |
-| **Zero Income Tax State (TX, FL, WA)** | 17.2% | $2,800.00 | -$481.60 | **$2,318.40** |
-| **Moderate Tax State (VA, NC, IL)** | 22.8% | $2,800.00 | -$638.40 | **$2,161.60** |
-| **High Tax State (CA, NY, NJ)** | 28.4% | $2,800.00 | -$795.20 | **$2,004.80** |
-
-Living in a jurisdiction with high progressive state income taxes reduces annualized net take-home liquidity by approximately $8,150 on an equivalent $72,800 gross salary compared to a zero-tax state.
-
----
-
-## Employer Recordkeeping & Audit Retention Guidelines
-
-Under 29 C.F.R. § 516.5, employers subject to federal labor standards must preserve comprehensive payroll records for at least three years, with basic employment and earnings computation records retained for at least two years. 
-
-### Mandatory Documentation Mandates
-1. **Time and Earning Records:** Exact hours worked daily and total hours worked each workweek, including starting and ending times.
-2. **Rate Schedules:** Regular hourly rates of pay for any workweek in which overtime compensation is due.
-3. **Exclusion Justifications:** Contemporaneous documentation establishing why specific discretionary bonuses, gifts, or third-party reimbursements were excluded from regular rate overtime multipliers.
-
-Failure to maintain clear, contemporaneous timekeeping records creates a strong evidentiary presumption in favor of employee claims during Department of Labor audits and private collective actions.
-
----
-
-## Practical Case Audit & Statutory Compliance Checklist
-
-When auditing payroll records for FLSA and IRS accuracy, compensation analysts employ a structured compliance checklist:
-
-- [ ] **Regular Rate Inclusion:** Confirm that all production bonuses, shift differential premiums, and non-discretionary payments are blended into the regular rate before calculating 1.5x overtime.
-- [ ] **FLSA Exemption Testing:** Verify that salaried employees meet both the statutory minimum salary threshold and the applicable administrative, executive, or professional duties test under 29 C.F.R. Part 541.
-- [ ] **Timecard Rounding Integrity:** Audit time-tracking systems to verify adherence to the 7-minute rounding rule (29 C.F.R. § 785.48(b)) without creating an asymmetrical advantage for the employer.
-- [ ] **Meal & Rest Period Classification:** Ensure that unpaid meal breaks lasting 30 minutes or more involve complete relief from all work-related obligations.
-- [ ] **Liquidated Damages Exposure (29 U.S.C. § 216(b)):** Recognize that willful violations result in mandatory 100% liquidated damages matching the back-pay total, plus mandatory legal fees.
-
----
-
-## Related Statutory & Payroll Guides
-
-For additional analysis on federal wage mandates and take-home calculations, explore our companion guides:
-
-- [Hourly to Salary Calculation: The 2,080-Hour Annual Standard Breakdown](/guides/hourly-to-salary-annual-breakdown/)
-- [FLSA Overtime Pay Rules: Time-and-a-Half (1.5x) and Double Time (2.0x)](/guides/flsa-overtime-time-and-a-half-rules/)
-- [Gross Pay vs Net Pay: Payroll Deductions Breakdown](/guides/gross-vs-net-pay-payroll-deductions/)
+See [the exempt vs. non-exempt test](/guides/salary-exempt-vs-non-exempt-flsa-test/) for a shorter walkthrough of the salary side and [overtime rules](/guides/flsa-overtime-time-and-a-half-rules/) for the 1.5x calculation.
