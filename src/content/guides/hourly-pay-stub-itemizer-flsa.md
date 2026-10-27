@@ -3,7 +3,7 @@ title: "Hourly Pay Stub Itemization & Employer Wage Statement Standards"
 description: "Understanding payroll stub acronyms (YTD Gross, Fed Withholding, FICA MED, FICA SS) and employer obligations under FLSA 29 U.S.C. § 211 and California Labor Code § 226."
 tool: "hourly-pay-stub-calculator"
 status: "published"
-published: "2026-10-21"
+published: "2026-11-05"
 author_slug: "eren-simsir"
 ---
 

@@ -4,7 +4,7 @@ description: "Federal FLSA hazard pay regulations, high-risk compensation formul
 key_takeaway: "Hazard pay is not federally mandated under the FLSA, but when agreed upon contractually, Title 29 C.F.R. § 778.207 mandates that hazard premiums must be incorporated into the regular rate of pay for 1.5x overtime calculations."
 tool: "hour-and-wage-calculator"
 status: "published"
-published: "2026-11-01"
+published: "2026-11-02"
 author_slug: "eren-simsir"
 ---
 

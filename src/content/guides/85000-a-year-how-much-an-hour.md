@@ -3,7 +3,7 @@ title: "$85,000 a Year is How Much an Hour? After-Tax Paycheck Guide"
 description: "At $40.87 per hour, an $85k gross salary yields precise biweekly paychecks. IRS Form W-4 withholding tuning, standard deduction analysis, and tax optimization."
 tool: "85000-a-year-is-how-much-an-hour"
 status: "published"
-published: "2026-10-26"
+published: "2026-11-20"
 author_slug: "eren-simsir"
 ---
 

@@ -3,7 +3,7 @@ title: "Hourly Pay Raise Calculator: Inflation Adjustment and Disposable Income"
 description: "How a $1.00 to $5.00 hourly pay raise impacts disposable income after progressive taxes and CPI inflation, and calculating real wage growth."
 tool: "hourly-pay-raise-calculator"
 status: "published"
-published: "2026-11-02"
+published: "2026-11-03"
 author_slug: "eren-simsir"
 ---
 

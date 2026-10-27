@@ -3,7 +3,7 @@ title: "True Hourly Rate: Deconstructing Exempt Salaries and Working Hours"
 description: "How to calculate your true hourly rate from an exempt fixed annual salary and detect wage dilution when working 45 to 60 hours per week under FLSA exemptions."
 tool: "salary-to-hourly-calculator"
 status: "published"
-published: "2026-10-24"
+published: "2026-11-22"
 author_slug: "eren-simsir"
 ---
 

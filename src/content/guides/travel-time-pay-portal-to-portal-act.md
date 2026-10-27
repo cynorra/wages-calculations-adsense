@@ -4,7 +4,7 @@ description: "Distinguishing normal home-to-work commuting from compensable trav
 key_takeaway: "Under the Portal-to-Portal Act (29 U.S.C. § 254), standard daily commuting is non-compensable, but travel between job sites during a workday or travel as a passenger during normal working hours on non-working days must be paid at full wage rates."
 tool: "hour-and-wage-calculator"
 status: "published"
-published: "2026-11-15"
+published: "2026-11-27"
 author_slug: "eren-simsir"
 ---
 

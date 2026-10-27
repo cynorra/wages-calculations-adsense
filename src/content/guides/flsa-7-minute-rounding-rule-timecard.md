@@ -3,7 +3,7 @@ title: "Hour and Wage Timecards: FLSA 7-Minute Rounding Rules and Lunch Breaks"
 description: "How employers lawfully round timecard punches under 29 CFR § 785.48 using the 7-minute quarter-hour interval rule, electronic timekeeping precision, and lunch break standards."
 tool: "hour-and-wage-calculator"
 status: "published"
-published: "2026-10-29"
+published: "2026-10-31"
 author_slug: "eren-simsir"
 ---
 

@@ -4,7 +4,7 @@ description: "Calculating one additional hour of regular pay for missed, delayed
 key_takeaway: "Under California Labor Code § 226.7, employers must pay one additional hour of pay at the employee's regular rate for each workday that a required meal or rest break is denied or unlawfully interrupted."
 tool: "hour-and-wage-calculator"
 status: "published"
-published: "2026-11-09"
+published: "2026-11-19"
 author_slug: "eren-simsir"
 ---
 

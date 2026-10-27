@@ -4,7 +4,7 @@ description: "Tax treatment of lump-sum and salary continuation severance packag
 key_takeaway: "Severance payments are classified by the IRS as supplemental wages and are subject to mandatory FICA taxes (6.2% Social Security + 1.45% Medicare) and either a flat 22% federal withholding rate or aggregate regular withholding."
 tool: "hourly-paycheck-tax-calculator"
 status: "published"
-published: "2026-11-11"
+published: "2026-11-23"
 author_slug: "eren-simsir"
 ---
 

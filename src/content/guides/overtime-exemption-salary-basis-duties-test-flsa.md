@@ -1,10 +1,9 @@
 ---
 title: "FLSA White-Collar Exemptions: Salary Threshold & Duties Test Breakdown"
 description: "Executive, administrative, and professional overtime exemptions. Salary basis test, permissible deductions, and job duties analysis under 29 CFR 541."
-key_takeaway: "To qualify as exempt from overtime, an employee must satisfy both the statutory weekly salary threshold and specific primary duty criteria established under 29 C.F.R. Part 541."
 tool: "salary-to-hourly-converter"
 status: "published"
-published: "2026-10-24"
+published: "2026-11-13"
 author_slug: "eren-simsir"
 ---
 
@@ -122,4 +121,3 @@ For additional analysis on federal wage mandates and take-home calculations, exp
 - [Hourly to Salary Calculation: The 2,080-Hour Annual Standard Breakdown](/guides/hourly-to-salary-annual-breakdown/)
 - [FLSA Overtime Pay Rules: Time-and-a-Half (1.5x) and Double Time (2.0x)](/guides/flsa-overtime-time-and-a-half-rules/)
 - [Gross Pay vs Net Pay: Payroll Deductions Breakdown](/guides/gross-vs-net-pay-payroll-deductions/)
-

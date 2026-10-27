@@ -1,7 +1,7 @@
 ---
 import Base from "../../layouts/Base.astro";
 import ScenarioSimulator from "../../components/ScenarioSimulator.astro";
-import { localRows, liveArticles } from "../../lib/articles-source.js";
+import { liveArticles } from "../../lib/articles-source.js";
 import { guideRow } from "../../lib/frontmatter.js";
 import { articleSchema, breadcrumbSchema } from "../../lib/schema.js";
 import { TOOLS } from "../../lib/tools.js";
@@ -19,8 +19,9 @@ const { article } = Astro.props;
 const relatedTool = TOOLS.find((t) => t.guideSlug === article.slug || t.slug === article.tool);
 
 // Get related articles for internal PageRank linking (same cluster or nearby topics)
-const allGuides = localRows();
-const relatedArticles = allGuides
+const liveGuides = await liveArticles();
+const liveSlugs = new Set(liveGuides.map((g: any) => g.slug));
+const relatedArticles = liveGuides
   .filter((g: any) => g.slug !== article.slug)
   .slice(0, 3);
 
@@ -37,6 +38,11 @@ marked.setOptions({
 
 // Render markdown using native marked parser into styled HTML
 let rawHtml = marked.parse(article.body_md);
+
+// Links to guides that are not published yet would 404: keep the anchor text, drop the link
+rawHtml = rawHtml.replace(/<a href="\/guides\/([a-z0-9-]+)\/?">([\s\S]*?)<\/a>/g, (match, linkSlug, text) =>
+  liveSlugs.has(linkSlug) ? match : text,
+);
 
 // Format standalone math equation blocks ($$...$$) into styled callout blocks
 rawHtml = rawHtml.replace(/<p>\$\$([\s\S]*?)\$\$<\/p>/g, (match, formula) => {

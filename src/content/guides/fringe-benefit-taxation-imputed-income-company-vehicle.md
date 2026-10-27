@@ -4,7 +4,7 @@ description: "How personal use of employer-provided vehicles, group-term life in
 key_takeaway: "Personal use of employer assets constitutes taxable non-cash compensation that must be recognized as imputed income, subject to Social Security, Medicare, and income tax withholdings."
 tool: "hourly-paycheck-tax-calculator"
 status: "published"
-published: "2026-10-24"
+published: "2026-11-01"
 author_slug: "eren-simsir"
 ---
 

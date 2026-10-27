@@ -3,7 +3,7 @@ title: "Shift Differential Pay: Night, Weekend & Hazardous Multipliers in Payrol
 description: "How shift differentials (flat dollar or percentage additions) function across healthcare, logistics, and manufacturing, and their mandatory overtime blend under FLSA 29 U.S.C. § 207(e)."
 tool: "shift-differential-pay-calculator"
 status: "published"
-published: "2026-11-04"
+published: "2026-11-10"
 author_slug: "eren-simsir"
 ---
 

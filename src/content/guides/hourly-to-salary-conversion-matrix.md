@@ -3,7 +3,7 @@ title: "Part-Time vs Full-Time Hourly Wage Conversion: ACA 30-Hour Rules"
 description: "Detailed conversion matrix comparing 20, 25, 30, 35, and 40 hour work schedules and statutory healthcare thresholds under the Affordable Care Act."
 tool: "hourly-to-salary-conversion-chart"
 status: "published"
-published: "2026-10-23"
+published: "2026-11-08"
 author_slug: "eren-simsir"
 ---
 
