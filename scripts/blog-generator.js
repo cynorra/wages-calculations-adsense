@@ -45,7 +45,7 @@ const ALLOWED_HOSTS = [
   "congress.gov", "sam.gov",
 ];
 
-// Each article gets a different shape, so the archive does not read as one template.
+// Each article gets a completely different shape and analytical lens, so the archive reads like an authoritative journal, not a template farm.
 const STRUCTURES = [
   {
     id: "scenario-table",
@@ -69,7 +69,7 @@ const STRUCTURES = [
     id: "question-answer",
     needs: { tables: 0, math: 0 },
     brief:
-      "Write 6 to 8 questions a worker or payroll manager would really ask. Make each question an H2, phrased as the question, and answer it in 120 to 200 words with a citation.",
+      "Write 6 to 8 questions a worker or payroll manager would really ask. Make each question an H2, phrased as the question, and answer it in 140 to 220 words with a citation.",
   },
   {
     id: "process-timeline",
@@ -82,6 +82,54 @@ const STRUCTURES = [
     needs: { tables: 1, math: 1 },
     brief:
       "Compare two or three regimes side by side (federal and state, method A and B, employee and contractor) in a table. Explain where each wins, with one formula and one example.",
+  },
+  {
+    id: "audit-checklist",
+    needs: { tables: 1, math: 1 },
+    brief:
+      "Structure as an exhaustive internal payroll compliance audit. Divide into 4 distinct phases (Classification & Status, Working Time Accounting, Rate Composition, Record Retention). Under each phase provide forensic verification steps with statutory citations and a table rating violation severity (Low, Medium, Critical FLSA liability) with worked financial exposure numbers.",
+  },
+  {
+    id: "statutory-deconstruction",
+    needs: { tables: 1, math: 1 },
+    brief:
+      "Perform a clause-by-clause anatomical legal teardown of the governing regulation. Break down operative statutory phrases, define their judicial thresholds from landmark appellate rulings, explain how employers inadvertently trigger violations, and include a table quantifying employer financial liability under FLSA Section 16(b).",
+  },
+  {
+    id: "paystub-anatomy",
+    needs: { tables: 1, math: 2 },
+    brief:
+      "Center the article on a mock paycheck or timecard paystub line-by-line audit. Deconstruct each line item (Base Hours, Shift Premium, Imputed Income, Nondiscretionary Bonus, Overtime Allocation, Tax Withholdings). Use LaTeX formulas to show how regular rate flows into gross pay, and add a table contrasting lawful itemization versus deceptive wage bundling.",
+  },
+  {
+    id: "multi-jurisdiction-matrix",
+    needs: { tables: 1, math: 1 },
+    brief:
+      "Examine the topic through a multi-jurisdictional lens. Contrast the federal baseline against contrasting state laws (such as California Labor Code, New York Labor Law, Washington, or Illinois). Include a dense 5-to-6 column markdown comparison matrix and worked calculations showing the exact payroll wage variance between jurisdictions.",
+  },
+  {
+    id: "troubleshooting-guide",
+    needs: { tables: 1, math: 1 },
+    brief:
+      "Structure around the 5 most critical operational failure modes in payroll software and management practice for this topic. For each failure mode: state the symptom, identify the statutory violation, cite the governing CFR/USC section, provide the mathematical correction formula, and prescribe the permanent payroll fix.",
+  },
+  {
+    id: "economic-tradeoff",
+    needs: { tables: 1, math: 2 },
+    brief:
+      "Examine the financial and economic tradeoff between employer total compensation costs (payroll taxes, workers comp, benefits) and employee spendable take-home pay. Include worked mathematical formulas and a trade-off table comparing two alternative compensation or scheduling strategies.",
+  },
+  {
+    id: "decision-tree",
+    needs: { tables: 1, math: 1 },
+    brief:
+      "Build the article around a rigorous logical decision flow: 'If condition A is met, evaluate condition B'. Walk through 4 to 6 discrete decision checkpoints. Include a structured decision matrix table mapping workplace facts directly to lawful classification and payroll outcomes.",
+  },
+  {
+    id: "historical-evolution",
+    needs: { tables: 1, math: 1 },
+    brief:
+      "Trace the legal and economic evolution of this rule from its statutory origins through modern DOL Opinion Letters, Circuit Court rulings, and current 2026 enforcement standards. Include a timeline table of major legal turning points and worked calculations of past versus present statutory thresholds.",
   },
 ];
 
@@ -105,7 +153,7 @@ function loadQueue() {
 }
 
 function pickStructure(archive) {
-  const recent = archive.filter((a) => a.structure).slice(-3).map((a) => a.structure);
+  const recent = archive.filter((a) => a.structure).slice(-6).map((a) => a.structure);
   const fresh = STRUCTURES.filter((s) => !recent.includes(s.id));
   const pool = fresh.length ? fresh : STRUCTURES;
   return pool[archive.length % pool.length];
@@ -126,7 +174,11 @@ function buildPrompt(topic, structure, archive, banned) {
     .join("\n");
   return `TODAY'S DATE: ${TODAY_ISO}. Current calendar year: ${CURRENT_YEAR}.
 
-Write an explanatory article for an independent publication about US wage and payroll rules. Audience: workers, small-business owners, and payroll staff.
+Write an explanatory article for an independent financial and labor law publication about US wage and payroll rules. Audience: payroll controllers, corporate compensation analysts, small-business owners, and hourly employees.
+
+TONE & FORENSIC STYLE:
+Write with the objective rigor, depth, and precision of a specialized legal-accounting journal (such as Bloomberg Law, Tax Notes, or Journal of Accountancy). 
+Never write like an AI assistant. Never use conversational meta-commentary, introductory throat-clearing, or clichéd transition words ("Moreover", "Furthermore", "In conclusion", "Ultimately", "Delving into", "In today's fast-paced world", "Crucial", "Vital", "Beacon"). Jump directly into the statutory reality in the very first sentence.
 
 TOPIC
 Title: ${topic.title}
@@ -141,16 +193,15 @@ SHAPE OF THIS ARTICLE (${structure.id})
 ${structure.brief}
 
 RULES
-1. Third person only. Never claim first-hand experience, client stories, proprietary data, or "our analysis". No invented case studies and no invented case names.
-2. Accuracy over completeness. If you are not sure of a number, a date, or a citation, leave it out or write "check the current figure at the source". Do not guess. Any figure tied to a year (tax brackets, wage bases, limits, minimum wages) must name the year, or be left out.
-3. Cite authority inline by name (for example "29 C.F.R. § 778.114"). Do not add a Sources section; the editor appends verified links.
+1. Third person only. Never claim first-hand experience, client stories, proprietary data, or "our analysis". No invented case studies, no invented worker names, and no invented employer names.
+2. Accuracy over completeness. If you are not sure of a number, a date, or a citation, leave it out or write "check the current figure at the source". Do not guess. Any figure tied to a year (tax brackets, wage bases, limits, minimum wages) must name the exact year, or be left out.
+3. Cite authority inline by exact statutory name (for example "29 C.F.R. § 778.114" or "29 U.S.C. § 207(o)"). Do not add a Sources section; the editor appends verified primary links.
 4. Link only to these existing articles when natural, using the exact path, and at most three links:
 ${siblings}
-   Do not link to any external website.
-5. Use these headings only if they fit the topic. Do NOT reuse generic boilerplate headings such as: ${[...banned].slice(0, 25).join(" | ")}.
-6. Vary the writing. Do not start every section with a definition. Do not use filler openings such as "In the realm of", "It is important to note", or "Navigating".
-7. Length: 850 to 1,300 words. Use between 4 and 8 H2 headings ('## '). Start with the first H2; no title line and no frontmatter.
-8. Formatting: tables must be GitHub markdown tables. Formulas, if needed, go on their own lines between $$ and $$. Write dollar amounts normally (for example $1,200).`;
+   Do not link to any external website in the body text.
+5. Headings: make headings specific and informative to this topic. Do NOT reuse generic boilerplate headings such as: ${[...banned].slice(0, 30).join(" | ")}.
+6. Formatting: tables must be well-aligned GitHub markdown tables. Formulas must go on their own lines between $$ and $$. Write dollar amounts normally (for example $1,200).
+7. Length: 1,050 to 1,450 words. Use between 5 and 8 H2 headings ('## '). Start immediately with the first H2; no title line and no frontmatter.`;
 }
 
 async function callGemini(prompt) {
@@ -179,7 +230,7 @@ function checkDraft(body, topic, structure, archive, banned) {
     title: topic.title,
     description: topic.description,
     body_md: body,
-    minWords: 800,
+    minWords: 1000,
     minTables: structure.needs.tables,
     minMath: structure.needs.math,
   });
