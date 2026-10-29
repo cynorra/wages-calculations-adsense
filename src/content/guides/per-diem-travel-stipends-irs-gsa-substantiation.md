@@ -74,6 +74,16 @@ For wage-and-hour purposes, payments that reasonably reimburse the employee for 
 
 For the take-home side, compare with [supplemental wage withholding](/guides/supplemental-wage-withholding-bonus-taxation-rules/), and for hours of travel itself, see [travel time pay](/guides/travel-time-pay-portal-to-portal-act/).
 
+## Accountable Plan Compliance and the 60-Day Substantiation Safe Harbor
+
+To maintain non-taxable status under 26 U.S.C. § 62(a)(2)(A), an employer's per diem reimbursement program must meet all three statutory pillars of an IRS **Accountable Plan** outlined in Treasury Regulation § 1.62-2:
+
+- **Business Connection:** The travel expenses must be incurred while performing services as an employee and directly related to trade or business duties.
+- **Substantiation Within 60 Days:** The employee must substantiate the travel dates, times, and business locations within a reasonable period (safe harbor of 60 days).
+- **Return of Excess Funds Within 120 Days:** Any advanced per diem payments exceeding substantiated GSA limits must be returned to the employer within 120 days.
+
+Failure to satisfy any condition converts the entire per diem allowance into taxable Form W-2 wages subject to FICA and federal income tax withholding.
+
 ## Sources and further reading
 
 The figures and rules in this article come from the primary sources below. Thresholds, rates, and limits change from year to year, so confirm the current value at the source before relying on it.

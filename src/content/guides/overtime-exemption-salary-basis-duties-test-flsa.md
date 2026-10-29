@@ -71,6 +71,17 @@ $$10 \times \$43.27 \times 52 = \$22{,}500 \text{ per year (before liquidated da
 
 See [the exempt vs. non-exempt test](/guides/salary-exempt-vs-non-exempt-flsa-test/) for a shorter walkthrough of the salary side and [overtime rules](/guides/flsa-overtime-time-and-a-half-rules/) for the 1.5x calculation.
 
+## Safe Harbor Policies for Improper Payroll Deductions Under 29 C.F.R. § 541.603
+
+An exempt employee's salary cannot be docked for partial-day absences or variations in the quality or quantity of work performed. Under 29 C.F.R. § 541.603, making improper deductions from an exempt employee's salary can result in the loss of the overtime exemption for the entire job classification across the organizational unit.
+
+To protect against retroactive overtime claims, employers should adopt a formal written **FLSA Safe Harbor Policy**:
+- Explicitly prohibiting improper salary deductions.
+- Establishing an internal employee grievance procedure for payroll errors.
+- Committing to full reimbursement of improper deductions within a reasonable timeframe.
+
+When an employer maintains a clear policy and acts in good faith, isolated or inadvertent deductions will not destroy the worker's exempt status.
+
 ## Sources and further reading
 
 The figures and rules in this article come from the primary sources below. Thresholds, rates, and limits change from year to year, so confirm the current value at the source before relying on it.

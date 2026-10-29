@@ -73,6 +73,25 @@ Under the "dual jobs" rule in 29 C.F.R. § 531.56(e), an employee who is a tippe
 
 For each employee with multiple rates, payroll records should show hours worked at each rate, each rate in effect, and any agreement about overtime computation, in writing and dated before the work. These records must be kept for three years under 29 C.F.R. Part 516.
 
+## Statutory Liabilities and DOL Audit Verification
+
+Under FLSA Section 16(b) (29 U.S.C. § 216(b)), an employer that miscalculates the weighted regular rate faces liability for 100% back overtime wages, plus an equal amount in mandatory statutory liquidated damages and reasonable attorney fees. Common audit triggers during Department of Labor Wage and Hour Division (WHD) audits include:
+
+- **Automated Payroll Software Rounding Errors:** Many off-the-shelf timekeeping tools incorrectly assign overtime to whichever job was worked chronologically last in the workweek without prior written agreement under 29 C.F.R. § 778.419.
+- **Exclusion of Non-Discretionary Incentive Pay:** Failing to pool production bonuses, attendance incentives, or shift differentials into the total straight-time earnings before dividing by total hours worked.
+- **Three-Year Lookback for Willful Violations:** Under 29 U.S.C. § 255(a), standard wage claims carry a 2-year statute of limitations, but systematic miscalculation across multi-rate workforces can extend exposure to 3 years.
+
+To ensure statutory compliance, employers operating multi-rate operations should maintain contemporaneous timecard records distinguishing exact hours clocked under each pay rate code, verify that payroll software executes the weighted average formula automatically, and execute signed rate-agreement riders prior to scheduling dual-rate overtime shifts.
+
+
+### Multi-Rate Overtime Compliance Checklist
+
+Before running payroll for employees working multiple roles across a single workweek:
+1. Confirm that total hours across all roles combined exceed 40 hours before applying overtime calculations.
+2. Sum straight-time earnings from each position before dividing by aggregate hours to determine the true weighted regular rate.
+3. Multiply overtime hours by 50% of the weighted regular rate to determine the additional half-time premium owed.
+4. Verify whether any written agreement exists under 29 C.F.R. Section 778.419 establishing job-specific overtime rates.
+
 ## Sources and further reading
 
 The figures and rules in this article come from the primary sources below. Thresholds, rates, and limits change from year to year, so confirm the current value at the source before relying on it.

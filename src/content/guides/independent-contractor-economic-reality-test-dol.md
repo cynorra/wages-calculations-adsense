@@ -67,6 +67,12 @@ Two other tests may apply to the same worker. The IRS uses a common-law control 
 
 For a related comparison of take-home and rate equivalence, see [1099 vs W-2 hourly rate equivalence](/guides/1099-contractor-vs-w2-hourly-rate-equivalence/).
 
+## Joint Employer Liability and Dual-Status Worker Scrutiny
+
+Under the Fair Labor Standards Act (29 U.S.C. § 203(e)(1)), courts and the Department of Labor evaluate economic dependence rather than contractual labels or IRS Form 1099 designations. In addition to the six economic reality factors, federal investigators examine whether a hiring enterprise operates as a joint employer with staffing agencies or third-party vendors under 29 C.F.R. Part 791.
+
+When an independent contractor relationship is successfully challenged, hiring firms face catastrophic retroactive liabilities: payment of unpaid minimum wages and overtime, employer FICA contributions, state unemployment insurance premiums, workers' compensation assessments, and 100% liquidated damages under 29 U.S.C. § 216(b).
+
 ## Sources and further reading
 
 The figures and rules in this article come from the primary sources below. Thresholds, rates, and limits change from year to year, so confirm the current value at the source before relying on it.

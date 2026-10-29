@@ -60,6 +60,16 @@ Legislation that would allow private comp time (the "Working Families Flexibilit
 
 If scheduling flexibility is the goal, a compliant alternative is to pay overtime in cash and offer **voluntary schedule adjustments within the same workweek**, for example shortening Friday after a long Monday. For help with the 1.5x math, see [FLSA overtime rules](/guides/flsa-overtime-time-and-a-half-rules/).
 
+## Private Employer Liabilities: Liquidated Damages and Section 216(b)
+
+Private employers that operate informal "comp time banks" often believe they are providing a voluntary, employee-friendly flexibility option. However, federal courts consistently rule that statutory FLSA protections cannot be waived by individual worker consent (*Brooklyn Savings Bank v. O'Neil*, 324 U.S. 697). When private comp time arrangements are uncovered—often following an employee separation or a Department of Labor investigation—the legal repercussions include:
+
+- **Full Cash Overtime Back Pay:** The employer must pay full cash overtime at 1.5 times the employee's regular rate for every overtime hour worked during the audit period, regardless of whether the employee previously took time off.
+- **100% Mandatory Liquidated Damages:** Under 29 U.S.C. § 216(b), the default remedy is double damages (back wages plus 100% liquidated damages), unless the employer can prove objective good faith under 29 U.S.C. § 260.
+- **Paystub Record-Keeping Penalties:** Maintaining off-the-books comp time logs violates the record-keeping mandates of 29 C.F.R. Part 516, preventing the employer from substantiating timely wage distributions.
+
+For private firms needing scheduling flexibility, lawful alternatives include implementing compressed 4x10 work schedules within a single 7-day workweek or granting discretionary paid personal leave that does not substitute for statutory overtime obligations.
+
 ## Sources and further reading
 
 The figures and rules in this article come from the primary sources below. Thresholds, rates, and limits change from year to year, so confirm the current value at the source before relying on it.

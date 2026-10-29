@@ -77,6 +77,15 @@ Severance does not automatically bar unemployment, but **state rules vary**. Som
 
 See [supplemental wage withholding](/guides/supplemental-wage-withholding-bonus-taxation-rules/) for the 22% and aggregate methods in more detail, and [gross vs. net pay](/guides/gross-vs-net-pay-payroll-deductions/) for how deductions affect take-home pay.
 
+## IRC Section 409A Nonqualified Deferred Compensation Exposure
+
+When structuring executive and managerial severance packages, corporate counsel and payroll directors must ensure strict compliance with Internal Revenue Code Section 409A (26 U.S.C. § 409A). Severance arrangements that extend payments across multiple tax years or tie distributions to non-compete milestones risk classification as nonqualified deferred compensation:
+
+- **The Separation Pay Exemption:** Under Treasury Regulation § 1.409A-1(b)(9)(iii), severance payments are exempt from Section 409A if paid upon involuntary termination, do not exceed two times the employee's annual compensation (or two times the IRC § 401(a)(17) limit, whichever is less), and are fully disbursed by the end of the second calendar year following separation.
+- **Penalties for Non-Compliance:** If a severance agreement violates Section 409A, the employee faces immediate income taxation on all vested amounts, an additional **20% statutory federal excise penalty**, and IRS interest penalties calculated at the federal underpayment rate plus 1%.
+
+Employers must structure severance release agreements with clear execution windows to ensure all payments satisfy the short-term deferral or separation pay safe harbors.
+
 ## Sources and further reading
 
 The figures and rules in this article come from the primary sources below. Thresholds, rates, and limits change from year to year, so confirm the current value at the source before relying on it.

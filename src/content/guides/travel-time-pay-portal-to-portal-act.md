@@ -62,6 +62,16 @@ Travel time that is hours worked must be paid at no less than the minimum wage a
 
 Back pay for unpaid travel is recoverable for two years, or three if the violation is willful, with an equal amount in liquidated damages under 29 U.S.C. § 216(b). The Portal-to-Portal Act itself provides a good-faith defense in § 259 where an employer relied in writing on a DOL interpretation.
 
+## Out-of-Town Overnight Travel Mechanics Under 29 C.F.R. § 785.39
+
+Travel away from an employee's home community that keeps the worker away overnight creates specific FLSA compensation obligations that differ fundamentally from ordinary commuting:
+
+- **Travel During Normal Working Hours:** Under 29 C.F.R. § 785.39, travel time is compensable working time when it cuts across the employee's normal workday hours. This applies not only on regular working days (Monday through Friday) but also during corresponding hours on non-working days (such as Saturday and Sunday).
+- **Travel Outside Normal Working Hours as a Passenger:** When an employee travels outside regular working hours as a passenger on an airplane, train, bus, or automobile, the travel time is non-compensable under the FLSA.
+- **Driver Exceptions:** If an employee is required to drive the corporate vehicle or transport other workers, the driving time is fully compensable regardless of the hour or day of the week.
+
+Employers should document travel schedules clearly to prevent unrecorded travel overtime claims under 29 U.S.C. § 207.
+
 ## Sources and further reading
 
 The figures and rules in this article come from the primary sources below. Thresholds, rates, and limits change from year to year, so confirm the current value at the source before relying on it.

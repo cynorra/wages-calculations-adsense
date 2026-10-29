@@ -85,6 +85,15 @@ This is before waiting time and wage statement penalties and attorney fees, whic
 
 This guide covers California's rules only; other states, such as New York and Illinois, require meal periods but do not impose a premium. For related state-law premiums see [split-shift pay](/guides/split-shift-differential-premiums-california-ny/).
 
+## Federal FLSA Break Rules Under 29 C.F.R. § 785.18 vs. California Mandates
+
+Unlike California, the federal Fair Labor Standards Act does not mandate employers to provide meal periods or rest breaks. However, federal regulations establish strict compensability rules when employers choose to offer breaks:
+
+- **Rest Breaks (5 to 20 Minutes):** Under 29 C.F.R. § 785.18, rest periods lasting 20 minutes or fewer are considered customary breaks that promote employee efficiency and must be counted as compensable hours worked.
+- **Bona Fide Meal Periods (30+ Minutes):** Under 29 C.F.R. § 785.19, bona fide meal times are non-compensable only if the employee is completely relieved from duty for the purposes of eating regular meals. If a worker answers telephones or monitors equipment while eating lunch, federal law requires full compensation.
+
+California employers must comply with both the federal compensation floor and California Labor Code § 226.7 premium penalties, ensuring that rest breaks are treated as paid time and meal breaks are strictly duty-free.
+
 ## Sources and further reading
 
 The figures and rules in this article come from the primary sources below. Thresholds, rates, and limits change from year to year, so confirm the current value at the source before relying on it.

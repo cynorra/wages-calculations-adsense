@@ -2,7 +2,7 @@
 title: "PTO Payout Laws by State: Vacation Cash Value and Supplemental Tax Rules"
 description: "How to convert unused vacation hours into cash value upon job separation, state use-it-or-lose-it prohibitions, and the 22% federal supplemental tax rule."
 tool: "pto-payout-calculator"
-status: "draft"
+status: "published"
 published: "2026-11-17"
 author_slug: "eren-simsir"
 ---

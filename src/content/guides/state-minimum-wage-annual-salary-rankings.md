@@ -2,7 +2,7 @@
 title: "50-State Minimum Wage to Annual Salary Rankings & Cost of Living"
 description: "Comprehensive 2026 rankings of all 50 US state statutory minimum wages converted into 2,080-hour annual base salaries from $15,080 to $36,400+."
 tool: "state-minimum-wage-to-annual-salary-calculator"
-status: "draft"
+status: "published"
 published: "2026-11-25"
 author_slug: "eren-simsir"
 ---

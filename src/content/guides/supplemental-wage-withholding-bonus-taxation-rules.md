@@ -71,6 +71,14 @@ Tax treatment and wage-and-hour law are separate. Under the FLSA, a **nondiscret
 
 For how severance is withheld, see [severance pay](/guides/severance-pay-taxation-payroll-withholding-irc/), and for a look at the full gross-to-net picture see [gross vs. net pay](/guides/gross-vs-net-pay-payroll-deductions/).
 
+## Aggregate Withholding Method vs. Percentage Method Compliance
+
+Under IRS Treasury Regulation § 31.3402(g)-1, employers disbursing bonuses, commissions, or equity compensation have two distinct statutory withholding options when paying supplemental wages concurrently with regular salary:
+
+- **The Aggregate Method:** Payroll software combines the regular paycheck and bonus into a single gross figure, calculates federal income tax withholding using standard Form W-4 tax tables, and subtracts the tax already attributable to regular wages. In high tax brackets, this method frequently results in higher upfront withholding than the 22% flat rate.
+- **The 22% Optional Flat Rate:** If regular wages have already been paid during the calendar year and the employer withholds tax at statutory rates on those wages, the employer may simply apply a flat 22.00% to the gross bonus.
+- **Mandatory 37% Withholding for High Earners:** Once cumulative supplemental wages paid to an employee exceed $1,000,000 within a single tax year, all subsequent supplemental payments must be withheld at the maximum individual federal tax rate of **37.00%** under 26 U.S.C. § 3402(g).
+
 ## Sources and further reading
 
 The figures and rules in this article come from the primary sources below. Thresholds, rates, and limits change from year to year, so confirm the current value at the source before relying on it.

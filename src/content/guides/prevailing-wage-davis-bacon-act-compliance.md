@@ -81,6 +81,16 @@ If a violation is found, the contracting agency can **withhold contract payments
 
 See [overtime rules](/guides/flsa-overtime-time-and-a-half-rules/) for the standard FLSA overtime rule that Davis-Bacon and the CWHSSA build on.
 
+## Certified Payroll and Fringe Benefit Credit Audits
+
+Under the Davis-Bacon Act (40 U.S.C. §§ 3141–3148) and related acts, government contractors must submit weekly certified payroll reports (Form WH-347) to the contracting agency. To maintain full regulatory compliance, employers must observe strict fringe credit rules under 29 C.F.R. Part 5:
+
+- **Bona Fide Fringe Benefits:** Only employer contributions to irrevocable trusts or bona fide third-party plans (health insurance, 401(k) retirement, life insurance, and apprenticeship programs) qualify for fringe credits.
+- **Statutory Exclusions:** Costs mandated by federal, state, or local law (such as FICA Social Security, Medicare, workers' compensation, and state unemployment insurance) cannot be credited toward the required prevailing fringe benefit rate.
+- **Annualization Principle:** When calculating the hourly credit for an annual benefit, the total employer contribution must be divided by total hours worked across *all* projects (both private and prevailing wage) during the year.
+
+Falsification of certified payroll records carries severe criminal penalties under 18 U.S.C. § 1001, including corporate debarment from federal contracts for up to three years.
+
 ## Sources and further reading
 
 The figures and rules in this article come from the primary sources below. Thresholds, rates, and limits change from year to year, so confirm the current value at the source before relying on it.

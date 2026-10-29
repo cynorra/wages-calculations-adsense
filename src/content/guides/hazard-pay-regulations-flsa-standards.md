@@ -60,6 +60,22 @@ When the premium is a flat sum instead of an hourly amount, the same principle a
 
 For the general method of blending premiums into the rate, see our guide on [regular rate and bonuses](/guides/flsa-regular-rate-of-pay-bonuses/), and for night or weekend premiums see [shift differentials](/guides/night-weekend-shift-differential-pay/).
 
+## Regular Rate Treatment and Payroll Calculation Mechanics
+
+Under 29 C.F.R. § 778.207(b), hazard pay differentials—whether paid as an hourly premium (e.g., an extra $4.00 per hour for confined space work) or as a flat lump-sum bonus per shift—must be included in the employee's regular rate of pay when computing overtime compensation. An employer cannot exclude hazard pay from the overtime calculation simply because it is labeled as hazardous duty compensation.
+
+For example, consider an employee with a $20.00 base rate who earns a $5.00/hr hazard differential for 20 hours of a 50-hour workweek:
+
+$\text{Straight-Time Earnings} = (50 \times \$20.00) + (20 \times \$5.00) = \$1{,}000.00 + \$100.00 = \$1{,}100.00$
+
+$\text{Regular Rate} = \frac{\$1{,}100.00}{50 \text{ hours}} = \$22.00 \text{ per hour}$
+
+$\text{Overtime Premium} = 10 \text{ OT hours} \times (0.5 \times \$22.00) = \$110.00$
+
+$\text{Total Gross Pay} = \$1{,}100.00 + \$110.00 = \$1{,}210.00$
+
+Excluding the hazard differential from the regular rate would reduce the overtime rate to $10.00/hr (producing only $100.00 OT), creating an unlawful FLSA wage underpayment under 29 U.S.C. § 207(a).
+
 ## Sources and further reading
 
 The figures and rules in this article come from the primary sources below. Thresholds, rates, and limits change from year to year, so confirm the current value at the source before relying on it.

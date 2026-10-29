@@ -65,6 +65,12 @@ Both premiums are paid at the minimum wage rate rather than the employee's actua
 
 For related California rules, see [meal and rest break premiums](/guides/rest-break-and-meal-period-penalty-pay-california/), and for premiums for nights and weekends see [shift differentials](/guides/night-weekend-shift-differential-pay/).
 
+## Federal FLSA Baselines vs. State Statutory Penalties
+
+Under federal law (29 C.F.R. § 785.16), off-duty intervals during a split shift are not compensable working hours as long as the period is of sufficient length to enable the employee to use the time effectively for personal purposes and the worker is completely relieved from duty. However, multi-state employers must recognize that federal silence does not preempt state premium mandates under FLSA Section 18(a) (29 U.S.C. § 218(a)).
+
+In California, failure to disburse the required split-shift differential on the regular payday violates California Labor Code § 204, subjecting employers to statutory penalties under Labor Code § 210 and waiting time penalties under § 203 upon termination. In New York, the spread-of-hours premium required under 12 N.Y.C.R.R. § 142-2.4 must be clearly itemized on weekly paystubs under the New York Wage Theft Prevention Act (NYLL § 195). Omission of spread-of-hours credits exposes companies to statutory damages of up to $250 per day (capped at $5,000 per worker) plus 100% liquidated damages.
+
 ## Sources and further reading
 
 The figures and rules in this article come from the primary sources below. Thresholds, rates, and limits change from year to year, so confirm the current value at the source before relying on it.

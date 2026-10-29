@@ -120,7 +120,7 @@ export function auditArticleQuality({ title, description, body_md, minWords = 10
   }
 
   // 7. Statutory Reference Gate
-  const statutoryRegex = /(?:29\s+U\.S\.C\.|29\s+C\.F\.R\.|26\s+U\.S\.C\.|IRS\s+Publication|FLSA\s+Section|Title\s+29)/i;
+  const statutoryRegex = /(?:29\s+U\.S\.C\.|29\s+C\.F\.R\.|26\s+U\.S\.C\.|IRS\s+Publication|FLSA\s+Section|Title\s+29|Labor\s+Code|N\.Y\.C\.R\.R\.|NYLL|IWC\s+Wage\s+Order|C\.R\.S\.|Rev\.\s*Stat\.)/i;
   if (!statutoryRegex.test(body_md)) {
     errors.push("MISSING_STATUTORY_AUTHORITY: Article must cite specific US Code or CFR sections (e.g., 29 C.F.R. § 778 or 29 U.S.C. § 207).");
   }

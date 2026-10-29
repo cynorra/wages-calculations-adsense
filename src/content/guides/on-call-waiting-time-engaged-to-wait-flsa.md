@@ -65,6 +65,16 @@ When an employee is on duty for 24 hours or more, the employer and employee may 
 - If the restrictions are too tight to avoid liability, pay a reasonable hourly standby rate. An agreed standby rate for compensable waiting time can be lower than the regular rate, as long as it is at least the minimum wage.
 - Review state law. Some states, and some union contracts, require call-in or standby pay that the FLSA does not.
 
+## Audit Standards and Geographical Restrictions Under 29 C.F.R. Part 785
+
+Courts and the Department of Labor evaluate on-call arrangements using a totality-of-the-circumstances framework to determine whether an employee was "engaged to wait" (compensable working time) or "waiting to be engaged" (non-compensable personal time). Key factors analyzed during an FLSA wage audit include:
+
+- **Required Response Time:** A response window of 10 to 15 minutes that forces the employee to remain in uniform and within a 5-mile radius generally converts on-call time into compensable hours. Conversely, response windows of 45 to 60 minutes typically allow meaningful personal pursuits.
+- **Call Frequency and Disruption:** If an employee receives repeated calls per shift that disrupt sleep, family meals, or appointments, the time is compensable even if the worker remains at home.
+- **Use of Time for Personal Activities:** An employee permitted to trade shifts, engage in recreational activities, and carry a cellular device without severe geographic confinement is generally considered waiting to be engaged under 29 C.F.R. § 785.17.
+
+Employers utilizing on-call rosters must document exact response protocols in writing and ensure that any hours spent actively logging in or responding remotely are recorded and paid down to the minute.
+
 ## Sources and further reading
 
 The figures and rules in this article come from the primary sources below. Thresholds, rates, and limits change from year to year, so confirm the current value at the source before relying on it.

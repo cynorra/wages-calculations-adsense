@@ -71,6 +71,14 @@ The $276 is subject to Social Security and Medicare, but not to federal income t
 
 For the withholding side, see [supplemental wages](/guides/supplemental-wage-withholding-bonus-taxation-rules/) and for the net-pay result [gross vs. net pay](/guides/gross-vs-net-pay-payroll-deductions/).
 
+## IRS Record-Keeping Requirements and Safe Harbor Rules
+
+To substantiate the exclusion of business use from gross income under 26 U.S.C. § 132(d), taxpayers and employers must satisfy rigorous contemporaneous record-keeping requirements under Treasury Regulation § 1.274-5T. Failure to maintain adequate logs results in 100% of the vehicle's operating and lease value being reclassified as taxable personal imputed income:
+
+- **Contemporaneous Mileage Logs:** Drivers must record the date of travel, starting and ending odometer readings, business destination, and specific business purpose.
+- **Written Employer Policy Prohibiting Personal Use:** Under Treasury Regulation § 1.274-6T, employers can avoid detailed personal mileage tracking if a formal written corporate policy strictly restricts personal use to commuting or completely prohibits personal usage outside business assignments.
+- **Annual Valuation Timing:** Employers typically calculate imputed personal vehicle income on an annual basis between November 1 and October 31 (the two-month rule) to ensure accurate Form W-2 Box 1 reporting.
+
 ## Sources and further reading
 
 The figures and rules in this article come from the primary sources below. Thresholds, rates, and limits change from year to year, so confirm the current value at the source before relying on it.
