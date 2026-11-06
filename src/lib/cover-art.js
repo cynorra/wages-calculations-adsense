@@ -42,10 +42,15 @@ function wrapText(text, maxChars, maxLines) {
     lines.push(current);
   }
 
-  if (words.length > 0 && lines.length === maxLines) {
-    const lastLine = lines[maxLines - 1];
-    if (words.join(" ").length > lines.join(" ").length) {
-      lines[maxLines - 1] = lastLine.replace(/\s+[^ ]*$/, "") + "…";
+  const allWords = words.join(" ");
+  const printedWords = lines.join(" ");
+  if (allWords.length > printedWords.length && lines.length > 0) {
+    const lastIdx = lines.length - 1;
+    const last = lines[lastIdx];
+    if (last.length + 1 <= maxChars) {
+      lines[lastIdx] = last + "…";
+    } else {
+      lines[lastIdx] = last.replace(/\s+[^ ]*$/, "") + "…";
     }
   }
 
@@ -93,24 +98,24 @@ function classifyTopic(slug) {
 function drawGaugeVisual(accent) {
   return `
     <!-- Right Panel Card: Overtime Threshold Meter -->
-    <g transform="translate(620, 75)">
-      <rect width="280" height="250" rx="16" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.09)" stroke-width="1.5"/>
-      <text x="140" y="36" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#9ab3a6" letter-spacing="1.5">STATUTORY OVERTIME GAUGE</text>
+    <g transform="translate(632, 72)">
+      <rect width="272" height="256" rx="16" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.09)" stroke-width="1.5"/>
+      <text x="136" y="34" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#9ab3a6" letter-spacing="1.5">STATUTORY OVERTIME GAUGE</text>
       
       <!-- Outer Dial Arc -->
-      <circle cx="140" cy="140" r="76" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="12" stroke-linecap="round"/>
-      <path d="M 78 178 A 76 76 0 1 1 202 178" fill="none" stroke="${accent}" stroke-width="12" stroke-dasharray="190 280" stroke-linecap="round"/>
+      <circle cx="136" cy="140" r="74" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="12" stroke-linecap="round"/>
+      <path d="M 76 178 A 74 74 0 1 1 196 178" fill="none" stroke="${accent}" stroke-width="12" stroke-dasharray="190 280" stroke-linecap="round"/>
       
       <!-- Center Display -->
-      <text x="140" y="132" text-anchor="middle" font-family="'Inter', sans-serif" font-size="34" font-weight="800" fill="#ffffff" letter-spacing="-1">1.5×</text>
-      <text x="140" y="154" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="${accent}">TIME-AND-A-HALF</text>
-      <text x="140" y="174" text-anchor="middle" font-family="'Inter', sans-serif" font-size="10" fill="#718a7e">THRESHOLD: &gt; 40.0 HRS</text>
+      <text x="136" y="132" text-anchor="middle" font-family="'Inter', sans-serif" font-size="34" font-weight="800" fill="#ffffff" letter-spacing="-1">1.5×</text>
+      <text x="136" y="154" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="${accent}">TIME-AND-A-HALF</text>
+      <text x="136" y="174" text-anchor="middle" font-family="'Inter', sans-serif" font-size="10" fill="#718a7e">THRESHOLD: &gt; 40.0 HRS</text>
 
       <!-- Bottom Benchmark Indicators -->
-      <rect x="24" y="210" width="110" height="24" rx="6" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)"/>
-      <text x="79" y="226" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10" fill="#ffffff">BASE: 1.0×</text>
-      <rect x="146" y="210" width="110" height="24" rx="6" fill="rgba(229,169,82,0.12)" stroke="${accent}" stroke-opacity="0.4"/>
-      <text x="201" y="226" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="${accent}">DOUBLE: 2.0×</text>
+      <rect x="20" y="210" width="110" height="24" rx="6" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)"/>
+      <text x="75" y="226" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10" fill="#ffffff">BASE: 1.0×</text>
+      <rect x="142" y="210" width="110" height="24" rx="6" fill="rgba(229,169,82,0.12)" stroke="${accent}" stroke-opacity="0.4"/>
+      <text x="197" y="226" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="${accent}">DOUBLE: 2.0×</text>
     </g>
   `;
 }
@@ -118,33 +123,33 @@ function drawGaugeVisual(accent) {
 function drawWaterfallVisual(accent) {
   return `
     <!-- Right Panel Card: Waterfall Net Pay Reduction -->
-    <g transform="translate(620, 75)">
-      <rect width="280" height="250" rx="16" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.09)" stroke-width="1.5"/>
-      <text x="140" y="34" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#9ab3a6" letter-spacing="1.5">PAYCHECK WATERFALL</text>
+    <g transform="translate(632, 72)">
+      <rect width="272" height="256" rx="16" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.09)" stroke-width="1.5"/>
+      <text x="136" y="34" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#9ab3a6" letter-spacing="1.5">PAYCHECK WATERFALL</text>
 
       <!-- Step 1: Gross Pay -->
-      <rect x="24" y="58" width="60" height="135" rx="6" fill="#38bdf8" opacity="0.85"/>
-      <text x="54" y="210" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10" fill="#9ab3a6">GROSS</text>
-      <text x="54" y="125" text-anchor="middle" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#ffffff" transform="rotate(-90 54 125)">100%</text>
+      <rect x="20" y="58" width="58" height="135" rx="6" fill="#38bdf8" opacity="0.85"/>
+      <text x="49" y="210" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10" fill="#9ab3a6">GROSS</text>
+      <text x="49" y="125" text-anchor="middle" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#ffffff" transform="rotate(-90 49 125)">100%</text>
 
       <!-- Step 2: FICA Deduction (7.65%) -->
-      <line x1="84" y1="58" x2="100" y2="58" stroke="rgba(255,255,255,0.2)" stroke-dasharray="3 3"/>
-      <rect x="100" y="58" width="34" height="28" rx="5" fill="#f87171" opacity="0.8"/>
-      <text x="117" y="210" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="9" fill="#f87171">-7.65%</text>
-      <text x="117" y="222" text-anchor="middle" font-family="'Inter', sans-serif" font-size="8" fill="#718a7e">FICA</text>
+      <line x1="78" y1="58" x2="94" y2="58" stroke="rgba(255,255,255,0.2)" stroke-dasharray="3 3"/>
+      <rect x="94" y="58" width="34" height="28" rx="5" fill="#f87171" opacity="0.8"/>
+      <text x="111" y="210" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="9" fill="#f87171">-7.65%</text>
+      <text x="111" y="222" text-anchor="middle" font-family="'Inter', sans-serif" font-size="8" fill="#718a7e">FICA</text>
 
       <!-- Step 3: Federal FIT (15-22%) -->
-      <line x1="134" y1="86" x2="148" y2="86" stroke="rgba(255,255,255,0.2)" stroke-dasharray="3 3"/>
-      <rect x="148" y="86" width="38" height="42" rx="5" fill="#fb923c" opacity="0.8"/>
-      <text x="167" y="210" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="9" fill="#fb923c">-18%</text>
-      <text x="167" y="222" text-anchor="middle" font-family="'Inter', sans-serif" font-size="8" fill="#718a7e">FIT</text>
+      <line x1="128" y1="86" x2="142" y2="86" stroke="rgba(255,255,255,0.2)" stroke-dasharray="3 3"/>
+      <rect x="142" y="86" width="38" height="42" rx="5" fill="#fb923c" opacity="0.8"/>
+      <text x="161" y="210" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="9" fill="#fb923c">-18%</text>
+      <text x="161" y="222" text-anchor="middle" font-family="'Inter', sans-serif" font-size="8" fill="#718a7e">FIT</text>
 
       <!-- Step 4: Net Pay Remaining -->
-      <line x1="186" y1="128" x2="202" y2="128" stroke="rgba(255,255,255,0.2)" stroke-dasharray="3 3"/>
-      <rect x="202" y="128" width="54" height="65" rx="6" fill="${accent}"/>
-      <text x="229" y="210" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="${accent}">NET</text>
-      <text x="229" y="222" text-anchor="middle" font-family="'Inter', sans-serif" font-size="8" fill="#718a7e">TAKE-HOME</text>
-      <text x="229" y="165" text-anchor="middle" font-family="'Inter', sans-serif" font-size="12" font-weight="800" fill="#ffffff">~74%</text>
+      <line x1="180" y1="128" x2="196" y2="128" stroke="rgba(255,255,255,0.2)" stroke-dasharray="3 3"/>
+      <rect x="196" y="128" width="56" height="65" rx="6" fill="${accent}"/>
+      <text x="224" y="210" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="${accent}">NET</text>
+      <text x="224" y="222" text-anchor="middle" font-family="'Inter', sans-serif" font-size="8" fill="#718a7e">TAKE-HOME</text>
+      <text x="224" y="165" text-anchor="middle" font-family="'Inter', sans-serif" font-size="12" font-weight="800" fill="#ffffff">~74%</text>
     </g>
   `;
 }
@@ -152,25 +157,25 @@ function drawWaterfallVisual(accent) {
 function drawConversionVisual(accent) {
   return `
     <!-- Right Panel Card: Wage Matrix Conversion -->
-    <g transform="translate(620, 75)">
-      <rect width="280" height="250" rx="16" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.09)" stroke-width="1.5"/>
-      <text x="140" y="34" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#9ab3a6" letter-spacing="1.5">ANNUAL DILUTION MATRIX</text>
+    <g transform="translate(632, 72)">
+      <rect width="272" height="256" rx="16" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.09)" stroke-width="1.5"/>
+      <text x="136" y="34" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#9ab3a6" letter-spacing="1.5">ANNUAL DILUTION MATRIX</text>
       
       <!-- Split Cards -->
-      <rect x="24" y="56" width="232" height="64" rx="10" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)"/>
-      <text x="42" y="80" font-family="'JetBrains Mono', monospace" font-size="10" fill="#9ab3a6">STANDARD FULL-TIME</text>
-      <text x="42" y="106" font-family="'Inter', sans-serif" font-size="22" font-weight="800" fill="#ffffff">2,080 <tspan font-size="12" font-weight="500" fill="#718a7e">HRS / YR</tspan></text>
+      <rect x="20" y="56" width="232" height="64" rx="10" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)"/>
+      <text x="36" y="80" font-family="'JetBrains Mono', monospace" font-size="10" fill="#9ab3a6">STANDARD FULL-TIME</text>
+      <text x="36" y="106" font-family="'Inter', sans-serif" font-size="22" font-weight="800" fill="#ffffff">2,080 <tspan font-size="12" font-weight="500" fill="#718a7e">HRS / YR</tspan></text>
       
       <!-- Exchange Icon -->
-      <circle cx="218" cy="88" r="16" fill="${accent}" fill-opacity="0.15"/>
-      <text x="218" y="93" text-anchor="middle" font-family="'Inter', sans-serif" font-size="14" fill="${accent}">⇄</text>
+      <circle cx="216" cy="88" r="16" fill="${accent}" fill-opacity="0.15"/>
+      <text x="216" y="93" text-anchor="middle" font-family="'Inter', sans-serif" font-size="14" fill="${accent}">⇄</text>
 
-      <rect x="24" y="132" width="232" height="64" rx="10" fill="rgba(255,255,255,0.04)" stroke="${accent}" stroke-opacity="0.3"/>
-      <text x="42" y="156" font-family="'JetBrains Mono', monospace" font-size="10" fill="${accent}">BIWEEKLY (26 PAY PERIODS)</text>
-      <text x="42" y="182" font-family="'Inter', sans-serif" font-size="22" font-weight="800" fill="#ffffff">80.0 <tspan font-size="12" font-weight="500" fill="#718a7e">HRS / CHECK</tspan></text>
+      <rect x="20" y="132" width="232" height="64" rx="10" fill="rgba(255,255,255,0.04)" stroke="${accent}" stroke-opacity="0.3"/>
+      <text x="36" y="156" font-family="'JetBrains Mono', monospace" font-size="10" fill="${accent}">BIWEEKLY (26 PAY PERIODS)</text>
+      <text x="36" y="182" font-family="'Inter', sans-serif" font-size="22" font-weight="800" fill="#ffffff">80.0 <tspan font-size="12" font-weight="500" fill="#718a7e">HRS / CHECK</tspan></text>
 
       <!-- Bottom Formula Tag -->
-      <text x="140" y="226" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10.5" fill="#9ab3a6">HOURLY = ANNUAL / 2,080</text>
+      <text x="136" y="230" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10.5" fill="#9ab3a6">HOURLY = ANNUAL / 2,080</text>
     </g>
   `;
 }
@@ -178,12 +183,12 @@ function drawConversionVisual(accent) {
 function drawComplianceVisual(accent) {
   return `
     <!-- Right Panel Card: Statutory Audit Seal & Checklist -->
-    <g transform="translate(620, 75)">
-      <rect width="280" height="250" rx="16" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.09)" stroke-width="1.5"/>
-      <text x="140" y="34" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#9ab3a6" letter-spacing="1.5">FORENSIC AUDIT CHECK</text>
+    <g transform="translate(632, 72)">
+      <rect width="272" height="256" rx="16" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.09)" stroke-width="1.5"/>
+      <text x="136" y="34" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#9ab3a6" letter-spacing="1.5">FORENSIC AUDIT CHECK</text>
 
       <!-- 4 Verification Rows -->
-      <g transform="translate(24, 56)">
+      <g transform="translate(20, 56)">
         <!-- Row 1 -->
         <rect x="0" y="0" width="232" height="36" rx="8" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)"/>
         <circle cx="18" cy="18" r="8" fill="${accent}" fill-opacity="0.2"/>
@@ -221,8 +226,13 @@ export function coverSvg(slug, kind, { className = "", label = "", title: passed
   const topic = classifyTopic(slug);
 
   const badgeWidth = Math.round(topic.category.length * 7.8 + 24);
-  const headlineLines = wrapText(title, 28, 3);
-  const descLines = wrapText(description, 58, 2);
+  const isLongTitle = title.length > 46;
+  const titleFontSize = isLongTitle ? 26 : 30;
+  const titleLineHeight = isLongTitle ? 36 : 40;
+  const titleMaxChars = isLongTitle ? 26 : 22;
+
+  const headlineLines = wrapText(title, titleMaxChars, 3);
+  const descLines = wrapText(description, 46, 2);
 
   // Generate unique seed for subtle gradient angle or ambient glow
   const uid = Math.abs(slug.split("").reduce((a, b) => ((a << 5) - a + b.charCodeAt(0)) | 0, 0)).toString(36);
@@ -235,16 +245,16 @@ export function coverSvg(slug, kind, { className = "", label = "", title: passed
 
   const headlineSvg = headlineLines
     .map((line, idx) => {
-      const yPos = 142 + idx * 42;
-      return `<text x="56" y="${yPos}" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="700" fill="#ffffff" letter-spacing="-0.5">${esc(line)}</text>`;
+      const yPos = 130 + idx * titleLineHeight;
+      return `<text x="56" y="${yPos}" font-family="Georgia, 'Times New Roman', serif" font-size="${titleFontSize}" font-weight="700" fill="#ffffff" letter-spacing="-0.3">${esc(line)}</text>`;
     })
     .join("\n");
 
-  const descStartY = 155 + headlineLines.length * 42;
+  const descStartY = 142 + headlineLines.length * titleLineHeight;
   const descSvg = descLines
     .map((line, idx) => {
-      const yPos = descStartY + idx * 22;
-      return `<text x="56" y="${yPos}" font-family="'Inter', -apple-system, sans-serif" font-size="14.5" fill="#9ab3a6" fill-opacity="0.9">${esc(line)}</text>`;
+      const yPos = descStartY + idx * 20;
+      return `<text x="56" y="${yPos}" font-family="'Inter', -apple-system, sans-serif" font-size="13.5" fill="#9ab3a6" fill-opacity="0.9">${esc(line)}</text>`;
     })
     .join("\n");
 

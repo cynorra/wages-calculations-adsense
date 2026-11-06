@@ -121,7 +121,7 @@ const schema = [
         <a href="/" class="hover:text-slate-900">Home</a><span>/</span>
         <a href="/guides/" class="hover:text-slate-900">Guides</a>
       </nav>
-      <div class={info ? "max-w-4xl aspect-[960/420] rounded-3xl overflow-hidden border border-stone-200 shadow-sm" : "h-44 sm:h-60 lg:h-72 rounded-3xl overflow-hidden border border-stone-200 shadow-sm"} set:html={cover} />
+      <div class="max-w-4xl aspect-[960/420] rounded-3xl overflow-hidden border border-stone-200 shadow-sm" set:html={cover} />
       <header class="max-w-3xl mt-8">
         <p class="text-xs font-mono font-semibold uppercase tracking-[0.18em] text-brand-700">{kindLabel}</p>
         <h1 class="mt-3 text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-slate-900 leading-[1.1]">{article.title}</h1>
@@ -152,23 +152,21 @@ const schema = [
         <a href="/" class="hover:text-slate-900">Home</a><span>/</span>
         <a href="/guides/" class="hover:text-slate-900">Guides</a>
       </nav>
-      <header class="grid md:grid-cols-5 gap-8 items-center">
-        <div class="md:col-span-3">
-          <p class="text-xs font-mono font-semibold uppercase tracking-[0.18em] text-brand-700">{kindLabel}</p>
-          <h1 class="mt-3 text-3xl sm:text-4xl font-serif font-bold text-slate-900 leading-tight">{article.title}</h1>
-          <p class="mt-4 text-base text-slate-600 leading-relaxed">{article.description}</p>
-          {headline && (
-            <div class="mt-6 inline-flex items-baseline gap-3 px-5 py-3 rounded-2xl bg-brand-950 text-white">
-              <span class="text-3xl font-serif font-bold tracking-tight">{headline}</span>
-              <span class="text-[11px] font-mono uppercase tracking-wider text-brand-300">headline figure</span>
-            </div>
-          )}
-          <p class="mt-5 text-xs text-slate-500 font-mono">
-            <time datetime={article.published_at}>{article.published_at?.slice(0, 10)}</time> &middot; {minutes} min read &middot; By Eren Şimşir{updated && <> &middot; Updated {updated}</>}
-          </p>
-        </div>
-        <div class="md:col-span-2 aspect-[960/420] rounded-3xl overflow-hidden border border-stone-200 shadow-sm" set:html={cover} />
+      <header class="max-w-3xl">
+        <p class="text-xs font-mono font-semibold uppercase tracking-[0.18em] text-brand-700">{kindLabel}</p>
+        <h1 class="mt-3 text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-slate-900 leading-tight">{article.title}</h1>
+        <p class="mt-4 text-base sm:text-lg text-slate-600 leading-relaxed font-serif italic">{article.description}</p>
+        {headline && (
+          <div class="mt-6 inline-flex items-baseline gap-3 px-5 py-3 rounded-2xl bg-brand-950 text-white">
+            <span class="text-3xl font-serif font-bold tracking-tight">{headline}</span>
+            <span class="text-[11px] font-mono uppercase tracking-wider text-brand-300">headline figure</span>
+          </div>
+        )}
+        <p class="mt-5 text-xs text-slate-500 font-mono">
+          <time datetime={article.published_at}>{article.published_at?.slice(0, 10)}</time> &middot; {minutes} min read &middot; By Eren Şimşir{updated && <> &middot; Updated {updated}</>}
+        </p>
       </header>
+      <div class="mt-8 max-w-4xl aspect-[960/420] rounded-3xl overflow-hidden border border-stone-200 shadow-sm" set:html={cover} />
       {toc.length > 2 && (
         <nav aria-label="Table of Contents" class="mt-8 flex flex-wrap gap-2">
           {toc.map((item) => (<a href={`#${item.id}`} class="px-3 py-1.5 rounded-full bg-white border border-stone-200 text-xs text-slate-700 hover:border-brand-600 hover:text-brand-800 transition-colors">{item.text}</a>))}
@@ -184,18 +182,15 @@ const schema = [
         <a href="/" class="hover:text-slate-900">Home</a><span>/</span>
         <a href="/guides/" class="hover:text-slate-900">Guides</a>
       </nav>
-      <header class="relative overflow-hidden rounded-3xl bg-brand-950 text-white">
-        {!info && <div class="h-32 sm:h-40" set:html={cover} />}
-        <div class="p-8 sm:p-12">
-          <p class="text-xs font-mono font-semibold uppercase tracking-[0.18em] text-brand-300">{kindLabel}</p>
-          <h1 class="mt-3 max-w-2xl text-3xl sm:text-4xl font-serif font-bold leading-tight text-white">{article.title}</h1>
-          <p class="mt-4 max-w-xl text-sm sm:text-base text-brand-100 leading-relaxed">{article.description}</p>
-          <p class="mt-6 text-xs text-brand-300 font-mono">
-            <time datetime={article.published_at}>{article.published_at?.slice(0, 10)}</time> &middot; {minutes} min read &middot; By Eren Şimşir{updated && <> &middot; Updated {updated}</>}
-          </p>
-        </div>
+      <header class="relative overflow-hidden rounded-3xl bg-brand-950 text-white p-8 sm:p-12">
+        <p class="text-xs font-mono font-semibold uppercase tracking-[0.18em] text-brand-300">{kindLabel}</p>
+        <h1 class="mt-3 max-w-2xl text-3xl sm:text-4xl font-serif font-bold leading-tight text-white">{article.title}</h1>
+        <p class="mt-4 max-w-xl text-sm sm:text-base text-brand-100 leading-relaxed">{article.description}</p>
+        <p class="mt-6 text-xs text-brand-300 font-mono">
+          <time datetime={article.published_at}>{article.published_at?.slice(0, 10)}</time> &middot; {minutes} min read &middot; By Eren Şimşir{updated && <> &middot; Updated {updated}</>}
+        </p>
       </header>
-      {info && <div class="mt-6 aspect-[960/420] rounded-3xl overflow-hidden border border-stone-200 shadow-sm" set:html={cover} />}
+      <div class="mt-8 aspect-[960/420] rounded-3xl overflow-hidden border border-stone-200 shadow-sm" set:html={cover} />
       {toc.length > 2 && (
         <nav aria-label="Table of Contents" class="mt-8">
           <h2 class="text-[11px] font-mono font-bold uppercase tracking-wider text-slate-500 mb-3">Step by step</h2>

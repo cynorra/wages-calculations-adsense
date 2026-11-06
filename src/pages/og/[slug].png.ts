@@ -1,55 +1,32 @@
 import sharp from "sharp";
 import { liveArticles } from "../../lib/articles-source.js";
-import { articleKind, KIND_LABEL } from "../../lib/article-kind.js";
-import { coverSvg, themeFor } from "../../lib/cover-art.js";
-import { hasInfographic } from "../../lib/infographics.js";
+import { articleKind } from "../../lib/article-kind.js";
+import { coverSvg } from "../../lib/cover-art.js";
 
 export async function getStaticPaths() {
   const articles = await liveArticles();
   return articles.map((article: any) => ({ params: { slug: article.slug }, props: { article } }));
 }
 
-const esc = (s: string) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
-
-function wrap(text: string, max: number, lines: number) {
-  const out: string[] = [];
-  let line = "";
-  for (const word of text.split(/\s+/)) {
-    if ((line + " " + word).trim().length > max) {
-      out.push(line);
-      line = word;
-    } else line = (line + " " + word).trim();
-  }
-  if (line) out.push(line);
-  return out.slice(0, lines).map((l, i, a) => (i === a.length - 1 && out.length > lines ? l + "…" : l));
-}
-
 export async function GET({ props }: { props: { article: any } }) {
   const { article } = props;
   const kind = articleKind(article.slug);
-  const t = themeFor(article.slug);
   const art = coverSvg(article.slug, kind);
-  const lines = wrap(article.title, 38, 3);
-  const text = lines
-    .map((l, i) => `<text x="64" y="${452 + i * 56}" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="46" fill="${t.ink}">${esc(l)}</text>`)
-    .join("");
-  // Infographic covers carry their own headline, so they get the full chart and a slim title strip.
-  const info = hasInfographic(article.slug);
   const inner = art.replace(/^<svg[^>]*>/, "").replace(/<\/svg>$/, "");
-  const svg = info
-    ? `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-<rect width="1200" height="630" fill="#ffffff"/>
-<svg x="0" y="0" width="1200" height="525" viewBox="0 0 960 420">${inner}</svg>
-<text x="48" y="582" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="30" fill="${t.ink}">${esc(wrap(article.title, 58, 1)[0])}</text>
-<text x="48" y="612" font-family="Arial, sans-serif" font-size="18" fill="${t.ink}" fill-opacity=".6">TheWageReport</text>
-</svg>`
-    : `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-<svg x="0" y="0" width="1200" height="525" viewBox="0 0 960 420" preserveAspectRatio="xMidYMid slice">${inner}</svg>
-<rect y="350" width="1200" height="280" fill="#ffffff"/>
-<text x="64" y="396" font-family="Arial, sans-serif" font-weight="700" font-size="20" letter-spacing="4" fill="${t.mid}">${esc(KIND_LABEL[kind].toUpperCase())}</text>
-${text}
-<text x="64" y="610" font-family="Arial, sans-serif" font-size="22" fill="${t.ink}" fill-opacity=".7">TheWageReport</text>
+
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#091410"/>
+  <svg x="0" y="0" width="1200" height="525" viewBox="0 0 960 420" preserveAspectRatio="xMidYMid meet">
+    ${inner}
+  </svg>
+  <rect y="525" width="1200" height="105" fill="#0d1b15"/>
+  <line x1="0" y1="525" x2="1200" y2="525" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+  <circle cx="64" cy="578" r="6" fill="#38bdf8"/>
+  <text x="84" y="583" font-family="'Inter', Arial, sans-serif" font-weight="700" font-size="20" fill="#ffffff" letter-spacing="2">THE WAGE REPORT</text>
+  <text x="340" y="583" font-family="'Inter', Arial, sans-serif" font-size="16" fill="#718a7e">| Independent Labor Economics &amp; Payroll Journal</text>
+  <text x="1136" y="583" text-anchor="end" font-family="'JetBrains Mono', Consolas, monospace" font-size="15" font-weight="700" fill="#e5a952" letter-spacing="1">thewagereport.com</text>
 </svg>`;
+
   const png = await sharp(Buffer.from(svg)).png().toBuffer();
   return new Response(png, { headers: { "Content-Type": "image/png" } });
 }
