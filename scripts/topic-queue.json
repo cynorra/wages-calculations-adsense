@@ -238,5 +238,35 @@
     "statutoryRef": "29 U.S.C. § 203(m); 29 C.F.R. § 531.59",
     "sources": ["usc203", "cfr531", "dolMinWage"],
     "notes": "Under 29 U.S.C. 203(m), federal law allows an employer to pay a cash wage of $2.13/hr and claim a tip credit of $5.12/hr to satisfy the $7.25 minimum wage, provided the employee receives at least $30/month in tips and retains all tips. For overtime, the regular rate is always the full minimum wage ($7.25), so 1.5x OT is $10.88/hr minus the $5.12 tip credit = $5.76/hr cash overtime wage. Employers cannot multiply $2.13 by 1.5. Under dual-jobs doctrine (29 CFR 531.56), non-tipped work directly supporting tip production exceeding 20% of the workweek or 30 consecutive minutes requires full $7.25 cash wages."
+  },
+  {
+    "slug": "commission-pay-draw-against-commission-flsa",
+    "title": "Commission Pay and Draws: Recoverable vs Non-Recoverable Draw Math",
+    "description": "How sales commission structures, draws against commission, and variable pay reconcile with FLSA minimum wage and regular rate overtime rules.",
+    "keyTakeaway": "Under FLSA regulations, a draw against commission must guarantee at least minimum wage for all hours worked in each pay period, and unearned recoverable draws cannot reduce wages below minimum wage.",
+    "tool": "base-hourly-plus-commission-calculator",
+    "statutoryRef": "29 C.F.R. § 778.117; 29 C.F.R. § 779.416",
+    "sources": ["usc207", "cfr778", "fs23"],
+    "notes": "Under 29 CFR 778.117, commissioned employees must receive at least the minimum wage free and clear for all hours worked in every workweek. In a recoverable draw arrangement, the employer advances an agreed amount (e.g. $500/week) against future commissions. If the worker earns only $300 in commissions, the employer carries over the $200 deficit against future commissions, but can never demand cash repayment that drops the worker's earnings below statutory minimum wage for hours worked. In a non-recoverable draw (guaranteed draw), the deficit is absorbed by the employer."
+  },
+  {
+    "slug": "part-time-vs-full-time-hours-aca-30-hour-threshold",
+    "title": "Full-Time vs Part-Time Hours: The ACA 30-Hour Threshold & 37.5-Hour Schedules",
+    "description": "How the Affordable Care Act 30-hour definition of full-time employment interacts with standard 37.5 and 40-hour workweeks and overtime thresholds.",
+    "keyTakeaway": "While the FLSA does not define part-time work and only mandates overtime after 40 hours, the ACA Section 4980H defines full-time employment as averaging 30 hours per week (130 hours per month) for employer health benefit mandates.",
+    "tool": "hour-and-wage-calculator",
+    "statutoryRef": "26 U.S.C. § 4980H; 29 U.S.C. § 207",
+    "sources": ["usc207", "dolFlsa", "p15"],
+    "notes": "Under the Affordable Care Act (IRC § 4980H), applicable large employers (ALEs with 50+ full-time equivalent employees) must offer health coverage to employees averaging at least 30 hours of service per week or 130 hours per calendar month. For payroll purposes, a standard 37.5-hour schedule (7.5 hours per day) yields 1,950 hours annually ($14,137.50 at federal $7.25 minimum wage). Overtime under FLSA Section 7(a) is not triggered at 37.5 hours; it strictly begins only after 40 actual working hours in the workweek."
+  },
+  {
+    "slug": "payroll-conversion-tables-hourly-to-annual-salary",
+    "title": "Payroll Conversion Tables: The 2,080-Hour Chart from $7.25 to $100/Hour",
+    "description": "Comprehensive reference charts converting hourly wage rates to weekly, biweekly, monthly, and annual gross pay across 2,080, 2,000, and 1,950 annual hour baselines.",
+    "keyTakeaway": "The standard full-time conversion multiplier is 2,080 hours (40 hours x 52 weeks), yielding exact hourly to annual salary relationships from $7.25 ($15,080) to $100 ($208,000).",
+    "tool": "hourly-to-salary-conversion-chart",
+    "statutoryRef": "29 U.S.C. § 206; 29 C.F.R. § 778.109",
+    "sources": ["usc206", "cfr778", "fs23"],
+    "notes": "Standard full-time year = 52 weeks x 40 hours = 2,080 hours. Shorthand: Hourly rate x 2 = approximate thousands per year ($25/hr x 2 = ~$50k, exact $52,000). Baseline figures: $7.25 x 40 = $290/week ($15,080 annual); $15/hr x 40 = $600/week ($31,200 annual); $20/hr x 40 = $800/week ($41,600 annual); $30/hr x 40 = $1,200/week ($62,400 annual); $50/hr x 40 = $2,000/week ($104,000 annual). When adjusting for 2 weeks unpaid vacation (2,000 hours), multiply hourly rate by 2,000."
   }
 ]
