@@ -119,6 +119,22 @@ For a retail chain with 50 stores, this single misclassification pattern creates
 
 ---
 
+## Exempt vs. Non-Exempt: Is an Exempt Employee Always Salaried or Can They Be Hourly?
+
+A central point of workplace confusion is whether exemption status automatically dictates how an employee is paid:
+
+### 1. Can an Exempt Employee Be Paid Hourly?
+With very narrow statutory exceptions, **no**. The FLSA general rule dictates that an exempt white-collar employee must be paid on a guaranteed salary basis. If an employer pays an employee on an hourly basis, the worker is automatically classified as **non-exempt and entitled to overtime**, regardless of how high their hourly rate is or how executive their job duties are. 
+
+The primary federal exception is the **Computer Professional Exemption (29 C.F.R. § 541.400)**, which permits exemption from overtime if the computer analyst, programmer, or software engineer is paid an hourly rate not less than **$27.63 per hour**.
+
+### 2. What is a "Salaried Non-Exempt" Employee?
+Many employers mistakenly believe that putting an employee on a "salary" eliminates the obligation to pay overtime. This is legally false. If an employee receives a fixed salary (e.g., $900 per week) but their daily job responsibilities fail the Executive, Administrative, or Professional duties tests, the worker is a **salaried non-exempt employee**. 
+
+Under 29 C.F.R. § 778.113, salaried non-exempt workers are **100% legally entitled to time-and-a-half (1.5x) overtime pay** for every hour worked past 40 in a workweek.
+
+---
+
 ## Related Statutory & Payroll Guides
 
 For additional context on FLSA regulations and take-home calculations, review our related guides:

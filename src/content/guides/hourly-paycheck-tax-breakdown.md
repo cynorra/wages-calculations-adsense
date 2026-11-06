@@ -111,6 +111,25 @@ At the conclusion of the tax year, the cumulative results of these hourly deduct
 
 ---
 
+## Biweekly After-Tax Take-Home Pay for $13, $18, and $20 per Hour
+
+Hourly workers frequently evaluate job offers and budget realities by calculating their net take-home paycheck for common wage tiers ($13, $18, and $20 per hour). Based on a standard 80-hour biweekly schedule (40 hours per week for single filers taking the standard deduction), here is the exact statutory tax breakdown:
+
+### Biweekly Take-Home Pay Comparison Matrix (80 Hours Worked)
+
+| Hourly Wage | Gross Biweekly Pay | FICA Taxes (7.65%) | Est. Federal Income Tax | Est. State Tax (Avg 3%) | Net Biweekly Paycheck (No-Tax States: TX/FL/WA) | Net Biweekly Paycheck (Avg Tax States) | Real Net Hourly Take-Home |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **$13.00 / hr** | **$1,040.00** | $79.56 | $52.00 | $31.20 | **$908.44** | **$877.24** | **$10.97 – $11.36 / hr** |
+| **$18.00 / hr** | **$1,440.00** | $110.16 | $101.00 | $43.20 | **$1,228.84** | **$1,185.64** | **$14.82 – $15.36 / hr** |
+| **$20.00 / hr** | **$1,600.00** | $122.40 | $123.00 | $48.00 | **$1,354.60** | **$1,306.60** | **$16.33 – $16.93 / hr** |
+
+### Key Wage Takeaway Breakdown:
+- **How much is $13 an hour biweekly after taxes?** A worker earning $13/hr grosses $1,040 biweekly and retains roughly **$877 to $908 in net take-home cash** every two weeks.
+- **How much is $18 an hour biweekly after taxes?** At $18/hr ($37,440/year gross), the biweekly gross is $1,440, resulting in **$1,186 to $1,229 in hand** after mandatory FICA and federal withholdings.
+- **How much is $20 an hour biweekly after taxes?** At $20/hr ($41,600/year gross), an 80-hour biweekly paycheck delivers **$1,307 to $1,355 in take-home pay**, reflecting an effective total payroll tax reduction of 15.3% to 18.3%.
+
+---
+
 ## Related Statutory & Payroll Guides
 
 For additional context on FLSA regulations and take-home calculations, review our related guides:

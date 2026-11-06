@@ -113,6 +113,20 @@ Employers cannot simply label a worker a "1099 contractor" to evade payroll taxe
 
 ---
 
+## Can a 1099 Independent Contractor Lawfully Be Paid an Hourly Rate?
+
+A critical compliance question raised by both workers and hiring businesses is: *Can a 1099 contractor be paid an hourly rate instead of a project fee?*
+
+Legally, **yes**, an independent contractor may bill clients on an hourly basis. However, paying a 1099 worker an hourly wage dramatically escalates **worker misclassification risks** under both IRS Common Law Rules and the Department of Labor's 2024 Independent Contractor Final Rule (29 C.F.R. Part 795):
+
+1. **Control of Work Hours:** If a company dictates that a 1099 worker must be present from 8:00 AM to 5:00 PM and pays a flat hourly wage, the DOL and state labor boards (such as California's EDD or New York's DOL) view this as behavioral control indicative of W-2 employment.
+2. **Opportunity for Profit or Loss:** True independent contractors realize profits or absorb losses based on operational efficiency and flat-fee project pricing. A fixed hourly rate guarantees income without entrepreneurial risk, resembling an employee-employer relationship.
+3. **Overtime Liability:** If a state agency or the IRS reclassifies an "hourly 1099 contractor" as a W-2 employee, the employer becomes retroactively liable for unpaid 1.5x overtime for all hours worked over 40 per week, unpaid employer FICA taxes (7.65%), state unemployment insurance premiums, and 100% liquidated damages under FLSA Section 16(b).
+
+To safely operate on an hourly billing model, 1099 professionals should issue itemized invoices, maintain their own business entity (e.g., LLC), utilize independent tools, and maintain freedom over when and where the work is performed.
+
+---
+
 ## Related Statutory & Payroll Guides
 
 For additional context on FLSA regulations and take-home calculations, review our related guides:

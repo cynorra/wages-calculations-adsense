@@ -2,15 +2,15 @@ export const TOOLS = [
   // Cluster 1: Core Converters & High-Volume Annual/Hourly Matrices
   {
     slug: "hourly-to-salary-calculator",
-    name: "Hourly to Salary Calculator",
+    name: "Hourly to Salary Calculator with Overtime",
     shortName: "Hourly to Salary",
     cluster: 1,
     clusterName: "Core Converters & Annual Matrices",
-    description: "Convert hourly pay to annual, monthly, biweekly, and daily wages with customized unpaid vacation weeks and overtime settings.",
-    blurb: "Full 2,080-hour annual wages breakdown with customizable paid/unpaid time off.",
+    description: "Convert hourly wages to annual salary, biweekly paycheck, and monthly take-home with customized overtime hours and unpaid vacation weeks.",
+    blurb: "Full 2,080-hour annual wages breakdown with customizable overtime and paid/unpaid time off.",
     href: "/calculators/hourly-to-salary-calculator/",
     component: "HourlyToSalary",
-    primaryKeyword: "hourly to salary calculator",
+    primaryKeyword: "hourly to salary calculator with overtime",
     guideSlug: "hourly-to-salary-annual-breakdown",
   },
   {
@@ -95,11 +95,11 @@ export const TOOLS = [
   // Cluster 2: Net Pay, Tax & Payroll Withholdings
   {
     slug: "hourly-paycheck-tax-calculator",
-    name: "Hourly Paycheck Tax Calculator",
+    name: "Hourly Paycheck Tax Calculator (Biweekly Take-Home)",
     shortName: "Paycheck Tax Calculator",
     cluster: 2,
     clusterName: "Net Pay & Payroll Deductions",
-    description: "Penny-accurate hourly paycheck deductions for Federal withholding, Social Security (6.2%), Medicare (1.45%), and State taxes.",
+    description: "Penny-accurate hourly paycheck deductions and biweekly take-home pay after taxes for $13, $18, $20/hr, including Federal, FICA, and State withholdings.",
     blurb: "Calculates exact line-item deductions with filing status and state selections.",
     href: "/calculators/hourly-paycheck-tax-calculator/",
     component: "PaycheckTax",
@@ -162,15 +162,15 @@ export const TOOLS = [
   // Cluster 3: Overtime (OT) & Shift Mathematics
   {
     slug: "overtime-pay-calculator",
-    name: "Overtime Pay Calculator (1.5x & 2.0x Rates)",
+    name: "Time and a Half & Overtime Calculator with Taxes (1.5x & 2.0x)",
     shortName: "Overtime Calculator",
     cluster: 3,
     clusterName: "Overtime & Shift Mathematics",
-    description: "Calculate FLSA time-and-a-half (1.5x) for hours past 40 and California double time (2.0x) daily/consecutive work rules.",
-    blurb: "Calculates federal 1.5x threshold and state daily overtime standards.",
+    description: "Calculate FLSA time-and-a-half (1.5x) and double-time (2.0x) pay after taxes, factoring in 22% supplemental withholding, FICA, and net take-home pay.",
+    blurb: "Calculates federal 1.5x threshold, double-time rules, and after-tax overtime take-home.",
     href: "/calculators/overtime-pay-calculator/",
     component: "OvertimeCalc",
-    primaryKeyword: "calculating overtime",
+    primaryKeyword: "time and a half calculator with taxes",
     guideSlug: "flsa-overtime-time-and-a-half-rules",
   },
   {
@@ -201,15 +201,15 @@ export const TOOLS = [
   },
   {
     slug: "shift-differential-pay-calculator",
-    name: "Shift Differential Pay Calculator",
+    name: "Shift Differential Calculator: Night, Weekend & Federal Pay",
     shortName: "Shift Differential Multiplier",
     cluster: 3,
     clusterName: "Overtime & Shift Mathematics",
-    description: "Calculate night, graveyard, and weekend shift premiums (flat dollar or percentage) and their blend into regular overtime rates.",
-    blurb: "Blends night and weekend shift differentials into statutory base wages.",
+    description: "Calculate night shift differential, weekend premiums, federal night differential (Title 5), and how shift premiums blend into regular overtime rates.",
+    blurb: "Blends night, weekend, and federal shift differentials into statutory base wages.",
     href: "/calculators/shift-differential-pay-calculator/",
     component: "ShiftDifferential",
-    primaryKeyword: "shift differential pay calculator",
+    primaryKeyword: "shift differential calculator",
     guideSlug: "night-weekend-shift-differential-pay",
   },
 

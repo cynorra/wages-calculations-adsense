@@ -34,7 +34,7 @@ $$\text{Total Gross Pay} = \text{Straight-Time Gross} + \text{Overtime Premium}$
 Consider a warehouse technician earning **$26.00 per hour** who logs **52 total hours** in a standard single workweek:
 
 1. **Regular Hourly Rate:** $26.00 / hour
-2. **Overtime Hourly Rate (1.5x):** $\$26.00 \times 1.5 = \mathbf{\$39.00 \text{ per hour}}$
+2. **Overtime Hourly Rate (1.5x OT Rate):** $\$26.00 \times 1.5 = \mathbf{\$39.00 \text{ per hour}}$
 3. **Regular Straight-Time Hours:** 40 hours
 4. **Overtime Hours (Hours > 40):** 12 hours
 5. **Straight-Time Earnings (40 hrs):** $40 \times \$26.00 = \$1,040.00$
@@ -42,6 +42,51 @@ Consider a warehouse technician earning **$26.00 per hour** who logs **52 total 
 7. **Total Weekly Gross Compensation:** $\$1,040.00 + \$468.00 = \mathbf{\$1,508.00}$
 
 Alternatively, calculating straight time on all 52 hours ($52 \times \$26 = \$1,352$) and adding the half-time premium on the 12 overtime hours ($12 \times \$13 = \$156$) yields the exact same statutory total: **$1,508.00**.
+
+### What is Time and a Half for Common Hourly Wages?
+
+Workers frequently need quick benchmark figures for the 1.5x overtime rate:
+- **What is time and a half for $15.00 an hour?** At a $15.00 base wage, the 1.5x rate is **$22.50 per hour** ($15.00 \times 1.5$), representing a $7.50 hourly premium.
+- **What is time and a half for $20.00 an hour?** The 1.5x rate is **$30.00 per hour** ($20.00 \times 1.5$).
+- **What is time and a half for $25.00 an hour?** The 1.5x rate is **$37.50 per hour** ($25.00 \times 1.5$).
+
+---
+
+## Time and a Half After Taxes: Federal and FICA Tax Withholding Impact
+
+A recurring question for hourly workers is: *How much of my time-and-a-half overtime pay do I actually keep after taxes?* 
+
+Overtime earnings are treated by the IRS as ordinary earned income. They are not taxed in a higher separate bracket by law, but because overtime increases your total gross earnings in that specific pay period, payroll software (using IRS Publication 15-T percentage tables) may withhold federal income taxes at your highest marginal tax rate.
+
+Every dollar of overtime pay is subject to mandatory payroll tax deductions:
+1. **FICA Social Security:** Flat **6.2%** on all gross wages up to the statutory wage base limit.
+2. **FICA Medicare:** Flat **1.45%** on all gross wages (plus a 0.9% Additional Medicare Tax on wages exceeding $200,000 for single filers). Total FICA = **7.65%**.
+3. **Federal Income Tax Withholding:** Typically between **12% and 22%** for moderate-income hourly workers. If overtime is paid as a separate check or supplemental wage, employers may apply the flat **22% supplemental rate**.
+4. **State and Local Income Taxes:** Ranging from **0%** (TX, FL, WA, NV, TN, WY, SD, AK) to over **5%–9.3%** in states like California or New York.
+
+### Overtime Pay Tax Withholding Table: Gross vs. Net Take-Home (10 Overtime Hours)
+
+The table below illustrates what a worker actually takes home after mandatory taxes on 10 hours of overtime:
+
+| Base Hourly Rate | 1.5x Overtime Rate | Gross OT Pay (10 hrs) | FICA Taxes (7.65%) | Est. Federal Tax (12%–22%) | Est. State Tax (0%–5%) | Net Overtime Pay in Hand | Effective Net Hourly OT Rate |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **$15.00 / hr** | **$22.50 / hr** | $225.00 | $17.21 | $27.00 – $49.50 | $0.00 – $11.25 | **$147.04 – $180.79** | **$14.70 – $18.08 / hr** |
+| **$20.00 / hr** | **$30.00 / hr** | $300.00 | $22.95 | $36.00 – $66.00 | $0.00 – $15.00 | **$196.05 – $241.05** | **$19.61 – $24.11 / hr** |
+| **$25.00 / hr** | **$37.50 / hr** | $375.00 | $28.69 | $45.00 – $82.50 | $0.00 – $18.75 | **$245.06 – $301.31** | **$24.51 – $30.13 / hr** |
+| **$30.00 / hr** | **$45.00 / hr** | $450.00 | $34.43 | $54.00 – $99.00 | $0.00 – $22.50 | **$294.07 – $361.57** | **$29.41 – $36.16 / hr** |
+
+As demonstrated, for a worker earning $15.00 per hour, 10 hours of time-and-a-half generates $225.00 gross, yielding approximately **$147 to $181 in net cash**, meaning taxes consume roughly 20% to 35% of the gross overtime check depending on filing status and state residence.
+
+---
+
+## Is Overtime 1.5x or 2.0x? The Double Time Pay Rules
+
+A widespread point of confusion is whether overtime is legally 1.5x or 2.0x:
+- **Federal FLSA Baseline:** Section 7(a) requires **only time-and-a-half (1.5x)** for hours past 40. Federal law **never mandates double time (2.0x)** under any circumstances.
+- **State Double-Time Mandates:** Only specific state statutes (most notably California Labor Code § 510) mandate **2.0x double time pay**. In California, double time is legally required for:
+  1. All hours worked in excess of **12 hours** in any single workday.
+  2. All hours worked in excess of **8 hours on the seventh consecutive day** of work in a single workweek.
+- **Contractual Double Time:** Private employers in other states may voluntarily pay 2.0x double time pursuant to company policy or union collective bargaining agreements (CBAs) for Sunday shifts, holiday shifts, or emergency call-outs. When paid contractually, the double-time premium must comply with 29 C.F.R. § 778.203.
 
 ---
 

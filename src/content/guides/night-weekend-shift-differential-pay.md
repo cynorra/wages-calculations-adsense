@@ -117,6 +117,26 @@ A frequent point of friction in corporate payroll is whether shift differentials
 
 ---
 
+## Federal Employee Night Differential Standards (Title 5 U.S.C. § 5545)
+
+While private sector employers establish shift premiums through voluntary policy or union negotiations, **federal government civilian employees are protected by strict statutory night pay differentials** under Title 5 of the United States Code:
+
+1. **General Schedule (GS) Employees (5 U.S.C. § 5545(a)):** GS employees regularly scheduled to perform work between the hours of **6:00 PM and 6:00 AM** receive a mandatory **night pay differential equal to 10%** of their basic hourly pay rate.
+2. **Federal Wage System (FWS / Blue-Collar WG) Employees (5 U.S.C. § 5343):**
+   - **Second Shift (Swing):** Blue-collar federal trade and craft employees scheduled for shifts where the majority of hours occur between 3:00 PM and midnight receive an automatic **7.5% shift premium**.
+   - **Third Shift (Graveyard):** When the majority of scheduled hours fall between 11:00 PM and 8:00 AM, federal workers receive a mandatory **10.0% night shift differential**.
+
+### Federal Night Differential Calculation Example:
+Consider a GS-9 federal specialist earning a base rate of **$32.50 per hour** assigned to an 8-hour overnight rotation (11:00 PM to 7:00 AM, where 7 hours fall between 6:00 PM and 6:00 AM):
+- **Night Differential Rate (10%):** $\$32.50 \times 0.10 = \mathbf{\$3.25 \text{ per hour}}$
+- **Total Night Differential Pay (7 qualifying hours):** $7 \text{ hours} \times \$3.25 = \mathbf{\$22.75}$
+- **Base Gross Pay for Shift:** $8 \text{ hours} \times \$32.50 = \$260.00$
+- **Total Combined Earnings for the Night Shift:** $\$260.00 + \$22.75 = \mathbf{\$282.75}$
+
+Under 5 C.F.R. § 550.113, when a federal employee performs overtime during qualifying night hours, the night differential is included in their basic pay rate prior to computing the 1.5x overtime multiplier.
+
+---
+
 ## Related Statutory & Payroll Guides
 
 For additional context on FLSA regulations and take-home calculations, review our related guides:

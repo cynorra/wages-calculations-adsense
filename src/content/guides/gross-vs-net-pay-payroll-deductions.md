@@ -114,6 +114,26 @@ To maximize net disposable income and long-term net worth:
 
 ---
 
+## Gross Salary vs. Net Salary: The Direct Mathematical Difference
+
+Workers and job seekers frequently ask: *What is the exact difference between gross salary versus net salary?*
+
+- **Gross Salary:** The total headline compensation agreed upon with your employer before any withholdings or deductions occur. If your offer letter states $75,000 per year, your gross salary is $75,000.
+- **Net Salary (Take-Home Pay):** The actual liquid cash deposited into your bank account after all mandatory statutory taxes (Federal, State, Local, FICA) and elected benefit deductions (health insurance, 401k) have been subtracted.
+
+### Gross vs. Net Salary Benchmark Table (Standard Single Filer)
+
+| Gross Annual Salary | Monthly Gross Salary | Estimated Total Deductions (20%–28%) | Estimated Annual Net Salary | Monthly Net Take-Home Pay | Real Hourly Net (2,080h) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **$40,000 / year** | $3,333.33 | ~$7,100.00 | **$32,900.00** | **$2,741.67** | **$15.82 / hr** |
+| **$50,000 / year** | $4,166.67 | ~$9,600.00 | **$40,400.00** | **$3,366.67** | **$19.42 / hr** |
+| **$75,000 / year** | $6,250.00 | ~$17,200.00 | **$57,800.00** | **$4,816.67** | **$27.79 / hr** |
+| **$100,000 / year**| $8,333.33 | ~$26,400.00 | **$73,600.00** | **$6,133.33** | **$35.38 / hr** |
+
+As demonstrated, taxes and mandatory contributions typically consume **18% to 28% of your gross salary**, meaning every $1,000 increase in gross salary delivers approximately $720 to $820 in real net take-home liquidity.
+
+---
+
 ## Related Statutory & Payroll Guides
 
 For additional context on FLSA regulations and take-home calculations, review our related guides:

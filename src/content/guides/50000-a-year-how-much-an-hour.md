@@ -14,6 +14,14 @@ A gross annual salary of **$50,000** represents a benchmark milestone in America
 
 $$\text{Hourly Wage} = \frac{\$50,000}{2,080 \text{ hours}} = \$24.0384 \approx \mathbf{\$24.04 \text{ per hour}}$$
 
+### Quick Summary: 50,000 Salary to Hourly Conversion Matrix
+- **50k a year is how much an hour?** Exactly **$24.04 per hour** ($50,000 / 2,080 standard full-time hours).
+- **50k a year is how much a week?** Exactly **$961.54 gross per week** ($50,000 / 52 calendar weeks).
+- **50,000 a year is how much biweekly?** Exactly **$1,923.08 gross per biweekly paycheck** ($50,000 / 26 pay periods).
+- **50k a year is how much a month?** Exactly **$4,166.67 gross per month** ($50,000 / 12 months).
+- **With 2 weeks unpaid vacation (2,000 hours worked):** $\$50,000 / 2,000 = \mathbf{\$25.00 \text{ per hour}}$.
+- **With 4 weeks unpaid vacation (1,920 hours worked):** $\$50,000 / 1,920 = \mathbf{\$26.04 \text{ per hour}}$.
+
 ### Periodic Gross Earnings Breakdown
 
 Before factoring in federal tax withholdings, state deductions, or employee-sponsored health contributions, a $50,000 gross salary converts across common payroll disbursement schedules as follows:

@@ -101,6 +101,22 @@ If your effective hourly wage is being eroded by chronic schedule inflation, app
 
 ---
 
+## Direct Salary to Hourly Mathematical Formulas: 85000/52/40, $80k, $70/hr, and $75/hr
+
+When workers negotiate compensation, compare job offers, or evaluate contractor conversion rates, quick shorthand mathematical conversions are essential. 
+
+The universal baseline formula for converting any annual salary to its standard 40-hour hourly equivalent is:
+
+$$\text{Hourly Rate} = \frac{\text{Annual Salary}}{52 \text{ weeks} \times 40 \text{ hours}} = \frac{\text{Annual Salary}}{2,080}$$
+
+### Shorthand Benchmark Conversions:
+- **What is 85000/52/40?** Evaluating $85,000 divided by 52 weeks and 40 hours yields **$40.865 $\approx$ $40.87 per hour** ($1,634.62 per week, or $3,269.23 biweekly).
+- **80,000 Salary to Hourly:** An $80,000 annual salary (or "80 grand a year") equals **$38.46 per hour** ($80,000 / 2,080), or **$1,538.46 per week**.
+- **$70 an Hour is How Much a Year?** Earning $70.00 per hour full-time equals an annual salary of **$145,600.00** ($70 \times 2,080 hours), delivering $5,600 gross biweekly.
+- **$75 an Hour is How Much a Year?** Earning $75.00 per hour ("75 hr") converts to **$156,000.00 annually** ($75 \times 2,080 hours), delivering $6,000 gross biweekly.
+
+---
+
 ## Related Statutory & Payroll Guides
 
 For additional context on FLSA regulations and take-home calculations, review our related guides:

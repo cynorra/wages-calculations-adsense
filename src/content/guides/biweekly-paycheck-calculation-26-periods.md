@@ -66,13 +66,13 @@ Under this framework, the two "third paychecks" received during magic months are
 
 ---
 
-## The 27-Paycheck Leap Year Payroll Dilemma
+## The Payroll Leap Year Dilemma: 27 Paychecks vs. 26 Biweekly Periods
 
-Because a solar calendar year consists of **365.2422 days** rather than exactly 364 days (52 weeks × 7 days = 364), every calendar year contains one leftover day (or two leftover days in leap years). 
+Because a solar calendar year consists of **365.2422 days** rather than exactly 364 days (52 weeks × 7 days = 364), every calendar year contains one leftover day (or two leftover days in a **payroll leap year**). 
 
-Over time, this fractional remainder accumulates. Approximately **every 11 years** (or sometimes 12 years), a biweekly payroll schedule contains **27 paychecks instead of 26**.
+Over time, this fractional remainder accumulates. Approximately **every 11 years** (or sometimes 12 years), a biweekly payroll schedule contains **27 paychecks instead of 26**. A payroll leap year occurs whenever a calendar year begins on a Thursday (or Wednesday/Thursday in a leap year) and paydays fall on alternate Fridays, generating a 27th pay date.
 
-This creates a serious administrative dilemma for corporate HR and payroll departments regarding salaried exempt employees:
+This creates a serious administrative dilemma for corporate HR and payroll controllers regarding salaried exempt employees:
 
 ### Approach 1: The Salary Division Method (Reduce Paycheck Size)
 The employer divides the employee's fixed annual salary by 27 instead of 26:
@@ -87,6 +87,21 @@ The employer maintains the standard biweekly payment ($3,000.00) and simply pays
 - While popular with employees, it increases the employer's annual payroll expenditure by 3.85%, impacting corporate earnings.
 
 For hourly non-exempt workers, there is no controversy: they are paid strictly for the hours logged, meaning a 27-pay-period year delivers **80 additional paid working hours (2,160 hours total)**.
+
+---
+
+## How to Calculate Biweekly Pay from Hourly and Annual Rates
+
+To accurately calculate your biweekly paycheck, use the standard 80-hour conversion formula:
+
+$$\text{Biweekly Gross (Hourly)} = \text{Hourly Wage} \times 80 \text{ hours}$$
+
+$$\text{Biweekly Gross (Salary)} = \frac{\text{Annual Salary}}{26}$$
+
+### Common Benchmark Paycheck Figures:
+- **50,000 a Year is How Much Biweekly?** A $50,000 annual salary yields **$1,923.08 gross per biweekly paycheck** ($\$50,000 / 26$). On an 80-hour basis, this equals **$24.04 per hour**.
+- **$25.00 an Hour Biweekly:** $\$25.00 \times 80 = \mathbf{\$2,000.00 \text{ gross per paycheck}}$ ($52,000 per year).
+- **$30.00 an Hour Biweekly:** $\$30.00 \times 80 = \mathbf{\$2,400.00 \text{ gross per paycheck}}$ ($62,400 per year).
 
 ---
 

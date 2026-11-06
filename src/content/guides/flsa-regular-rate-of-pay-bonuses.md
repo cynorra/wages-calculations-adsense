@@ -79,16 +79,26 @@ Under federal regulations, the regular rate of pay must reflect total remunerati
 
 ---
 
-## Multi-Week & Monthly Bonuses: The "True-Up" Allocation Formula
+## FLSA True-Up Calculation: Multi-Week & Quarterly Bonus Overtime Allocation (29 C.F.R. § 778.209)
 
 When bonuses are earned over periods longer than a single workweek (e.g., monthly sales commissions or quarterly quality bonuses), payroll departments cannot simply dump the entire bonus into the week it is paid. 
 
-Under **29 C.F.R. § 778.209**, the employer must apportion the bonus retroactively back to each workweek of the earning period and recalculate the overtime premium for any week where the employee exceeded 40 hours.
+Under **29 C.F.R. § 778.209**, the employer must apportion the bonus retroactively back to each workweek of the earning period and recalculate the overtime premium for any week where the employee exceeded 40 hours. This retroactive adjustment process is known in payroll compliance as the **FLSA true-up**.
 
-### The Allocation Process:
-1. **Apportion the Bonus Evenly:** Divide the total bonus amount across the workweeks within the incentive period.
-2. **Recompute the Regular Rate:** In any week where overtime was worked, add the weekly allocated bonus slice to the straight-time earnings, divide by total hours worked that week, and compute the new regular rate.
-3. **Disburse the "True-Up" Overtime Payment:** Issue an adjusting true-up check covering the difference between the previously paid overtime rate and the new recomputed rate.
+### The Step-by-Step FLSA True-Up Formula:
+1. **Apportion the Bonus Across Hours:** If the bonus cannot be identified with specific weeks, apportion the total bonus across all hours worked during the bonus period:
+   $$\text{Bonus Hourly Increase} = \frac{\text{Total Bonus Amount}}{\text{Total Hours Worked in Bonus Period}}$$
+2. **Compute Additional Overtime Due per Overtime Hour:** Because straight time is already paid, the employee is owed half-time (0.5x) of the bonus hourly rate for every overtime hour worked during that bonus period:
+   $$\text{Additional OT Premium Rate} = \text{Bonus Hourly Increase} \times 0.5$$
+   $$\text{Total FLSA True-Up Payment} = \text{Total OT Hours in Period} \times \text{Additional OT Premium Rate}$$
+
+### Concrete Quarterly FLSA True-Up Example:
+An employee works **520 total hours** across a 13-week quarter, including **60 overtime hours**. At quarter-end, the employee receives an earned non-discretionary performance bonus of **$1,300.00**:
+1. Bonus Hourly Increase: $\frac{\$1,300.00}{520 \text{ total hours}} = \mathbf{\$2.50 \text{ per hour}}$
+2. Half-Time Overtime Premium on Bonus: $\$2.50 \times 0.5 = \mathbf{\$1.25 \text{ per overtime hour}}$
+3. Mandatory FLSA True-Up Overtime Disbursed: $60 \text{ OT hours} \times \$1.25 = \mathbf{\$75.00}$
+
+The employer must issue an adjusting true-up check of **$75.00** alongside the $1,300.00 bonus to satisfy 29 C.F.R. § 778.209. Failure to disburse this $75.00 true-up creates an FLSA overtime violation spanning the entire quarter.
 
 ### Simplified Alternative: The Percentage-of-Total-Earnings Bonus
 To eliminate the complex administrative burden of retroactive true-up calculations, employers can utilize the **percentage of total earnings method** under **29 C.F.R. § 778.210**. 
