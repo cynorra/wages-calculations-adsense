@@ -1,4 +1,22 @@
+import fs from "node:fs";
+import path from "node:path";
 import { localRows } from "./articles-source.js";
+
+export function findCoverPhoto(slug) {
+  try {
+    const exts = [".webp", ".jpg", ".png", ".jpeg"];
+    const baseDir = path.join(process.cwd(), "public", "images", "guides");
+    for (const ext of exts) {
+      const filename = `${slug}${ext}`;
+      if (fs.existsSync(path.join(baseDir, filename))) {
+        return `/images/guides/${filename}`;
+      }
+    }
+  } catch {
+    return null;
+  }
+  return null;
+}
 
 // Cache article metadata for instantaneous lookup
 let rowCache = null;
@@ -224,6 +242,25 @@ export function coverSvg(slug, kind, { className = "", label = "", title: passed
   const title = passedTitle || row.title || slug.replace(/-/g, " ");
   const description = passedDesc || row.description || row.key_takeaway || "";
   const topic = classifyTopic(slug);
+
+  // If a real photograph exists in public/images/guides/[slug], render photographic cover
+  const photoUrl = findCoverPhoto(slug);
+  if (photoUrl) {
+    return `<div class="relative w-full h-full overflow-hidden bg-slate-950 group ${className}" role="img" aria-label="${esc(label || title)}">
+      <img src="${photoUrl}" alt="${esc(label || title)}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="eager" />
+      <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent"></div>
+      <div class="absolute top-5 left-5">
+        <span class="inline-flex items-center px-3 py-1 rounded-md text-xs font-mono font-bold uppercase tracking-wider text-amber-300 bg-slate-950/80 border border-amber-400/30 backdrop-blur-sm">${esc(topic.category)}</span>
+      </div>
+      <div class="absolute bottom-5 left-5 right-5 flex items-end justify-between">
+        <div class="max-w-xl">
+          <p class="text-[11px] font-mono font-bold uppercase tracking-wider text-slate-300 mb-1">AUTHORITY: ${esc(topic.badge)}</p>
+          <h2 class="text-xl sm:text-2xl lg:text-3xl font-serif font-bold text-white leading-tight drop-shadow-md">${esc(title)}</h2>
+        </div>
+        <span class="hidden sm:inline-block text-[10.5px] font-mono font-semibold text-amber-400 bg-slate-950/80 px-2.5 py-1 rounded border border-white/10 shrink-0 ml-4">THE WAGE REPORT</span>
+      </div>
+    </div>`;
+  }
 
   const badgeWidth = Math.round(topic.category.length * 7.8 + 24);
   const isLongTitle = title.length > 46;
