@@ -1,0 +1,77 @@
+# Automated Daily Blog Publisher for The Wage Report
+# Runs every day at 04:00 UTC (07:00 TRT):
+# 1. Runs generate-guide.mjs to generate and publish the next high-value statutory guide
+# 2. Pushes the article to Supabase database (status: published, with published_at date)
+# 3. Commits the newly generated markdown file back to the git repository
+# 4. Triggers deploy.yml which builds and deploys to Cloudflare Pages!
+
+name: Daily Auto-Blog Generator & Publisher
+
+on:
+  schedule:
+    - cron: "0 4 * * *" # Runs every day at 04:00 UTC (07:00 TRT)
+  workflow_dispatch: # Allows manual trigger from GitHub Actions UI anytime
+
+concurrency:
+  group: auto-blog
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  generate-and-publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Audit existing guides
+        run: node scripts/audit-guides.mjs
+
+      - name: Generate and publish next guide
+        run: node scripts/generate-guide.mjs --publish
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+
+      - name: Inject internal links
+        run: node scripts/inject-internal-links.mjs
+
+      - name: Run test suite
+        run: npm test
+
+      - name: Commit and push new guide to repo
+        run: |
+          git config --global user.name "The Wage Report Bot"
+          git config --global user.email "bot@thewagereport.com"
+          git add src/content/guides/ scripts/audit-results.json
+          if git diff --staged --quiet; then
+            echo "No new guide changes to commit."
+          else
+            git commit -m "content: auto-generated statutory payroll guide [skip ci]"
+            git pull --rebase origin main || true
+            git push origin main
+          fi
+
+      - name: Trigger deploy workflow
+        run: |
+          echo "Triggering site deployment to Cloudflare Pages..."
+          gh workflow run deploy.yml --ref main || true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+

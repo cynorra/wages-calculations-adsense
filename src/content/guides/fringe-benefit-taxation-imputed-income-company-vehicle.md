@@ -79,6 +79,12 @@ To substantiate the exclusion of business use from gross income under 26 U.S.C. 
 - **Written Employer Policy Prohibiting Personal Use:** Under Treasury Regulation § 1.274-6T, employers can avoid detailed personal mileage tracking if a formal written corporate policy strictly restricts personal use to commuting or completely prohibits personal usage outside business assignments.
 - **Annual Valuation Timing:** Employers typically calculate imputed personal vehicle income on an annual basis between November 1 and October 31 (the two-month rule) to ensure accurate Form W-2 Box 1 reporting.
 
+## Related Statutory & Payroll Guides
+
+For additional context on FLSA regulations and compensation compliance, review our related guides:
+
+- [Hourly Paycheck Tax Withholding: Federal, FICA & State Deductions](/guides/hourly-paycheck-tax-breakdown/)
+
 ## Sources and further reading
 
 The figures and rules in this article come from the primary sources below. Thresholds, rates, and limits change from year to year, so confirm the current value at the source before relying on it.

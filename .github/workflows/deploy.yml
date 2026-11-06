@@ -31,8 +31,6 @@ jobs:
 
       - run: npm ci
 
-      # Articles are no longer generated or committed here. Drafts come from `node scripts/blog-generator.js`
-      # on a developer machine and are published only after a person has checked them.
       - run: npm test
 
       - name: Build site with Supabase articles

@@ -75,6 +75,13 @@ Courts and the Department of Labor evaluate on-call arrangements using a totalit
 
 Employers utilizing on-call rosters must document exact response protocols in writing and ensure that any hours spent actively logging in or responding remotely are recorded and paid down to the minute.
 
+## Related Statutory & Payroll Guides
+
+For additional context on FLSA regulations and compensation compliance, review our related guides:
+
+- [FLSA Overtime Pay Rules: Time-and-a-Half (1.5x) and Double Time (2.0x)](/guides/flsa-overtime-time-and-a-half-rules/)
+- [Hourly to Salary Calculation: The 2,080-Hour Annual Standard Breakdown](/guides/hourly-to-salary-annual-breakdown/)
+
 ## Sources and further reading
 
 The figures and rules in this article come from the primary sources below. Thresholds, rates, and limits change from year to year, so confirm the current value at the source before relying on it.

@@ -1,7 +1,8 @@
 import fs from 'fs';
 import path from 'path';
 
-const dir = 'd:/android-projeler/wages-calculations-adsense/src/content/guides';
+const ROOT = process.cwd();
+const dir = path.join(ROOT, 'src', 'content', 'guides');
 const files = fs.readdirSync(dir).filter(f => f.endsWith('.md'));
 
 const audit = [];
@@ -46,9 +47,10 @@ files.forEach(file => {
     mentions2026,
     mentionsFLSA,
     mentionsIRS,
-    tool
+    tool,
+    published
   });
 });
 
-fs.writeFileSync('d:/android-projeler/wages-calculations-adsense/scripts/audit-results.json', JSON.stringify(audit, null, 2));
+fs.writeFileSync(path.join(ROOT, 'scripts', 'audit-results.json'), JSON.stringify(audit, null, 2));
 console.log('AUDIT_COMPLETE: Analyzed ' + audit.length + ' guides.');

@@ -86,6 +86,12 @@ When structuring executive and managerial severance packages, corporate counsel 
 
 Employers must structure severance release agreements with clear execution windows to ensure all payments satisfy the short-term deferral or separation pay safe harbors.
 
+## Related Statutory & Payroll Guides
+
+For additional context on FLSA regulations and compensation compliance, review our related guides:
+
+- [Hourly Paycheck Tax Withholding: Federal, FICA & State Deductions](/guides/hourly-paycheck-tax-breakdown/)
+
 ## Sources and further reading
 
 The figures and rules in this article come from the primary sources below. Thresholds, rates, and limits change from year to year, so confirm the current value at the source before relying on it.

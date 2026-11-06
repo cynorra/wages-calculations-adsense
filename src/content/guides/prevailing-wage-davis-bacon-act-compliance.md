@@ -91,6 +91,13 @@ Under the Davis-Bacon Act (40 U.S.C. §§ 3141–3148) and related acts, governm
 
 Falsification of certified payroll records carries severe criminal penalties under 18 U.S.C. § 1001, including corporate debarment from federal contracts for up to three years.
 
+## Related Statutory & Payroll Guides
+
+For additional context on FLSA regulations and compensation compliance, review our related guides:
+
+- [Hourly to Salary Calculation: The 2,080-Hour Annual Standard Breakdown](/guides/hourly-to-salary-annual-breakdown/)
+- [True Hourly Rate: Deconstructing Exempt Salaries and Working Hours](/guides/salary-to-hourly-rate-converter/)
+
 ## Sources and further reading
 
 The figures and rules in this article come from the primary sources below. Thresholds, rates, and limits change from year to year, so confirm the current value at the source before relying on it.

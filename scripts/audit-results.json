@@ -13,7 +13,8 @@
     "mentions2026": 2,
     "mentionsFLSA": 4,
     "mentionsIRS": 3,
-    "tool": "50000-a-year-is-how-much-an-hour"
+    "tool": "50000-a-year-is-how-much-an-hour",
+    "published": "2026-10-20"
   },
   {
     "file": "1099-contractor-vs-w2-hourly-rate-equivalence.md",
@@ -29,7 +30,8 @@
     "mentions2026": 1,
     "mentionsFLSA": 1,
     "mentionsIRS": 5,
-    "tool": "1099-contractor-vs-w2-employee-calculator"
+    "tool": "1099-contractor-vs-w2-employee-calculator",
+    "published": "2026-10-27"
   },
   {
     "file": "75000-a-year-how-much-an-hour.md",
@@ -45,7 +47,8 @@
     "mentions2026": 1,
     "mentionsFLSA": 3,
     "mentionsIRS": 5,
-    "tool": "75000-a-year-is-how-much-an-hour"
+    "tool": "75000-a-year-is-how-much-an-hour",
+    "published": "2026-11-04"
   },
   {
     "file": "80000-a-year-how-much-an-hour.md",
@@ -61,7 +64,8 @@
     "mentions2026": 1,
     "mentionsFLSA": 3,
     "mentionsIRS": 3,
-    "tool": "80000-a-year-is-how-much-an-hour"
+    "tool": "80000-a-year-is-how-much-an-hour",
+    "published": "2026-11-12"
   },
   {
     "file": "85000-a-year-how-much-an-hour.md",
@@ -77,7 +81,8 @@
     "mentions2026": 1,
     "mentionsFLSA": 3,
     "mentionsIRS": 5,
-    "tool": "85000-a-year-is-how-much-an-hour"
+    "tool": "85000-a-year-is-how-much-an-hour",
+    "published": "2026-11-20"
   },
   {
     "file": "base-hourly-plus-commission-payroll-draws.md",
@@ -93,7 +98,8 @@
     "mentions2026": 1,
     "mentionsFLSA": 5,
     "mentionsIRS": 1,
-    "tool": "base-hourly-plus-commission-calculator"
+    "tool": "base-hourly-plus-commission-calculator",
+    "published": "2026-10-28"
   },
   {
     "file": "biweekly-paycheck-calculation-26-periods.md",
@@ -109,7 +115,8 @@
     "mentions2026": 1,
     "mentionsFLSA": 1,
     "mentionsIRS": 2,
-    "tool": "biweekly-paycheck-calculator"
+    "tool": "biweekly-paycheck-calculator",
+    "published": "2026-10-29"
   },
   {
     "file": "flsa-7-minute-rounding-rule-timecard.md",
@@ -125,7 +132,8 @@
     "mentions2026": 1,
     "mentionsFLSA": 7,
     "mentionsIRS": 0,
-    "tool": "hour-and-wage-calculator"
+    "tool": "hour-and-wage-calculator",
+    "published": "2026-10-31"
   },
   {
     "file": "flsa-overtime-time-and-a-half-rules.md",
@@ -141,7 +149,8 @@
     "mentions2026": 2,
     "mentionsFLSA": 12,
     "mentionsIRS": 0,
-    "tool": "overtime-pay-calculator"
+    "tool": "overtime-pay-calculator",
+    "published": "2026-10-22"
   },
   {
     "file": "flsa-regular-rate-of-pay-bonuses.md",
@@ -157,7 +166,8 @@
     "mentions2026": 2,
     "mentionsFLSA": 14,
     "mentionsIRS": 0,
-    "tool": "calculating-overtime-with-bonuses"
+    "tool": "calculating-overtime-with-bonuses",
+    "published": "2026-10-23"
   },
   {
     "file": "gross-vs-net-pay-payroll-deductions.md",
@@ -173,7 +183,8 @@
     "mentions2026": 2,
     "mentionsFLSA": 1,
     "mentionsIRS": 6,
-    "tool": "gross-pay-vs-net-pay-calculator"
+    "tool": "gross-pay-vs-net-pay-calculator",
+    "published": "2026-10-21"
   },
   {
     "file": "hourly-pay-raise-impact-inflation-taxes.md",
@@ -189,7 +200,8 @@
     "mentions2026": 1,
     "mentionsFLSA": 4,
     "mentionsIRS": 2,
-    "tool": "hourly-pay-raise-calculator"
+    "tool": "hourly-pay-raise-calculator",
+    "published": "2026-11-03"
   },
   {
     "file": "hourly-pay-stub-itemizer-flsa.md",
@@ -205,7 +217,8 @@
     "mentions2026": 1,
     "mentionsFLSA": 4,
     "mentionsIRS": 2,
-    "tool": "hourly-pay-stub-calculator"
+    "tool": "hourly-pay-stub-calculator",
+    "published": "2026-11-05"
   },
   {
     "file": "hourly-paycheck-tax-breakdown.md",
@@ -221,7 +234,8 @@
     "mentions2026": 1,
     "mentionsFLSA": 1,
     "mentionsIRS": 9,
-    "tool": "hourly-paycheck-tax-calculator"
+    "tool": "hourly-paycheck-tax-calculator",
+    "published": "2026-11-06"
   },
   {
     "file": "hourly-to-salary-annual-breakdown.md",
@@ -237,7 +251,8 @@
     "mentions2026": 1,
     "mentionsFLSA": 7,
     "mentionsIRS": 2,
-    "tool": "hourly-to-salary-calculator"
+    "tool": "hourly-to-salary-calculator",
+    "published": "2026-11-07"
   },
   {
     "file": "hourly-to-salary-conversion-matrix.md",
@@ -253,7 +268,8 @@
     "mentions2026": 1,
     "mentionsFLSA": 3,
     "mentionsIRS": 2,
-    "tool": "hourly-to-salary-conversion-chart"
+    "tool": "hourly-to-salary-conversion-chart",
+    "published": "2026-11-08"
   },
   {
     "file": "night-weekend-shift-differential-pay.md",
@@ -269,7 +285,8 @@
     "mentions2026": 1,
     "mentionsFLSA": 9,
     "mentionsIRS": 0,
-    "tool": "shift-differential-pay-calculator"
+    "tool": "shift-differential-pay-calculator",
+    "published": "2026-11-10"
   },
   {
     "file": "pto-vacation-payout-laws-by-state.md",
@@ -285,7 +302,8 @@
     "mentions2026": 1,
     "mentionsFLSA": 3,
     "mentionsIRS": 4,
-    "tool": "pto-payout-calculator"
+    "tool": "pto-payout-calculator",
+    "published": "2026-11-17"
   },
   {
     "file": "real-hourly-pay-rate-after-tax.md",
@@ -301,7 +319,8 @@
     "mentions2026": 1,
     "mentionsFLSA": 1,
     "mentionsIRS": 3,
-    "tool": "pay-rate-after-tax-calculator"
+    "tool": "pay-rate-after-tax-calculator",
+    "published": "2026-11-18"
   },
   {
     "file": "reverse-biweekly-to-hourly-rate-audit.md",
@@ -317,7 +336,8 @@
     "mentions2026": 1,
     "mentionsFLSA": 3,
     "mentionsIRS": 1,
-    "tool": "biweekly-to-hourly-rate-converter"
+    "tool": "biweekly-to-hourly-rate-converter",
+    "published": "2026-11-21"
   },
   {
     "file": "salary-exempt-vs-non-exempt-flsa-test.md",
@@ -333,7 +353,8 @@
     "mentions2026": 3,
     "mentionsFLSA": 10,
     "mentionsIRS": 0,
-    "tool": "salary-exempt-vs-non-exempt-calculator"
+    "tool": "salary-exempt-vs-non-exempt-calculator",
+    "published": "2026-10-24"
   },
   {
     "file": "salary-to-hourly-rate-converter.md",
@@ -349,7 +370,8 @@
     "mentions2026": 1,
     "mentionsFLSA": 8,
     "mentionsIRS": 1,
-    "tool": "salary-to-hourly-calculator"
+    "tool": "salary-to-hourly-calculator",
+    "published": "2026-11-22"
   },
   {
     "file": "state-minimum-wage-annual-salary-rankings.md",
@@ -365,7 +387,8 @@
     "mentions2026": 4,
     "mentionsFLSA": 2,
     "mentionsIRS": 0,
-    "tool": "state-minimum-wage-to-annual-salary-calculator"
+    "tool": "state-minimum-wage-to-annual-salary-calculator",
+    "published": "2026-11-25"
   },
   {
     "file": "tipped-minimum-wage-tip-credit-audit.md",
@@ -381,7 +404,8 @@
     "mentions2026": 2,
     "mentionsFLSA": 5,
     "mentionsIRS": 0,
-    "tool": "tipped-minimum-wage-calculator"
+    "tool": "tipped-minimum-wage-calculator",
+    "published": "2026-10-26"
   },
   {
     "file": "zero-state-income-tax-vs-california-new-york.md",
@@ -397,199 +421,212 @@
     "mentions2026": 2,
     "mentionsFLSA": 1,
     "mentionsIRS": 4,
-    "tool": "no-state-income-tax-paycheck-comparison"
+    "tool": "no-state-income-tax-paycheck-comparison",
+    "published": "2026-11-28"
   },
   {
     "file": "on-call-waiting-time-engaged-to-wait-flsa.md",
     "title": "On-Call Pay Rules: Engaged to Wait vs. Waiting to Be Engaged (FLSA 29 CFR 785.17)",
     "titleLen": 81,
     "descLen": 153,
-    "words": 1149,
-    "h2Count": 9,
+    "words": 1189,
+    "h2Count": 10,
     "h3Count": 0,
     "tables": 2,
-    "internalLinks": 1,
+    "internalLinks": 3,
     "mathEquations": 2,
     "mentions2026": 1,
-    "mentionsFLSA": 5,
+    "mentionsFLSA": 7,
     "mentionsIRS": 0,
-    "tool": "hour-and-wage-calculator"
+    "tool": "hour-and-wage-calculator",
+    "published": "2026-11-11"
   },
   {
     "file": "comp-time-in-lieu-of-overtime-public-vs-private.md",
     "title": "Comp Time Rules: Public Sector Standards vs. Private Sector FLSA Violations",
     "titleLen": 75,
     "descLen": 136,
-    "words": 1083,
-    "h2Count": 8,
+    "words": 1124,
+    "h2Count": 9,
     "h3Count": 0,
     "tables": 3,
-    "internalLinks": 1,
+    "internalLinks": 3,
     "mathEquations": 1,
     "mentions2026": 1,
-    "mentionsFLSA": 5,
+    "mentionsFLSA": 7,
     "mentionsIRS": 0,
-    "tool": "hour-and-wage-calculator"
+    "tool": "hour-and-wage-calculator",
+    "published": "2026-10-30"
   },
   {
     "file": "hazard-pay-regulations-flsa-standards.md",
     "title": "Hazard Pay Rules: FLSA Standards, Dangerous Conditions & Overtime Multipliers",
     "titleLen": 77,
     "descLen": 152,
-    "words": 1070,
-    "h2Count": 7,
+    "words": 1100,
+    "h2Count": 8,
     "h3Count": 0,
     "tables": 3,
-    "internalLinks": 2,
+    "internalLinks": 3,
     "mathEquations": 1,
     "mentions2026": 1,
-    "mentionsFLSA": 6,
+    "mentionsFLSA": 8,
     "mentionsIRS": 0,
-    "tool": "hour-and-wage-calculator"
+    "tool": "hour-and-wage-calculator",
+    "published": "2026-11-02"
   },
   {
     "file": "independent-contractor-economic-reality-test-dol.md",
     "title": "DOL Economic Reality Test: Independent Contractor vs. W-2 Employee Classification",
     "titleLen": 81,
     "descLen": 139,
-    "words": 1084,
-    "h2Count": 7,
+    "words": 1122,
+    "h2Count": 8,
     "h3Count": 0,
     "tables": 5,
-    "internalLinks": 1,
+    "internalLinks": 3,
     "mathEquations": 0,
     "mentions2026": 1,
-    "mentionsFLSA": 0,
+    "mentionsFLSA": 1,
     "mentionsIRS": 7,
-    "tool": "hourly-paycheck-tax-calculator"
+    "tool": "hourly-paycheck-tax-calculator",
+    "published": "2026-11-09"
   },
   {
     "file": "overtime-exemption-salary-basis-duties-test-flsa.md",
     "title": "FLSA White-Collar Exemptions: Salary Threshold & Duties Test Breakdown",
     "titleLen": 70,
     "descLen": 149,
-    "words": 1187,
-    "h2Count": 8,
+    "words": 1218,
+    "h2Count": 9,
     "h3Count": 0,
     "tables": 4,
-    "internalLinks": 2,
+    "internalLinks": 3,
     "mathEquations": 2,
     "mentions2026": 2,
-    "mentionsFLSA": 4,
+    "mentionsFLSA": 6,
     "mentionsIRS": 0,
-    "tool": "salary-to-hourly-converter"
+    "tool": "salary-to-hourly-converter",
+    "published": "2026-11-13"
   },
   {
     "file": "overtime-for-dual-rate-workers-blended-hourly-rate.md",
     "title": "Calculating Overtime for Dual-Rate Workers: Weighted Average Regular Rate",
     "titleLen": 73,
     "descLen": 143,
-    "words": 1157,
-    "h2Count": 9,
+    "words": 1187,
+    "h2Count": 10,
     "h3Count": 1,
     "tables": 7,
-    "internalLinks": 2,
+    "internalLinks": 3,
     "mathEquations": 7,
     "mentions2026": 1,
-    "mentionsFLSA": 2,
+    "mentionsFLSA": 4,
     "mentionsIRS": 0,
-    "tool": "hour-and-wage-calculator"
+    "tool": "hour-and-wage-calculator",
+    "published": "2026-11-14"
   },
   {
     "file": "travel-time-pay-portal-to-portal-act.md",
     "title": "Travel Time Compensation: The Portal-to-Portal Act & Compensable Drive Hours",
     "titleLen": 76,
     "descLen": 158,
-    "words": 1164,
-    "h2Count": 9,
+    "words": 1206,
+    "h2Count": 10,
     "h3Count": 0,
     "tables": 3,
-    "internalLinks": 1,
+    "internalLinks": 3,
     "mathEquations": 1,
     "mentions2026": 1,
-    "mentionsFLSA": 2,
+    "mentionsFLSA": 5,
     "mentionsIRS": 0,
-    "tool": "hour-and-wage-calculator"
+    "tool": "hour-and-wage-calculator",
+    "published": "2026-11-27"
   },
   {
     "file": "fringe-benefit-taxation-imputed-income-company-vehicle.md",
     "title": "Imputed Income on Fringe Benefits: Company Car Valuation & Payroll Taxation",
     "titleLen": 75,
     "descLen": 134,
-    "words": 1148,
-    "h2Count": 8,
+    "words": 1177,
+    "h2Count": 9,
     "h3Count": 0,
     "tables": 5,
-    "internalLinks": 2,
+    "internalLinks": 3,
     "mathEquations": 4,
     "mentions2026": 1,
-    "mentionsFLSA": 0,
+    "mentionsFLSA": 1,
     "mentionsIRS": 9,
-    "tool": "hourly-paycheck-tax-calculator"
+    "tool": "hourly-paycheck-tax-calculator",
+    "published": "2026-11-01"
   },
   {
     "file": "per-diem-travel-stipends-irs-gsa-substantiation.md",
     "title": "Per Diem Travel Stipends: GSA Rates, Accountable Plans & Tax Exemption",
     "titleLen": 70,
     "descLen": 130,
-    "words": 1168,
-    "h2Count": 9,
+    "words": 1197,
+    "h2Count": 10,
     "h3Count": 0,
     "tables": 6,
-    "internalLinks": 2,
+    "internalLinks": 3,
     "mathEquations": 1,
     "mentions2026": 1,
-    "mentionsFLSA": 0,
+    "mentionsFLSA": 1,
     "mentionsIRS": 5,
-    "tool": "hour-and-wage-calculator"
+    "tool": "hour-and-wage-calculator",
+    "published": "2026-11-15"
   },
   {
     "file": "prevailing-wage-davis-bacon-act-compliance.md",
     "title": "Davis-Bacon Act Prevailing Wage: Certified Payroll & Fringe Benefit Calculations",
     "titleLen": 80,
     "descLen": 157,
-    "words": 1160,
-    "h2Count": 9,
+    "words": 1199,
+    "h2Count": 10,
     "h3Count": 0,
     "tables": 5,
-    "internalLinks": 1,
+    "internalLinks": 3,
     "mathEquations": 4,
     "mentions2026": 1,
-    "mentionsFLSA": 1,
+    "mentionsFLSA": 2,
     "mentionsIRS": 0,
-    "tool": "hour-and-wage-calculator"
+    "tool": "hour-and-wage-calculator",
+    "published": "2026-11-16"
   },
   {
     "file": "rest-break-and-meal-period-penalty-pay-california.md",
     "title": "California Meal and Rest Break Premiums: Labor Code 226.7 Penalty Calculations",
     "titleLen": 78,
     "descLen": 148,
-    "words": 1235,
-    "h2Count": 9,
+    "words": 1273,
+    "h2Count": 10,
     "h3Count": 0,
     "tables": 8,
-    "internalLinks": 1,
+    "internalLinks": 3,
     "mathEquations": 3,
     "mentions2026": 1,
-    "mentionsFLSA": 1,
+    "mentionsFLSA": 2,
     "mentionsIRS": 0,
-    "tool": "hour-and-wage-calculator"
+    "tool": "hour-and-wage-calculator",
+    "published": "2026-11-19"
   },
   {
     "file": "severance-pay-taxation-payroll-withholding-irc.md",
     "title": "Severance Pay Taxation: IRC Supplemental Wage Withholding & FICA Impact",
     "titleLen": 71,
     "descLen": 159,
-    "words": 1175,
-    "h2Count": 9,
+    "words": 1204,
+    "h2Count": 10,
     "h3Count": 0,
     "tables": 7,
-    "internalLinks": 2,
+    "internalLinks": 3,
     "mathEquations": 1,
     "mentions2026": 1,
-    "mentionsFLSA": 0,
+    "mentionsFLSA": 1,
     "mentionsIRS": 3,
-    "tool": "hourly-paycheck-tax-calculator"
+    "tool": "hourly-paycheck-tax-calculator",
+    "published": "2026-11-23"
   },
   {
     "file": "supplemental-wage-withholding-bonus-taxation-rules.md",
@@ -605,22 +642,41 @@
     "mentions2026": 1,
     "mentionsFLSA": 1,
     "mentionsIRS": 8,
-    "tool": "hourly-paycheck-tax-calculator"
+    "tool": "hourly-paycheck-tax-calculator",
+    "published": "2026-11-26"
   },
   {
     "file": "split-shift-differential-premiums-california-ny.md",
     "title": "Split Shift Differential Pay: California IWC & New York Labor Law Formulas",
     "titleLen": 74,
     "descLen": 146,
-    "words": 1142,
-    "h2Count": 7,
+    "words": 1172,
+    "h2Count": 8,
     "h3Count": 1,
     "tables": 3,
-    "internalLinks": 2,
+    "internalLinks": 3,
     "mathEquations": 4,
     "mentions2026": 1,
-    "mentionsFLSA": 3,
+    "mentionsFLSA": 5,
     "mentionsIRS": 0,
-    "tool": "shift-differential-pay-calculator"
+    "tool": "shift-differential-pay-calculator",
+    "published": "2026-11-24"
+  },
+  {
+    "file": "fluctuating-workweek-method-overtime.md",
+    "title": "Fluctuating Workweek Method: Overtime Rules for Salaried Non-Exempt Staff",
+    "titleLen": 73,
+    "descLen": 172,
+    "words": 2004,
+    "h2Count": 7,
+    "h3Count": 6,
+    "tables": 12,
+    "internalLinks": 3,
+    "mathEquations": 17,
+    "mentions2026": 1,
+    "mentionsFLSA": 7,
+    "mentionsIRS": 0,
+    "tool": "hour-and-wage-calculator",
+    "published": "2026-11-29"
   }
 ]

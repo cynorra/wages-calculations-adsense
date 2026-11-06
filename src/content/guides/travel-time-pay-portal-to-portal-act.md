@@ -72,6 +72,13 @@ Travel away from an employee's home community that keeps the worker away overnig
 
 Employers should document travel schedules clearly to prevent unrecorded travel overtime claims under 29 U.S.C. § 207.
 
+## Related Statutory & Payroll Guides
+
+For additional context on FLSA regulations and compensation compliance, review our related guides:
+
+- [FLSA Overtime Pay Rules: Time-and-a-Half (1.5x) and Double Time (2.0x)](/guides/flsa-overtime-time-and-a-half-rules/)
+- [Calculating Overtime with Bonuses: The FLSA Regular Rate of Pay Formula](/guides/flsa-regular-rate-of-pay-bonuses/)
+
 ## Sources and further reading
 
 The figures and rules in this article come from the primary sources below. Thresholds, rates, and limits change from year to year, so confirm the current value at the source before relying on it.

@@ -73,6 +73,13 @@ Under the Fair Labor Standards Act (29 U.S.C. § 203(e)(1)), courts and the Depa
 
 When an independent contractor relationship is successfully challenged, hiring firms face catastrophic retroactive liabilities: payment of unpaid minimum wages and overtime, employer FICA contributions, state unemployment insurance premiums, workers' compensation assessments, and 100% liquidated damages under 29 U.S.C. § 216(b).
 
+## Related Statutory & Payroll Guides
+
+For additional context on FLSA regulations and compensation compliance, review our related guides:
+
+- [Biweekly Paycheck Schedules: Navigating 26-Pay-Period Years and Magic Months](/guides/biweekly-paycheck-calculation-26-periods/)
+- [Reverse Paycheck Audit: Biweekly to Hourly Rate Deconstruction](/guides/reverse-biweekly-to-hourly-rate-audit/)
+
 ## Sources and further reading
 
 The figures and rules in this article come from the primary sources below. Thresholds, rates, and limits change from year to year, so confirm the current value at the source before relying on it.

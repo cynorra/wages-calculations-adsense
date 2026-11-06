@@ -82,6 +82,12 @@ To protect against retroactive overtime claims, employers should adopt a formal 
 
 When an employer maintains a clear policy and acts in good faith, isolated or inadvertent deductions will not destroy the worker's exempt status.
 
+## Related Statutory & Payroll Guides
+
+For additional context on FLSA regulations and compensation compliance, review our related guides:
+
+- [Calculating Overtime with Bonuses: The FLSA Regular Rate of Pay Formula](/guides/flsa-regular-rate-of-pay-bonuses/)
+
 ## Sources and further reading
 
 The figures and rules in this article come from the primary sources below. Thresholds, rates, and limits change from year to year, so confirm the current value at the source before relying on it.

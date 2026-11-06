@@ -54,6 +54,10 @@ export const L = {
   ca510: ["California Labor Code § 510, daily overtime", "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=LAB&sectionNum=510"],
   nyReg: ["12 NYCRR § 142-2.4, spread of hours (Cornell LII)", "https://www.law.cornell.edu/regulations/new-york/12-NYCRR-142-2.4"],
   nyMin: ["New York State Department of Labor: minimum wage", "https://dol.ny.gov/minimum-wage-0"],
+  usc255: ["29 U.S.C. § 255, statute of limitations (Cornell LII)", "https://www.law.cornell.edu/uscode/text/29/255"],
+  ca203: ["California Labor Code § 203, waiting time penalty", "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=LAB&sectionNum=203"],
+  ca2802: ["California Labor Code § 2802, business expense reimbursement", "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=LAB&sectionNum=2802"],
+  cfr825: ["29 C.F.R. Part 825, Family and Medical Leave Act (eCFR)", "https://www.ecfr.gov/current/title-29/part-825"],
 };
 
 export const SOURCES_HEADING = "## Sources and further reading";

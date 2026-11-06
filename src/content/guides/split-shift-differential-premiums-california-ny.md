@@ -71,6 +71,12 @@ Under federal law (29 C.F.R. § 785.16), off-duty intervals during a split shift
 
 In California, failure to disburse the required split-shift differential on the regular payday violates California Labor Code § 204, subjecting employers to statutory penalties under Labor Code § 210 and waiting time penalties under § 203 upon termination. In New York, the spread-of-hours premium required under 12 N.Y.C.R.R. § 142-2.4 must be clearly itemized on weekly paystubs under the New York Wage Theft Prevention Act (NYLL § 195). Omission of spread-of-hours credits exposes companies to statutory damages of up to $250 per day (capped at $5,000 per worker) plus 100% liquidated damages.
 
+## Related Statutory & Payroll Guides
+
+For additional context on FLSA regulations and compensation compliance, review our related guides:
+
+- [FLSA Overtime Pay Rules: Time-and-a-Half (1.5x) and Double Time (2.0x)](/guides/flsa-overtime-time-and-a-half-rules/)
+
 ## Sources and further reading
 
 The figures and rules in this article come from the primary sources below. Thresholds, rates, and limits change from year to year, so confirm the current value at the source before relying on it.

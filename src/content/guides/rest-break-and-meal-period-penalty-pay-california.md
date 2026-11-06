@@ -94,6 +94,13 @@ Unlike California, the federal Fair Labor Standards Act does not mandate employe
 
 California employers must comply with both the federal compensation floor and California Labor Code § 226.7 premium penalties, ensuring that rest breaks are treated as paid time and meal breaks are strictly duty-free.
 
+## Related Statutory & Payroll Guides
+
+For additional context on FLSA regulations and compensation compliance, review our related guides:
+
+- [Biweekly Paycheck Schedules: Navigating 26-Pay-Period Years and Magic Months](/guides/biweekly-paycheck-calculation-26-periods/)
+- [Reverse Paycheck Audit: Biweekly to Hourly Rate Deconstruction](/guides/reverse-biweekly-to-hourly-rate-audit/)
+
 ## Sources and further reading
 
 The figures and rules in this article come from the primary sources below. Thresholds, rates, and limits change from year to year, so confirm the current value at the source before relying on it.

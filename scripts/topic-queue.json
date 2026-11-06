@@ -1,7 +1,7 @@
 [
   {
     "slug": "fluctuating-workweek-method-overtime",
-    "title": "Fluctuating Workweek Method: How Overtime Works for Salaried Non-Exempt Employees",
+    "title": "Fluctuating Workweek Method: Overtime Rules for Salaried Non-Exempt Staff",
     "description": "When a fixed salary covers hours that change every week, overtime is half-time on a regular rate that falls as hours rise. The conditions and the math under 29 CFR 778.114.",
     "keyTakeaway": "Under the fluctuating workweek method, a salaried non-exempt employee owed overtime receives an extra half of the regular rate, which is the salary divided by the hours actually worked that week.",
     "tool": "hour-and-wage-calculator",
@@ -21,7 +21,7 @@
   },
   {
     "slug": "tip-pooling-rules-flsa-management-and-back-of-house",
-    "title": "Tip Pooling Rules: Who May Share in a Pool and Who May Not",
+    "title": "Tip Pooling Rules: Who May Share in a Pool and Mandatory Exclusions",
     "description": "How tip pools work under the FLSA after the 2018 amendment: managers and owners may not keep tips, and back-of-house sharing depends on whether a tip credit is taken.",
     "keyTakeaway": "An employer may never keep employees' tips, and may include back-of-house staff in a tip pool only if it does not take a tip credit and pays the full minimum wage in cash.",
     "tool": "tipped-minimum-wage-calculator",
@@ -31,7 +31,7 @@
   },
   {
     "slug": "payroll-record-retention-requirements-flsa-irs",
-    "title": "Payroll Record Retention: How Long to Keep Time Cards, Payroll Registers, and Tax Records",
+    "title": "Payroll Record Retention: Mandatory Time Card and Tax Record Timelines",
     "description": "FLSA and IRS recordkeeping periods for payroll data, which records fall under each rule, and what regulators expect to see in an audit.",
     "keyTakeaway": "The FLSA requires payroll records to be kept for three years and time cards and wage-rate tables for two years, while the IRS requires employment tax records to be kept for at least four years.",
     "tool": "hour-and-wage-calculator",
@@ -41,7 +41,7 @@
   },
   {
     "slug": "training-meetings-and-seminars-hours-worked-flsa",
-    "title": "Are Training Sessions and Meetings Paid Time? The Four-Part Test Under 29 CFR 785.27",
+    "title": "Are Training Sessions and Meetings Paid Time? The 29 CFR 785.27 Test",
     "description": "When training, lectures, and meetings count as hours worked, and the four conditions that make attendance unpaid under the FLSA.",
     "keyTakeaway": "Training and meeting time is unpaid only if attendance is outside regular hours, voluntary, not job related, and no productive work is done during it; otherwise it is hours worked.",
     "tool": "hour-and-wage-calculator",
@@ -51,12 +51,152 @@
   },
   {
     "slug": "commission-overtime-retail-service-exemption-section-7i",
-    "title": "The Retail and Service Commission Exemption: When Commission Pay Replaces Overtime",
+    "title": "Retail and Service Commission Exemption: Section 7(i) Overtime Rules",
     "description": "How Section 7(i) lets some retail and service establishments skip overtime for commissioned employees, and the two tests every pay period must pass.",
     "keyTakeaway": "Section 7(i) exempts an employee from overtime only if the employer is a retail or service establishment, the regular rate is above one and a half times the minimum wage, and more than half of earnings in a representative period come from commissions.",
     "tool": "base-hourly-plus-commission-calculator",
     "statutoryRef": "29 U.S.C. § 207(i); 29 C.F.R. Part 779, Subpart G",
     "sources": ["usc207", "cfr778", "fs23"],
     "notes": "Under 29 U.S.C. 207(i), an employee of a retail or service establishment is not owed overtime if: the regular rate of pay is more than one and a half times the applicable minimum wage (10.88 dollars an hour at the 7.25 federal minimum wage); and more than half of the employee's compensation for a representative period of at least one month comes from commissions on goods or services. Commissions can include bona fide commission rates based on sales; draws and guarantees do not turn base pay into commission. Some industries (for example, auto dealerships, which have their own exemption in 213(b)(10)) are handled separately. State law may be stricter."
+  },
+  {
+    "slug": "improper-salary-deductions-flsa-safe-harbor",
+    "title": "Improper Salary Deductions: Salary Basis Test and FLSA Safe Harbor Rules",
+    "description": "When employers illegally dock exempt employee salaries for partial-day absences, disciplinary penalties, or operational slowdowns under 29 CFR 541.602.",
+    "keyTakeaway": "Improper partial-day or operational pay deductions destroy an employee's exempt status across the entire job classification unless corrected under the 29 C.F.R. § 541.603 safe harbor provision.",
+    "tool": "salary-exempt-vs-non-exempt-calculator",
+    "statutoryRef": "29 C.F.R. §§ 541.602-541.603",
+    "sources": ["cfr541", "fs17a", "usc216"],
+    "notes": "Under 29 CFR 541.602, exempt salaried workers must receive their full predetermined salary for any week in which they perform any work. Permissible deductions: full-day absences for personal reasons; full-day absences for sickness if under a bona fide sick leave plan; major safety rule violations; or unpaid FMLA leave. Impermissible deductions: partial-day absences for personal reasons, jury duty offsets, or business closures due to weather/shortage of work. Safe harbor under 541.603 requires a written policy, reimbursement of improper deductions, and good-faith commitment."
+  },
+  {
+    "slug": "reporting-time-pay-and-call-in-pay-state-rules",
+    "title": "Reporting Time Pay: State Show-Up Wage Mandates and Overtime Impact",
+    "description": "How California, New York, and Massachusetts mandate half-day or 2-to-4 hour show-up pay when workers arrive for scheduled shifts but are sent home early.",
+    "keyTakeaway": "While the federal FLSA does not mandate reporting time pay, key states require employers to pay 2 to 4 hours of wages at regular rates when scheduled shifts are cancelled or truncated.",
+    "tool": "hour-and-wage-calculator",
+    "statutoryRef": "California IWC Orders § 5; 12 NYCRR § 142-2.3",
+    "sources": ["ca510", "nyMin", "cfr778"],
+    "notes": "California IWC Wage Orders require reporting time pay equal to half the scheduled day's work (minimum 2 hours, maximum 4 hours) at the regular rate of pay. New York mandates at least 4 hours (or the scheduled shift, whichever is less) at the basic minimum hourly rate. Massachusetts requires 3 hours at minimum wage for shifts of 3+ hours. Reporting time pay for hours not actually worked does not count toward the 40-hour federal overtime threshold under 29 CFR 778.216."
+  },
+  {
+    "slug": "uniform-and-tool-deductions-minimum-wage-kickback",
+    "title": "Uniform and Tool Deductions: The FLSA 'Free and Clear' Wage Principle",
+    "description": "How employer deductions for required uniforms, safety gear, cash register shortages, and company tools violate minimum wage under 29 CFR 531.35.",
+    "keyTakeaway": "Deductions for items that primarily benefit the employer cannot reduce a worker's direct cash earnings below the applicable federal or state minimum wage in any workweek.",
+    "tool": "hourly-pay-stub-calculator",
+    "statutoryRef": "29 C.F.R. § 531.35; 29 C.F.R. § 531.36",
+    "sources": ["cfr531", "usc206", "fs23"],
+    "notes": "Under 29 C.F.R. 531.35, wages must be paid 'free and clear' without kickbacks directly or indirectly to the employer. Required uniforms (bearing company logos or unique colors), name tags, knives, or specialized tools are deemed employer business expenses. If an employee earns 12.00 dollars an hour for 40 hours ($480 gross), an employer cannot deduct 60 dollars for uniforms if doing so brings weekly pay below $7.25 x 40 = $290 (federal), or applicable state minimums ($16.00/hr in CA = $640 minimum floor)."
+  },
+  {
+    "slug": "statute-of-limitations-flsa-wage-claims-willful-violations",
+    "title": "FLSA Statute of Limitations: Two-Year Standard vs Three-Year Willful Penalties",
+    "description": "Statutory recovery periods for unpaid minimum wage and overtime under 29 U.S.C. § 255, proving employer recklessness, and liquidated damages under Section 216.",
+    "keyTakeaway": "Wage claims carry a standard two-year statute of limitations under 29 U.S.C. § 255, but extend to three years with 100% liquidated damages if the employer acted willfully.",
+    "tool": "hour-and-wage-calculator",
+    "statutoryRef": "29 U.S.C. § 255; 29 U.S.C. § 216(b)",
+    "sources": ["usc255", "usc216", "dolFlsa"],
+    "notes": "Portal-to-Portal Act Section 6 (29 U.S.C. 255) establishes a 2-year statute of limitations for ordinary FLSA claims. Under McLaughlin v. Richland Shoe Co., a violation is 'willful' if the employer either knew its conduct was prohibited or showed reckless disregard for FLSA compliance. Section 216(b) mandates equal amount as liquidated damages (double damages) plus reasonable attorney fees, unless the employer proves subjective good faith and reasonable grounds under 29 U.S.C. 260."
+  },
+  {
+    "slug": "final-paycheck-deadlines-and-waiting-time-penalties",
+    "title": "Final Paycheck Deadlines: Termination Timelines and Waiting Time Penalties",
+    "description": "State-by-state statutory deadlines for final wage delivery upon firing or quitting, and the daily wage penalty formulas under California Labor Code Section 203.",
+    "keyTakeaway": "Under California Labor Code Section 203, failure to pay all final wages immediately upon termination triggers waiting time penalties equal to one full day of pay per day of delay up to 30 days.",
+    "tool": "hourly-pay-stub-calculator",
+    "statutoryRef": "California Labor Code §§ 201-203; N.Y. Labor Law § 191",
+    "sources": ["ca203", "usc216", "dolMinWage"],
+    "notes": "Under CA Labor Code 201, fired employees must receive all unpaid wages immediately at discharge. Resigning employees giving 72 hours notice must be paid on their last day; without notice, within 72 hours (LC 202). Penalties under LC 203 accrue at the employee's regular daily wage rate for up to 30 calendar days ($25/hr x 8 hrs = $200/day x 30 days = $6,000 maximum penalty). In New York, final wages are due on the next regular payday (NYLL 191)."
+  },
+  {
+    "slug": "nondiscretionary-bonuses-retroactive-overtime-true-up",
+    "title": "Nondiscretionary Bonuses: Retroactive Overtime Recalculation Formulas",
+    "description": "How quarterly, attendance, or performance bonuses must be allocated back across prior workweeks to pay retroactive overtime adjustments under 29 CFR 778.209.",
+    "keyTakeaway": "When an employee earns a nondiscretionary bonus covering multiple pay periods, the employer must retroactively increase the regular rate and pay additional overtime for every overtime hour worked during the bonus period.",
+    "tool": "calculating-overtime-with-bonuses",
+    "statutoryRef": "29 C.F.R. §§ 778.208-778.209",
+    "sources": ["cfr778", "usc207", "fs23"],
+    "notes": "Under 29 CFR 778.208, all payments are included in regular rate unless specifically exempt under 207(e). Nondiscretionary bonuses (production, quality, attendance, safety) must be apportioned back to the workweeks in which they were earned (778.209). If a $1,200 quarterly bonus is earned over a 12-week period with 50 total overtime hours and 480 total hours, the bonus increases the regular rate by $1,200 / 480 = $2.50/hr, triggering an additional half-time true-up of 50 x ($2.50 x 0.5) = $62.50."
+  },
+  {
+    "slug": "bona-fide-meal-periods-compensable-desk-lunch-flsa",
+    "title": "Bona Fide Meal Breaks: The Relieved-of-Duty Test and Desk Lunch Liability",
+    "description": "Distinguishing unpaid 30-minute meal periods from compensable worktime under 29 CFR 785.19. Why eating at desks or remaining on standby triggers overtime pay.",
+    "keyTakeaway": "Under 29 C.F.R. § 785.19, meal breaks are unpaid only if the worker is completely relieved from all duty for at least 30 minutes; answering emails or staying at workstations makes the entire period paid time.",
+    "tool": "hour-and-wage-calculator",
+    "statutoryRef": "29 C.F.R. § 785.19",
+    "sources": ["cfr785", "fs22", "usc207"],
+    "notes": "Under 29 CFR 785.19, bona fide meal periods must typically be 30 minutes or longer and the employee must be completely relieved from duty. If an employee is required to answer phone calls, monitor equipment, or remain seated at a customer desk while eating, the break is compensable hours worked. If an employee logs 40 hours of straight work plus five unpaid 30-minute desk lunches (2.5 hours total), the employer owes 2.5 hours of overtime at time-and-a-half."
+  },
+  {
+    "slug": "remote-work-expense-reimbursements-payroll-compliance",
+    "title": "Remote Work Expense Reimbursements: Mandatory Stipends and Tax Rules",
+    "description": "State statutory reimbursement requirements for home internet, cell phones, and computer hardware under California Labor Code 2802 and IRS accountable plans.",
+    "keyTakeaway": "California, Illinois, and several states mandate reasonable reimbursement for mandatory remote work expenses; under the FLSA, unreimbursed expenses cannot reduce wages below minimum wage.",
+    "tool": "hourly-pay-stub-calculator",
+    "statutoryRef": "California Labor Code § 2802; 820 ILCS 115/9.5",
+    "sources": ["ca2802", "t162", "usc206"],
+    "notes": "California Labor Code 2802 requires employers to indemnify employees for all necessary expenditures incurred in direct consequence of duties (Cochran v. Schwan's Home Service established employers must pay a reasonable percentage of personal cell phone/internet bills even if the employee incurs no added out-of-pocket costs). Under federal law, if remote workers must purchase equipment, unreimbursed expenses cannot drop effective wages below minimum wage under 29 CFR 531.35. IRS Accountable Plan rules (26 CFR 1.62-2) keep reimbursements tax-free."
+  },
+  {
+    "slug": "comp-time-in-public-schools-and-municipalities",
+    "title": "Public Sector Comp Time: Statutory Accrual Caps and Cash-Out Formulas",
+    "description": "How public agency fire, police, school, and municipal workers accrue compensatory time off in lieu of cash overtime under FLSA Section 7(o).",
+    "keyTakeaway": "Under FLSA Section 7(o), public safety and emergency personnel may accrue up to 480 hours of comp time, while all other public employees are capped at 240 hours before cash overtime is mandatory.",
+    "tool": "overtime-pay-calculator",
+    "statutoryRef": "29 U.S.C. § 207(o); 29 C.F.R. Part 553",
+    "sources": ["usc207", "cfr553", "fs23"],
+    "notes": "Under 29 U.S.C. 207(o), public agencies (state, county, city, school districts) can provide comp time at 1.5 hours per overtime hour worked under an agreement with employees or collective bargaining. Accrual limits: 480 hours for public safety, emergency response, and seasonal activities (representing 320 OT hours); 240 hours for all other municipal workers (160 OT hours). Any hours beyond statutory caps must be paid in cash. Upon separation, accrued comp time must be cashed out at the average regular rate over the last 3 years or final rate, whichever is higher."
+  },
+  {
+    "slug": "shift-differential-blended-regular-rate-overtime",
+    "title": "Shift Differential Overtime: Blended Rate Calculations for Night Shifts",
+    "description": "How hourly night, graveyard, and weekend shift premiums must be factored into the FLSA regular rate to calculate legal time-and-a-half overtime.",
+    "keyTakeaway": "Shift differential premiums cannot be paid as straight hourly additions during overtime; they must be blended into total straight-time earnings to elevate the base overtime multiplier.",
+    "tool": "shift-differential-pay-calculator",
+    "statutoryRef": "29 C.F.R. § 778.207(b)",
+    "sources": ["cfr778", "usc207", "fs23"],
+    "notes": "Under 29 CFR 778.207(b), shift differentials paid for working undesirable hours (night, swing, weekend, hazardous shifts) are part of the regular rate. Example: Worker earns base $20/hr for 40 day hours ($800) and $25/hr ($20 + $5 differential) for 10 night hours ($250). Total straight-time earnings = $1,050 for 50 hours. Regular rate = $1,050 / 50 = $21.00/hr. Overtime premium = 10 OT hours x ($21.00 x 0.5) = $105.00. Total gross pay = $1,050 + $105 = $1,155.00."
+  },
+  {
+    "slug": "fmla-unpaid-leave-payroll-docking-salaried-exempt",
+    "title": "FMLA Unpaid Leave Payroll Docking: Hourly Deductions for Exempt Staff",
+    "description": "The specific exception in 29 CFR 825.206 allowing employers to dock exempt salaried employee pay on an hourly basis for intermittent FMLA leave without voiding exemptions.",
+    "keyTakeaway": "Under 29 C.F.R. § 825.206, employers may make partial-day salary deductions for intermittent FMLA leave without violating the FLSA salary basis test or triggering overtime liability.",
+    "tool": "salary-exempt-vs-non-exempt-calculator",
+    "statutoryRef": "29 C.F.R. § 825.206; 29 U.S.C. § 2612",
+    "sources": ["cfr825", "cfr541", "fs17a"],
+    "notes": "While 29 CFR 541.602 strictly prohibits partial-day deductions from exempt employee salaries, the Family and Medical Leave Act provides a statutory carve-out in 29 CFR 825.206. Employers may convert an exempt salary into an hourly equivalent and dock pay for partial-day FMLA absences without losing the white-collar overtime exemption. Calculation: Weekly salary divided by normal scheduled hours (e.g. $1,600 / 40 hrs = $40/hr). A 4-hour intermittent FMLA medical appointment results in a $160 salary reduction."
+  },
+  {
+    "slug": "paid-sick-leave-statutory-regular-rate-formulas",
+    "title": "Paid Sick Leave Pay Rates: Regular Rate vs Base Wage Calculations",
+    "description": "How California Labor Code 246 and state sick pay laws mandate calculating sick wages using blended regular rates, commissions, and shift premiums instead of base hourly pay.",
+    "keyTakeaway": "State mandatory paid sick leave laws frequently prohibit paying base hourly rates, requiring employers to calculate sick leave wages using a 90-day regular rate average including differentials and commissions.",
+    "tool": "hour-and-wage-calculator",
+    "statutoryRef": "California Labor Code § 246; N.Y. Labor Law § 196-b",
+    "sources": ["ca510", "nyMin", "cfr778"],
+    "notes": "Under California Labor Code 246(l), non-exempt employees must be paid for sick leave using either: (1) the regular rate of pay of the workweek in which the leave was taken; or (2) total non-overtime earnings divided by total non-overtime hours over the prior 90-day pay period. Paying simple base hourly rates violates state law whenever an employee has earned shift differentials, nondiscretionary bonuses, or sales commissions in the prior 90 days."
+  },
+  {
+    "slug": "tipped-employees-credit-card-processing-fee-deductions",
+    "title": "Tip Deductions for Credit Card Processing Fees: Federal Rules and Limits",
+    "description": "When employers may deduct actual credit card transactional interchange fees from charged employee tips under FLSA regulations and state-specific bans.",
+    "keyTakeaway": "Federal law allows employers to deduct only the actual transactional fee percentage charged by the credit card processor from an employee's tip, but several states strictly ban the practice.",
+    "tool": "tipped-minimum-wage-calculator",
+    "statutoryRef": "29 U.S.C. § 203(m); DOL Field Operations Handbook 30d05",
+    "sources": ["usc203", "cfr531", "dolMinWage"],
+    "notes": "Under DOL guidance and federal circuit court precedent, an employer may subtract the actual transaction fee percentage (e.g. 2.5%) charged by the credit card company from the charged tip before paying the employee, provided the deduction does not reduce effective wages below the minimum wage. However, states like California, Maine, and Massachusetts strictly prohibit any credit card fee deductions from employee tips under state labor codes."
+  },
+  {
+    "slug": "de-minimis-doctrine-preliminary-postliminary-work",
+    "title": "The FLSA De Minimis Doctrine: Compensable Preliminary and Postliminary Time",
+    "description": "When minutes spent logging into computers, donning protective gear, or passing security checkpoints cross the threshold into mandatory paid worktime.",
+    "keyTakeaway": "Under 29 C.F.R. § 785.47, insubstantial periods of a few seconds or minutes beyond scheduled hours may be disregarded as de minimis only when recording them is administratively impractical.",
+    "tool": "hour-and-wage-calculator",
+    "statutoryRef": "29 C.F.R. § 785.47; 29 U.S.C. § 254",
+    "sources": ["cfr785", "usc254", "fs22"],
+    "notes": "Under 29 CFR 785.47, de minimis doctrine applies only where trifles of a few seconds or minutes are in question and cannot as a practical matter be measured. Regular, scheduled preliminary activities (such as boot-up time for call center systems, donning specialized PPE, or mandatory shift briefings of 5-10 minutes daily) are compensable working hours under 10th and 9th Circuit rulings. Employers cannot arbitrarily truncate recorded time."
   }
 ]

@@ -84,6 +84,12 @@ To maintain non-taxable status under 26 U.S.C. § 62(a)(2)(A), an employer's per
 
 Failure to satisfy any condition converts the entire per diem allowance into taxable Form W-2 wages subject to FICA and federal income tax withholding.
 
+## Related Statutory & Payroll Guides
+
+For additional context on FLSA regulations and compensation compliance, review our related guides:
+
+- [Hourly Paycheck Tax Withholding: Federal, FICA & State Deductions](/guides/hourly-paycheck-tax-breakdown/)
+
 ## Sources and further reading
 
 The figures and rules in this article come from the primary sources below. Thresholds, rates, and limits change from year to year, so confirm the current value at the source before relying on it.

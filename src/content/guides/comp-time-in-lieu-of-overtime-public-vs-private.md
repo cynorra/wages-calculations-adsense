@@ -70,6 +70,13 @@ Private employers that operate informal "comp time banks" often believe they are
 
 For private firms needing scheduling flexibility, lawful alternatives include implementing compressed 4x10 work schedules within a single 7-day workweek or granting discretionary paid personal leave that does not substitute for statutory overtime obligations.
 
+## Related Statutory & Payroll Guides
+
+For additional context on FLSA regulations and compensation compliance, review our related guides:
+
+- [Calculating Overtime with Bonuses: The FLSA Regular Rate of Pay Formula](/guides/flsa-regular-rate-of-pay-bonuses/)
+- [Hourly to Salary Calculation: The 2,080-Hour Annual Standard Breakdown](/guides/hourly-to-salary-annual-breakdown/)
+
 ## Sources and further reading
 
 The figures and rules in this article come from the primary sources below. Thresholds, rates, and limits change from year to year, so confirm the current value at the source before relying on it.

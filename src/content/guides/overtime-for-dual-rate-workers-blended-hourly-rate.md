@@ -92,6 +92,12 @@ Before running payroll for employees working multiple roles across a single work
 3. Multiply overtime hours by 50% of the weighted regular rate to determine the additional half-time premium owed.
 4. Verify whether any written agreement exists under 29 C.F.R. Section 778.419 establishing job-specific overtime rates.
 
+## Related Statutory & Payroll Guides
+
+For additional context on FLSA regulations and compensation compliance, review our related guides:
+
+- [FLSA Overtime Pay Rules: Time-and-a-Half (1.5x) and Double Time (2.0x)](/guides/flsa-overtime-time-and-a-half-rules/)
+
 ## Sources and further reading
 
 The figures and rules in this article come from the primary sources below. Thresholds, rates, and limits change from year to year, so confirm the current value at the source before relying on it.

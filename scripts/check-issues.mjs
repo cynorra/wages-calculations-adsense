@@ -1,6 +1,8 @@
 import fs from 'fs';
+import path from 'path';
 
-const list = JSON.parse(fs.readFileSync('d:/android-projeler/wages-calculations-adsense/scripts/audit-results.json', 'utf-8'));
+const ROOT = process.cwd();
+const list = JSON.parse(fs.readFileSync(path.join(ROOT, 'scripts', 'audit-results.json'), 'utf-8'));
 const issues = [];
 
 list.forEach(item => {
