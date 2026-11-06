@@ -198,5 +198,45 @@
     "statutoryRef": "29 C.F.R. § 785.47; 29 U.S.C. § 254",
     "sources": ["cfr785", "usc254", "fs22"],
     "notes": "Under 29 CFR 785.47, de minimis doctrine applies only where trifles of a few seconds or minutes are in question and cannot as a practical matter be measured. Regular, scheduled preliminary activities (such as boot-up time for call center systems, donning specialized PPE, or mandatory shift briefings of 5-10 minutes daily) are compensable working hours under 10th and 9th Circuit rulings. Employers cannot arbitrarily truncate recorded time."
+  },
+  {
+    "slug": "texas-overtime-laws-and-payday-rules",
+    "title": "Texas Overtime Laws: TWC Payday Rules, 40-Hour Limits & Exemptions",
+    "description": "How the Texas Payday Law interacts with federal FLSA Section 7(a) overtime requirements, mandatory pay frequencies, and wage claim enforcement by the TWC.",
+    "keyTakeaway": "Texas follows the federal 40-hour overtime standard with no daily overtime cap, but enforces strict semi-monthly payday deadlines and wage collection remedies under Texas Labor Code Chapter 61.",
+    "tool": "overtime-pay-calculator",
+    "statutoryRef": "Texas Labor Code Chapter 61; 29 U.S.C. § 207",
+    "sources": ["usc207", "cfr778", "fs23"],
+    "notes": "Under the Texas Payday Law (Texas Labor Code Chapter 61), Texas employers must pay non-exempt employees at least twice per month (semimonthly) on designated paydays. Texas has no state overtime law or daily overtime requirement, relying entirely on the federal FLSA 40-hour weekly threshold at 1.5x regular rate. Wage claims must be filed with the Texas Workforce Commission (TWC) within 180 days of the date wages were due. Fringe benefits like vacation payouts are only enforceable if promised in a written company policy."
+  },
+  {
+    "slug": "annual-lease-value-table-company-car-taxation",
+    "title": "IRS Annual Lease Value Table: Company Vehicle Imputed Income Audits",
+    "description": "How employers calculate taxable fringe benefit income for personal use of employer-provided vehicles using the IRS Regulation 1.61-21 Annual Lease Value Table.",
+    "keyTakeaway": "Under 26 C.F.R. § 1.61-21, the personal use portion of an employer-provided vehicle is imputed as taxable wage income subject to FICA and federal withholding based on the IRS Annual Lease Value Table.",
+    "tool": "hourly-pay-stub-calculator",
+    "statutoryRef": "26 C.F.R. § 1.61-21(d); IRS Publication 15-B",
+    "sources": ["t6121", "p15b", "u61"],
+    "notes": "Under Treasury Regulation 1.61-21(d), the annual lease value of a vehicle is determined by its fair market value (FMV) when first made available to the employee. For example, a $34,000 FMV vehicle carries an IRS annual lease value of $9,250. If the employee drives 20,000 total miles with 5,000 personal miles (25% personal use), the taxable imputed income is 25% of $9,250 = $2,312.50 (plus 5.5 cents/mile if fuel is provided by employer = $275, totaling $2,587.50). This amount must be included on Form W-2 Box 1, 3, and 5."
+  },
+  {
+    "slug": "vacation-pay-and-pto-accrual-calculations-flsa",
+    "title": "Vacation Pay and PTO Accrual: Hourly Rate Formulas and Overtime Exclusions",
+    "description": "How employers compute paid time off accrual rates per hour worked, cash out policies, and why PTO hours are excluded from the 40-hour FLSA overtime baseline.",
+    "keyTakeaway": "Under 29 U.S.C. § 207(e)(2), paid vacation and PTO hours are excluded from the FLSA regular rate and do not count toward the 40-hour weekly overtime threshold.",
+    "tool": "pto-payout-calculator",
+    "statutoryRef": "29 U.S.C. § 207(e)(2); 29 C.F.R. § 778.218",
+    "sources": ["usc207", "cfr778", "fs23"],
+    "notes": "Under 29 U.S.C. § 207(e)(2), payments made for occasional periods when no work is performed due to vacation, holiday, or illness are not part of the regular rate and cannot be used to calculate or satisfy overtime obligations. For example, if an employee logs 36 actual work hours plus 8 hours of holiday pay (44 total paid hours), the employee has zero statutory overtime hours because actual hours worked did not exceed 40. Standard accrual formula: 80 annual PTO hours / 2,080 working hours = 0.03846 PTO hours earned per hour worked."
+  },
+  {
+    "slug": "tip-credit-rules-213-cash-wage-and-dual-jobs",
+    "title": "The $2.13 Tipped Minimum Wage: Tip Credit Mechanics & Dual-Job Audits",
+    "description": "How the federal $5.12 maximum tip credit operates under FLSA Section 3(m), calculating overtime for tipped staff, and DOL 80/20/30 dual-jobs compliance.",
+    "keyTakeaway": "Employers taking the federal $5.12 tip credit must pay at least $2.13 in cash wages and pay overtime at 1.5 times the full statutory minimum wage ($10.88), subtracting only the tip credit.",
+    "tool": "tipped-minimum-wage-calculator",
+    "statutoryRef": "29 U.S.C. § 203(m); 29 C.F.R. § 531.59",
+    "sources": ["usc203", "cfr531", "dolMinWage"],
+    "notes": "Under 29 U.S.C. 203(m), federal law allows an employer to pay a cash wage of $2.13/hr and claim a tip credit of $5.12/hr to satisfy the $7.25 minimum wage, provided the employee receives at least $30/month in tips and retains all tips. For overtime, the regular rate is always the full minimum wage ($7.25), so 1.5x OT is $10.88/hr minus the $5.12 tip credit = $5.76/hr cash overtime wage. Employers cannot multiply $2.13 by 1.5. Under dual-jobs doctrine (29 CFR 531.56), non-tipped work directly supporting tip production exceeding 20% of the workweek or 30 consecutive minutes requires full $7.25 cash wages."
   }
 ]
