@@ -268,5 +268,25 @@
     "statutoryRef": "29 U.S.C. § 206; 29 C.F.R. § 778.109",
     "sources": ["usc206", "cfr778", "fs23"],
     "notes": "Standard full-time year = 52 weeks x 40 hours = 2,080 hours. Shorthand: Hourly rate x 2 = approximate thousands per year ($25/hr x 2 = ~$50k, exact $52,000). Baseline figures: $7.25 x 40 = $290/week ($15,080 annual); $15/hr x 40 = $600/week ($31,200 annual); $20/hr x 40 = $800/week ($41,600 annual); $30/hr x 40 = $1,200/week ($62,400 annual); $50/hr x 40 = $2,000/week ($104,000 annual). When adjusting for 2 weeks unpaid vacation (2,000 hours), multiply hourly rate by 2,000."
+  },
+  {
+    "slug": "texas-overtime-laws-oilfield-and-weekly-standards",
+    "title": "Texas Overtime Laws: FLSA 40-Hour Threshold vs Daily Overtime Misconceptions",
+    "description": "How the Texas Payday Law and FLSA govern overtime in Texas, why 12-hour shifts do not trigger daily overtime, and special rules for oilfield and healthcare workers.",
+    "keyTakeaway": "Texas follows the federal FLSA 40-hour weekly standard with zero daily overtime requirement, meaning an employee working four 12-hour shifts owes overtime only on the 8 hours exceeding 40.",
+    "tool": "overtime-pay-calculator",
+    "statutoryRef": "Tex. Lab. Code § 62.051; 29 U.S.C. § 207",
+    "sources": ["usc207", "dolFlsa", "fs23"],
+    "notes": "Under Texas Labor Code Chapter 62 and the Texas Payday Law, Texas has no daily overtime statute (unlike California or Alaska). Overtime is owed strictly after 40 hours worked in a 7-day defined workweek under FLSA Section 7(a). Common misunderstanding: working 12 or 16 hours in a single shift does not require time-and-a-half unless total weekly hours surpass 40. Oilfield workers: day rate pay must be converted to regular rate by dividing total weekly compensation by actual hours worked. Mandatory 7-day workweek rule under 29 CFR 778.105 prevents averaging hours across biweekly pay periods."
+  },
+  {
+    "slug": "payroll-leap-year-27-pay-periods-salary-dilemma",
+    "title": "Payroll Leap Year: Managing the 27 Biweekly Pay Periods Phenomenon",
+    "description": "How the calendar drift creates 27 pay periods every 11 years, employer calculation strategies under the FLSA salary basis test, and withholding impacts.",
+    "keyTakeaway": "When calendar leap years cause 27 biweekly pay dates instead of 26, employers must either divide annual salary by 27 to maintain annual compensation or keep the 26-divisor and budget for a 3.85% payroll expansion.",
+    "tool": "biweekly-paycheck-calculator",
+    "statutoryRef": "29 C.F.R. § 541.602; 26 U.S.C. § 3402",
+    "sources": ["cfr541", "p15", "fs17a"],
+    "notes": "A standard 52-week year has 364 days, leaving 1 extra day (2 in a leap year). Over an 11-year cycle, these extra days accumulate to produce a 27th pay date for biweekly payrolls and 53rd for weekly. For exempt salaried employees: under the salary basis test (29 CFR 541.602), dividing salary by 27 lowers the per-period salary (which must still exceed the federal $684/wk threshold), while keeping the standard /26 biweekly divisor increases annual pay by 3.85% ($75,000 salary paid at $2,884.62 x 27 = $77,884.74). IRS Publication 15-T wage bracket withholding tables adjust accordingly."
   }
 ]
