@@ -88,3 +88,4 @@ if (totalIssues === 0) {
 } else {
   console.log(`\n>>> AUDIT FOUND ${totalIssues} FILES WITH POTENTIAL FLAGS. <<<\n`);
 }
+
