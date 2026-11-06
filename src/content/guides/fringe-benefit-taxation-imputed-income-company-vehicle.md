@@ -25,7 +25,7 @@ An employer-provided vehicle is a good example. The part of the use that is **bu
 
 The commuting rule is limited: the employer must require the commuting use for a bona fide business reason, there must be a written policy prohibiting other personal use, and the employee cannot be a "control employee" (generally officers and certain highly paid or ownership-linked employees).
 
-## A worked example under ALV
+## Imputed Income Case Study: Personal Miles on a $36,000 Fleet Vehicle
 
 An employee drives a company sedan with a fair market value of $22,300. The IRS lease-value table assigns it an annual lease value of roughly $5,850 (confirm the current figure in Publication 15-B). The mileage log shows 8,000 total miles, of which 2,000 are personal:
 

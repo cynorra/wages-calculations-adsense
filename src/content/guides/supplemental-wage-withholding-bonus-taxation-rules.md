@@ -31,7 +31,7 @@ The employer adds the bonus to the employee's **regular wages for the most recen
 
 This method often leads to a different result from 22%, because adding a bonus to one pay period can make the annualized pay look much higher. For a modest earner with a large bonus, the aggregate method may withhold more than 22% on part of the amount; for a high earner with a small bonus, it may be close to their top rate.
 
-## A worked example
+## Worked Payroll Audit: Withholding on a $12,000 Annual Performance Bonus
 
 An employee is paid $3,000 every two weeks and receives a **$6,000 bonus** in a separate payment. Using the flat method:
 

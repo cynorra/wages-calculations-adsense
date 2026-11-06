@@ -30,7 +30,7 @@ For employees receiving biweekly paychecks (every other Friday, 26 times per yea
 
 ---
 
-## Progressive Federal Tax Brackets and FICA Withholdings (2025 Illustration)
+## Progressive Federal Tax Brackets and FICA Withholdings on $75k
 
 Understanding real spendable liquidity requires analyzing how the Internal Revenue Service (IRS) taxes an income of $75,000. In the United States, federal income tax is progressive, meaning dollars are taxed at increasing rates across established brackets, rather than taxing the entire salary at one flat rate.
 

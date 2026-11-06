@@ -50,7 +50,7 @@ An employer cannot calculate overtime pay at 1.5 times the daytime base rate whi
 
 ---
 
-## The Mathematical Proof: Illegal Calculation vs. The Lawful FLSA Method
+## Unlawful Flat Shift Addition vs. Lawful FLSA Regular Rate Blending
 
 To see how workers are shortchanged when shift differentials are miscalculated, examine a realistic hospital CNA or logistics technician scenario:
 

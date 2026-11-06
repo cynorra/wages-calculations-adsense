@@ -16,7 +16,7 @@ In United States employment law, the cornerstone of worker compensation is the o
 
 This statutory principle applies to all **non-exempt employees** engaged in interstate commerce or employed by an enterprise covered under the FLSA. Under federal doctrine, the workweek is defined as a fixed and regularly recurring period of **168 hours—seven consecutive 24-hour periods**. An employer may establish any day and hour as the start of the workweek (e.g., Sunday at midnight, or Thursday at 7:00 AM), but once established, it cannot be arbitrarily shifted to evade overtime liabilities.
 
-Furthermore, federal law evaluates overtime strictly on a **single workweek basis**. Employers cannot average hours across a two-week biweekly pay period. For instance, if an employee logs 50 hours in Week 1 and 30 hours in Week 2 (averaging 40 hours per week across the biweekly cycle), the employer must lawfully pay **10 hours of overtime** in Week 1.
+Federal law evaluates overtime strictly on a **single workweek basis**. Employers cannot average hours across a two-week biweekly pay period. For instance, if an employee logs 50 hours in Week 1 and 30 hours in Week 2 (averaging 40 hours per week across the biweekly cycle), the employer must lawfully pay **10 hours of overtime** in Week 1.
 
 ---
 

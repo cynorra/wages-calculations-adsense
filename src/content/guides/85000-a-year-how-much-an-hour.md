@@ -30,7 +30,7 @@ For employees paid biweekly (every two weeks, 26 times annually), each gross pay
 
 ---
 
-## Progressive Federal Tax Brackets and FICA Withholdings (2025 Illustration)
+## Federal Income Tax & FICA Burden at $85,000: Marginal vs. Effective Slices
 
 An earner at $85,000 operates within the 22% federal marginal tax bracket. However, the United States federal tax system is progressive, meaning only a fraction of their income is taxed at the highest bracket.
 

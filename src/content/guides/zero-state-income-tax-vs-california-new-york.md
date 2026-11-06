@@ -63,7 +63,7 @@ Texas levies **no personal income tax**, but it maintains the **6th highest effe
   - In California (protected by Proposition 13, capped at ~1.1% base rate): Annual property tax $\approx \mathbf{\$4,950.00}$.
   - In Texas (at an effective rate of 2.05%): Annual property tax $\approx \mathbf{\$9,225.00}$.
   - **The Difference:** The Texas homeowner pays an additional **$4,275 per year in property taxes**, directly offsetting nearly two-thirds of their state income tax savings.
-  - Furthermore, while renters do not receive a property tax bill directly, landlords pass property taxes directly through into monthly rental rates.
+  - In addition, while renters do not receive a property tax bill directly, landlords pass property taxes directly through into monthly rental rates.
 
 ### 2. The Tennessee and Washington Sales Tax Tradeoff
 To compensate for zero income taxes, Tennessee and Washington enforce some of the highest combined state and local sales tax rates in the nation:

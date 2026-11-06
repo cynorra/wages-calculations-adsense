@@ -92,7 +92,7 @@ Under California Labor Code § 226.2, piece-rate employees must be compensated s
 
 California employers cannot rely solely on 29 C.F.R. § 778.111 to cover rest breaks within baseline piece rates. Rest period penalty obligations and statutory requirements governing California rest breaks are documented under [/guides/rest-break-and-meal-period-penalty-pay-california/](/guides/rest-break-and-meal-period-penalty-pay-california/).
 
-Furthermore, California law mandates daily overtime pay (1.5x regular rate for hours over 8 in a work day) alongside weekly overtime (hours over 40). When calculating the daily regular rate for a pieceworker in California, total earnings for the day must be divided by total hours worked that day, and a half-time premium applied to daily overtime hours.
+Under California law, daily overtime pay (1.5x regular rate for hours over 8 in a work day) applies alongside weekly overtime (hours over 40). When calculating the daily regular rate for a pieceworker in California, total earnings for the day must be divided by total hours worked that day, and a half-time premium applied to daily overtime hours.
 
 ## Compensation Reconciliation and Paystub Itemization Audit Requirements
 

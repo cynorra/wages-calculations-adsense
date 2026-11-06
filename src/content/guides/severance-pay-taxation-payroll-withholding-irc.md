@@ -32,7 +32,7 @@ How the severance is paid changes how it is withheld.
 | **Salary continuation** paid on regular paydays | Treated as regular wages; withheld using the employee's Form W-4 and the normal tables |
 | **Accrued PTO** paid at separation | Wages; may be supplemental depending on how it is paid; some states require immediate payment |
 
-## A worked example
+## Case Study: Severance Lump-Sum Taxation on a $45,000 Separation Package
 
 An employee with a $90,000 salary is laid off with a **$30,000 lump-sum** severance payment. Her earlier wages that year do not exceed the Social Security base, so all FICA applies. Using the flat 22% federal supplemental rate:
 
