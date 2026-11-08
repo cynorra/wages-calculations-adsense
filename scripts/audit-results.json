@@ -646,6 +646,23 @@
     "published": "2026-11-26"
   },
   {
+    "file": "tip-pooling-rules-flsa-management-and-back-of-house.md",
+    "title": "Tip Pooling Rules: Who May Share in a Pool and Mandatory Exclusions",
+    "titleLen": 67,
+    "descLen": 166,
+    "words": 2528,
+    "h2Count": 10,
+    "h3Count": 12,
+    "tables": 4,
+    "internalLinks": 3,
+    "mathEquations": 6,
+    "mentions2026": 1,
+    "mentionsFLSA": 13,
+    "mentionsIRS": 0,
+    "tool": "tipped-minimum-wage-calculator",
+    "published": "2026-12-01"
+  },
+  {
     "file": "tipped-minimum-wage-tip-credit-audit.md",
     "title": "Tipped Minimum Wage & Tip Credit: Federal $2.13 Audit and Tip Pooling",
     "titleLen": 69,
