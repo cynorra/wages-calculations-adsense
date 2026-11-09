@@ -425,6 +425,23 @@
     "published": "2026-11-14"
   },
   {
+    "file": "payroll-record-retention-requirements-flsa-irs.md",
+    "title": "Payroll Record Retention: Mandatory Time Card and Tax Record Timelines",
+    "titleLen": 70,
+    "descLen": 135,
+    "words": 2062,
+    "h2Count": 7,
+    "h3Count": 3,
+    "tables": 5,
+    "internalLinks": 3,
+    "mathEquations": 1,
+    "mentions2026": 1,
+    "mentionsFLSA": 18,
+    "mentionsIRS": 22,
+    "tool": "hour-and-wage-calculator",
+    "published": "2026-12-02"
+  },
+  {
     "file": "per-diem-travel-stipends-irs-gsa-substantiation.md",
     "title": "Per Diem Travel Stipends: GSA Rates, Accountable Plans & Tax Exemption",
     "titleLen": 70,
