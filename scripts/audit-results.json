@@ -697,6 +697,23 @@
     "published": "2026-10-26"
   },
   {
+    "file": "training-meetings-and-seminars-hours-worked-flsa.md",
+    "title": "Are Training Sessions and Meetings Paid Time? The 29 CFR 785.27 Test",
+    "titleLen": 68,
+    "descLen": 128,
+    "words": 1442,
+    "h2Count": 8,
+    "h3Count": 0,
+    "tables": 2,
+    "internalLinks": 5,
+    "mathEquations": 0,
+    "mentions2026": 1,
+    "mentionsFLSA": 7,
+    "mentionsIRS": 0,
+    "tool": "hour-and-wage-calculator",
+    "published": "2026-12-03"
+  },
+  {
     "file": "travel-time-pay-portal-to-portal-act.md",
     "title": "Travel Time Compensation: The Portal-to-Portal Act & Compensable Drive Hours",
     "titleLen": 76,
