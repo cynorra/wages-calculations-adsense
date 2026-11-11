@@ -119,6 +119,23 @@
     "published": "2026-10-29"
   },
   {
+    "file": "commission-overtime-retail-service-exemption-section-7i.md",
+    "title": "Retail and Service Commission Exemption: Section 7(i) Overtime Rules",
+    "titleLen": 68,
+    "descLen": 148,
+    "words": 1365,
+    "h2Count": 8,
+    "h3Count": 0,
+    "tables": 3,
+    "internalLinks": 4,
+    "mathEquations": 5,
+    "mentions2026": 2,
+    "mentionsFLSA": 3,
+    "mentionsIRS": 0,
+    "tool": "base-hourly-plus-commission-calculator",
+    "published": "2026-12-04"
+  },
+  {
     "file": "comp-time-in-lieu-of-overtime-public-vs-private.md",
     "title": "Comp Time Rules: Public Sector Standards vs. Private Sector FLSA Violations",
     "titleLen": 75,
