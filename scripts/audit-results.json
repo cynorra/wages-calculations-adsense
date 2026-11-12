@@ -357,6 +357,23 @@
     "published": "2026-11-08"
   },
   {
+    "file": "improper-salary-deductions-flsa-safe-harbor.md",
+    "title": "Improper Salary Deductions: Salary Basis Test and FLSA Safe Harbor Rules",
+    "titleLen": 72,
+    "descLen": 151,
+    "words": 1380,
+    "h2Count": 9,
+    "h3Count": 0,
+    "tables": 3,
+    "internalLinks": 3,
+    "mathEquations": 2,
+    "mentions2026": 1,
+    "mentionsFLSA": 3,
+    "mentionsIRS": 0,
+    "tool": "salary-exempt-vs-non-exempt-calculator",
+    "published": "2026-12-05"
+  },
+  {
     "file": "independent-contractor-economic-reality-test-dol.md",
     "title": "DOL Economic Reality Test: Independent Contractor vs. W-2 Employee Classification",
     "titleLen": 81,
