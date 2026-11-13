@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import { pushToFirestore } from "./lib/firestore.mjs";
+import { loadEnvFile } from "./lib/env.mjs";
 import {
   auditArticleQuality,
   sanitizeSignatures,
@@ -34,19 +35,7 @@ const flagValue = (name) => {
 
 // Parse environment variables from .env
 function loadEnv() {
-  const env = { ...process.env };
-  const envPath = path.join(ROOT, ".env");
-  if (fs.existsSync(envPath)) {
-    for (const line of fs.readFileSync(envPath, "utf-8").split(/\r?\n/)) {
-      const trimmed = line.trim();
-      if (!trimmed || trimmed.startsWith("#")) continue;
-      const eq = trimmed.indexOf("=");
-      if (eq > 0) {
-        env[trimmed.slice(0, eq).trim()] = trimmed.slice(eq + 1).trim().replace(/^["']|["']$/g, "");
-      }
-    }
-  }
-  return env;
+  return loadEnvFile(path.join(ROOT, ".env"));
 }
 
 const env = loadEnv();
