@@ -71,3 +71,36 @@ export async function pushToFirestore(row, rawServiceAccount, collection = "arti
     return false;
   }
 }
+
+const fromField = (f) => (f && (f.timestampValue ?? f.stringValue)) ?? undefined;
+
+// Reads published articles (published_at <= nowIso) from <collection>. Returns [] on any problem.
+export async function listPublishedFromFirestore(rawServiceAccount, nowIso, collection = "articles") {
+  try {
+    const sa = loadServiceAccount(rawServiceAccount);
+    if (!sa) return [];
+    const url = `https://firestore.googleapis.com/v1/projects/${sa.project_id}/databases/(default)/documents:runQuery`;
+    const res = await fetch(url, {
+      method: "POST",
+      headers: { Authorization: `Bearer ${await accessToken(sa)}`, "Content-Type": "application/json" },
+      body: JSON.stringify({
+        structuredQuery: {
+          from: [{ collectionId: collection }],
+          where: { fieldFilter: { field: { fieldPath: "status" }, op: "EQUAL", value: { stringValue: "published" } } },
+        },
+      }),
+    });
+    if (!res.ok) {
+      console.warn(`Firestore responded ${res.status}; skipping Firestore articles.`);
+      return [];
+    }
+    const rows = (await res.json())
+      .filter((r) => r.document)
+      .map((r) => Object.fromEntries(Object.entries(r.document.fields || {}).map(([k, v]) => [k, fromField(v)])));
+    // The date filter is applied here (not in the query) so no composite index is needed.
+    return rows.filter((r) => r.slug && r.body_md && r.published_at && r.published_at <= nowIso);
+  } catch (e) {
+    console.warn("Firestore fetch failed, skipping Firestore articles:", e.message);
+    return [];
+  }
+}

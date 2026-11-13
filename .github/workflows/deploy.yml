@@ -33,11 +33,12 @@ jobs:
 
       - run: npm test
 
-      - name: Build site with Supabase articles
+      - name: Build site with backend articles
         run: npm run build
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
 
       - name: Deploy to Cloudflare Pages
         run: npx wrangler pages deploy dist --project-name "wages-calculations-adsense"
