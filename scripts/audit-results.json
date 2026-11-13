@@ -85,6 +85,23 @@
     "published": "2026-11-20"
   },
   {
+    "file": "98000-a-year-how-much-an-hour.md",
+    "title": "$98,000 a Year Is How Much an Hour? Salary to Hourly Conversion",
+    "titleLen": 63,
+    "descLen": 157,
+    "words": 1218,
+    "h2Count": 8,
+    "h3Count": 0,
+    "tables": 4,
+    "internalLinks": 7,
+    "mathEquations": 2,
+    "mentions2026": 1,
+    "mentionsFLSA": 6,
+    "mentionsIRS": 1,
+    "tool": "hour-and-wage-calculator",
+    "published": "2026-12-07"
+  },
+  {
     "file": "base-hourly-plus-commission-payroll-draws.md",
     "title": "Base Hourly Plus Commission: Total Compensation & Draw Accounting",
     "titleLen": 65,
