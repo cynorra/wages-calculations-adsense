@@ -288,5 +288,85 @@
     "statutoryRef": "29 C.F.R. § 541.602; 26 U.S.C. § 3402",
     "sources": ["cfr541", "p15", "fs17a"],
     "notes": "A standard 52-week year has 364 days, leaving 1 extra day (2 in a leap year). Over an 11-year cycle, these extra days accumulate to produce a 27th pay date for biweekly payrolls and 53rd for weekly. For exempt salaried employees: under the salary basis test (29 CFR 541.602), dividing salary by 27 lowers the per-period salary (which must still exceed the federal $684/wk threshold), while keeping the standard /26 biweekly divisor increases annual pay by 3.85% ($75,000 salary paid at $2,884.62 x 27 = $77,884.74). IRS Publication 15-T wage bracket withholding tables adjust accordingly."
+  },
+  {
+    "slug": "salaried-non-exempt-overtime-calculation-778-113",
+    "title": "Overtime for Salaried Non-Exempt Employees: How to Calculate the Regular Rate",
+    "description": "A salary does not make an employee exempt. How to divide a weekly salary by the hours it is meant to cover and pay time and a half for hours over 40 under 29 CFR 778.113.",
+    "keyTakeaway": "For a salaried non-exempt employee, the regular rate is the weekly salary divided by the hours the salary is intended to compensate, and every hour over 40 earns an additional 1.5 times that rate.",
+    "tool": "hour-and-wage-calculator",
+    "statutoryRef": "29 C.F.R. § 778.113",
+    "sources": ["usc207", "cfr778", "fs23"],
+    "notes": "Key rules: a salary alone does not create an exemption; the employee must also meet the salary level and duties tests in Part 541. Under 778.113, if the salary covers a 40 hour week, the regular rate is salary divided by 40, and overtime is 1.5 times that rate for each hour over 40. If the employer and employee agreed the salary covers a different fixed number of hours (for example 45), the regular rate is salary divided by that number. Contrast with the fluctuating workweek method, which pays only half-time and requires a clear understanding that the salary covers all hours. Example numbers: salary 800 dollars a week for 40 hours gives 20.00 regular rate and 30.00 per overtime hour; 46 hours gives 800 + 6 x 30 = 980 dollars."
+  },
+  {
+    "slug": "workweek-definition-fixed-recurring-778-105",
+    "title": "Defining the FLSA Workweek: Fixed 168-Hour Periods and Why Averaging Fails",
+    "description": "Overtime is counted week by week. What counts as a workweek, when an employer may change it, and why averaging hours across two weeks is not allowed.",
+    "keyTakeaway": "The FLSA workweek is a fixed, recurring period of 168 hours (seven consecutive 24-hour days), and overtime must be computed for each workweek on its own with no averaging across weeks.",
+    "tool": "hour-and-wage-calculator",
+    "statutoryRef": "29 C.F.R. § 778.103-.105",
+    "sources": ["usc207", "cfr778", "fs23"],
+    "notes": "Key rules: 778.103 requires overtime to be calculated each workweek; 778.104 says each workweek stands alone, so hours cannot be averaged over two or more weeks (for example 30 hours one week and 50 the next is 10 overtime hours, not zero). 778.105: the workweek is a fixed and regularly recurring 168 hour period and may begin on any day and hour; an employer may change the start of the workweek only if the change is intended to be permanent and is not designed to evade overtime. Biweekly pay periods do not change the weekly calculation. Example numbers: 30 hours then 50 hours at 18.00 an hour gives 10 overtime hours at 27.00."
+  },
+  {
+    "slug": "computer-professional-exemption-hourly-pay-541-400",
+    "title": "Computer Employee Exemption: The Salary and Hourly Pay Options",
+    "description": "Computer professionals can be exempt on a salary basis or at a minimum hourly rate. The duties test, the two pay methods, and where misclassification usually happens.",
+    "keyTakeaway": "A computer systems analyst, programmer, or software engineer can be exempt from overtime if paid on a salary basis or at least 27.63 dollars an hour, and performs the qualifying computer duties.",
+    "tool": "hour-and-wage-calculator",
+    "statutoryRef": "29 C.F.R. § 541.400",
+    "sources": ["usc213", "cfr541", "fs17a"],
+    "notes": "Key rules: 541.400 describes the computer employee exemption; qualifying jobs are computer systems analysts, programmers, software engineers or similarly skilled workers performing duties such as system analysis, design, development or modification of computer systems or programs. Pay: either a salary of at least 684 dollars a week (the level in effect after the 2024 salary increase was vacated) or, uniquely, an hourly rate of at least 27.63 dollars. Employees paid hourly at or above 27.63 who meet the duties test are exempt and get no overtime. Does not cover help desk or equipment repair roles, which generally fail the duties test. Include a caution to check the current DOL rule."
+  },
+  {
+    "slug": "highly-compensated-employee-exemption-total-annual-compensation",
+    "title": "Highly Compensated Employee Exemption: The Total Annual Compensation Test",
+    "description": "A relaxed duties test applies to high earners. How total annual compensation is counted, what happens if bonuses fall short, and the catch-up payment rule.",
+    "keyTakeaway": "An employee with total annual compensation of at least 107,432 dollars, including at least 684 dollars a week paid on a salary or fee basis, who customarily performs one exempt duty can qualify as highly compensated and exempt.",
+    "tool": "hour-and-wage-calculator",
+    "statutoryRef": "29 C.F.R. § 541.601",
+    "sources": ["usc213", "cfr541", "fs17a"],
+    "notes": "Key rules: 541.601 sets the highly compensated employee exemption: total annual compensation of at least 107,432 dollars (level in effect after the 2024 increase was vacated), of which at least the standard weekly salary must be paid on a salary or fee basis; commissions, nondiscretionary bonuses and other nondiscretionary compensation count; board and lodging and employer contributions to retirement and health plans do not. The employee must customarily and regularly perform at least one exempt duty of an executive, administrative or professional employee, and the work must be office or non-manual. If the annual total falls short at year end, the employer may make a catch-up payment within one pay period after the end of the 52-week period. Manual laborers cannot qualify. Include a caution to check the current DOL rule."
+  },
+  {
+    "slug": "holiday-vacation-idle-time-pay-excluded-from-regular-rate",
+    "title": "Holiday, Vacation, and Sick Pay: Excluded From the Regular Rate but Not Hours Worked",
+    "description": "Payments for time not worked do not raise the regular rate, and those hours do not count toward 40. How 207(e)(2) works and the common payroll mistakes.",
+    "keyTakeaway": "Pay for holidays, vacation, and other idle time is excluded from the regular rate, and the hours paid but not worked do not count toward the 40-hour overtime threshold.",
+    "tool": "hour-and-wage-calculator",
+    "statutoryRef": "29 U.S.C. § 207(e)(2)",
+    "sources": ["usc207", "cfr778", "fs23"],
+    "notes": "Key rules: 207(e)(2) excludes payments made for occasional periods when no work is performed due to vacation, holiday, illness, failure of the employer to provide sufficient work, or similar cause. 29 CFR 778.218 and 778.219 explain this. Consequence: holiday hours paid but not worked do not count as hours worked for overtime, so 8 holiday hours plus 40 worked hours is still only 40 hours of work with no overtime, unless a contract or policy provides otherwise (the FLSA does not require holiday pay). Example numbers: 24.00 an hour, 32 hours worked plus 8 hours of holiday pay is 40 hours paid but no overtime; the holiday pay is not added into the regular rate."
+  },
+  {
+    "slug": "flsa-liquidated-damages-back-wage-calculation-216b",
+    "title": "FLSA Liquidated Damages: How Back Wages Double in a Wage Claim",
+    "description": "An employer who underpays overtime may owe the unpaid wages plus an equal amount. How liquidated damages work, the good-faith defense, and a worked example.",
+    "keyTakeaway": "Under 29 U.S.C. 216(b) an employer who violates the minimum wage or overtime rules owes the unpaid wages plus an equal amount as liquidated damages, unless the court finds the employer acted in good faith.",
+    "tool": "hour-and-wage-calculator",
+    "statutoryRef": "29 U.S.C. § 216(b)",
+    "sources": ["usc216", "usc255", "dolFlsa"],
+    "notes": "Key rules: 216(b) makes an employer liable for unpaid minimum wages or overtime plus an additional equal amount as liquidated damages, plus attorney fees and costs. Section 260 of the Portal-to-Portal Act lets a court reduce or deny liquidated damages if the employer shows good faith and reasonable grounds for believing the act was not a violation. The limitations period is two years, extended to three for willful violations (29 U.S.C. 255). Do not repeat the statute of limitations article in depth; focus on the damages math. Example numbers: 10 overtime hours a week unpaid at premium of 12.00 over 52 weeks gives 6,240 dollars in back wages and 12,480 total with liquidated damages."
+  },
+  {
+    "slug": "early-clock-in-late-clock-out-compensable-time-785-48",
+    "title": "Early Clock-In and Late Clock-Out: When Punch Time Becomes Paid Time",
+    "description": "Employees punch in before the shift or stay after. When that time is compensable, when it can be disregarded, and how to document it.",
+    "keyTakeaway": "Under 29 CFR 785.48, time clock punches before or after the shift are not compensable if the employee performs no work, but if work is performed in that time it must be paid.",
+    "tool": "hour-and-wage-calculator",
+    "statutoryRef": "29 C.F.R. § 785.48",
+    "sources": ["usc207", "cfr785", "fs22"],
+    "notes": "Key rules: 785.48(a) says that where employees voluntarily come in before their regular starting time or remain after their closing time and do not work, the early or late punch time need not be counted as hours worked; but if they perform any work during that time it is compensable. Rounding is allowed only if it averages out over time and does not consistently favor the employer (785.48(b)); the 7-minute rule is already covered in another article, so link to it rather than repeat it. Employers should have a written policy and enforce it, but suffering or permitting work with knowledge means it must be paid. Example numbers: punches in 6 minutes early and talks at the lockers, no work, is not compensable; answers customer emails during those 6 minutes, compensable."
+  },
+  {
+    "slug": "retroactive-pay-raise-overtime-recalculation",
+    "title": "Retroactive Pay Raises: Recalculating Overtime for Past Pay Periods",
+    "description": "A raise back-dated to an earlier date increases the regular rate for those weeks. How to compute the overtime owed on the back pay.",
+    "keyTakeaway": "When a pay raise is made retroactive, the regular rate for each affected workweek rises, and the employer owes additional overtime for those weeks on top of the base back pay.",
+    "tool": "hour-and-wage-calculator",
+    "statutoryRef": "29 C.F.R. § 778.303",
+    "sources": ["usc207", "cfr778", "fs23"],
+    "notes": "Key rules: 29 CFR 778.303 covers retroactive pay increases: the increase is part of the regular rate for the workweeks to which it applies, so overtime for those weeks must be recomputed. Back pay at straight time is owed on all hours worked (the rate increase times every hour), and the additional overtime premium owed is 0.5 times the rate increase for each overtime hour. Example numbers: raise from 20.00 to 22.00 retroactive 8 weeks, 45 hours a week (5 overtime hours): straight-time back pay is 2.00 x 45 x 8 = 720 dollars; the extra overtime premium is 1.00 x 5 x 8 = 40 dollars; total owed 760 dollars."
   }
 ]
