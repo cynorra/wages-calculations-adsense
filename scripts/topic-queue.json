@@ -80,6 +80,26 @@
     "notes": "California IWC Wage Orders require reporting time pay equal to half the scheduled day's work (minimum 2 hours, maximum 4 hours) at the regular rate of pay. New York mandates at least 4 hours (or the scheduled shift, whichever is less) at the basic minimum hourly rate. Massachusetts requires 3 hours at minimum wage for shifts of 3+ hours. Reporting time pay for hours not actually worked does not count toward the 40-hour federal overtime threshold under 29 CFR 778.216."
   },
   {
+    "slug": "98000-a-year-how-much-an-hour",
+    "title": "$98,000 a Year Is How Much an Hour? Salary to Hourly Conversion",
+    "description": "A $98,000 salary works out to $47.12 an hour on a 2,080-hour year. Weekly, biweekly and monthly pay, and how paid time off and overtime change the real rate.",
+    "keyTakeaway": "A $98,000 annual salary equals about $47.12 per hour at 2,080 paid hours a year, $1,884.62 per week, and $3,769.23 every two weeks before taxes.",
+    "tool": "hour-and-wage-calculator",
+    "statutoryRef": "29 C.F.R. § 778.113",
+    "sources": ["dolFlsa", "cfr778", "p15"],
+    "notes": "Search intent: people typing '98000 salary to hourly'. Lead with the answer. Math to use: 98,000 / 2,080 = 47.12 per hour; weekly 98,000 / 52 = 1,884.62; biweekly 98,000 / 26 = 3,769.23; semi-monthly 98,000 / 24 = 4,083.33; monthly 98,000 / 12 = 8,166.67. Using 2,087 paid hours gives 46.96 per hour. If the employee actually works 2,000 hours after 10 holidays and 10 vacation days are unpaid time off the effective rate is 49.00 per hour. A salary this high is above the 684 dollars a week exempt floor, but a salaried non-exempt employee still earns overtime at 1.5 times the regular rate (salary / hours the salary covers), e.g. 47.12 regular rate gives 70.68 per overtime hour. Do not invent tax figures; if a take-home estimate is given, say it depends on state and filing status and point to the hourly paycheck tax breakdown guide."
+  },
+  {
+    "slug": "75-dollars-an-hour-annual-salary",
+    "title": "$75 an Hour Is How Much a Year? Hourly to Annual Salary",
+    "description": "At $75 an hour full time, annual pay is $156,000 before tax. Weekly, monthly and part-time versions, and how unpaid time off and overtime change the total.",
+    "keyTakeaway": "Working 40 hours a week for 52 weeks, $75 an hour equals $156,000 a year, $3,000 a week, $6,000 every two weeks, and $13,000 a month before taxes.",
+    "tool": "hour-and-wage-calculator",
+    "statutoryRef": "29 U.S.C. § 207",
+    "sources": ["usc207", "cfr778", "dolFlsa"],
+    "notes": "Search intent: 'what is 75 an hour annually'. Lead with the answer. Math to use: 75 x 40 = 3,000 per week; x 52 = 156,000 per year; biweekly 6,000; semi-monthly 6,500; monthly 13,000. Part time: 30 hours a week gives 117,000; 20 hours gives 78,000. If two weeks are unpaid, 50 weeks gives 150,000; with 2,000 worked hours also 150,000. Overtime: a non-exempt worker at 75 per hour earns 112.50 per overtime hour, so 5 overtime hours a week for 52 weeks adds 29,250. Contract (1099) comparison: link to the 1099 vs W-2 equivalence guide because a contractor at 75 per hour has no employer payroll tax share or benefits. Do not state tax amounts as fixed numbers."
+  },
+  {
     "slug": "uniform-and-tool-deductions-minimum-wage-kickback",
     "title": "Uniform and Tool Deductions: The FLSA 'Free and Clear' Wage Principle",
     "description": "How employer deductions for required uniforms, safety gear, cash register shortages, and company tools violate minimum wage under 29 CFR 531.35.",
