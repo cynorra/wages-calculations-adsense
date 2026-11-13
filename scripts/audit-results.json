@@ -561,6 +561,23 @@
     "published": "2026-11-18"
   },
   {
+    "file": "reporting-time-pay-and-call-in-pay-state-rules.md",
+    "title": "Reporting Time Pay: State Show-Up Wage Mandates and Overtime Impact",
+    "titleLen": 67,
+    "descLen": 153,
+    "words": 1527,
+    "h2Count": 9,
+    "h3Count": 0,
+    "tables": 5,
+    "internalLinks": 5,
+    "mathEquations": 1,
+    "mentions2026": 1,
+    "mentionsFLSA": 8,
+    "mentionsIRS": 0,
+    "tool": "hour-and-wage-calculator",
+    "published": "2026-12-06"
+  },
+  {
     "file": "rest-break-and-meal-period-penalty-pay-california.md",
     "title": "California Meal and Rest Break Premiums: Labor Code 226.7 Penalty Calculations",
     "titleLen": 78,
