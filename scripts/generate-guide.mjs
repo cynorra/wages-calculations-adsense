@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import { pushToFirestore } from "./lib/firestore.mjs";
 import {
   auditArticleQuality,
   sanitizeSignatures,
@@ -507,6 +508,7 @@ ${renderSources(topic.sources)}`;
       author_slug: "eren-simsir",
     };
     await pushToSupabase(row);
+    await pushToFirestore(row, env.FIREBASE_SERVICE_ACCOUNT, env.FIRESTORE_COLLECTION);
   }
 
   console.log(`\n[Generator] COMPLETED: "${topic.title}" is ready for deployment.`);
