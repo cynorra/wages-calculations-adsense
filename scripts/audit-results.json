@@ -731,6 +731,23 @@
     "published": "2026-11-25"
   },
   {
+    "file": "statute-of-limitations-flsa-wage-claims-willful-violations.md",
+    "title": "FLSA Statute of Limitations: Two-Year Standard vs Three-Year Willful Penalties",
+    "titleLen": 78,
+    "descLen": 159,
+    "words": 2178,
+    "h2Count": 8,
+    "h3Count": 25,
+    "tables": 3,
+    "internalLinks": 3,
+    "mathEquations": 24,
+    "mentions2026": 1,
+    "mentionsFLSA": 13,
+    "mentionsIRS": 0,
+    "tool": "hour-and-wage-calculator",
+    "published": "2026-12-10"
+  },
+  {
     "file": "supplemental-wage-withholding-bonus-taxation-rules.md",
     "title": "Bonus Tax Rates: IRS 22% Supplemental Withholding vs. Aggregate Method",
     "titleLen": 70,
