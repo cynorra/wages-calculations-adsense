@@ -2,7 +2,7 @@
 title: "Zero State Income Tax vs California & New York: Total Tax Burden Reality"
 description: "Why living in a zero-income-tax state (Texas, Florida) does not always equal lower total taxes due to high property and sales tax burdens."
 tool: "no-state-income-tax-paycheck-comparison"
-status: "published"
+status: "draft"
 published: "2026-11-28"
 author_slug: "eren-simsir"
 ---

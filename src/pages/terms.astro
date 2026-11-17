@@ -9,30 +9,60 @@ const schema = [breadcrumbSchema(crumbs)];
 
 <Base
   title="Terms of Use"
-  description={`Terms and conditions governing the use of the financial and wage calculators provided by ${SITE.name}.`}
+  description={`Terms of use for ${SITE.name}: permitted use, not legal or tax advice, accuracy and updates, advertising and limitation of liability.`}
   schema={schema}
   crumbs={crumbs}
 >
   <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
     <div class="bg-white rounded-2xl border border-slate-200 p-8 sm:p-12 shadow-sm prose prose-slate max-w-none text-sm text-slate-700 leading-relaxed">
       <h1 class="text-3xl font-extrabold text-slate-900 not-prose">Terms of Use</h1>
-      <p class="text-xs text-slate-500">Last Revised: October 2026</p>
+      <p class="text-xs text-slate-500">Last Revised: November 2026</p>
 
       <hr class="my-6" />
 
-      <h2>1. Acceptance of Terms</h2>
+      <h2>1. Acceptance of these terms</h2>
       <p>
-        By accessing or using {SITE.name}, you agree to be bound by these Terms of Use and all applicable federal and state laws. If you do not agree, you are prohibited from using the calculators and content.
+        By using {SITE.name}, you agree to these Terms of Use. If you do not agree, please do not use the calculators or articles.
       </p>
 
-      <h2>2. Permitted Use</h2>
+      <h2>2. What the site is for</h2>
       <p>
-        The calculators and computational matrices provided on this platform are made available for personal, educational, and informational evaluation. You may utilize the outputs to benchmark job offers, verify paycheck deductions, or plan personal household budgets.
+        The calculators and articles are provided for personal, educational, and informational use. You may use them to compare job offers, check paycheck figures, or plan a household budget.
       </p>
 
-      <h2>3. Intellectual Property</h2>
+      <h2>3. Not legal, tax, or financial advice</h2>
       <p>
-        The code architecture, design systems, proprietary calculators, and editorial guides are the intellectual property of {SITE.name} and Eren Şimşir, protected under copyright and intellectual property treaties.
+        {SITE.name} publishes general information about wages, overtime, and payroll taxes. It is not legal, tax, accounting, or financial advice, and reading it does not create a professional relationship with the author. Wage and tax rules depend on your state, your employer, and your situation. For a decision that matters, check the primary source linked in the article and ask a qualified professional or your state labor agency.
+      </p>
+
+      <h2>4. Accuracy and updates</h2>
+      <p>
+        We cite primary sources and recompute examples, but tax brackets, wage bases, and minimum wages change often, and errors can happen. Where an article uses a figure from a particular year, it says so. If you find an error, tell us at <a href={`mailto:${SITE.email}`}>{SITE.email}</a> and verified errors are corrected.
+      </p>
+
+      <h2>5. Intellectual property</h2>
+      <p>
+        The text, tables, and design of this site belong to {SITE.name} unless stated otherwise. You may quote short excerpts with a link back to the source page. Please do not copy whole articles or republish them without permission. Legal texts, regulations, and agency publications cited here belong to their original publishers.
+      </p>
+
+      <h2>6. Third-party links and advertising</h2>
+      <p>
+        Articles link to government and other external sites that we do not control. The site may show advertising; advertisers do not review or influence our articles, and an ad is not an endorsement. See the <a href="/privacy/">privacy policy</a> for how advertising cookies work.
+      </p>
+
+      <h2>7. Limitation of liability</h2>
+      <p>
+        The calculators and articles are provided as is, without warranties of any kind. To the extent allowed by law, {SITE.name} and its author are not liable for losses that result from relying on the site. Check results against your actual pay records and official sources before you act on them.
+      </p>
+
+      <h2>8. Changes</h2>
+      <p>
+        We may update these terms. The date at the top shows the latest revision. Continuing to use the site after a change means you accept the updated terms.
+      </p>
+
+      <h2>9. Contact</h2>
+      <p>
+        Questions about these terms: <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.
       </p>
     </div>
   </div>

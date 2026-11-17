@@ -3,7 +3,7 @@ title: "Severance Pay Taxation: IRC Supplemental Wage Withholding & FICA Impact"
 description: "Tax treatment of lump-sum and salary continuation severance packages under IRS Publication 15-T, the flat 22% supplemental rate, and unemployment offset rules."
 key_takeaway: "Severance is taxable wages for federal income tax and for Social Security and Medicare. A lump sum can be withheld at the flat 22% supplemental rate; salary continuation is withheld like regular pay."
 tool: "hourly-paycheck-tax-calculator"
-status: "published"
+status: "draft"
 published: "2026-11-23"
 author_slug: "eren-simsir"
 ---

@@ -3,7 +3,7 @@ title: "FLSA Statute of Limitations: Two-Year Standard vs Three-Year Willful Pen
 description: "Statutory recovery periods for unpaid minimum wage and overtime under 29 U.S.C. § 255, proving employer recklessness, and liquidated damages under Section 216."
 key_takeaway: "Wage claims carry a standard two-year statute of limitations under 29 U.S.C. § 255, but extend to three years with 100% liquidated damages if the employer acted willfully."
 tool: "hour-and-wage-calculator"
-status: "published"
+status: "draft"
 structure: "troubleshooting-guide"
 published: "2026-12-10"
 author_slug: "eren-simsir"

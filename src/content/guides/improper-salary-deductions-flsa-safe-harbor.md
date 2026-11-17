@@ -3,7 +3,7 @@ title: "Improper Salary Deductions: Salary Basis Test and FLSA Safe Harbor Rules
 description: "When employers illegally dock exempt employee salaries for partial-day absences, disciplinary penalties, or operational slowdowns under 29 CFR 541.602."
 key_takeaway: "Improper partial-day or operational pay deductions destroy an employee's exempt status across the entire job classification unless corrected under the 29 C.F.R. § 541.603 safe harbor provision."
 tool: "salary-exempt-vs-non-exempt-calculator"
-status: "published"
+status: "draft"
 structure: "comparison"
 published: "2026-12-05"
 author_slug: "eren-simsir"

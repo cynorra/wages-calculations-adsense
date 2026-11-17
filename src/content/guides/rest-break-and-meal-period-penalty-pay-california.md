@@ -3,7 +3,7 @@ title: "California Meal and Rest Break Premiums: Labor Code 226.7 Penalty Calcul
 description: "Calculating one additional hour of regular pay for missed, delayed, or non-compliant meal and rest periods under California Supreme Court standards."
 key_takeaway: "California owes one extra hour of pay at the regular rate for each workday with a missed meal period and one for each workday with a missed rest period, up to two hours of premium pay per day."
 tool: "hour-and-wage-calculator"
-status: "published"
+status: "draft"
 published: "2026-11-19"
 author_slug: "eren-simsir"
 ---

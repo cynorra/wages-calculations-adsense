@@ -3,7 +3,7 @@ title: "Bonus Tax Rates: IRS 22% Supplemental Withholding vs. Aggregate Method"
 description: "Federal tax withholding mechanisms for performance bonuses, commissions, and non-periodic earnings under IRS Publication 15-T."
 key_takeaway: "Bonuses are not taxed at a special rate. Withholding is a prepayment calculated by either the flat 22% method or the aggregate method, and the real tax is settled on the tax return."
 tool: "hourly-paycheck-tax-calculator"
-status: "published"
+status: "draft"
 published: "2026-11-26"
 author_slug: "eren-simsir"
 ---

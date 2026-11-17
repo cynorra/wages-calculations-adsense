@@ -3,7 +3,7 @@ title: "Final Paycheck Deadlines: Termination Timelines and Waiting Time Penalti
 description: "State-by-state statutory deadlines for final wage delivery upon firing or quitting, and the daily wage penalty formulas under California Labor Code Section 203."
 key_takeaway: "Under California Labor Code Section 203, failure to pay all final wages immediately upon termination triggers waiting time penalties equal to one full day of pay per day of delay up to 30 days."
 tool: "hourly-pay-stub-calculator"
-status: "published"
+status: "draft"
 structure: "multi-jurisdiction-matrix"
 published: "2026-12-11"
 author_slug: "eren-simsir"

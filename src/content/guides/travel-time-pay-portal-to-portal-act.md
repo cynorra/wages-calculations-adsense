@@ -3,7 +3,7 @@ title: "Travel Time Compensation: The Portal-to-Portal Act & Compensable Drive H
 description: "Distinguishing normal home-to-work commuting from compensable travel: emergency call-outs, special one-day assignments, and overnight travel under 29 CFR 785."
 key_takeaway: "Under the Portal-to-Portal Act (29 U.S.C. § 254), the ordinary commute is not paid, but travel that is part of the day's work, travel on a special one-day assignment, and out-of-town travel during normal working hours generally are."
 tool: "hour-and-wage-calculator"
-status: "published"
+status: "draft"
 published: "2026-11-27"
 author_slug: "eren-simsir"
 ---

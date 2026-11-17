@@ -3,7 +3,7 @@ title: "Split Shift Differential Pay: California IWC & New York Labor Law Formul
 description: "State-mandated split shift premiums, non-consecutive working hours, minimum wage offsets, and calculating additional pay for interrupted workdays."
 key_takeaway: "Federal law has no split-shift premium. California and New York each require an extra hour of minimum-wage pay in specific situations, and each calculation works differently."
 tool: "shift-differential-pay-calculator"
-status: "published"
+status: "draft"
 published: "2026-11-24"
 author_slug: "eren-simsir"
 ---
