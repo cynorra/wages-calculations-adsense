@@ -41,11 +41,36 @@ export function localLiveArticles() {
     .sort((a, b) => b.published_at.localeCompare(a.published_at));
 }
 
-// The markdown files in the repo are the source of truth. Supabase and Firestore may add guides that have
-// no file yet, but they never override a file and an empty or failing response can never hide the local guides.
-export async function liveArticles() {
+// Firestore is the source of truth (collection "articles" in the project of FIREBASE_SERVICE_ACCOUNT).
+// Edit a guide in src/content/guides, run `node scripts/push-firestore.mjs`, then deploy.
+// The markdown files stay in the repo as a backup: if Firestore is unreachable, empty, or returns far fewer
+// guides than the files hold, the build falls back to the files so a Firestore problem can never ship a site
+// with its guides missing. The result is memoized so one build reads Firestore once, not once per page.
+let livePromise = null;
+export function liveArticles() {
+  if (!livePromise) {
+    livePromise = loadLiveArticles().catch((e) => {
+      livePromise = null;
+      throw e;
+    });
+  }
+  return livePromise;
+}
+
+async function loadLiveArticles() {
   const nowIso = new Date().toISOString();
   const local = localLiveArticles();
+
+  if (process.env.FIREBASE_SERVICE_ACCOUNT) {
+    const fire = await listPublishedFromFirestore(process.env.FIREBASE_SERVICE_ACCOUNT, nowIso, process.env.FIRESTORE_COLLECTION);
+    const floor = Math.floor(local.length * 0.8);
+    if (fire.length > 0 && fire.length >= floor) {
+      console.log(`[articles] ${fire.length} live guides from Firestore (local files: ${local.length}).`);
+      return fire.sort((a, b) => b.published_at.localeCompare(a.published_at));
+    }
+    console.warn(`[articles] Firestore returned ${fire.length} guides (local files: ${local.length}); falling back to the local files.`);
+  }
+
   // Any local file, including a draft, takes precedence over a remote row with the same slug.
   const known = new Set(localRows().map((r) => r.slug));
   const extra = [];
