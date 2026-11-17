@@ -187,6 +187,23 @@
     "published": "2026-10-30"
   },
   {
+    "file": "final-paycheck-deadlines-and-waiting-time-penalties.md",
+    "title": "Final Paycheck Deadlines: Termination Timelines and Waiting Time Penalties",
+    "titleLen": 74,
+    "descLen": 160,
+    "words": 1437,
+    "h2Count": 8,
+    "h3Count": 0,
+    "tables": 4,
+    "internalLinks": 5,
+    "mathEquations": 1,
+    "mentions2026": 1,
+    "mentionsFLSA": 3,
+    "mentionsIRS": 0,
+    "tool": "hourly-pay-stub-calculator",
+    "published": "2026-12-11"
+  },
+  {
     "file": "flsa-7-minute-rounding-rule-timecard.md",
     "title": "Hour and Wage Timecards: FLSA 7-Minute Rounding Rules and Lunch Breaks",
     "titleLen": 70,
