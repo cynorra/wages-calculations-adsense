@@ -3,9 +3,10 @@ title: "Split Shift Differential Pay: California IWC & New York Labor Law Formul
 description: "State-mandated split shift premiums, non-consecutive working hours, minimum wage offsets, and calculating additional pay for interrupted workdays."
 key_takeaway: "Federal law has no split-shift premium. California and New York each require an extra hour of minimum-wage pay in specific situations, and each calculation works differently."
 tool: "shift-differential-pay-calculator"
-status: "draft"
-published: "2026-11-24"
+status: "published"
+published: "2026-11-18"
 author_slug: "eren-simsir"
+updated: 2026-11-18
 ---
 
 A split shift divides one workday into two or more working periods with an unpaid gap between them: a restaurant server who works the lunch rush, goes home for three hours, and returns for dinner. The FLSA treats the gap as non-working time as long as the employee is completely free to use it, and it has no premium for the inconvenience. Two large states, however, require extra pay. The rules look similar but are triggered differently, and employers who operate in both can easily apply the wrong one.
@@ -84,3 +85,11 @@ The figures and rules in this article come from the primary sources below. Thres
 - [12 NYCRR § 142-2.4, spread of hours (Cornell LII)](https://www.law.cornell.edu/regulations/new-york/12-NYCRR-142-2.4)
 - [New York State Department of Labor: minimum wage](https://dol.ny.gov/minimum-wage-0)
 - [DOL: state minimum wage laws](https://www.dol.gov/agencies/whd/minimum-wage/state)
+
+For related coverage, see our guide on [$75,000 a Year is How Much an Hour? Take-Home Pay & 50/30/20 Budget](/guides/75000-a-year-how-much-an-hour/).
+
+For related coverage, see our guide on [$80,000 a Year is How Much an Hour? State-by-State Take-Home Comparison](/guides/80000-a-year-how-much-an-hour/).
+
+For related coverage, see our guide on [$85,000 a Year is How Much an Hour? After-Tax Paycheck Guide](/guides/85000-a-year-how-much-an-hour/).
+
+For related coverage, see our guide on [FLSA White-Collar Exemptions: Salary Threshold & Duties Test Breakdown](/guides/overtime-exemption-salary-basis-duties-test-flsa/).

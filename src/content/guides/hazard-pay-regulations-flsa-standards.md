@@ -6,6 +6,7 @@ tool: "hour-and-wage-calculator"
 status: "published"
 published: "2026-11-02"
 author_slug: "eren-simsir"
+updated: 2026-12-12
 ---
 
 "Hazard pay" gets used for several different things, and the confusion costs workers and employers money. Some people think the law guarantees extra pay for dangerous work. Some employers think a hazard premium sits outside overtime math. Both are wrong in the same direction. This guide separates what is required, what is voluntary, and what happens to the numbers once a premium exists.
@@ -89,3 +90,11 @@ The figures and rules in this article come from the primary sources below. Thres
 - [29 C.F.R. Part 778, overtime compensation (eCFR)](https://www.ecfr.gov/current/title-29/part-778)
 - [29 U.S.C. § 207, maximum hours (Cornell LII)](https://www.law.cornell.edu/uscode/text/29/207)
 - [DOL Fact Sheet #23, overtime pay requirements](https://www.dol.gov/agencies/whd/fact-sheets/23-flsa-overtime-pay)
+
+For related coverage, see our guide on [1099 Contractor vs W-2 Employee: Finding Your True Hourly Equivalence](/guides/1099-contractor-vs-w2-hourly-rate-equivalence/).
+
+For related coverage, see our guide on [Comp Time Rules: Public Sector Standards vs. Private Sector FLSA Violations](/guides/comp-time-in-lieu-of-overtime-public-vs-private/).
+
+For related coverage, see our guide on [$50,000 a Year is How Much an Hour? Living Wage & Biweekly Breakdown](/guides/50000-a-year-how-much-an-hour/).
+
+For related coverage, see our guide on [Nondiscretionary Bonuses: Retroactive Overtime Recalculation Formulas](/guides/nondiscretionary-bonuses-retroactive-overtime-true-up/).

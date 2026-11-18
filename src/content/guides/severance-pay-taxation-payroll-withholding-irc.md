@@ -3,9 +3,10 @@ title: "Severance Pay Taxation: IRC Supplemental Wage Withholding & FICA Impact"
 description: "Tax treatment of lump-sum and salary continuation severance packages under IRS Publication 15-T, the flat 22% supplemental rate, and unemployment offset rules."
 key_takeaway: "Severance is taxable wages for federal income tax and for Social Security and Medicare. A lump sum can be withheld at the flat 22% supplemental rate; salary continuation is withheld like regular pay."
 tool: "hourly-paycheck-tax-calculator"
-status: "draft"
-published: "2026-11-23"
+status: "published"
+published: "2026-11-18"
 author_slug: "eren-simsir"
+updated: 2026-11-18
 ---
 
 Severance pay is money an employer pays when employment ends. No federal law requires it for most employees, so it exists by contract, policy, or negotiation. But once it is paid, the tax rules are firm: it is **wages**, and it is taxed more like a final paycheck than like a gift or a settlement.
@@ -100,3 +101,5 @@ The figures and rules in this article come from the primary sources below. Thres
 - [26 U.S.C. § 3121, FICA definitions (Cornell LII)](https://www.law.cornell.edu/uscode/text/26/3121)
 - [26 U.S.C. § 409A, deferred compensation (Cornell LII)](https://www.law.cornell.edu/uscode/text/26/409A)
 - [EEOC: waivers in severance agreements (OWBPA)](https://www.eeoc.gov/laws/guidance/qa-understanding-waivers-discrimination-claims-employee-severance-agreements)
+
+For related coverage, see our guide on [DOL Economic Reality Test: Independent Contractor vs. W-2 Employee Classification](/guides/independent-contractor-economic-reality-test-dol/).

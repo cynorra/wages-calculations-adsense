@@ -6,6 +6,7 @@ tool: "hourly-paycheck-tax-calculator"
 status: "published"
 published: "2026-11-09"
 author_slug: "eren-simsir"
+updated: 2026-11-18
 ---
 
 A signed "independent contractor agreement" does not make someone a contractor. Under the Fair Labor Standards Act, courts and the Department of Labor ask a different question: is the worker **economically dependent** on the business, or in business for themselves? The answer determines whether the worker is owed minimum wage, overtime, and the employer's share of payroll taxes.
@@ -90,3 +91,5 @@ The figures and rules in this article come from the primary sources below. Thres
 - [IRS: independent contractor, self-employed, or employee](https://www.irs.gov/businesses/small-businesses-self-employed/independent-contractor-self-employed-or-employee)
 - [IRS Form SS-8, worker status determination](https://www.irs.gov/forms-pubs/about-form-ss-8)
 - [IRS Voluntary Classification Settlement Program](https://www.irs.gov/businesses/small-businesses-self-employed/voluntary-classification-settlement-program)
+
+For related coverage, see our guide on [Imputed Income on Fringe Benefits: Company Car Valuation & Payroll Taxation](/guides/fringe-benefit-taxation-imputed-income-company-vehicle/).

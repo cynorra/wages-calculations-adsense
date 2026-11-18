@@ -3,10 +3,11 @@ title: "Uniform and Tool Deductions: The FLSA 'Free and Clear' Wage Principle"
 description: "How employer deductions for required uniforms, safety gear, cash register shortages, and company tools violate minimum wage under 29 CFR 531.35."
 key_takeaway: "Deductions for items that primarily benefit the employer cannot reduce a worker's direct cash earnings below the applicable federal or state minimum wage in any workweek."
 tool: "hourly-pay-stub-calculator"
-status: "draft"
+status: "published"
 structure: "audit-checklist"
-published: "2026-12-09"
+published: "2026-11-18"
 author_slug: "eren-simsir"
+updated: 2026-12-11
 ---
 
 ## Statutory Foundations of the 'Free and Clear' Wage Principle
@@ -84,3 +85,7 @@ The figures and rules in this article come from the primary sources below. Thres
 - [29 C.F.R. Part 531, wage payments including tip credit (eCFR)](https://www.ecfr.gov/current/title-29/part-531)
 - [29 U.S.C. § 206, minimum wage (Cornell LII)](https://www.law.cornell.edu/uscode/text/29/206)
 - [DOL Fact Sheet #23, overtime pay requirements](https://www.dol.gov/agencies/whd/fact-sheets/23-flsa-overtime-pay)
+
+For related coverage, see our guide on [Hourly Pay Stub Itemization & Employer Wage Statement Standards](/guides/hourly-pay-stub-itemizer-flsa/).
+
+For related coverage, see our guide on [Final Paycheck Deadlines: Termination Timelines and Waiting Time Penalties](/guides/final-paycheck-deadlines-and-waiting-time-penalties/).

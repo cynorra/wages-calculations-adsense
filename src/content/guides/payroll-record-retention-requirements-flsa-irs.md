@@ -3,9 +3,9 @@ title: "Payroll Record Retention: Mandatory Time Card and Tax Record Timelines"
 description: "FLSA and IRS recordkeeping periods for payroll data, which records fall under each rule, and what regulators expect to see in an audit."
 key_takeaway: "The FLSA requires payroll records to be kept for three years and time cards and wage-rate tables for two years, while the IRS requires employment tax records to be kept for at least four years."
 tool: "hour-and-wage-calculator"
-status: "draft"
+status: "published"
 structure: "scenario-table"
-published: "2026-12-02"
+published: "2026-11-18"
 author_slug: "eren-simsir"
 ---
 

@@ -3,9 +3,9 @@ title: "Tip Pooling Rules: Who May Share in a Pool and Mandatory Exclusions"
 description: "How tip pools work under the FLSA after the 2018 amendment: managers and owners may not keep tips, and back-of-house sharing depends on whether a tip credit is taken."
 key_takeaway: "An employer may never keep employees' tips, and may include back-of-house staff in a tip pool only if it does not take a tip credit and pays the full minimum wage in cash."
 tool: "tipped-minimum-wage-calculator"
-status: "draft"
+status: "published"
 structure: "myth-fact"
-published: "2026-12-01"
+published: "2026-11-18"
 author_slug: "eren-simsir"
 ---
 

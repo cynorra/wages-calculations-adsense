@@ -4,7 +4,7 @@ description: "How to audit overtime eligibility using federal salary level tests
 tool: "salary-exempt-vs-non-exempt-calculator"
 status: "published"
 published: "2026-10-24"
-updated: "2026-10-27"
+updated: 2026-12-05
 author_slug: "eren-simsir"
 ---
 
@@ -151,3 +151,5 @@ The figures and rules in this article come from the primary sources below. Thres
 - [29 C.F.R. Part 541, white-collar exemptions (eCFR)](https://www.ecfr.gov/current/title-29/part-541)
 - [29 U.S.C. § 213, exemptions (Cornell LII)](https://www.law.cornell.edu/uscode/text/29/213)
 - [DOL Wage and Hour Division: FLSA overview](https://www.dol.gov/agencies/whd/flsa)
+
+For related coverage, see our guide on [Improper Salary Deductions: Salary Basis Test and FLSA Safe Harbor Rules](/guides/improper-salary-deductions-flsa-safe-harbor/).

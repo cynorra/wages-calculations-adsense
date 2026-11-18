@@ -5,7 +5,7 @@ key_takeaway: "Working 40 hours a week for 52 weeks, $75 an hour equals $156,000
 tool: "hour-and-wage-calculator"
 status: "published"
 structure: "worked-case"
-published: "2026-11-21"
+published: "2026-11-18"
 author_slug: "eren-simsir"
 ---
 

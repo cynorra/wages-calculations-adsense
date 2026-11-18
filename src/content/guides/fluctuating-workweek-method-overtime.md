@@ -3,9 +3,9 @@ title: "Fluctuating Workweek Method: Overtime Rules for Salaried Non-Exempt Staf
 description: "When a fixed salary covers hours that change every week, overtime is half-time on a regular rate that falls as hours rise. The conditions and the math under 29 CFR 778.114."
 key_takeaway: "Under the fluctuating workweek method, a salaried non-exempt employee owed overtime receives an extra half of the regular rate, which is the salary divided by the hours actually worked that week."
 tool: "hour-and-wage-calculator"
-status: "draft"
+status: "published"
 structure: "multi-jurisdiction-matrix"
-published: "2026-11-29"
+published: "2026-11-18"
 author_slug: "eren-simsir"
 ---
 

@@ -3,10 +3,11 @@ title: "Reporting Time Pay: State Show-Up Wage Mandates and Overtime Impact"
 description: "How California, New York, and Massachusetts mandate half-day or 2-to-4 hour show-up pay when workers arrive for scheduled shifts but are sent home early."
 key_takeaway: "While the federal FLSA does not mandate reporting time pay, key states require employers to pay 2 to 4 hours of wages at regular rates when scheduled shifts are cancelled or truncated."
 tool: "hour-and-wage-calculator"
-status: "draft"
+status: "published"
 structure: "statutory-deconstruction"
-published: "2026-12-06"
+published: "2026-11-18"
 author_slug: "eren-simsir"
+updated: 2026-12-02
 ---
 
 ## Statutory Framework of Reporting Time Pay vs. FLSA Preemption
@@ -72,3 +73,9 @@ The figures and rules in this article come from the primary sources below. Thres
 - [California Labor Code § 510, daily overtime](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=LAB&sectionNum=510)
 - [New York State Department of Labor: minimum wage](https://dol.ny.gov/minimum-wage-0)
 - [29 C.F.R. Part 778, overtime compensation (eCFR)](https://www.ecfr.gov/current/title-29/part-778)
+
+For related coverage, see our guide on [Fluctuating Workweek Method: Overtime Rules for Salaried Non-Exempt Staff](/guides/fluctuating-workweek-method-overtime/).
+
+For related coverage, see our guide on [Piece-Rate Pay and Overtime: Calculating the Regular Rate for Production Workers](/guides/piece-rate-overtime-calculation/).
+
+For related coverage, see our guide on [Payroll Record Retention: Mandatory Time Card and Tax Record Timelines](/guides/payroll-record-retention-requirements-flsa-irs/).

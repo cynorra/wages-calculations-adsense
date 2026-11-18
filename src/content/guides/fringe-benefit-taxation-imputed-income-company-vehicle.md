@@ -6,6 +6,7 @@ tool: "hourly-paycheck-tax-calculator"
 status: "published"
 published: "2026-11-01"
 author_slug: "eren-simsir"
+updated: 2026-11-23
 ---
 
 A fringe benefit is any form of compensation other than cash wages. The default rule in Internal Revenue Code § 61 is that it is **taxable**, valued at fair market value, unless a specific section excludes it. When it is taxable but not paid in cash, the value is called *imputed income*. It appears on Form W-2, raises the employee's taxable wages, and often creates the surprise of a larger tax bill with no larger paycheck. The IRS's reference for employers is Publication 15-B.
@@ -93,3 +94,5 @@ The figures and rules in this article come from the primary sources below. Thres
 - [26 C.F.R. § 1.61-21, fringe benefit valuation (eCFR)](https://www.ecfr.gov/current/title-26/section-1.61-21)
 - [26 U.S.C. § 61, gross income (Cornell LII)](https://www.law.cornell.edu/uscode/text/26/61)
 - [26 U.S.C. § 127, educational assistance programs (Cornell LII)](https://www.law.cornell.edu/uscode/text/26/127)
+
+For related coverage, see our guide on [Severance Pay Taxation: IRC Supplemental Wage Withholding & FICA Impact](/guides/severance-pay-taxation-payroll-withholding-irc/).

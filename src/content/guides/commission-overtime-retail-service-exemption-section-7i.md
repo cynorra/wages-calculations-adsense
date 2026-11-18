@@ -3,10 +3,11 @@ title: "Retail and Service Commission Exemption: Section 7(i) Overtime Rules"
 description: "How Section 7(i) lets some retail and service establishments skip overtime for commissioned employees, and the two tests every pay period must pass."
 key_takeaway: "Section 7(i) exempts an employee from overtime only if the employer is a retail or service establishment, the regular rate is above one and a half times the minimum wage, and more than half of earnings in a representative period come from commissions."
 tool: "base-hourly-plus-commission-calculator"
-status: "draft"
+status: "published"
 structure: "troubleshooting-guide"
-published: "2026-12-04"
+published: "2026-11-18"
 author_slug: "eren-simsir"
+updated: 2026-11-28
 ---
 
 ## Statutory Prerequisites for 29 U.S.C. § 207(i) Application
@@ -99,3 +100,7 @@ The figures and rules in this article come from the primary sources below. Thres
 - [29 U.S.C. § 207, maximum hours (Cornell LII)](https://www.law.cornell.edu/uscode/text/29/207)
 - [29 C.F.R. Part 778, overtime compensation (eCFR)](https://www.ecfr.gov/current/title-29/part-778)
 - [DOL Fact Sheet #23, overtime pay requirements](https://www.dol.gov/agencies/whd/fact-sheets/23-flsa-overtime-pay)
+
+For related coverage, see our guide on [Base Hourly Plus Commission: Total Compensation & Draw Accounting](/guides/base-hourly-plus-commission-payroll-draws/).
+
+For related coverage, see our guide on [Zero State Income Tax vs California & New York: Total Tax Burden Reality](/guides/zero-state-income-tax-vs-california-new-york/).

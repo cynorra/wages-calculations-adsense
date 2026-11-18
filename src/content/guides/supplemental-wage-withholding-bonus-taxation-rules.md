@@ -3,9 +3,10 @@ title: "Bonus Tax Rates: IRS 22% Supplemental Withholding vs. Aggregate Method"
 description: "Federal tax withholding mechanisms for performance bonuses, commissions, and non-periodic earnings under IRS Publication 15-T."
 key_takeaway: "Bonuses are not taxed at a special rate. Withholding is a prepayment calculated by either the flat 22% method or the aggregate method, and the real tax is settled on the tax return."
 tool: "hourly-paycheck-tax-calculator"
-status: "draft"
-published: "2026-11-26"
+status: "published"
+published: "2026-11-18"
 author_slug: "eren-simsir"
+updated: 2026-11-18
 ---
 
 The belief that "bonuses are taxed at a higher rate" comes from looking at a bonus paycheck and seeing a smaller net than expected. The reason is the withholding method, not a different tax. Bonuses, commissions, overtime pay, back pay, awards, and severance are all **supplemental wages** under IRS rules, and employers choose between two federal withholding methods. Neither changes the tax actually owed.
@@ -87,3 +88,11 @@ The figures and rules in this article come from the primary sources below. Thres
 - [IRS Publication 15-T, federal income tax withholding methods](https://www.irs.gov/publications/p15t)
 - [26 U.S.C. § 3402, income tax withholding (Cornell LII)](https://www.law.cornell.edu/uscode/text/26/3402)
 - [IRS Form W-4](https://www.irs.gov/forms-pubs/about-form-w-4)
+
+For related coverage, see our guide on [$75,000 a Year is How Much an Hour? Take-Home Pay & 50/30/20 Budget](/guides/75000-a-year-how-much-an-hour/).
+
+For related coverage, see our guide on [$80,000 a Year is How Much an Hour? State-by-State Take-Home Comparison](/guides/80000-a-year-how-much-an-hour/).
+
+For related coverage, see our guide on [DOL Economic Reality Test: Independent Contractor vs. W-2 Employee Classification](/guides/independent-contractor-economic-reality-test-dol/).
+
+For related coverage, see our guide on [Imputed Income on Fringe Benefits: Company Car Valuation & Payroll Taxation](/guides/fringe-benefit-taxation-imputed-income-company-vehicle/).

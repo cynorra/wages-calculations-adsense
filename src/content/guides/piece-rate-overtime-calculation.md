@@ -3,9 +3,9 @@ title: "Piece-Rate Pay and Overtime: Calculating the Regular Rate for Production
 description: "How to compute overtime for employees paid per unit produced, including the extra half-time premium and how nonproductive time is paid."
 key_takeaway: "For piece-rate workers the regular rate is total weekly earnings divided by total hours worked, and overtime hours are owed an additional half of that rate."
 tool: "hour-and-wage-calculator"
-status: "draft"
+status: "published"
 structure: "process-timeline"
-published: "2026-11-30"
+published: "2026-11-18"
 author_slug: "eren-simsir"
 ---
 

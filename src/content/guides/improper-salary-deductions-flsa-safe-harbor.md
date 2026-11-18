@@ -3,10 +3,11 @@ title: "Improper Salary Deductions: Salary Basis Test and FLSA Safe Harbor Rules
 description: "When employers illegally dock exempt employee salaries for partial-day absences, disciplinary penalties, or operational slowdowns under 29 CFR 541.602."
 key_takeaway: "Improper partial-day or operational pay deductions destroy an employee's exempt status across the entire job classification unless corrected under the 29 C.F.R. § 541.603 safe harbor provision."
 tool: "salary-exempt-vs-non-exempt-calculator"
-status: "draft"
+status: "published"
 structure: "comparison"
-published: "2026-12-05"
+published: "2026-11-18"
 author_slug: "eren-simsir"
+updated: 2026-12-01
 ---
 
 ## The Salary Basis Test and Prohibited Payroll Deductions Under 29 C.F.R. § 541.602
@@ -90,3 +91,9 @@ The figures and rules in this article come from the primary sources below. Thres
 - [29 C.F.R. Part 541, white-collar exemptions (eCFR)](https://www.ecfr.gov/current/title-29/part-541)
 - [DOL Fact Sheet #17A, white-collar exemptions](https://www.dol.gov/agencies/whd/fact-sheets/17a-overtime)
 - [29 U.S.C. § 216, penalties (Cornell LII)](https://www.law.cornell.edu/uscode/text/29/216)
+
+For related coverage, see our guide on [Zero State Income Tax vs California & New York: Total Tax Burden Reality](/guides/zero-state-income-tax-vs-california-new-york/).
+
+For related coverage, see our guide on [Retail and Service Commission Exemption: Section 7(i) Overtime Rules](/guides/commission-overtime-retail-service-exemption-section-7i/).
+
+For related coverage, see our guide on [Tip Pooling Rules: Who May Share in a Pool and Mandatory Exclusions](/guides/tip-pooling-rules-flsa-management-and-back-of-house/).

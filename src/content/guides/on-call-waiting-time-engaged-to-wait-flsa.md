@@ -6,6 +6,7 @@ tool: "hour-and-wage-calculator"
 status: "published"
 published: "2026-11-11"
 author_slug: "eren-simsir"
+updated: 2026-11-18
 ---
 
 The Supreme Court framed the whole doctrine in two cases from 1944. In *Armour & Co. v. Wantock*, firefighters who lived at the plant and did nothing most of the day were still working because they were **engaged to wait**. In *Skidmore v. Swift & Co.*, employees who slept at home and answered occasional fire alarms were held to be **waiting to be engaged**, with the court looking at the specific facts. Eighty years later, the Department of Labor's regulation at 29 C.F.R. § 785.17 still turns on that distinction.
@@ -89,3 +90,7 @@ The figures and rules in this article come from the primary sources below. Thres
 - [29 C.F.R. Part 785, hours worked (eCFR)](https://www.ecfr.gov/current/title-29/part-785)
 - [DOL Fact Sheet #22, hours worked](https://www.dol.gov/agencies/whd/fact-sheets/22-flsa-hours-worked)
 - [DOL Wage and Hour Division: FLSA overview](https://www.dol.gov/agencies/whd/flsa)
+
+For related coverage, see our guide on [Hourly Pay Raise Calculator: Inflation Adjustment and Disposable Income](/guides/hourly-pay-raise-impact-inflation-taxes/).
+
+For related coverage, see our guide on [Comp Time Rules: Public Sector Standards vs. Private Sector FLSA Violations](/guides/comp-time-in-lieu-of-overtime-public-vs-private/).

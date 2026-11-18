@@ -3,9 +3,10 @@ title: "Travel Time Compensation: The Portal-to-Portal Act & Compensable Drive H
 description: "Distinguishing normal home-to-work commuting from compensable travel: emergency call-outs, special one-day assignments, and overnight travel under 29 CFR 785."
 key_takeaway: "Under the Portal-to-Portal Act (29 U.S.C. § 254), the ordinary commute is not paid, but travel that is part of the day's work, travel on a special one-day assignment, and out-of-town travel during normal working hours generally are."
 tool: "hour-and-wage-calculator"
-status: "draft"
-published: "2026-11-27"
+status: "published"
+published: "2026-11-18"
 author_slug: "eren-simsir"
+updated: 2026-11-21
 ---
 
 Almost every travel-time dispute comes down to one question: **is the employee traveling to work, or traveling as part of work?** The first is a commute and unpaid. The second is working time that counts toward the 40-hour overtime threshold. The statute that draws the line is the Portal-to-Portal Act of 1947 (29 U.S.C. § 254), and the Department of Labor's interpretation lives in 29 C.F.R. §§ 785.33–785.41.
@@ -86,3 +87,13 @@ The figures and rules in this article come from the primary sources below. Thres
 - [29 U.S.C. § 254, Portal-to-Portal Act (Cornell LII)](https://www.law.cornell.edu/uscode/text/29/254)
 - [29 C.F.R. Part 785, hours worked (eCFR)](https://www.ecfr.gov/current/title-29/part-785)
 - [DOL Fact Sheet #22, hours worked](https://www.dol.gov/agencies/whd/fact-sheets/22-flsa-hours-worked)
+
+For related coverage, see our guide on [$85,000 a Year is How Much an Hour? After-Tax Paycheck Guide](/guides/85000-a-year-how-much-an-hour/).
+
+For related coverage, see our guide on [On-Call Pay Rules: Engaged to Wait vs. Waiting to Be Engaged (FLSA 29 CFR 785.17)](/guides/on-call-waiting-time-engaged-to-wait-flsa/).
+
+For related coverage, see our guide on [Davis-Bacon Act Prevailing Wage: Certified Payroll & Fringe Benefit Calculations](/guides/prevailing-wage-davis-bacon-act-compliance/).
+
+For related coverage, see our guide on [$98,000 a Year Is How Much an Hour? Salary to Hourly Conversion](/guides/98000-a-year-how-much-an-hour/).
+
+For related coverage, see our guide on [$75 an Hour Is How Much a Year? Hourly to Annual Salary](/guides/75-dollars-an-hour-annual-salary/).

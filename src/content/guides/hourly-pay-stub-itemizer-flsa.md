@@ -5,6 +5,7 @@ tool: "hourly-pay-stub-calculator"
 status: "published"
 published: "2026-11-05"
 author_slug: "eren-simsir"
+updated: 2026-12-09
 ---
 
 ## Statutory Pay Stub Requirements: Federal and State Recordkeeping Mandates
@@ -115,3 +116,7 @@ The figures and rules in this article come from the primary sources below. Thres
 - [29 C.F.R. Part 516, recordkeeping (eCFR)](https://www.ecfr.gov/current/title-29/part-516)
 - [IRS Publication 15, Employer's Tax Guide](https://www.irs.gov/publications/p15)
 - [DOL Wage and Hour Division: FLSA overview](https://www.dol.gov/agencies/whd/flsa)
+
+For related coverage, see our guide on [Final Paycheck Deadlines: Termination Timelines and Waiting Time Penalties](/guides/final-paycheck-deadlines-and-waiting-time-penalties/).
+
+For related coverage, see our guide on [Uniform and Tool Deductions: The FLSA 'Free and Clear' Wage Principle](/guides/uniform-and-tool-deductions-minimum-wage-kickback/).

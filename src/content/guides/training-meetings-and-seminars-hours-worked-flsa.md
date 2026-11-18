@@ -3,10 +3,11 @@ title: "Are Training Sessions and Meetings Paid Time? The 29 CFR 785.27 Test"
 description: "When training, lectures, and meetings count as hours worked, and the four conditions that make attendance unpaid under the FLSA."
 key_takeaway: "Training and meeting time is unpaid only if attendance is outside regular hours, voluntary, not job related, and no productive work is done during it; otherwise it is hours worked."
 tool: "hour-and-wage-calculator"
-status: "draft"
+status: "published"
 structure: "question-answer"
-published: "2026-12-03"
+published: "2026-11-18"
 author_slug: "eren-simsir"
+updated: 2026-11-21
 ---
 
 ## Under what conditions does the FLSA permit excluding training time from compensable hours?
@@ -53,3 +54,11 @@ The figures and rules in this article come from the primary sources below. Thres
 - [29 C.F.R. Part 785, hours worked (eCFR)](https://www.ecfr.gov/current/title-29/part-785)
 - [DOL Fact Sheet #22, hours worked](https://www.dol.gov/agencies/whd/fact-sheets/22-flsa-hours-worked)
 - [29 U.S.C. § 207, maximum hours (Cornell LII)](https://www.law.cornell.edu/uscode/text/29/207)
+
+For related coverage, see our guide on [Fluctuating Workweek Method: Overtime Rules for Salaried Non-Exempt Staff](/guides/fluctuating-workweek-method-overtime/).
+
+For related coverage, see our guide on [Piece-Rate Pay and Overtime: Calculating the Regular Rate for Production Workers](/guides/piece-rate-overtime-calculation/).
+
+For related coverage, see our guide on [Payroll Record Retention: Mandatory Time Card and Tax Record Timelines](/guides/payroll-record-retention-requirements-flsa-irs/).
+
+For related coverage, see our guide on [$75 an Hour Is How Much a Year? Hourly to Annual Salary](/guides/75-dollars-an-hour-annual-salary/).

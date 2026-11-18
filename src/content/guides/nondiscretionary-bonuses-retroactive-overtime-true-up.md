@@ -3,9 +3,9 @@ title: "Nondiscretionary Bonuses: Retroactive Overtime Recalculation Formulas"
 description: "How quarterly, attendance, or performance bonuses must be allocated back across prior workweeks to pay retroactive overtime adjustments under 29 CFR 778.209."
 key_takeaway: "When an employee earns a nondiscretionary bonus covering multiple pay periods, the employer must retroactively increase the regular rate and pay additional overtime for every overtime hour worked during the bonus period."
 tool: "calculating-overtime-with-bonuses"
-status: "draft"
+status: "published"
 structure: "scenario-table"
-published: "2026-12-12"
+published: "2026-11-18"
 author_slug: "eren-simsir"
 ---
 

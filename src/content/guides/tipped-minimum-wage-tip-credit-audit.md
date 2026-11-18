@@ -4,7 +4,7 @@ description: "How the FLSA tip credit functions under 29 U.S.C. § 203(m), 50-st
 tool: "tipped-minimum-wage-calculator"
 status: "published"
 published: "2026-10-26"
-updated: "2026-10-27"
+updated: 2026-12-01
 author_slug: "eren-simsir"
 ---
 
@@ -126,3 +126,5 @@ The figures and rules in this article come from the primary sources below. Thres
 - [29 C.F.R. Part 531, wage payments including tip credit (eCFR)](https://www.ecfr.gov/current/title-29/part-531)
 - [DOL: state minimum wage laws](https://www.dol.gov/agencies/whd/minimum-wage/state)
 - [29 U.S.C. § 206, minimum wage (Cornell LII)](https://www.law.cornell.edu/uscode/text/29/206)
+
+For related coverage, see our guide on [Tip Pooling Rules: Who May Share in a Pool and Mandatory Exclusions](/guides/tip-pooling-rules-flsa-management-and-back-of-house/).

@@ -6,6 +6,7 @@ tool: "hour-and-wage-calculator"
 status: "published"
 published: "2026-10-30"
 author_slug: "eren-simsir"
+updated: 2026-11-18
 ---
 
 "Comp time" sounds like an easy substitute for overtime: instead of paying 1.5 times the regular rate, give 1.5 hours off later. For a city or county it is lawful. For a private business it usually is not, and a handshake arrangement does not fix that. The difference is built into one subsection of the FLSA, 29 U.S.C. § 207(o).
@@ -84,3 +85,9 @@ The figures and rules in this article come from the primary sources below. Thres
 - [29 U.S.C. § 207, maximum hours (Cornell LII)](https://www.law.cornell.edu/uscode/text/29/207)
 - [29 C.F.R. Part 553, public agency employees (eCFR)](https://www.ecfr.gov/current/title-29/part-553)
 - [DOL Fact Sheet #23, overtime pay requirements](https://www.dol.gov/agencies/whd/fact-sheets/23-flsa-overtime-pay)
+
+For related coverage, see our guide on [Base Hourly Plus Commission: Total Compensation & Draw Accounting](/guides/base-hourly-plus-commission-payroll-draws/).
+
+For related coverage, see our guide on [Reporting Time Pay: State Show-Up Wage Mandates and Overtime Impact](/guides/reporting-time-pay-and-call-in-pay-state-rules/).
+
+For related coverage, see our guide on [$50,000 a Year is How Much an Hour? Living Wage & Biweekly Breakdown](/guides/50000-a-year-how-much-an-hour/).

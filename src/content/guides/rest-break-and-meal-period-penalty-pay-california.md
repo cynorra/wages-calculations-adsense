@@ -3,9 +3,10 @@ title: "California Meal and Rest Break Premiums: Labor Code 226.7 Penalty Calcul
 description: "Calculating one additional hour of regular pay for missed, delayed, or non-compliant meal and rest periods under California Supreme Court standards."
 key_takeaway: "California owes one extra hour of pay at the regular rate for each workday with a missed meal period and one for each workday with a missed rest period, up to two hours of premium pay per day."
 tool: "hour-and-wage-calculator"
-status: "draft"
-published: "2026-11-19"
+status: "published"
+published: "2026-11-18"
 author_slug: "eren-simsir"
+updated: 2026-11-19
 ---
 
 California is one of the few states where a missed break is a **wage** violation with a price tag set by statute. Labor Code § 226.7 and the IWC wage orders require employers to provide meal and rest periods, and when they do not, the employee earns a premium payment. Because the premium is owed automatically, it is also one of the most common sources of class actions.
@@ -108,3 +109,7 @@ The figures and rules in this article come from the primary sources below. Thres
 - [California Labor Code § 226.7, meal and rest periods](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=LAB&sectionNum=226.7)
 - [California Labor Code § 512, meal periods](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=LAB&sectionNum=512)
 - [California Labor Code § 510, daily overtime](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=LAB&sectionNum=510)
+
+For related coverage, see our guide on [Per Diem Travel Stipends: GSA Rates, Accountable Plans & Tax Exemption](/guides/per-diem-travel-stipends-irs-gsa-substantiation/).
+
+For related coverage, see our guide on [$98,000 a Year Is How Much an Hour? Salary to Hourly Conversion](/guides/98000-a-year-how-much-an-hour/).

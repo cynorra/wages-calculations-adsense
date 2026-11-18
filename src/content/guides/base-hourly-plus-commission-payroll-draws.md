@@ -5,6 +5,7 @@ tool: "base-hourly-plus-commission-calculator"
 status: "published"
 published: "2026-10-28"
 author_slug: "eren-simsir"
+updated: 2026-12-04
 ---
 
 ## Modeling Base Hourly Plus Commission Structures
@@ -133,3 +134,5 @@ The figures and rules in this article come from the primary sources below. Thres
 - [29 C.F.R. Part 778, overtime compensation (eCFR)](https://www.ecfr.gov/current/title-29/part-778)
 - [DOL Fact Sheet #23, overtime pay requirements](https://www.dol.gov/agencies/whd/fact-sheets/23-flsa-overtime-pay)
 - [IRS Publication 15, Employer's Tax Guide](https://www.irs.gov/publications/p15)
+
+For related coverage, see our guide on [Retail and Service Commission Exemption: Section 7(i) Overtime Rules](/guides/commission-overtime-retail-service-exemption-section-7i/).

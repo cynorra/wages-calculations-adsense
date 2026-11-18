@@ -6,6 +6,7 @@ tool: "hour-and-wage-calculator"
 status: "published"
 published: "2026-11-15"
 author_slug: "eren-simsir"
+updated: 2026-11-18
 ---
 
 A per diem is a flat daily allowance for lodging, meals, and incidental expenses while an employee is traveling for work. Whether it shows up on the W-2 depends entirely on how the employer's reimbursement arrangement is built, not on how large the payment is. The governing rule is Treasury Regulation § 1.62-2, and the IRS discusses it in Publications 463 and 15.
@@ -99,3 +100,5 @@ The figures and rules in this article come from the primary sources below. Thres
 - [26 C.F.R. § 1.62-2, reimbursement arrangements (eCFR)](https://www.ecfr.gov/current/title-26/section-1.62-2)
 - [26 U.S.C. § 62, adjusted gross income (Cornell LII)](https://www.law.cornell.edu/uscode/text/26/62)
 - [IRS Publication 15, Employer's Tax Guide](https://www.irs.gov/publications/p15)
+
+For related coverage, see our guide on [Hourly Pay Raise Calculator: Inflation Adjustment and Disposable Income](/guides/hourly-pay-raise-impact-inflation-taxes/).

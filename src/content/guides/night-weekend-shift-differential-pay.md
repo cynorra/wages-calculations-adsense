@@ -5,6 +5,7 @@ tool: "shift-differential-pay-calculator"
 status: "published"
 published: "2026-11-10"
 author_slug: "eren-simsir"
+updated: 2026-11-24
 ---
 
 ## What is Shift Differential Pay?
@@ -152,3 +153,5 @@ The figures and rules in this article come from the primary sources below. Thres
 - [29 C.F.R. Part 778, overtime compensation (eCFR)](https://www.ecfr.gov/current/title-29/part-778)
 - [29 U.S.C. § 207, maximum hours (Cornell LII)](https://www.law.cornell.edu/uscode/text/29/207)
 - [DOL Fact Sheet #23, overtime pay requirements](https://www.dol.gov/agencies/whd/fact-sheets/23-flsa-overtime-pay)
+
+For related coverage, see our guide on [Split Shift Differential Pay: California IWC & New York Labor Law Formulas](/guides/split-shift-differential-premiums-california-ny/).

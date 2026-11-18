@@ -5,8 +5,9 @@ key_takeaway: "A $98,000 annual salary equals about $47.12 per hour at 2,080 pai
 tool: "hour-and-wage-calculator"
 status: "published"
 structure: "multi-jurisdiction-matrix"
-published: "2026-11-19"
+published: "2026-11-18"
 author_slug: "eren-simsir"
+updated: 2026-11-18
 ---
 
 ## Statutory Hourly Conversion of a $98,000 Annual Salary
@@ -78,3 +79,7 @@ The figures and rules in this article come from the primary sources below. Thres
 - [DOL Wage and Hour Division: FLSA overview](https://www.dol.gov/agencies/whd/flsa)
 - [29 C.F.R. Part 778, overtime compensation (eCFR)](https://www.ecfr.gov/current/title-29/part-778)
 - [IRS Publication 15, Employer's Tax Guide](https://www.irs.gov/publications/p15)
+
+For related coverage, see our guide on [Hazard Pay Rules: FLSA Standards, Dangerous Conditions & Overtime Multipliers](/guides/hazard-pay-regulations-flsa-standards/).
+
+For related coverage, see our guide on [Per Diem Travel Stipends: GSA Rates, Accountable Plans & Tax Exemption](/guides/per-diem-travel-stipends-irs-gsa-substantiation/).
