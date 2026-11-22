@@ -9,7 +9,7 @@ export const SITE = {
   foundingYear: 2026,
   email: "hello@thewagereport.com",
   contactFormEndpoint: "",
-  adsensePublisherId: "", // Onay oncesi bos, onay sonrasi pub-4674211063760769
+  adsensePublisherId: "ca-pub-4674211063760769", // Onay oncesi dogrulama icin acildi; script yalnizca cerez onayindan sonra yuklenir
   verification: { google: "", bing: "", yandex: "" },
   indexNowKey: "d28c5a05a99f5176adf74a2dd2414fd5",
 };
